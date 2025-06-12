@@ -1,94 +1,70 @@
-let examData;
-let timerInterval;
+let examData, timer, countdown;
 let currentTeil = 1;
-let timeLeft = 0;
+const timerElement = document.getElementById("timer");
 
-function startTimer(duration) {
-  clearInterval(timerInterval);
-  timeLeft = duration;
-  updateTimeDisplay();
-  timerInterval = setInterval(() => {
-    timeLeft--;
-    updateTimeDisplay();
-    if (timeLeft <= 0) {
-      clearInterval(timerInterval);
-      if (currentTeil === 1) {
-        document.getElementById("teil1").style.display = "none";
-        document.getElementById("next-btn").style.display = "block";
-      } else {
-        document.getElementById("submit-btn").style.display = "block";
-      }
-    }
-  }, 1000);
-}
-
-function updateTimeDisplay() {
-  const minutes = Math.floor(timeLeft / 60).toString().padStart(2, "0");
-  const seconds = (timeLeft % 60).toString().padStart(2, "0");
-  document.getElementById("time").textContent = `${minutes}:${seconds}`;
-}
+fetch('Exams-30-Muster.json')
+  .then(res => res.json())
+  .then(data => {
+    const selected = data.exams[Math.floor(Math.random() * data.exams.length)];
+    examData = selected;
+    renderTeil(selected.teil_1, 'questions1');
+    startTimer(50 * 60); // 50 Minuten für Teil 1
+  });
 
 function renderTeil(questions, containerId) {
   const container = document.getElementById(containerId);
-  container.innerHTML = "";
-  questions.forEach((q, index) => {
+  questions.forEach((q, idx) => {
     const wrapper = document.createElement("div");
-    wrapper.className = "question-block";
+    wrapper.className = "frageblock";
     wrapper.innerHTML = `
-      <p><strong>${index + 1}. ${q.frage}</strong></p>
-      <textarea rows="3" data-index="${index}" data-teil="${containerId}"></textarea>
+      <div class="question"><strong>${idx + 1}.</strong> ${q.frage}</div>
+      <textarea class="antwort" data-index="${idx}" rows="3" placeholder="Antwort schreiben..."></textarea>
     `;
     container.appendChild(wrapper);
   });
 }
 
-function showResults() {
-  const resultBox = document.getElementById("result");
-  let html = "<h3>📋 Auswertung:</h3>";
-  ["teil1", "teil2"].forEach(id => {
-    const inputs = document.querySelectorAll(`#${id} textarea`);
-    inputs.forEach(input => {
-      const teil = id === "teil1" ? examData.teil_1 : examData.teil_2;
-      const idx = parseInt(input.getAttribute("data-index"));
-      const original = teil[idx];
-      const userAnswer = input.value.trim();
-      html += `
-        <div class="result-block">
-          <strong>Frage:</strong> ${original.frage}<br>
-          <strong>Ihre Antwort:</strong> ${userAnswer || "<em>Keine Antwort</em>"}<br>
-          <strong>Richtige Antwort:</strong> ${original.antwort}<br><hr>
-        </div>
-      `;
-    });
-  });
-  resultBox.innerHTML = html;
-  document.getElementById("submit-btn").style.display = "none";
+function startTimer(seconds) {
+  clearInterval(countdown);
+  updateTimerDisplay(seconds);
+  countdown = setInterval(() => {
+    seconds--;
+    updateTimerDisplay(seconds);
+    if (seconds <= 0) {
+      clearInterval(countdown);
+      if (currentTeil === 1) {
+        document.getElementById("teil2-btn").classList.remove("hidden");
+        alert("Teil 1 ist beendet. Jetzt kannst du Teil 2 starten.");
+      } else {
+        document.getElementById("submit-btn").classList.remove("hidden");
+        alert("Teil 2 ist beendet. Du kannst jetzt abschließen.");
+      }
+    }
+  }, 1000);
 }
 
-fetch("Exams-30-Muster.json")
-  .then(res => res.json())
-  .then(data => {
-    const selected = data.exams[Math.floor(Math.random() * data.exams.length)];
-    examData = selected;
-    renderTeil(selected.teil_1, "teil1");
-    document.getElementById("teil1").style.display = "block";
-    startTimer(50 * 60); // 50 Minuten
-  })
-  .catch(err => {
-    document.getElementById("exam-container").innerHTML = "Fehler beim Laden der Prüfung.";
-    console.error(err);
-  });
+function updateTimerDisplay(seconds) {
+  const min = Math.floor(seconds / 60);
+  const sec = seconds % 60;
+  timerElement.textContent = `🕒 ${min}:${sec < 10 ? "0" + sec : sec}`;
+}
 
-document.getElementById("next-btn").addEventListener("click", () => {
+document.getElementById("teil2-btn").addEventListener("click", () => {
+  document.getElementById("teil1").classList.add("hidden");
+  document.getElementById("teil2").classList.remove("hidden");
+  document.getElementById("teil2-btn").classList.add("hidden");
   currentTeil = 2;
-  document.getElementById("teil1").style.display = "none";
-  document.getElementById("teil2").style.display = "block";
-  renderTeil(examData.teil_2, "teil2");
-  document.getElementById("next-btn").style.display = "none";
-  startTimer(60 * 60); // 60 Minuten
+  renderTeil(examData.teil_2, 'questions2');
+  startTimer(60 * 60); // 60 Minuten für Teil 2
 });
 
 document.getElementById("submit-btn").addEventListener("click", () => {
-  clearInterval(timerInterval);
-  showResults();
+  document.getElementById("submit-btn").classList.add("hidden");
+  const antworten = document.querySelectorAll("textarea.antwort");
+  let antwortText = "<h3>Deine Antworten</h3><ol>";
+  antworten.forEach(a => {
+    antwortText += `<li>${a.value.trim() || "<em>(keine Antwort)</em>"}</li>`;
+  });
+  antwortText += "</ol>";
+  document.getElementById("result").innerHTML = antwortText;
 });
