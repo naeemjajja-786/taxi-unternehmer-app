@@ -1,81 +1,73 @@
 let examData;
 let timerInterval;
-let timeLeft = 110 * 60;
 
-function startTimer() {
-  const timerDisplay = document.getElementById('timer');
+function startTimer(duration, display) {
+  let timer = duration, minutes, seconds;
   timerInterval = setInterval(() => {
-    const minutes = Math.floor(timeLeft / 60);
-    const seconds = timeLeft % 60;
-    timerDisplay.textContent = `⏳ ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-    timeLeft--;
-
-    if (timeLeft < 0) {
+    minutes = parseInt(timer / 60, 10);
+    seconds = parseInt(timer % 60, 10);
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    display.textContent = `⏱️ ${minutes}:${seconds} Minuten`;
+    if (--timer < 0) {
       clearInterval(timerInterval);
-      alert("⏰ Zeit ist abgelaufen!");
-      document.getElementById('submit-btn').click();
+      alert("⏰ Die Zeit ist um!");
     }
   }, 1000);
 }
 
-fetch('Exams-30-Muster.json')
-  .then(res => res.json())
-  .then(data => {
-    const exams = data.exams;
-    const selected = exams[Math.floor(Math.random() * exams.length)];
-    examData = selected;
-    loadTeil(selected.teil_1, 'questions1');
-    loadTeil(selected.teil_2, 'questions2');
-    startTimer();
-  })
-  .catch(err => console.error(err));
+window.onload = function () {
+  fetch("Exams-30-Muster.json")
+    .then(res => res.json())
+    .then(data => {
+      const exams = data.exams;
+      const selected = exams[Math.floor(Math.random() * exams.length)];
+      examData = selected;
+      loadTeil(selected.teil_1, 'questions1', true);
+      loadTeil(selected.teil_2, 'questions2', false);
+      const timerDisplay = document.getElementById("timer");
+      startTimer(110 * 60, timerDisplay);
+    })
+    .catch(err => console.error("Fehler beim Laden der Prüfungsdaten:", err));
+};
 
-function loadTeil(questions, containerId) {
+function loadTeil(questions, containerId, reveal = true) {
   const container = document.getElementById(containerId);
   questions.forEach((q, idx) => {
-    const qEl = document.createElement('div');
-    qEl.className = 'question';
+    const wrapper = document.createElement("div");
+    wrapper.className = "question-box";
+    const qEl = document.createElement("div");
+    qEl.className = "frage";
     qEl.textContent = (idx + 1) + ". " + q.frage;
-    container.appendChild(qEl);
-
-    const optionsList = document.createElement('ul');
-    optionsList.className = 'options';
+    wrapper.appendChild(qEl);
+    const optionsList = document.createElement("div");
+    optionsList.className = "options-list";
     q.antworten.forEach(ans => {
-      const li = document.createElement('li');
-      const btn = document.createElement('button');
-      btn.className = 'option-button';
+      const btn = document.createElement("button");
+      btn.className = "quiz-option";
       btn.textContent = ans;
       btn.onclick = () => {
         q.selected = ans;
-        Array.from(optionsList.children).forEach(l => l.firstChild.classList.remove('selected'));
-        btn.classList.add('selected');
+        optionsList.querySelectorAll("button").forEach(b => b.classList.remove("selected"));
+        btn.classList.add("selected");
       };
-      li.appendChild(btn);
-      optionsList.appendChild(li);
+      optionsList.appendChild(btn);
     });
-    container.appendChild(optionsList);
+    wrapper.appendChild(optionsList);
+    container.appendChild(wrapper);
   });
 }
 
-document.getElementById('submit-btn').addEventListener('click', () => {
-  clearInterval(timerInterval);
+document.getElementById("submit-btn").addEventListener("click", () => {
   let total = 0, correctCount = 0;
-  ['questions1', 'questions2'].forEach((id, partIndex) => {
-    const questions = partIndex === 0 ? examData.teil_1 : examData.teil_2;
-    const div = document.getElementById(id);
-    const questionBlocks = div.querySelectorAll('.question');
-    questionBlocks.forEach((qEl, i) => {
-      const options = qEl.nextElementSibling;
-      const selectedBtn = Array.from(options.children).find(li => li.firstChild.classList.contains('selected'));
-      const selected = selectedBtn ? selectedBtn.firstChild.textContent : null;
-      const correct = questions[i].richtigeAntwort;
-      if (selected === correct) {
-        correctCount++;
-      }
+  ['teil_1', 'teil_2'].forEach((teil, idx) => {
+    const questions = examData[teil];
+    questions.forEach(q => {
       total++;
+      if (q.selected === q.richtigeAntwort) correctCount++;
     });
   });
-  const score = Math.round((correctCount / total) * 100);
-  document.getElementById('result').innerHTML = 
-    `<h3>Ergebnis: ${correctCount} von ${total} richtig (${score}%)</h3>`;
+  clearInterval(timerInterval);
+  document.getElementById("result").innerHTML =
+    `<div class="explanation">✅ Ergebnis: <strong>${correctCount} von ${total}</strong> richtig (${Math.round((correctCount / total) * 100)}%)</div>`;
 });
