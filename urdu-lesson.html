@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>اردو سبق</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>سبق</h1>
+  </header>
+  <main id="app">
+    <div id="lesson-content"></div>
+    <button class="zuruck-btn" onclick="history.back()">Zurück</button>
+  </main>
+
+  <script>
+    // URL سے سبق کا فائل نام حاصل کریں
+    const params = new URLSearchParams(window.location.search);
+    const fileName = params.get('file');
+    const contentDiv = document.getElementById('lesson-content');
+
+    fetch(fileName)
+      .then(response => response.json())
+      .then(data => {
+        // سبق کا عنوان دکھائیں
+        const title = document.createElement('h2');
+        title.textContent = data["عنوان"] || '';
+        contentDiv.appendChild(title);
+        // سوالات و جوابات دکھائیں
+        if (Array.isArray(data["سوالات"])) {
+          data["سوالات"].forEach((item, index) => {
+            const q = document.createElement('p');
+            q.textContent = item.frage || '';
+            contentDiv.appendChild(q);
+            if (item.antworten) {
+              item.antworten.forEach(ans => {
+                const a = document.createElement('p');
+                a.textContent = '• ' + ans;
+                contentDiv.appendChild(a);
+              });
+            }
+          });
+        }
+      })
+      .catch(err => {
+        contentDiv.textContent = "معلومات حاصل کرنے میں مسئلہ ہوا۔";
+        console.error(err);
+      });
+  </script>
+</body>
+</html>
