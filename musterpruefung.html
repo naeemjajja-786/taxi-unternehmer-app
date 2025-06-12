@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Musterprüfung</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    #timer {
-      font-size: 1.2em;
-      font-weight: bold;
-      margin: 12px 0;
-      color: #d2222d;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>📑 Musterprüfung</h1>
   </header>
   <main id="app">
-    <div id="timer">⏳ Wird geladen...</div>
     <div id="exam-container">
+      <div id="timer">⏳ 1:50:00</div>
       <div id="teil1">
         <h2>Teil 1</h2>
         <div id="questions1"></div>
@@ -32,92 +24,9 @@
       <button id="submit-btn" class="quiz-btn">Abschließen</button>
       <div id="result"></div>
     </div>
-    <button class="zuruck-btn" onclick="history.back()">← Zurück</button>
+    <button class="zuruck-btn" onclick="history.back()">Zurück</button>
   </main>
 
-  <script>
-    let examData;
-
-    fetch('Exams-30-Muster.json')
-      .then(res => res.json())
-      .then(data => {
-        const exams = data.exams;
-        const selected = exams[Math.floor(Math.random() * exams.length)];
-        examData = selected;
-        loadTeil(selected.teil_1, 'questions1');
-        loadTeil(selected.teil_2, 'questions2');
-        startTimer(110 * 60); // 110 Minuten in Sekunden
-      })
-      .catch(err => {
-        document.getElementById("timer").textContent = "❌ Fehler beim Laden der Prüfung.";
-        console.error(err);
-      });
-
-    function loadTeil(questions, containerId) {
-      const container = document.getElementById(containerId);
-      questions.forEach((q, idx) => {
-        const qEl = document.createElement('div');
-        qEl.className = 'question';
-        qEl.textContent = (idx + 1) + ". " + q.frage;
-        container.appendChild(qEl);
-        const optionsList = document.createElement('ul');
-        optionsList.className = 'options';
-        q.antworten.forEach(ans => {
-          const li = document.createElement('li');
-          const btn = document.createElement('button');
-          btn.className = 'option-button';
-          btn.textContent = ans;
-          btn.onclick = () => {
-            q.selected = ans;
-            Array.from(optionsList.children).forEach(l => l.firstChild.classList.remove('selected'));
-            btn.classList.add('selected');
-          };
-          li.appendChild(btn);
-          optionsList.appendChild(li);
-        });
-        container.appendChild(optionsList);
-      });
-    }
-
-    function startTimer(seconds) {
-      const timerEl = document.getElementById("timer");
-      const endTime = Date.now() + seconds * 1000;
-
-      function update() {
-        const now = Date.now();
-        const remaining = Math.max(0, Math.floor((endTime - now) / 1000));
-        const min = String(Math.floor(remaining / 60)).padStart(2, '0');
-        const sec = String(remaining % 60).padStart(2, '0');
-        timerEl.textContent = `⏳ Verbleibende Zeit: ${min}:${sec}`;
-
-        if (remaining <= 0) {
-          clearInterval(interval);
-          document.getElementById("submit-btn").click();
-        }
-      }
-
-      update();
-      const interval = setInterval(update, 1000);
-    }
-
-    document.getElementById('submit-btn').addEventListener('click', () => {
-      let total = 0, correctCount = 0;
-      ['questions1', 'questions2'].forEach(id => {
-        const div = document.getElementById(id);
-        const qElements = Array.from(div.children).filter(el => el.className === 'question');
-        qElements.forEach((qEl, i) => {
-          const options = qEl.nextElementSibling;
-          const selectedBtn = Array.from(options.children).find(li => li.firstChild.classList.contains('selected'));
-          const selected = selectedBtn ? selectedBtn.firstChild.textContent : null;
-          const correct = (id === 'questions1' ? examData.teil_1[i] : examData.teil_2[i]).richtigeAntwort;
-          if (selected === correct) correctCount++;
-          total++;
-        });
-      });
-      const score = Math.round((correctCount / total) * 100);
-      document.getElementById('result').innerHTML =
-        `<h3>Ergebnis: ${correctCount} von ${total} richtig (${score}%)</h3>`;
-    });
-  </script>
+  <script src="musterpruefung.js"></script>
 </body>
 </html>
