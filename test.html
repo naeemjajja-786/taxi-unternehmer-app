@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste Dich</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🧠 Teste Dich</h1>
+  </header>
+  <main id="app">
+    <div id="quiz-container">
+      <div id="question-container">
+        <div id="question" class="question"></div>
+        <ul id="options" class="options"></ul>
+      </div>
+      <div id="feedback" class="feedback"></div>
+      <button id="next-btn" class="quiz-btn">Nächstes</button>
+    </div>
+    <button class="zuruck-btn" onclick="history.back()">Zurück</button>
+  </main>
+
+  <script>
+    let allQuestions = [];
+    let quizData = [];
+    let currentQuestion = 0;
+
+    // تمام سوالات لوڈ کریں
+    fetch('Quiz-gesamt.json')
+      .then(res => res.json())
+      .then(data => {
+        allQuestions = data;
+        // 30 رینڈم سوال منتخب کریں
+        quizData = allQuestions.sort(() => 0.5 - Math.random()).slice(0, 30);
+        showQuestion();
+      })
+      .catch(err => {
+        document.getElementById('question').textContent = "Quiz لوڈ نہیں ہو سکا۔";
+        console.error(err);
+      });
+
+    function showQuestion() {
+      document.getElementById('feedback').textContent = '';
+      const optionsEl = document.getElementById('options');
+      optionsEl.innerHTML = '';
+      if (currentQuestion < quizData.length) {
+        const qObj = quizData[currentQuestion];
+        document.getElementById('question').textContent = qObj.frage;
+        qObj.antworten.forEach(ans => {
+          const li = document.createElement('li');
+          const btn = document.createElement('button');
+          btn.className = 'option-button';
+          btn.textContent = ans;
+          btn.addEventListener('click', () => checkAnswer(ans));
+          li.appendChild(btn);
+          optionsEl.appendChild(li);
+        });
+        document.getElementById('next-btn').disabled = true;
+      } else {
+        document.getElementById('question').textContent = "Quiz ختم ہو چکا ہے!";
+        document.getElementById('next-btn').style.display = 'none';
+      }
+    }
+
+    function checkAnswer(selected) {
+      const qObj = quizData[currentQuestion];
+      Array.from(document.getElementById('options').children).forEach(li => {
+        const btn = li.firstChild;
+        if (btn.textContent === qObj.richtigeAntwort) {
+          btn.classList.add('correct');
+        }
+        if (btn.textContent === selected && selected !== qObj.richtigeAntwort) {
+          btn.classList.add('incorrect');
+        }
+        btn.disabled = true;
+      });
+      if (selected === qObj.richtigeAntwort) {
+        document.getElementById('feedback').textContent = "درست! " + (qObj.erklärung || '');
+      } else {
+        document.getElementById('feedback').textContent = "غلط! صحیح جواب: " + qObj.richtigeAntwort + (qObj.erklärung ? ' | ' + qObj.erklärung : '');
+      }
+      document.getElementById('next-btn').disabled = false;
+    }
+
+    document.getElementById('next-btn').addEventListener('click', () => {
+      currentQuestion++;
+      showQuestion();
+    });
+  </script>
+</body>
+</html>
