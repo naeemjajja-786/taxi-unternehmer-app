@@ -1,70 +1,100 @@
-let examData, timer, countdown;
-let currentTeil = 1;
-const timerElement = document.getElementById("timer");
 
-fetch('Exams-30-Muster.json')
+let examData;
+let currentTeil = 1;
+let timeLeft = 50 * 60;
+let timerInterval;
+
+fetch('Exams-30-Muster-FINAL-COMPLETE.json')
   .then(res => res.json())
   .then(data => {
     const selected = data.exams[Math.floor(Math.random() * data.exams.length)];
     examData = selected;
-    renderTeil(selected.teil_1, 'questions1');
-    startTimer(50 * 60); // 50 Minuten für Teil 1
+    loadTeil(selected.teil_1, 'questions1');
+    startTimer();
   });
 
-function renderTeil(questions, containerId) {
-  const container = document.getElementById(containerId);
-  questions.forEach((q, idx) => {
-    const wrapper = document.createElement("div");
-    wrapper.className = "frageblock";
-    wrapper.innerHTML = `
-      <div class="question"><strong>${idx + 1}.</strong> ${q.frage}</div>
-      <textarea class="antwort" data-index="${idx}" rows="3" placeholder="Antwort schreiben..."></textarea>
-    `;
-    container.appendChild(wrapper);
-  });
-}
-
-function startTimer(seconds) {
-  clearInterval(countdown);
-  updateTimerDisplay(seconds);
-  countdown = setInterval(() => {
-    seconds--;
-    updateTimerDisplay(seconds);
-    if (seconds <= 0) {
-      clearInterval(countdown);
+function startTimer() {
+  updateTimerDisplay();
+  timerInterval = setInterval(() => {
+    timeLeft--;
+    updateTimerDisplay();
+    if (timeLeft <= 0) {
       if (currentTeil === 1) {
-        document.getElementById("teil2-btn").classList.remove("hidden");
-        alert("Teil 1 ist beendet. Jetzt kannst du Teil 2 starten.");
+        switchToTeil2();
       } else {
-        document.getElementById("submit-btn").classList.remove("hidden");
-        alert("Teil 2 ist beendet. Du kannst jetzt abschließen.");
+        clearInterval(timerInterval);
+        submitExam();
       }
     }
   }, 1000);
 }
 
-function updateTimerDisplay(seconds) {
-  const min = Math.floor(seconds / 60);
-  const sec = seconds % 60;
-  timerElement.textContent = `🕒 ${min}:${sec < 10 ? "0" + sec : sec}`;
+function updateTimerDisplay() {
+  const minutes = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+  const seconds = String(timeLeft % 60).padStart(2, '0');
+  document.getElementById("time").textContent = `${minutes}:${seconds}`;
 }
 
-document.getElementById("teil2-btn").addEventListener("click", () => {
-  document.getElementById("teil1").classList.add("hidden");
-  document.getElementById("teil2").classList.remove("hidden");
-  document.getElementById("teil2-btn").classList.add("hidden");
-  currentTeil = 2;
-  renderTeil(examData.teil_2, 'questions2');
-  startTimer(60 * 60); // 60 Minuten für Teil 2
-});
+function loadTeil(questions, containerId) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = '';
+  questions.forEach((q, idx) => {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'question-block';
 
-document.getElementById("submit-btn").addEventListener("click", () => {
-  document.getElementById("submit-btn").classList.add("hidden");
-  const antworten = document.querySelectorAll("textarea.antwort");
-  let antwortText = "<h3>Deine Antworten</h3><ol>";
-  antworten.forEach(a => {
-    antwortText += `<li>${a.value.trim() || "<em>(keine Antwort)</em>"}</li>`;
+    const qText = document.createElement('p');
+    qText.className = 'question';
+    qText.textContent = (idx + 1) + '. ' + q.frage;
+    wrapper.appendChild(qText);
+
+    const ul = document.createElement('ul');
+    ul.className = 'options';
+
+    q.antworten.forEach(ans => {
+      const li = document.createElement('li');
+      const btn = document.createElement('button');
+      btn.className = 'option-button';
+      btn.textContent = ans;
+      btn.onclick = () => {
+        q.selected = ans;
+        Array.from(ul.children).forEach(child => child.firstChild.classList.remove('selected'));
+        btn.classList.add('selected');
+      };
+      li.appendChild(btn);
+      ul.appendChild(li);
+    });
+
+    wrapper.appendChild(ul);
+    container.appendChild(wrapper);
   });
-  antwortText += "</ol>";
-  document.getElementById("result").innerHTML = antwortText;
-});
+}
+
+document.getElementById('to-teil2').onclick = () => {
+  currentTeil = 2;
+  timeLeft = 60 * 60;
+  document.getElementById('teil1').style.display = 'none';
+  document.getElementById('teil2').style.display = 'block';
+  loadTeil(examData.teil_2, 'questions2');
+};
+
+document.getElementById('submit-btn').onclick = submitExam;
+
+function submitExam() {
+  clearInterval(timerInterval);
+  let total = 0, correct = 0, score = 0;
+
+  ['teil_1', 'teil_2'].forEach((teil, index) => {
+    examData[teil].forEach(q => {
+      total++;
+      if (q.selected === q.richtigeAntwort) correct++;
+      if (q.punkte && q.selected === q.richtigeAntwort) score += q.punkte;
+    });
+  });
+
+  const percent = Math.round((correct / total) * 100);
+  document.getElementById('result').innerHTML = `
+    <h3>Ergebnis</h3>
+    <p>${correct} von ${total} richtig (${percent}%)</p>
+    <p>Gesamtpunktzahl: ${score}</p>
+  `;
+}
