@@ -6,15 +6,14 @@
   --neutral: #222;
   --white: #fff;
   --border: #e0e2e6;
-  --shadow: 0 2px 8px rgba(30, 64, 95, 0.04);
   --radius: 12px;
   --transition: 0.2s ease-in-out;
   --font-main: 'Segoe UI', 'Roboto', Arial, sans-serif;
 }
 
 html, body {
-  padding: 0;
   margin: 0;
+  padding: 0;
   font-family: var(--font-main);
   background: var(--main-bg);
   color: var(--neutral);
@@ -29,86 +28,50 @@ header, footer {
 }
 
 main#app {
-  max-width: 800px;
+  max-width: 700px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-#main-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-.menu-btn {
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  width: 80%;
-  max-width: 400px;
-  border: none;
-  border-radius: var(--radius);
-  background: var(--primary);
-  color: var(--white);
-  cursor: pointer;
-  transition: background var(--transition);
-}
-
-.menu-btn:hover {
-  background: var(--accent);
-}
-
-.quiz-topic-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
 .quiz-btn, .zuruck-btn {
-  margin-top: 1.5rem;
-  padding: 0.8rem 1.2rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: var(--radius);
   background: var(--accent);
   color: var(--white);
-  cursor: pointer;
-}
-
-.question {
+  padding: 0.8rem 1.2rem;
   font-weight: bold;
-  margin-top: 1rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  margin: 1rem 0.5rem;
 }
 
-ul.options {
-  list-style: none;
-  padding: 0;
+.quiz-btn:hover, .zuruck-btn:hover {
+  background: var(--primary);
 }
 
-ul.options li {
-  margin: 0.3rem 0;
+#timer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-.option-button {
+textarea.antwort {
   width: 100%;
+  border-radius: var(--radius);
   padding: 0.7rem;
   border: 1px solid var(--border);
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.exam-section {
+  background: var(--white);
+  padding: 1rem;
   border-radius: var(--radius);
-  background: #f1f4fb;
-  cursor: pointer;
+  box-shadow: var(--shadow);
 }
 
-.option-button:hover {
-  background: var(--primary);
-  color: white;
-}
-
-.option-button.selected {
-  background: var(--accent);
-  color: white;
-}
-
-.timer {
-  float: right;
-  font-weight: bold;
+.hidden {
+  display: none;
 }
