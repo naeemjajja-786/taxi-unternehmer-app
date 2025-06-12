@@ -1,0 +1,73 @@
+{
+  "chapter": "Straßenverkehrsrecht",
+  "topics": [
+    {
+      "id": "6.1",
+      "title": "Grundlagen des Straßenverkehrsrechts",
+      "content": [
+        "Das Straßenverkehrsrecht regelt das Verhalten aller Verkehrsteilnehmer auf öffentlichen Straßen.",
+        "Wichtige Rechtsgrundlagen sind das Straßenverkehrsgesetz (StVG), die Straßenverkehrs-Ordnung (StVO) und die Straßenverkehrs-Zulassungs-Ordnung (StVZO).",
+        "Es gilt für Fußgänger, Radfahrer, Autofahrer, Motorradfahrer und auch für den gewerblichen Personenverkehr."
+      ],
+      "explain": "Straßenverkehrsrecht heißt: Für alle auf öffentlichen Straßen gibt es Regeln, die für Sicherheit und Ordnung sorgen.",
+      "example": "Ein Taxi muss sich ebenso an die Vorfahrtsregelung halten wie ein Privatfahrer.",
+      "media": null,
+      "tags": ["verkehrsrecht", "stvg", "stvo", "stvzo"]
+    },
+    {
+      "id": "6.2",
+      "title": "Führerschein- und Zulassungsrecht",
+      "content": [
+        "Wer ein Kraftfahrzeug führt, benötigt eine entsprechende Fahrerlaubnis.",
+        "Die wichtigsten Fahrerlaubnisklassen im Personenverkehr sind Klasse B (PKW), Klasse D (Bus), ggf. Klasse C (LKW).",
+        "Das Fahrzeug muss zugelassen, haftpflichtversichert und verkehrssicher sein.",
+        "Fahrzeuge, die für die gewerbliche Personenbeförderung eingesetzt werden, müssen zusätzliche Auflagen erfüllen (z. B. regelmäßige Hauptuntersuchung, besondere Sicherheitsausstattung)."
+      ],
+      "explain": "Ohne Führerschein und Zulassung keine Fahrt – besonders streng für gewerblichen Verkehr.",
+      "example": "Ein Taxi braucht eine gültige Zulassung und muss regelmäßig zum TÜV.",
+      "media": null,
+      "tags": ["führerschein", "zulassung", "gewerbe"]
+    },
+    {
+      "id": "6.3",
+      "title": "Verkehrsvorschriften und Verhalten",
+      "content": [
+        "Verkehrsvorschriften sind in der StVO geregelt.",
+        "Beispiele: Vorfahrtsregeln, Geschwindigkeitsbegrenzungen, Halte- und Parkverbote, Abstandsvorschriften.",
+        "Besondere Pflichten für Taxen und Mietwagen: Sorgfaltspflicht, Hilfsbereitschaft, besondere Rücksichtnahme auf Fahrgäste.",
+        "Handy am Steuer ist verboten, Gurtpflicht gilt für alle Insassen."
+      ],
+      "explain": "Alle müssen sich an Verkehrsregeln halten. Für Berufskraftfahrer gelten oft besonders hohe Anforderungen.",
+      "example": "Ein Taxi muss auch an der roten Ampel halten und darf nicht in zweiter Reihe parken.",
+      "media": null,
+      "tags": ["verkehrsvorschriften", "pflichten"]
+    },
+    {
+      "id": "6.4",
+      "title": "Sicherheitsvorschriften",
+      "content": [
+        "Fahrzeuge müssen verkehrssicher und ordnungsgemäß ausgerüstet sein.",
+        "Regelmäßige technische Überprüfungen (Hauptuntersuchung, Sicherheitsprüfung) sind Pflicht.",
+        "Pflichtausstattung: Warndreieck, Verbandskasten, Warnweste.",
+        "Bei Mängeln darf das Fahrzeug nicht eingesetzt werden."
+      ],
+      "explain": "Nur technisch einwandfreie Fahrzeuge dürfen im gewerblichen Personenverkehr eingesetzt werden.",
+      "example": "Ein Mietwagen ohne funktionierende Bremslichter darf nicht genutzt werden.",
+      "media": null,
+      "tags": ["sicherheit", "prüfung", "ausstattung"]
+    },
+    {
+      "id": "6.5",
+      "title": "Sanktionen bei Verstößen",
+      "content": [
+        "Verstöße gegen das Straßenverkehrsrecht werden mit Verwarnungen, Bußgeldern, Punkten in Flensburg oder Fahrverboten geahndet.",
+        "Schwere Verstöße können zum Entzug der Fahrerlaubnis führen.",
+        "Für Berufskraftfahrer und Unternehmer gelten verschärfte Sanktionen bei Pflichtverletzungen."
+      ],
+      "explain": "Wer sich nicht an die Regeln hält, riskiert Geldstrafen, Punkte oder den Führerscheinentzug – besonders schnell im Gewerbe.",
+      "example": "Ein Taxiunternehmer, dessen Fahrer ohne Gurt erwischt wird, muss mit Bußgeld rechnen.",
+      "media": null,
+      "tags": ["sanktionen", "bußgeld", "flensburg"]
+    }
+  ]
+}

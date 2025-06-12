@@ -1,0 +1,112 @@
+[
+  {
+    "frage": "Was ist das Ziel des Umweltschutzes im Straßenverkehr?",
+    "antworten": [
+      "Reduzierung von Schadstoffemissionen und Lärm.",
+      "Erhöhung der Geschwindigkeit.",
+      "Mehr Parkplätze in Innenstädten.",
+      "Verkürzung der Fahrzeiten."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Umweltschutz im Straßenverkehr zielt insbesondere auf weniger Schadstoffe und Lärm ab."
+  },
+  {
+    "frage": "Welche Plakette benötigen Fahrzeuge für die Einfahrt in eine Umweltzone?",
+    "antworten": [
+      "Die grüne Umweltplakette.",
+      "Die blaue Plakette.",
+      "Die gelbe Plakette.",
+      "Keine Plakette."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Für Umweltzonen in Städten ist die grüne Umweltplakette nötig."
+  },
+  {
+    "frage": "Was bedeutet 'Feinstaub'?",
+    "antworten": [
+      "Sehr kleine, gesundheitsgefährdende Schwebeteilchen in der Luft.",
+      "Große Steine auf der Fahrbahn.",
+      "Abfall im Innenraum des Autos.",
+      "Regenwasser auf der Straße."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Feinstaub sind kleine, gesundheitsschädliche Teilchen, die z.B. durch Verkehr entstehen."
+  },
+  {
+    "frage": "Wie kann ein Taxiunternehmen zum Umweltschutz beitragen?",
+    "antworten": [
+      "Durch den Einsatz sparsamer und moderner Fahrzeuge.",
+      "Durch häufiges Hupen.",
+      "Durch längere Standzeiten mit laufendem Motor.",
+      "Durch Nichtbeachtung der Wartung."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Moderne, sparsame Fahrzeuge und regelmäßige Wartung helfen, Emissionen zu senken."
+  },
+  {
+    "frage": "Was regelt die EU-Abgasnorm?",
+    "antworten": [
+      "Grenzwerte für den Ausstoß von Schadstoffen bei Fahrzeugen.",
+      "Die Versicherungspflicht.",
+      "Die Straßenbenutzung.",
+      "Die Anzahl der Fahrgäste im Taxi."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Die EU-Abgasnorm legt fest, wie viele Schadstoffe Fahrzeuge maximal ausstoßen dürfen."
+  },
+  {
+    "frage": "Was ist Recycling im Zusammenhang mit Fahrzeugen?",
+    "antworten": [
+      "Wiederverwertung von Teilen und Materialien nach der Fahrzeugnutzung.",
+      "Erneutes Tanken.",
+      "Fahrzeugwäsche.",
+      "Motoröl nachfüllen."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Recycling bedeutet Wiederverwendung von Altteilen und Rohstoffen."
+  },
+  {
+    "frage": "Was bedeutet 'ÖPNV' im Umweltschutzkontext?",
+    "antworten": [
+      "Öffentlicher Personennahverkehr, der umweltfreundlicher als Individualverkehr ist.",
+      "Ölpreisniveau.",
+      "Organisation privater Nachverkehrsbetriebe.",
+      "Öffentliche Nachtversorgung."
+    ],
+    "korrekt": 0,
+    "erklaerung": "ÖPNV (Bus, Bahn, Taxi) trägt zur Verringerung des Individualverkehrs und damit zum Umweltschutz bei."
+  },
+  {
+    "frage": "Wie kann durch Fahrverhalten Kraftstoff gespart werden?",
+    "antworten": [
+      "Durch vorausschauendes, gleichmäßiges Fahren und Vermeidung von Leerlauf.",
+      "Durch häufiges Beschleunigen und Bremsen.",
+      "Durch Fahren mit zu niedrigem Reifendruck.",
+      "Durch Motor auf hoher Drehzahl laufen lassen."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Ruhiges, vorausschauendes Fahren spart Kraftstoff und schont die Umwelt."
+  },
+  {
+    "frage": "Wer kontrolliert die Einhaltung der Umweltzonen in Städten?",
+    "antworten": [
+      "Die kommunalen Behörden.",
+      "Das Arbeitsamt.",
+      "Der Bundesrat.",
+      "Die Banken."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Die Städte bzw. kommunalen Behörden überwachen Umweltzonen."
+  },
+  {
+    "frage": "Warum ist regelmäßige Fahrzeugwartung wichtig für den Umweltschutz?",
+    "antworten": [
+      "Weil gut gewartete Fahrzeuge weniger Schadstoffe ausstoßen.",
+      "Weil das Auto dann schöner aussieht.",
+      "Nur wegen der Garantie.",
+      "Für billigere Versicherung."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Gut gewartete Fahrzeuge verursachen weniger Emissionen und helfen der Umwelt."
+  }
+]

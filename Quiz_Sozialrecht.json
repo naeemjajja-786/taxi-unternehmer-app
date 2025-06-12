@@ -1,0 +1,112 @@
+[
+  {
+    "frage": "Was versteht man unter Sozialversicherungspflicht?",
+    "antworten": [
+      "Die gesetzliche Pflicht zur Versicherung in Renten-, Kranken-, Pflege- und Arbeitslosenversicherung.",
+      "Die Pflicht zur privaten Unfallversicherung.",
+      "Die Pflicht zur Gebäudeversicherung.",
+      "Die Pflicht zum Abschluss einer Lebensversicherung."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Sozialversicherungspflicht bedeutet, dass Arbeitnehmer in die gesetzlichen Sozialversicherungen einzahlen müssen."
+  },
+  {
+    "frage": "Wer zahlt die Beiträge zur gesetzlichen Krankenversicherung?",
+    "antworten": [
+      "Arbeitgeber und Arbeitnehmer jeweils zur Hälfte.",
+      "Nur der Arbeitnehmer.",
+      "Nur der Arbeitgeber.",
+      "Der Staat übernimmt alles."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Die Beiträge zur gesetzlichen Krankenversicherung werden in der Regel hälftig von Arbeitnehmer und Arbeitgeber getragen."
+  },
+  {
+    "frage": "Was sichert die gesetzliche Rentenversicherung ab?",
+    "antworten": [
+      "Das Einkommen im Alter oder bei Erwerbsminderung.",
+      "Die Pflege im Alter.",
+      "Die Krankenbehandlung.",
+      "Den Schaden am Auto."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Die gesetzliche Rentenversicherung sichert das Einkommen im Alter oder bei Erwerbsminderung."
+  },
+  {
+    "frage": "Welche Versicherung zahlt bei Arbeitslosigkeit?",
+    "antworten": [
+      "Die Arbeitslosenversicherung.",
+      "Die Pflegeversicherung.",
+      "Die Unfallversicherung.",
+      "Die Kfz-Versicherung."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Bei Arbeitslosigkeit zahlt die Arbeitslosenversicherung das Arbeitslosengeld."
+  },
+  {
+    "frage": "Wer ist in der gesetzlichen Unfallversicherung versichert?",
+    "antworten": [
+      "Alle Arbeitnehmer während ihrer beruflichen Tätigkeit.",
+      "Nur Selbstständige.",
+      "Nur Rentner.",
+      "Nur Schüler."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Alle Arbeitnehmer sind während der Arbeit in der gesetzlichen Unfallversicherung abgesichert."
+  },
+  {
+    "frage": "Was ist ein Sozialversicherungsausweis?",
+    "antworten": [
+      "Ein Nachweis über die Sozialversicherungsnummer.",
+      "Ein Nachweis über die Steuerklasse.",
+      "Ein Ausweis für das Auto.",
+      "Ein Krankenversicherungsausweis."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Der Sozialversicherungsausweis weist die Sozialversicherungsnummer eines Arbeitnehmers nach."
+  },
+  {
+    "frage": "Was versteht man unter Beitragsbemessungsgrenze?",
+    "antworten": [
+      "Die Grenze, bis zu der Einkommen für die Beitragsberechnung herangezogen wird.",
+      "Die Höchstgrenze für Arbeitsstunden.",
+      "Die Altersgrenze für die Rente.",
+      "Die maximale Anzahl an Urlaubstagen."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Bis zur Beitragsbemessungsgrenze werden Sozialversicherungsbeiträge auf das Einkommen berechnet."
+  },
+  {
+    "frage": "Wann besteht Versicherungspflicht in der Pflegeversicherung?",
+    "antworten": [
+      "Mit dem Beginn einer sozialversicherungspflichtigen Beschäftigung.",
+      "Nur ab 50 Jahren.",
+      "Nur für Selbstständige.",
+      "Nie."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Mit dem Beginn einer sozialversicherungspflichtigen Beschäftigung besteht auch Pflegeversicherungspflicht."
+  },
+  {
+    "frage": "Wer erhält Kindergeld?",
+    "antworten": [
+      "Eltern mit Kindern bis zum 18. Lebensjahr (ggf. länger bei Ausbildung/Studium).",
+      "Nur Alleinerziehende.",
+      "Nur Selbstständige.",
+      "Nur Kinder mit Behinderung."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Kindergeld erhalten Eltern für ihre Kinder in der Regel bis zum 18. Lebensjahr, ggf. länger bei Ausbildung/Studium."
+  },
+  {
+    "frage": "Wer zahlt die Beiträge zur gesetzlichen Rentenversicherung?",
+    "antworten": [
+      "Arbeitgeber und Arbeitnehmer gemeinsam.",
+      "Nur der Arbeitnehmer.",
+      "Nur der Staat.",
+      "Nur der Arbeitgeber."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Die Beiträge zur gesetzlichen Rentenversicherung werden gemeinsam von Arbeitgeber und Arbeitnehmer getragen."
+  }
+]

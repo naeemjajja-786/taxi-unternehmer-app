@@ -1,0 +1,89 @@
+{
+  "chapter": "Kaufmännische und finanzielle Führung des Unternehmens",
+  "topics": [
+    {
+      "id": "4.1",
+      "title": "Grundlagen der kaufmännischen Führung",
+      "content": [
+        "Die kaufmännische Führung umfasst alle Tätigkeiten, die zur erfolgreichen Steuerung und Organisation eines Unternehmens notwendig sind.",
+        "Dazu zählen Planung, Organisation, Kontrolle, Rechnungswesen, Finanzierung und Personalmanagement.",
+        "Ein Ziel ist die Sicherung der Wirtschaftlichkeit und Rentabilität des Betriebs."
+      ],
+      "explain": "Kaufmännische Führung heißt: Ein Unternehmen so zu steuern, dass es wirtschaftlich arbeitet, gut organisiert ist und seine Zahlen kennt.",
+      "example": "Der Taxiunternehmer plant seine monatlichen Kosten, kontrolliert Einnahmen und achtet darauf, dass genug Geld für Versicherungen und Löhne da ist.",
+      "media": null,
+      "tags": ["führung", "planung", "organisation"]
+    },
+    {
+      "id": "4.2",
+      "title": "Rechnungswesen und Buchführung",
+      "content": [
+        "Das Rechnungswesen umfasst die systematische Erfassung und Auswertung aller betrieblichen Geld- und Leistungsströme.",
+        "Jedes Unternehmen ist verpflichtet, eine ordnungsgemäße Buchführung zu betreiben.",
+        "Buchführungspflichten ergeben sich aus dem Handelsgesetzbuch (HGB) und der Abgabenordnung (AO).",
+        "Die wichtigsten Bereiche sind Finanzbuchhaltung, Lohnbuchhaltung und Kostenrechnung.",
+        "Alle Belege (Rechnungen, Quittungen) müssen vollständig und nachvollziehbar aufbewahrt werden."
+      ],
+      "explain": "Im Rechnungswesen hältst du schriftlich fest, wie viel Geld rein- und rausgeht, wer was bezahlt hat und wie hoch deine Kosten sind.",
+      "example": "Der Unternehmer sammelt alle Tankquittungen, erstellt monatlich eine Einnahmen-Ausgaben-Übersicht und bewahrt alle Belege 10 Jahre auf.",
+      "media": null,
+      "tags": ["buchführung", "rechnungswesen", "beleg"]
+    },
+    {
+      "id": "4.3",
+      "title": "Finanzierung und Liquidität",
+      "content": [
+        "Finanzierung bedeutet die Beschaffung von Kapital, das für Investitionen und laufende Kosten benötigt wird.",
+        "Unterschieden wird zwischen Eigen- und Fremdfinanzierung.",
+        "Die Sicherstellung der Liquidität (Zahlungsfähigkeit) ist lebenswichtig für das Unternehmen.",
+        "Liquiditätsplanung hilft, Zahlungsschwierigkeiten frühzeitig zu erkennen.",
+        "Typische Finanzierungsquellen: Eigenkapital, Bankdarlehen, Leasing, öffentliche Fördermittel."
+      ],
+      "explain": "Ohne Geld läuft kein Betrieb: Finanzierung sorgt für das Startkapital und Liquidität für pünktliche Zahlung aller Rechnungen.",
+      "example": "Der Unternehmer nimmt für neue Fahrzeuge ein Darlehen bei der Bank auf und plant seine monatlichen Raten ein.",
+      "media": null,
+      "tags": ["finanzierung", "liquidität", "kapital"]
+    },
+    {
+      "id": "4.4",
+      "title": "Kostenmanagement",
+      "content": [
+        "Kostenmanagement umfasst die Planung, Überwachung und Steuerung aller betrieblichen Kosten.",
+        "Ziel ist es, die Kosten so gering wie möglich zu halten und trotzdem einen reibungslosen Betriebsablauf zu gewährleisten.",
+        "Wichtige Kostenarten im Taxi- und Mietwagengewerbe: Fahrzeugkosten, Personalkosten, Versicherungen, Steuern, Wartung, Kraftstoff.",
+        "Durch Kostenkontrolle und Vergleich mit den Einnahmen kann die Wirtschaftlichkeit des Betriebs beurteilt werden."
+      ],
+      "explain": "Kostenmanagement hilft dir, dein Geld nicht zum Fenster rauszuwerfen, sondern gezielt und sinnvoll auszugeben.",
+      "example": "Der Unternehmer vergleicht regelmäßig die Spritpreise, um möglichst günstig zu tanken.",
+      "media": null,
+      "tags": ["kosten", "management", "kontrolle"]
+    },
+    {
+      "id": "4.5",
+      "title": "Steuern und Abgaben",
+      "content": [
+        "Unternehmen sind zur Zahlung verschiedener Steuern verpflichtet, z. B. Einkommensteuer, Umsatzsteuer, Gewerbesteuer.",
+        "Die rechtzeitige und korrekte Abführung der Steuern ist Pflicht.",
+        "Fehler bei der Steuer führen zu Nachzahlungen, Bußgeldern oder sogar Strafverfahren.",
+        "Oft ist die Unterstützung durch einen Steuerberater sinnvoll."
+      ],
+      "explain": "Jeder Betrieb muss Steuern zahlen – wer mogelt oder Fehler macht, bekommt schnell Ärger mit dem Finanzamt.",
+      "example": "Der Taxiunternehmer reicht seine Umsatzsteuer-Voranmeldung pünktlich elektronisch beim Finanzamt ein.",
+      "media": null,
+      "tags": ["steuer", "finanzamt", "pflicht"]
+    },
+    {
+      "id": "4.6",
+      "title": "Personalführung",
+      "content": [
+        "Zur kaufmännischen Führung gehört auch die Auswahl, Einstellung, Führung und Motivation von Mitarbeitern.",
+        "Arbeitsverträge, Lohnabrechnung und die Einhaltung arbeitsrechtlicher Vorschriften sind wichtig.",
+        "Eine gute Personalführung fördert Motivation und Bindung der Mitarbeiter."
+      ],
+      "explain": "Wer ein Unternehmen führt, ist auch Chef: Du musst Mitarbeiter fair behandeln, Arbeitszeiten regeln und auf ein gutes Klima achten.",
+      "example": "Der Unternehmer führt regelmäßig Personalgespräche und organisiert Schulungen für die Fahrer.",
+      "media": null,
+      "tags": ["personal", "führung", "arbeitnehmer"]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "chapter": "Grenzverkehr",
+  "topics": [
+    {
+      "id": "8.1",
+      "title": "Definition und rechtliche Grundlagen",
+      "content": [
+        "Grenzverkehr bezeichnet die grenzüberschreitende Personenbeförderung, z. B. von Deutschland in Nachbarländer.",
+        "Rechtsgrundlagen sind insbesondere das Personenbeförderungsgesetz (PBefG), internationale Abkommen (z. B. EU-Regelungen), sowie bilaterale Verträge.",
+        "Bei der grenzüberschreitenden Beförderung müssen sowohl deutsche als auch ausländische Vorschriften beachtet werden."
+      ],
+      "explain": "Wer Fahrgäste über die Landesgrenze befördert, muss zusätzliche Gesetze beachten – sowohl im Start- als auch Zielland.",
+      "example": "Ein Taxi bringt einen Fahrgast von Berlin nach Warschau – dabei gelten deutsche und polnische Vorschriften.",
+      "media": null,
+      "tags": ["grenzverkehr", "recht", "international"]
+    },
+    {
+      "id": "8.2",
+      "title": "Genehmigungspflicht und Ausnahmen",
+      "content": [
+        "Für den gewerblichen grenzüberschreitenden Verkehr ist in der Regel eine besondere Genehmigung erforderlich.",
+        "Ausnahmen gibt es z. B. für Rückfahrten ohne Fahrgast (Leerfahrten) oder für bestimmte Vertragsstaaten.",
+        "Die EU regelt viele Bereiche des internationalen Verkehrs, z. B. im Rahmen der Dienstleistungsfreiheit."
+      ],
+      "explain": "Ohne Sondergenehmigung darfst du normalerweise keine Fahrgäste über die Grenze bringen. Es gibt aber Ausnahmen, z. B. für Leerfahrten.",
+      "example": "Ein Mietwagen fährt leer aus Frankreich nach Deutschland zurück – dafür ist oft keine Extra-Genehmigung nötig.",
+      "media": null,
+      "tags": ["genehmigung", "ausnahme", "eu"]
+    },
+    {
+      "id": "8.3",
+      "title": "Fahrpersonal und Fahrzeugvoraussetzungen",
+      "content": [
+        "Fahrer benötigen einen gültigen Führerschein und ggf. einen Personenbeförderungsschein, der auch im Zielland anerkannt wird.",
+        "Das Fahrzeug muss ordnungsgemäß zugelassen, versichert und für den grenzüberschreitenden Verkehr geeignet sein.",
+        "Mitführpflichten: Personalausweis oder Reisepass, ggf. internationale Versicherungskarte (Grüne Karte), Zulassungspapiere."
+      ],
+      "explain": "Du brauchst alle wichtigen Dokumente für Fahrer und Auto dabei – sonst kann es an der Grenze Ärger geben.",
+      "example": "Ein Taxifahrer hat seinen Ausweis, Fahrzeugschein und Grüne Karte bei einer Fahrt in die Schweiz dabei.",
+      "media": null,
+      "tags": ["fahrpersonal", "fahrzeug", "dokumente"]
+    },
+    {
+      "id": "8.4",
+      "title": "Besonderheiten bei der Personenbeförderung",
+      "content": [
+        "Bei der grenzüberschreitenden Personenbeförderung gelten häufig besondere Vorschriften für Tarife, Steuern und Meldungen.",
+        "Es kann eine Meldepflicht beim Grenzübertritt bestehen.",
+        "Bei Fahrten außerhalb der EU sind Zoll- und Visavorschriften zu beachten."
+      ],
+      "explain": "Du musst wissen, welche Tarife und Meldepflichten im Ausland gelten – manchmal gibt es sogar Visapflicht.",
+      "example": "Bei einer Fahrt nach Russland muss der Fahrer die Einreisevorschriften (Visum) beachten und eventuell das Auto beim Zoll anmelden.",
+      "media": null,
+      "tags": ["tarif", "meldung", "zoll", "visum"]
+    }
+  ]
+}

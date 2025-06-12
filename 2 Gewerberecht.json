@@ -1,0 +1,77 @@
+{
+  "chapter": "Gewerberecht",
+  "topics": [
+    {
+      "id": "2.1",
+      "title": "Grundlagen des Gewerberechts",
+      "content": [
+        "Das Gewerberecht regelt die Ausübung von Gewerben in Deutschland.",
+        "Es gilt für alle selbstständigen, erlaubten, auf Dauer und Gewinnerzielung angelegten Tätigkeiten.",
+        "Wer ein Gewerbe aufnehmen will, muss dieses beim Gewerbeamt anmelden.",
+        "Die wichtigsten Vorschriften sind in der Gewerbeordnung (GewO) geregelt.",
+        "Bestimmte Gewerbe sind erlaubnispflichtig, z. B. Taxi- und Mietwagengewerbe."
+      ],
+      "explain": "Jedes Unternehmen, das dauerhaft und mit Gewinnerzielungsabsicht arbeitet, gilt als Gewerbe. Für viele Branchen genügt die Anmeldung, einige – wie das Taxi/Mietwagen-Gewerbe – brauchen zusätzliche Erlaubnisse.",
+      "example": "Ein Taxibetrieb darf erst nach Anmeldung und Erlaubnis beim Gewerbeamt Fahrgäste befördern.",
+      "media": null,
+      "tags": ["gewerbe", "gewo", "anmeldung"]
+    },
+    {
+      "id": "2.2",
+      "title": "Gewerbeanmeldung und -abmeldung",
+      "content": [
+        "Die Aufnahme eines Gewerbes ist beim Gewerbeamt der zuständigen Stadt oder Gemeinde anzuzeigen.",
+        "Auch Änderungen, Betriebsverlegung oder Aufgabe des Gewerbes müssen gemeldet werden.",
+        "Bei erlaubnispflichtigen Gewerben (z. B. Taxi) ist die behördliche Erlaubnis vor der Anmeldung erforderlich.",
+        "Nach der Anmeldung werden weitere Stellen automatisch informiert (z. B. Finanzamt, IHK, Berufsgenossenschaft)."
+      ],
+      "explain": "Bevor du loslegst, musst du dich beim Gewerbeamt anmelden. Das gilt auch bei Umzug oder Geschäftsaufgabe.",
+      "example": "Ein Mietwagenunternehmer meldet sein Gewerbe um, weil er in eine andere Stadt zieht.",
+      "media": null,
+      "tags": ["anmeldung", "abmeldung", "behörde"]
+    },
+    {
+      "id": "2.3",
+      "title": "Erlaubnispflicht und besondere Anforderungen",
+      "content": [
+        "Manche Gewerbe sind erlaubnispflichtig, d. h. sie dürfen nur mit besonderer behördlicher Genehmigung ausgeübt werden.",
+        "Zu den erlaubnispflichtigen Gewerben zählen insbesondere:",
+        "- Personenbeförderung (Taxi, Mietwagen)",
+        "- Bewachungsgewerbe",
+        "- Gaststätten (mit Alkoholausschank)",
+        "Die Erlaubnis wird nur erteilt, wenn Zuverlässigkeit, geordnete Vermögensverhältnisse und ggf. fachliche Eignung nachgewiesen werden.",
+        "Für die Personenbeförderung ist zusätzlich das PBefG zu beachten."
+      ],
+      "explain": "Ein Taxi- oder Mietwagenunternehmen braucht mehr als nur eine Anmeldung: Es muss besonders geprüft und genehmigt werden.",
+      "example": "Die Stadt erteilt einem Bewerber die Taxierlaubnis erst nach Prüfung der Unterlagen und Eignung.",
+      "media": null,
+      "tags": ["erlaubnis", "sondergewerbe", "taxi"]
+    },
+    {
+      "id": "2.4",
+      "title": "Pflichten des Gewerbetreibenden",
+      "content": [
+        "Der Gewerbetreibende ist verpflichtet, sein Gewerbe ordnungsgemäß auszuüben und die einschlägigen gesetzlichen Vorschriften einzuhalten.",
+        "Er muss z. B. Buchführungspflichten, steuerliche Pflichten, arbeitsrechtliche Vorschriften und Meldepflichten gegenüber Behörden beachten.",
+        "Wer gegen gewerberechtliche Vorschriften verstößt, riskiert Bußgelder, Untersagung des Gewerbes oder strafrechtliche Folgen."
+      ],
+      "explain": "Unternehmer sind verpflichtet, ihr Geschäft korrekt zu führen, Steuern zu zahlen und Gesetze einzuhalten.",
+      "example": "Ein Taxiunternehmer, der keine Steuern abführt, kann sein Gewerbe verlieren.",
+      "media": null,
+      "tags": ["pflichten", "buchführung", "ordnung"]
+    },
+    {
+      "id": "2.5",
+      "title": "Überwachung und Sanktionen",
+      "content": [
+        "Die Gewerbeämter und andere Behörden (z. B. Ordnungsamt, Polizei) überwachen die Einhaltung der gewerberechtlichen Vorschriften.",
+        "Bei Verstößen können Bußgelder verhängt, die Gewerbeausübung eingeschränkt oder ganz untersagt werden.",
+        "Schwere oder wiederholte Verstöße können auch strafrechtliche Konsequenzen nach sich ziehen."
+      ],
+      "explain": "Die Einhaltung der Vorschriften wird überwacht. Verstöße führen oft zu Strafen oder sogar zum Verlust der Gewerbeerlaubnis.",
+      "example": "Das Gewerbeamt untersagt einem Mietwagenbetrieb die Tätigkeit wegen wiederholter Verstöße.",
+      "media": null,
+      "tags": ["überwachung", "strafe", "behörde"]
+    }
+  ]
+}

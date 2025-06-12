@@ -1,0 +1,103 @@
+{
+  "chapter": "Umweltschutz",
+  "topics": [
+    {
+      "id": "11.1",
+      "title": "Immissionsschutz & gesetzliche Grundlagen",
+      "content": [
+        "Das Bundes-Immissionsschutzgesetz (BImSchG) verpflichtet Unternehmen dazu, Emissionen – wie Abgase und Lärm – zu vermeiden oder zu verringern.",
+        "Maßnahmen: Verwendung emissionsarmer Fahrzeuge, regelmäßige Wartung, keine unnötigen Standzeiten.",
+        "In Umweltzonen dürfen nur Fahrzeuge mit entsprechender Plakette fahren.",
+        "Betriebe müssen Auflagen der Behörden umsetzen und können bei Verstößen mit Bußgeldern oder Betriebsschließung rechnen."
+      ],
+      "explain": "Das BImSchG schützt Menschen und Umwelt vor schädlichen Einwirkungen. Wer dagegen verstößt, riskiert hohe Strafen.",
+      "example": "Ein Taxiunternehmen ersetzt alte Diesel-Fahrzeuge durch moderne Hybrid-Modelle, um Emissionsauflagen zu erfüllen.",
+      "media": null,
+      "tags": ["immissionsschutz", "gesetz", "umweltzone"]
+    },
+    {
+      "id": "11.2",
+      "title": "Abfallwirtschaft & Kreislaufwirtschaftsgesetz",
+      "content": [
+        "Im Betrieb anfallende Abfälle – Altöl, Reifen, Batterien, Fahrzeugteile – müssen getrennt gesammelt und fachgerecht entsorgt werden.",
+        "Das Kreislaufwirtschaftsgesetz (KrWG) verpflichtet Unternehmen zur Rückgabe und Verwertung von Abfällen.",
+        "Nachweise über die Entsorgung (Belege, Rechnungen) sind aufzubewahren.",
+        "Verstöße können zu erheblichen Bußgeldern führen."
+      ],
+      "explain": "Umweltschutz heißt auch: Mülltrennung, Recycling und alles fachgerecht entsorgen!",
+      "example": "Altreifen werden bei einem zertifizierten Entsorger abgegeben, das Unternehmen bewahrt die Quittung auf.",
+      "media": null,
+      "tags": ["abfall", "kreislaufwirtschaft", "entsorgung"]
+    },
+    {
+      "id": "11.3",
+      "title": "Energieeffizienz im Betrieb",
+      "content": [
+        "Energie sparen senkt Kosten und schont die Umwelt.",
+        "Beispiele: Einsatz energiesparender Beleuchtung, elektronische Geräte mit Standby-Abschaltung, Heizungslast optimieren.",
+        "Bei Neuanschaffung von Fahrzeugen auf niedrigen Verbrauch und Emissionswerte achten.",
+        "Umstieg auf alternative Antriebe wie Elektro, Hybrid oder Erdgas wird staatlich gefördert."
+      ],
+      "explain": "Energieeffizienz spart Geld und verringert CO₂ – jede Kilowattstunde zählt!",
+      "example": "Das Unternehmen rüstet die Garage mit LED-Beleuchtung aus und lädt Elektrofahrzeuge mit Ökostrom.",
+      "media": null,
+      "tags": ["energie", "effizienz", "förderung"]
+    },
+    {
+      "id": "11.4",
+      "title": "Ressourcenschonung & nachhaltige Betriebsführung",
+      "content": [
+        "Nachhaltigkeit bedeutet, Ressourcen wie Wasser, Kraftstoff und Material sparsam einzusetzen.",
+        "Dienstpläne können so gestaltet werden, dass Leerfahrten vermieden werden.",
+        "Digitale Lösungen wie Routenoptimierung helfen, Kilometer zu sparen.",
+        "Papierverbrauch lässt sich durch digitale Rechnungen, Abrechnungen und Kommunikation verringern."
+      ],
+      "explain": "Nachhaltig wirtschaften heißt: Ressourcen clever nutzen, Umwelt schonen, Kosten sparen.",
+      "example": "Fahrten werden so koordiniert, dass möglichst wenig Leerfahrten entstehen.",
+      "media": null,
+      "tags": ["ressourcen", "nachhaltigkeit", "planung"]
+    },
+    {
+      "id": "11.5",
+      "title": "Maßnahmen zur Emissionsminderung (Praxis)",
+      "content": [
+        "Eco-Training: Fahrer werden in sparsamer Fahrweise geschult (vorausschauend fahren, richtig schalten, wenig Leerlauf).",
+        "Regelmäßige Wartung der Fahrzeuge reduziert Emissionen.",
+        "Umstieg auf Fahrzeuge mit niedriger Emissionsklasse (Euro 6, Elektro, Hybrid).",
+        "Fahrgemeinschaften für Mitarbeiter reduzieren den Individualverkehr.",
+        "Vermeidung langer Standzeiten mit laufendem Motor."
+      ],
+      "explain": "Sparsames Fahren und moderne Technik helfen, Emissionen zu senken und Betriebskosten zu verringern.",
+      "example": "Alle Fahrer nehmen an einem Eco-Training teil und das Unternehmen überwacht den Spritverbrauch digital.",
+      "media": null,
+      "tags": ["eco-training", "wartung", "emission"]
+    },
+    {
+      "id": "11.6",
+      "title": "Förderprogramme & steuerliche Vorteile",
+      "content": [
+        "Die Umstellung auf Elektro- oder Hybridfahrzeuge wird staatlich gefördert (z. B. Umweltbonus, steuerliche Vergünstigungen).",
+        "Förderprogramme gibt es auch für Ladeinfrastruktur, Energieberatung oder Umstellung auf ressourcenschonende Betriebsmittel.",
+        "Voraussetzung für Förderung: Antragstellung mit Nachweis der Investition und Einhaltung der Bedingungen.",
+        "Regionale Unterschiede bei Fördermitteln möglich – zuständige Kammern oder Behörden beraten."
+      ],
+      "explain": "Förderprogramme machen den Umstieg auf umweltfreundliche Technik finanziell attraktiver.",
+      "example": "Ein Taxiunternehmer beantragt die KfW-Förderung für eine neue E-Ladesäule auf dem Betriebshof.",
+      "media": null,
+      "tags": ["förderung", "umweltbonus", "steuer"]
+    },
+    {
+      "id": "11.7",
+      "title": "CO₂-Kompensation & betriebliche Klimabilanz",
+      "content": [
+        "Nicht vermeidbare Emissionen können durch Investitionen in Klimaschutzprojekte (CO₂-Kompensation) ausgeglichen werden.",
+        "Viele Unternehmen erstellen heute eine Klimabilanz (CO₂-Fußabdruck) ihres Betriebs.",
+        "Nachweis und Kommunikation der Umweltmaßnahmen stärken das Image gegenüber Kunden und Behörden."
+      ],
+      "explain": "CO₂-Kompensation hilft, Klimaschäden auszugleichen, wenn Emissionen nicht ganz vermieden werden können.",
+      "example": "Das Unternehmen kompensiert die Emissionen durch den Kauf von Klimaschutzzertifikaten.",
+      "media": null,
+      "tags": ["klimabilanz", "kompensation", "image"]
+    }
+  ]
+}

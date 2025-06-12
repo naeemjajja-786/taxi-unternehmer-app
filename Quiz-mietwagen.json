@@ -1,0 +1,112 @@
+[
+  {
+    "frage": "Was unterscheidet einen Mietwagen von einem Taxi im Personenbeförderungsrecht?",
+    "antworten": [
+      "Mietwagen dürfen nur nach vorheriger Bestellung eingesetzt werden.",
+      "Mietwagen dürfen an Taxiständen warten.",
+      "Mietwagen haben immer einen Taxameter.",
+      "Mietwagen fahren nur im Ausland."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Mietwagen müssen vorab bestellt werden und dürfen nicht an Taxiständen auf Kunden warten."
+  },
+  {
+    "frage": "Was ist eine Pflicht für Mietwagen nach abgeschlossener Fahrt?",
+    "antworten": [
+      "Die Rückkehrpflicht zum Betriebssitz.",
+      "Direkt zur nächsten Fahrt fahren.",
+      "Am Bahnhof warten.",
+      "Immer die gleiche Strecke fahren."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Mietwagen müssen nach jeder Fahrt unverzüglich zum Betriebssitz zurückkehren, außer bei Anschlussaufträgen."
+  },
+  {
+    "frage": "Darf ein Mietwagen ohne Bestellung Fahrgäste aufnehmen?",
+    "antworten": [
+      "Nein, das ist verboten.",
+      "Ja, überall.",
+      "Nur an Flughäfen.",
+      "Nur bei schlechtem Wetter."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Fahrgäste dürfen nur nach vorheriger Bestellung aufgenommen werden."
+  },
+  {
+    "frage": "Wer legt die Preise für Mietwagenfahrten fest?",
+    "antworten": [
+      "Das Mietwagenunternehmen selbst.",
+      "Die Gemeinde.",
+      "Die Industrie- und Handelskammer.",
+      "Der Fahrgast."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Mietwagenpreise sind frei vereinbar und unterliegen nicht dem behördlichen Taxitarif."
+  },
+  {
+    "frage": "Müssen Mietwagen besonders gekennzeichnet sein?",
+    "antworten": [
+      "Ja, durch ein grünes oder blaues Nummernschild und keine Taxi-Aufschrift.",
+      "Ja, mit Taxischild.",
+      "Mit gelbem Streifen.",
+      "Nein, sie haben keine Kennzeichnung."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Mietwagen tragen keine Taxi-Aufschrift, aber besondere Kennzeichen (z.B. grünes Nummernschild)."
+  },
+  {
+    "frage": "Was ist ein Anschlussauftrag im Mietwagenverkehr?",
+    "antworten": [
+      "Ein Auftrag, der vor Abschluss der aktuellen Fahrt an den Betriebssitz übermittelt wird.",
+      "Ein Auftrag vom Taxistand.",
+      "Eine Fahrt zum Restaurant.",
+      "Eine Fahrt mit mehreren Stopps."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Ein Anschlussauftrag liegt vor, wenn vor Fahrtende ein neuer Auftrag am Betriebssitz eingeht."
+  },
+  {
+    "frage": "Welche Genehmigung braucht ein Mietwagenunternehmer?",
+    "antworten": [
+      "Genehmigung nach Personenbeförderungsgesetz (§ 49 PBefG).",
+      "Nur einen Führerschein.",
+      "Gar keine.",
+      "Die Genehmigung der Industrie- und Handelskammer."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Für gewerbliche Mietwagenbeförderung ist eine PBefG-Genehmigung erforderlich."
+  },
+  {
+    "frage": "Darf ein Mietwagen mit Funk ausgestattet sein?",
+    "antworten": [
+      "Ja, aber Fahrten dürfen nur vom Betriebssitz aus vermittelt werden.",
+      "Nein, nie.",
+      "Ja, auch für spontane Fahrgastaufnahme.",
+      "Nur auf Autobahnen."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Mietwagen können über Funk Aufträge annehmen, aber immer nur über den Betriebssitz."
+  },
+  {
+    "frage": "Wer ist für die Kontrolle des Mietwagenverkehrs zuständig?",
+    "antworten": [
+      "Die örtliche Genehmigungsbehörde.",
+      "Das Arbeitsamt.",
+      "Der Fahrgast.",
+      "Der Taxifahrer."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Die Behörde überwacht die Einhaltung der Vorschriften für Mietwagen."
+  },
+  {
+    "frage": "Wann kann ein Mietwagenunternehmer seine Genehmigung verlieren?",
+    "antworten": [
+      "Bei schweren oder wiederholten Verstößen gegen das Personenbeförderungsgesetz.",
+      "Wenn er viele Fahrgäste hat.",
+      "Wenn das Fahrzeug zu groß ist.",
+      "Nur bei Unfällen."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Die Genehmigung kann bei groben oder wiederholten Gesetzesverstößen entzogen werden."
+  }
+]

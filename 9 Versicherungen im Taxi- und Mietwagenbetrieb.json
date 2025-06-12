@@ -1,0 +1,70 @@
+{
+  "chapter": "Versicherungen im Taxi- und Mietwagenbetrieb",
+  "topics": [
+    {
+      "id": "9.1",
+      "title": "Haftpflichtversicherung",
+      "content": [
+        "Die Kfz-Haftpflichtversicherung ist gesetzlich vorgeschrieben und übernimmt Schäden, die durch das Fahrzeug an Dritten verursacht werden.",
+        "Sie deckt sowohl Personen-, Sach- als auch Vermögensschäden ab.",
+        "Ohne gültige Haftpflichtversicherung darf kein Fahrzeug am Straßenverkehr teilnehmen.",
+        "Die Mindestdeckungssummen sind im Pflichtversicherungsgesetz geregelt."
+      ],
+      "explain": "Jedes Taxi und jeder Mietwagen muss haftpflichtversichert sein, sonst darf es nicht auf die Straße.",
+      "example": "Verursacht ein Taxi einen Unfall, übernimmt die Haftpflichtversicherung die Kosten für Schäden am anderen Fahrzeug.",
+      "media": null,
+      "tags": ["haftpflicht", "versicherung", "pflicht"]
+    },
+    {
+      "id": "9.2",
+      "title": "Kaskoversicherung",
+      "content": [
+        "Die Kaskoversicherung ist freiwillig und schützt vor Schäden am eigenen Fahrzeug.",
+        "Man unterscheidet zwischen Teilkasko (z. B. Diebstahl, Glasbruch) und Vollkasko (auch selbstverschuldete Unfälle, Vandalismus).",
+        "Die Kaskoversicherung ist insbesondere bei Neufahrzeugen oder finanzierten/leasing Fahrzeugen sinnvoll."
+      ],
+      "explain": "Mit Kaskoversicherung bist du gegen Schäden am eigenen Fahrzeug geschützt – nicht nur gegen Diebstahl, sondern auch gegen selbstverschuldete Unfälle (bei Vollkasko).",
+      "example": "Nach einem Parkschaden übernimmt die Vollkasko die Reparaturkosten für das Taxi.",
+      "media": null,
+      "tags": ["kasko", "teilkasko", "vollkasko"]
+    },
+    {
+      "id": "9.3",
+      "title": "Insassenunfallversicherung",
+      "content": [
+        "Diese Versicherung zahlt bei Unfällen, bei denen Fahrer oder Fahrgäste verletzt oder getötet werden.",
+        "Sie ist freiwillig, aber im gewerblichen Personenverkehr üblich.",
+        "Leistungen können Invaliditäts-, Todesfall- oder Krankenhaustagegeld sein."
+      ],
+      "explain": "Die Insassenunfallversicherung sichert Fahrer und Fahrgäste ab, wenn es zu einem Unfall kommt.",
+      "example": "Ein Fahrgast wird bei einem Unfall verletzt – die Insassenunfallversicherung zahlt ein Tagegeld.",
+      "media": null,
+      "tags": ["insassenunfall", "personenversicherung"]
+    },
+    {
+      "id": "9.4",
+      "title": "Betriebshaftpflichtversicherung",
+      "content": [
+        "Sie deckt Schäden ab, die im Rahmen der betrieblichen Tätigkeit entstehen, aber nicht durch das Fahrzeug selbst verursacht werden.",
+        "Typisch: Schäden an Dritten durch Fahrlässigkeit des Unternehmers oder Personals (z. B. beim Ein- oder Aussteigen).",
+        "Diese Versicherung ist besonders für Unternehmen mit vielen Mitarbeitern wichtig."
+      ],
+      "explain": "Die Betriebshaftpflicht springt ein, wenn beim Betrieb etwas schiefgeht, das nicht direkt mit dem Fahren zu tun hat.",
+      "example": "Ein Fahrer hilft einem Fahrgast und beschädigt dabei versehentlich dessen Gepäck – die Betriebshaftpflicht übernimmt den Schaden.",
+      "media": null,
+      "tags": ["betriebshaftpflicht", "unternehmensversicherung"]
+    },
+    {
+      "id": "9.5",
+      "title": "Weitere Versicherungen",
+      "content": [
+        "Mögliche weitere sinnvolle Versicherungen: Rechtsschutzversicherung, Unfallversicherung, Krankenversicherung für Unternehmer und Angestellte, Berufsunfähigkeitsversicherung.",
+        "Für Unternehmer ist eine freiwillige Arbeitslosenversicherung möglich."
+      ],
+      "explain": "Es gibt noch viele weitere Versicherungen, die dir als Unternehmer helfen können, Risiken abzusichern.",
+      "example": "Ein Taxiunternehmer schließt eine Rechtsschutzversicherung ab, um sich im Streitfall mit Behörden oder Kunden abzusichern.",
+      "media": null,
+      "tags": ["rechtsschutz", "unfallversicherung", "krankenversicherung"]
+    }
+  ]
+}

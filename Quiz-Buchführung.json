@@ -1,0 +1,112 @@
+[
+  {
+    "frage": "Was ist der Zweck der Buchführung im Unternehmen?",
+    "antworten": [
+      "Erfassung und Kontrolle aller Einnahmen und Ausgaben.",
+      "Nur die Überwachung der Fahrer.",
+      "Festlegung der Preise.",
+      "Planung von Urlaubszeiten."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Die Buchführung dient der vollständigen Dokumentation aller finanziellen Geschäftsvorgänge."
+  },
+  {
+    "frage": "Welche Unterlagen müssen Taxiunternehmen aufbewahren?",
+    "antworten": [
+      "Rechnungen, Quittungen, Fahrtenbücher, Kassenberichte.",
+      "Nur Visitenkarten.",
+      "Nur die Steuererklärung.",
+      "Gar keine."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Alle relevanten Unterlagen zur Buchführung müssen gesetzlich aufbewahrt werden."
+  },
+  {
+    "frage": "Wie lange ist die gesetzliche Aufbewahrungsfrist für steuerrelevante Belege?",
+    "antworten": [
+      "10 Jahre.",
+      "1 Jahr.",
+      "2 Jahre.",
+      "20 Jahre."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Steuerlich relevante Unterlagen sind 10 Jahre aufzubewahren."
+  },
+  {
+    "frage": "Was ist ein Kassenbuch?",
+    "antworten": [
+      "Eine tägliche Aufzeichnung aller Bargeldbewegungen.",
+      "Das Fahrtenbuch.",
+      "Die Preisliste.",
+      "Ein Gutscheinheft."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Im Kassenbuch werden alle Bargeldeinnahmen und -ausgaben dokumentiert."
+  },
+  {
+    "frage": "Was versteht man unter dem 'Grundsatz der Vollständigkeit'?",
+    "antworten": [
+      "Alle Geschäftsvorfälle müssen lückenlos erfasst werden.",
+      "Nur Einnahmen werden erfasst.",
+      "Nur Ausgaben werden erfasst.",
+      "Jede Buchung darf doppelt sein."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Vollständigkeit bedeutet, dass keine Buchung fehlen darf."
+  },
+  {
+    "frage": "Was ist ein Fahrtenbuch?",
+    "antworten": [
+      "Eine Aufzeichnung aller beruflichen und privaten Fahrten mit dem Fahrzeug.",
+      "Eine Liste aller Kunden.",
+      "Das Fahrplanheft.",
+      "Der Tagesbericht."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Im Fahrtenbuch werden Fahrstrecken, Ziele und Anlass jeder Fahrt festgehalten."
+  },
+  {
+    "frage": "Warum ist die Trennung von Privat- und Geschäftskonten wichtig?",
+    "antworten": [
+      "Für klare und nachvollziehbare Buchführung.",
+      "Nur für den Steuerberater.",
+      "Für den persönlichen Überblick.",
+      "Weil es das Gesetz so will."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Private und geschäftliche Buchungen dürfen nicht vermischt werden."
+  },
+  {
+    "frage": "Was ist eine Einnahmen-Überschuss-Rechnung?",
+    "antworten": [
+      "Eine einfache Gewinnermittlung: Einnahmen minus Ausgaben.",
+      "Eine Art Steuerprüfung.",
+      "Eine Fahrzeugrechnung.",
+      "Ein Versicherungsbeleg."
+    ],
+    "korrekt": 0,
+    "erklaerung": "EÜR bedeutet: Alle Einnahmen minus alle Ausgaben ergibt den Gewinn."
+  },
+  {
+    "frage": "Wer ist zur doppelten Buchführung verpflichtet?",
+    "antworten": [
+      "Kaufleute, Kapitalgesellschaften und größere Unternehmen.",
+      "Jeder Arbeitnehmer.",
+      "Nur Privatpersonen.",
+      "Nur Nebenjobber."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Große Unternehmen und Handelsbetriebe müssen doppelt buchen."
+  },
+  {
+    "frage": "Was kann bei mangelnder Buchführung passieren?",
+    "antworten": [
+      "Steuernachzahlungen, Bußgelder und Strafen.",
+      "Nichts.",
+      "Nur ein Hinweis vom Finanzamt.",
+      "Verlust des Führerscheins."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Fehlerhafte Buchführung kann schwerwiegende steuerliche und rechtliche Folgen haben."
+  }
+]

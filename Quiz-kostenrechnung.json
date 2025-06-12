@@ -1,0 +1,489 @@
+[
+  {
+    "frage": "Was versteht man unter Betriebskosten?",
+    "antworten": [
+      "Alle regelmäßig im Betrieb anfallenden Kosten.",
+      "Nur Benzinkosten.",
+      "Nur Versicherungskosten.",
+      "Nur Reparaturkosten."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Betriebskosten umfassen z.B. Miete, Löhne, Benzin, Versicherung, Reparaturen usw."
+  },
+  {
+    "frage": "Was ist eine Abschreibung?",
+    "antworten": [
+      "Die Verteilung der Anschaffungskosten eines Fahrzeugs über mehrere Jahre.",
+      "Eine Versicherungsleistung.",
+      "Eine Einnahme.",
+      "Ein Darlehen."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Abschreibung bedeutet, dass Anschaffungswerte (wie Fahrzeuge) auf mehrere Jahre verteilt als Kosten angesetzt werden."
+  },
+  {
+    "frage": "Welche Kosten zählen zu den fixen Betriebskosten eines Taxiunternehmens?",
+    "antworten": [
+      "Kosten, die unabhängig von der Fahrleistung anfallen, z.B. Miete, Versicherung.",
+      "Nur die Benzinkosten.",
+      "Kosten pro gefahrenen Kilometer.",
+      "Nur die Löhne der Fahrer."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Fixe Kosten fallen unabhängig von der Nutzung des Fahrzeugs an, z.B. Versicherungen, Steuer, Miete."
+  },
+  {
+    "frage": "Was sind variable Betriebskosten?",
+    "antworten": [
+      "Kosten, die direkt mit der Nutzung des Fahrzeugs zusammenhängen, z.B. Benzin, Wartung.",
+      "Mietkosten für das Büro.",
+      "Die Gehälter der Verwaltung.",
+      "Kosten für Werbung."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Variable Kosten ändern sich mit der Nutzung, z.B. Kraftstoff, Reifen, Reparaturen."
+  },
+  {
+    "frage": "Was versteht man unter dem Begriff 'Kosten pro Kilometer'?",
+    "antworten": [
+      "Die Betriebskosten geteilt durch die gefahrenen Kilometer.",
+      "Die Versicherungskosten im Monat.",
+      "Den Benzinpreis an der Tankstelle.",
+      "Die Reparaturkosten pro Jahr."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Kosten pro Kilometer sind die Gesamtkosten dividiert durch die gefahrene Strecke."
+  },
+  {
+    "frage": "Warum ist die Kostenrechnung für Taxiunternehmen wichtig?",
+    "antworten": [
+      "Um den Fahrpreis kalkulieren und wirtschaftlich arbeiten zu können.",
+      "Nur wegen der Steuer.",
+      "Nur für die Werbung.",
+      "Damit das Finanzamt mehr Steuern verlangen kann."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Nur wer seine Kosten kennt, kann den Mindestfahrpreis und die Wirtschaftlichkeit berechnen."
+  },
+  {
+    "frage": "Welche Kostenart ist die Fahrzeugversicherung?",
+    "antworten": [
+      "Fixe Kosten.",
+      "Variable Kosten.",
+      "Lohnkosten.",
+      "Nebenkosten."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Fahrzeugversicherung fällt unabhängig von der Nutzung an und zählt zu den fixen Kosten."
+  },
+  {
+    "frage": "Was bedeutet 'Eigenkapital' im Unternehmen?",
+    "antworten": [
+      "Das vom Unternehmer selbst eingebrachte Kapital.",
+      "Ein Bankdarlehen.",
+      "Der monatliche Gewinn.",
+      "Die Einnahmen pro Fahrt."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Eigenkapital ist das Geld, das der Unternehmer selbst ins Unternehmen einbringt."
+  },
+  {
+    "frage": "Wie kann ein Taxiunternehmen Betriebskosten senken?",
+    "antworten": [
+      "Durch Wartung, effiziente Routen und kostensparenden Fahrzeugeinsatz.",
+      "Durch höhere Fahrpreise.",
+      "Durch mehr Werbung.",
+      "Nur durch Kündigung der Fahrer."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Betriebskosten können z.B. durch effiziente Planung und sparsame Fahrzeuge gesenkt werden."
+  },
+  {
+    "frage": "Was ist der Unterschied zwischen brutto und netto bei Kosten?",
+    "antworten": [
+      "Brutto enthält die Mehrwertsteuer, netto ist der Betrag ohne Steuer.",
+      "Es gibt keinen Unterschied.",
+      "Brutto ist immer kleiner.",
+      "Netto enthält Steuern."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Bruttokosten beinhalten die Umsatzsteuer, Nettokosten sind ohne Steuer."
+  },
+{
+    "frage": "Was ist der Dreisatz?",
+    "antworten": [
+      "Eine Steuerart",
+      "Eine Rechenmethode zum Berechnen von proportionalen Werten",
+      "Ein Kassenzettel",
+      "Ein Fahrplan"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Dreisatz ایک سادہ ریاضیاتی طریقہ ہے جس سے تناسب کی بنیاد پر کسی قیمت یا مقدار کا حساب لگایا جاتا ہے۔"
+  },
+  {
+    "frage": "Ein 750g Glas kostet 6,49 €. Wie viel kosten 100g?",
+    "antworten": [
+      "0,86 €",
+      "1,50 €",
+      "0,49 €",
+      "0,99 €"
+    ],
+    "korrekt": 0,
+    "erklaerung": "اردو: 100g = (6,49 ÷ 750) × 100 = ca. 0,86 €"
+  },
+  {
+    "frage": "Ein kleines Glas (450g) kostet 2,79 €. Welches Angebot ist günstiger?",
+    "antworten": [
+      "750g Glas",
+      "450g Glas",
+      "Beide gleich",
+      "Keine Angabe möglich"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: 450g Glas ist günstiger, weil Preis pro 100g geringer ist۔"
+  },
+  {
+    "frage": "Was bedeutet das Prozentzeichen (%)?",
+    "antworten": [
+      "Pro Einheit",
+      "Pro Tausend",
+      "Von Hundert",
+      "Von Zehn"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: ٪ کا مطلب ہوتا ہے 'فی سو' یعنی 100 میں سے۔"
+  },
+  {
+    "frage": "Ein Produkt kostet 6,49 € inkl. 7% MwSt. Wie hoch ist der Steuerbetrag?",
+    "antworten": [
+      "0,49 €",
+      "0,58 €",
+      "0,42 €",
+      "0,39 €"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: 6,49 ÷ 107 × 7 = ca. 0,58 € MwSt"
+  },
+  {
+    "frage": "Was ist Zinsrechnung?",
+    "antworten": [
+      "Eine Sondersteuer",
+      "Ein Rechnungsverfahren auf Basis von Prozenten",
+      "Ein Kassenzettel",
+      "Ein Arbeitsvertrag"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Zinsrechnung میں ہم کسی رقم پر فیصد کے حساب سے منافع یا سود نکالتے ہیں۔"
+  },
+  {
+    "frage": "Auf 2500 € gibt es 0,3 % Zinsen. Wie viel Zinsen erhält man?",
+    "antworten": [
+      "7,50 €",
+      "8,00 €",
+      "6,50 €",
+      "9,00 €"
+    ],
+    "korrekt": 0,
+    "erklaerung": "اردو: 2500 × 0,3 ÷ 100 = 7,50 €"
+  },
+  {
+    "frage": "Was sind Fixkosten?",
+    "antworten": [
+      "Kosten, die sich je nach Umsatz ändern",
+      "Kosten, die unabhängig vom Umsatz gleich bleiben",
+      "Nur Steuerkosten",
+      "Einmalige Kosten"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Fixkosten وہ ہوتے ہیں جو چاہے کمپنی کام کرے یا نہ کرے، ہمیشہ ادا کرنے ہوتے ہیں۔"
+  },
+  {
+    "frage": "Was sind Beispiele für Fixkosten in einem Taxiunternehmen?",
+    "antworten": [
+      "Benzin",
+      "Versicherung, Funkgebühr, Lohn",
+      "Ölwechsel",
+      "Reifen"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: انشورنس، تنخواہیں، ٹیکس وغیرہ ایسے اخراجات ہیں جو ہر حال میں آتے ہیں۔"
+  },
+  {
+    "frage": "Was sind variable Kosten?",
+    "antworten": [
+      "Kosten, die unabhängig von der Fahrleistung sind",
+      "Kosten, die mit Nutzung steigen oder fallen",
+      "Monatliche Fixbeträge",
+      "Steuerkosten"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Variable Kosten ایسے خرچے ہیں جو سفر یا استعمال پر منحصر ہوتے ہیں جیسے فیول۔"
+  },
+
+  // Fragen 11 bis 50 folgen hier...
+
+  {
+    "frage": "Was ist der Unterschied zwischen kalkulatorischer und steuerlicher Abschreibung?",
+    "antworten": [
+      "Kalkulatorisch ist extern, steuerlich intern",
+      "Kalkulatorisch ist intern und freiwillig, steuerlich gesetzlich vorgeschrieben",
+      "Beide sind gleich",
+      "Nur steuerlich erlaubt"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Kalkulatorische Abschreibung کمپنی کی اپنی حساب کتاب ہوتی ہے، جبکہ steuerliche قانون کے مطابق ہوتی ہے۔"
+  },
+  {
+    "frage": "Was sind kalkulatorische Kosten?",
+    "antworten": [
+      "Kosten mit gesetzlicher Pflicht",
+      "Kosten für Sozialversicherung",
+      "Interne Rechenkosten wie Unternehmerlohn, Zinsen",
+      "Unnötige Ausgaben"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: یہ کمپنی کے اپنے اندازے کے مطابق اخراجات ہوتے ہیں جیسے مالک کی تنخواہ۔"
+  },
+  {
+    "frage": "Was ist der Unternehmerlohn?",
+    "antworten": [
+      "Der Gewinn der Firma",
+      "Der Lohn, den sich ein Unternehmer selbst zuweist",
+      "Die Steuerzahlung",
+      "Die Fahrerlöhne"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: یہ وہ رقم ہے جو کاروباری مالک اپنی خدمات کے بدلے خود کو دیتا ہے۔"
+  },
+  {
+    "frage": "Warum ist Kostenrechnung für ein Taxiunternehmen wichtig?",
+    "antworten": [
+      "Nur für Werbung",
+      "Zur Preiskalkulation, Kontrolle von Einnahmen und Ausgaben",
+      "Für Fahrpläne",
+      "Nur für große Firmen"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: اس سے پتا چلتا ہے کہ کہاں نفع ہو رہا ہے اور کہاں نقصان۔"
+  }
+[
+  {
+    "frage": "Was ist eine kalkulatorische Abschreibung?",
+    "antworten": [
+      "Abschreibung auf Basis gesetzlicher Vorgaben",
+      "Freiwillige interne Abschreibung zur Kostenkalkulation",
+      "Steuerliche Gutschrift",
+      "Kosten für Reparaturen"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: یہ ایک اندرونی حساب کتاب ہے جس سے کسی چیز کی قدر کا اندازہ لگایا جاتا ہے۔"
+  },
+  {
+    "frage": "Wie lange wird ein Firmenfahrzeug laut AfA-Tabelle abgeschrieben?",
+    "antworten": [
+      "2 Jahre",
+      "5 Jahre",
+      "6 Jahre",
+      "10 Jahre"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: ٹیکسی جیسے گاڑی کو عام طور پر 6 سال میں آہستہ آہستہ صفر ویلیو تک لایا جاتا ہے۔"
+  },
+  {
+    "frage": "Was zählt zu den Wirtschaftsgütern des Anlagevermögens?",
+    "antworten": [
+      "Tankkosten",
+      "Rohstoffe",
+      "Firmenwagen",
+      "Verpackung"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: ایسی اشیاء جو طویل مدت تک استعمال میں رہتی ہیں، Anlagevermögen میں شمار ہوتی ہیں۔"
+  },
+  {
+    "frage": "Was ist eine GuV-Rechnung?",
+    "antworten": [
+      "Ein Steuerformular",
+      "Ein Dokument über Vermögen",
+      "Eine Übersicht über Erträge und Aufwendungen",
+      "Eine Lohnabrechnung"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: GuV وہ حساب ہے جو منافع اور اخراجات کی پوری تصویر پیش کرتا ہے۔"
+  },
+  {
+    "frage": "Was gehört zu den fixen Kosten?",
+    "antworten": [
+      "Kraftstoffkosten",
+      "Reifenverschleiß",
+      "Versicherungsbeiträge",
+      "Ölwechsel"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: انشورنس جیسے اخراجات وقت کے حساب سے ہوتے ہیں، فاصلے کے نہیں۔"
+  },
+  {
+    "frage": "Was versteht man unter \"Unternehmerlohn\"?",
+    "antworten": [
+      "Steuerrückzahlung",
+      "Gehalt für einen Fahrer",
+      "Eigenes Gehalt des Firmeninhabers",
+      "Lohnsteuerbetrag"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: کاروباری شخص خود اپنے لیے جو تنخواہ طے کرتا ہے، وہ Unternehmerlohn ہے۔"
+  },
+  {
+    "frage": "Welche Aussage über das Kassenbuch ist korrekt?",
+    "antworten": [
+      "Nur Kartenzahlungen werden erfasst",
+      "Nur Steuern werden notiert",
+      "Alle Bargeldbewegungen müssen täglich dokumentiert werden",
+      "Es ist freiwillig"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: کاسن بُک میں ہر دن کی نقد آمد و خرچ کو درج کرنا ضروری ہوتا ہے۔"
+  },
+  {
+    "frage": "Wie lange müssen Buchführungsunterlagen aufbewahrt werden?",
+    "antworten": [
+      "3 Jahre",
+      "5 Jahre",
+      "10 Jahre",
+      "1 Jahr"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: جرمن قانون کے مطابق حساب کتاب اور رسیدیں 10 سال تک سنبھالنی ضروری ہیں۔"
+  },
+  {
+    "frage": "Was ist eine Bilanz?",
+    "antworten": [
+      "Ein Steuerausweis",
+      "Eine Übersicht über Einnahmen und Ausgaben",
+      "Gegenüberstellung von Vermögen und Schulden",
+      "Kassenzettel"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: Bilanz میں کمپنی کے اثاثے اور واجبات ایک صفحے پر دکھائے جاتے ہیں۔"
+  },
+  {
+    "frage": "Was bedeutet der Begriff \"Abnutzung\"?",
+    "antworten": [
+      "Preissteigerung",
+      "Wertverlust durch Nutzung",
+      "Steuerersparnis",
+      "Guthaben"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: کوئی چیز جب استعمال ہوتی ہے تو اس کی قیمت اور قدر کم ہو جاتی ہے، یہی Abnutzung ہے۔"
+  },
+  {
+    "frage": "Welche Kosten gehören zu den variablen Kosten?",
+    "antworten": [
+      "KFZ-Steuer",
+      "Funkgebühr",
+      "Kraftstoff",
+      "Lohnnebenkosten"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: فیول کا خرچ اس بات پر منحصر ہوتا ہے کہ کتنی گاڑی چلی۔"
+  },
+  {
+    "frage": "Welche Funktion hat das Journal in der Buchführung?",
+    "antworten": [
+      "Speicherung der Tankbelege",
+      "Erfassung aller Geschäftsvorfälle",
+      "Übersicht über Gehälter",
+      "Nur für das Finanzamt"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Journal یا Grundbuch میں روز مرہ کے تمام کاروباری لین دین درج کیے جاتے ہیں۔"
+  },
+  {
+    "frage": "Was ist die Aufgabe der Bilanz?",
+    "antworten": [
+      "Lohnabrechnung erstellen",
+      "Einnahmen dokumentieren",
+      "Vermögenslage eines Unternehmens darstellen",
+      "Preisvergleich von Produkten"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: Bilanz کمپنی کی مالی صحت کا جائزہ دیتی ہے۔"
+  },
+  {
+    "frage": "Welche der folgenden Abschreibungsmethoden ist gesetzlich vorgeschrieben?",
+    "antworten": [
+      "Lineare Abschreibung",
+      "Kalkulatorische Abschreibung",
+      "Poolabschreibung",
+      "Erinnerungswert"
+    ],
+    "korrekt": 0,
+    "erklaerung": "اردو: Lineare Abschreibung عام قانونی طریقہ ہے جس میں ہر سال یکساں کٹوتی ہوتی ہے۔"
+  },
+  {
+    "frage": "Was versteht man unter Poolabschreibung?",
+    "antworten": [
+      "Abschreibung in einer Summe",
+      "Einzelabschreibung mit Erinnerungswert",
+      "Verteilung von geringwertigen Wirtschaftsgütern auf 5 Jahre",
+      "Nur für Fahrzeuge"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: ایسی چیزیں جن کی قیمت 1000 یورو سے کم ہو، انہیں 5 سال میں تھوڑا تھوڑا کر کے کاٹا جاتا ہے۔"
+  },
+  {
+    "frage": "Was ist ein Erinnerungswert?",
+    "antworten": [
+      "Wert für neue Produkte",
+      "Restwert nach kalkulatorischer Abschreibung",
+      "Symbolischer Wert von 1 €, wenn das Objekt weiter genutzt wird",
+      "Bankwert"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: اگر کوئی چیز مکمل طور پر کٹ چکی ہو مگر استعمال میں ہو، تو اس کی قیمت 1 یورو دکھائی جاتی ہے۔"
+  },
+  {
+    "frage": "Wie wirkt sich eine falsche Abschreibung auf die Bilanz aus?",
+    "antworten": [
+      "Keine Auswirkung",
+      "Falsche Darstellung des Vermögens",
+      "Bessere Zinsen",
+      "Erhöhte Mitarbeiterzahl"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: غلط Abschreibung سے کمپنی کی مالی حالت غلط انداز میں نظر آئے گی۔"
+  },
+  {
+    "frage": "Warum ist das Kassenbuch wichtig?",
+    "antworten": [
+      "Nur für den Kunden",
+      "Zur Darstellung von Onlinezahlungen",
+      "Zur Kontrolle der Bargeldbestände",
+      "Für Urlaubsplanung"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: Kassenbuch یہ ظاہر کرتا ہے کہ آپ کی نقد رقم کہاں سے آئی اور کہاں خرچ ہوئی۔"
+  },
+  {
+    "frage": "Was sind kalkulatorische Zinsen?",
+    "antworten": [
+      "Bankzinsen",
+      "Steuerliche Abgaben",
+      "Gedachte Zinsen auf eingebrachtes Kapital",
+      "Zinseszins"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: یہ وہ منافع ہے جو آپ کو کمپنی میں لگائی گئی رقم پر ملنا چاہیے۔"
+  },
+  {
+    "frage": "Wozu dient die Kostenrechnung in einem Betrieb?",
+    "antworten": [
+      "Zur Erstellung von Lohnabrechnungen",
+      "Zur Bestimmung von Angebotspreisen und Kontrolle der Wirtschaftlichkeit",
+      "Zur Erstellung von Arbeitsverträgen",
+      "Zur Beantragung von Genehmigungen"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Kostenrechnung سے پتا چلتا ہے کہ قیمتیں کیسے مقرر کرنی ہیں اور کہاں خرچ کم کرنا ہے۔"
+  }

@@ -1,0 +1,112 @@
+[
+  {
+    "frage": "Welches Gesetz regelt den Straßenverkehr in Deutschland hauptsächlich?",
+    "antworten": [
+      "Straßenverkehrs-Ordnung (StVO)",
+      "Handelsgesetzbuch (HGB)",
+      "Grundgesetz (GG)",
+      "Bürgerliches Gesetzbuch (BGB)"
+    ],
+    "korrekt": 0,
+    "erklaerung": "Die Straßenverkehrs-Ordnung (StVO) enthält die wichtigsten Vorschriften für den Straßenverkehr in Deutschland."
+  },
+  {
+    "frage": "Welche Promillegrenze gilt im Straßenverkehr für Fahranfänger in der Probezeit?",
+    "antworten": [
+      "0,0 Promille",
+      "0,5 Promille",
+      "0,3 Promille",
+      "1,1 Promille"
+    ],
+    "korrekt": 0,
+    "erklaerung": "Für Fahranfänger in der Probezeit gilt die 0,0-Promille-Grenze."
+  },
+  {
+    "frage": "Wer muss immer angeschnallt sein?",
+    "antworten": [
+      "Alle Insassen eines Fahrzeugs.",
+      "Nur der Fahrer.",
+      "Nur Kinder.",
+      "Nur Personen auf dem Rücksitz."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Alle Insassen eines Fahrzeugs sind verpflichtet, sich anzuschnallen."
+  },
+  {
+    "frage": "Was bedeutet das Verkehrszeichen 'Vorfahrt gewähren'?",
+    "antworten": [
+      "Anhalten und Vorfahrt gewähren.",
+      "Parken erlaubt.",
+      "Überholen erlaubt.",
+      "Wenden verboten."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Das Zeichen 'Vorfahrt gewähren' verpflichtet zum Anhalten, falls nötig, und zum Gewähren der Vorfahrt."
+  },
+  {
+    "frage": "Was ist die zulässige Höchstgeschwindigkeit innerorts für Pkw?",
+    "antworten": [
+      "50 km/h",
+      "30 km/h",
+      "80 km/h",
+      "100 km/h"
+    ],
+    "korrekt": 0,
+    "erklaerung": "Innerhalb geschlossener Ortschaften beträgt die zulässige Höchstgeschwindigkeit für Pkw 50 km/h."
+  },
+  {
+    "frage": "Was regelt die Straßenverkehrs-Zulassungs-Ordnung (StVZO)?",
+    "antworten": [
+      "Die Zulassung und technische Vorschriften für Fahrzeuge.",
+      "Das Mietrecht.",
+      "Das Arbeitsrecht.",
+      "Das Steuerrecht."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Die StVZO enthält Vorschriften über die Zulassung von Fahrzeugen und deren technische Anforderungen."
+  },
+  {
+    "frage": "Welche Strafe droht bei Fahren ohne Fahrerlaubnis?",
+    "antworten": [
+      "Freiheitsstrafe oder Geldstrafe.",
+      "Ein einfaches Verwarnungsgeld.",
+      "Gar keine Strafe.",
+      "Nur ein Punkt in Flensburg."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Das Fahren ohne Fahrerlaubnis ist eine Straftat und kann mit Freiheits- oder Geldstrafe geahndet werden."
+  },
+  {
+    "frage": "Was muss bei einer roten Ampel gemacht werden?",
+    "antworten": [
+      "Anhalten und warten.",
+      "Langsam weiterfahren.",
+      "Hupen und durchfahren.",
+      "Blaues Licht einschalten."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Bei Rot an der Ampel muss angehalten und auf Grün gewartet werden."
+  },
+  {
+    "frage": "Wer hat an einem Zebrastreifen Vorrang?",
+    "antworten": [
+      "Fußgänger.",
+      "Fahrradfahrer.",
+      "Taxis.",
+      "Lastwagen."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Fußgänger haben an einem Zebrastreifen Vorrang."
+  },
+  {
+    "frage": "Was ist zu tun, wenn ein Einsatzfahrzeug mit Blaulicht und Martinshorn naht?",
+    "antworten": [
+      "Sofort freie Bahn schaffen.",
+      "Weiterfahren wie bisher.",
+      "Anhalten und aussteigen.",
+      "Fenster schließen."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Einsatzfahrzeugen mit Blaulicht und Martinshorn ist sofort freie Bahn zu verschaffen."
+  }
+]

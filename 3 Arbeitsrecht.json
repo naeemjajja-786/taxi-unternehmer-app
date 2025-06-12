@@ -1,0 +1,88 @@
+{
+  "chapter": "Arbeitsrecht",
+  "topics": [
+    {
+      "id": "3.1",
+      "title": "Grundlagen des Arbeitsrechts",
+      "content": [
+        "Das Arbeitsrecht regelt die Rechte und Pflichten zwischen Arbeitgeber und Arbeitnehmer.",
+        "Es umfasst Individualarbeitsrecht (einzelner Arbeitsvertrag) und Kollektivarbeitsrecht (Tarifverträge, Betriebsrat).",
+        "Wichtige gesetzliche Grundlagen sind das Bürgerliche Gesetzbuch (BGB), das Kündigungsschutzgesetz (KSchG), das Arbeitszeitgesetz (ArbZG) und das Mutterschutzgesetz (MuSchG)."
+      ],
+      "explain": "Arbeitsrecht bestimmt, was im Verhältnis zwischen Chef und Mitarbeiter erlaubt oder verboten ist – sowohl für den einzelnen Arbeitsvertrag als auch für ganze Gruppen durch Tarifverträge.",
+      "example": "Ein Fahrer schließt einen Arbeitsvertrag mit dem Taxiunternehmen ab – die Rechte und Pflichten beider Seiten regelt das Arbeitsrecht.",
+      "media": null,
+      "tags": ["arbeitsrecht", "vertrag", "grundlagen"]
+    },
+    {
+      "id": "3.2",
+      "title": "Arbeitsvertrag",
+      "content": [
+        "Der Arbeitsvertrag regelt die gegenseitigen Rechte und Pflichten von Arbeitgeber und Arbeitnehmer.",
+        "Er kann schriftlich oder mündlich geschlossen werden, sollte aber aus Beweisgründen immer schriftlich sein.",
+        "Inhalte sind z. B.: Beginn und Dauer des Arbeitsverhältnisses, Arbeitszeit, Vergütung, Urlaubsanspruch, Kündigungsfristen, Tätigkeitsbeschreibung.",
+        "Der Arbeitgeber muss die wesentlichen Vertragsbedingungen spätestens einen Monat nach Arbeitsbeginn schriftlich niederlegen (§ 2 Nachweisgesetz)."
+      ],
+      "explain": "Im Arbeitsvertrag steht, wie viel du verdienst, wie lange du arbeitest, wann du Urlaub hast und wie du kündigen kannst.",
+      "example": "Im Vertrag eines Fahrers steht: 40 Stunden pro Woche, 2.000 € brutto im Monat, 24 Tage Urlaub im Jahr.",
+      "media": null,
+      "tags": ["arbeitsvertrag", "nachweis", "rechte"]
+    },
+    {
+      "id": "3.3",
+      "title": "Pflichten aus dem Arbeitsverhältnis",
+      "content": [
+        "Arbeitnehmerpflichten: Arbeitspflicht, Sorgfaltspflicht, Weisungsgebundenheit, Verschwiegenheitspflicht.",
+        "Arbeitgeberpflichten: Lohnzahlungspflicht, Fürsorgepflicht, Beschäftigungspflicht, Gleichbehandlung.",
+        "Beide Parteien müssen auf die berechtigten Interessen der jeweils anderen Seite Rücksicht nehmen."
+      ],
+      "explain": "Mitarbeiter müssen arbeiten und Betriebsgeheimnisse wahren; Chefs müssen pünktlich zahlen und sich um Sicherheit und Gesundheit kümmern.",
+      "example": "Ein Fahrer muss Dienstkleidung tragen und darf Betriebsinterna nicht ausplaudern. Der Chef muss Lohn zahlen und Pausen gewähren.",
+      "media": null,
+      "tags": ["pflichten", "arbeitgeber", "arbeitnehmer"]
+    },
+    {
+      "id": "3.4",
+      "title": "Arbeitszeit und Pausen",
+      "content": [
+        "Die Arbeitszeit ist im Arbeitszeitgesetz (ArbZG) geregelt.",
+        "Maximal 8 Stunden pro Tag, Ausdehnung auf 10 Stunden möglich, wenn im Schnitt 8 Stunden nicht überschritten werden.",
+        "Nach spätestens 6 Stunden Arbeit ist eine Pause von mindestens 30 Minuten vorgeschrieben, nach 9 Stunden mindestens 45 Minuten.",
+        "Zwischen zwei Arbeitstagen muss eine ununterbrochene Ruhezeit von 11 Stunden liegen."
+      ],
+      "explain": "Normalerweise darfst du pro Tag maximal 8 Stunden arbeiten, mit Pausen und ausreichend Ruhe zwischen den Schichten.",
+      "example": "Ein Taxifahrer arbeitet von 8 bis 16 Uhr, macht eine halbe Stunde Pause – das ist gesetzeskonform.",
+      "media": null,
+      "tags": ["arbeitszeit", "pausen", "gesetz"]
+    },
+    {
+      "id": "3.5",
+      "title": "Urlaub und Krankheit",
+      "content": [
+        "Der gesetzliche Mindesturlaub beträgt 24 Werktage bei einer 6-Tage-Woche (nach Bundesurlaubsgesetz).",
+        "Bei Krankheit muss der Arbeitnehmer dem Arbeitgeber die Arbeitsunfähigkeit und deren voraussichtliche Dauer unverzüglich mitteilen.",
+        "Ab dem dritten Tag ist eine ärztliche Bescheinigung vorzulegen.",
+        "Während der Krankheit besteht Anspruch auf Lohnfortzahlung bis zu 6 Wochen (§ 3 EFZG)."
+      ],
+      "explain": "Bei Krankheit bekommst du bis zu 6 Wochen weiter Gehalt vom Arbeitgeber. Urlaub steht jedem festangestellten Fahrer gesetzlich zu.",
+      "example": "Ein Fahrer meldet sich wegen Grippe krank – er bekommt weiter Lohn, wenn er ein Attest bringt.",
+      "media": null,
+      "tags": ["urlaub", "krankheit", "lohnfortzahlung"]
+    },
+    {
+      "id": "3.6",
+      "title": "Beendigung des Arbeitsverhältnisses",
+      "content": [
+        "Das Arbeitsverhältnis endet durch Kündigung, Aufhebungsvertrag oder Zeitablauf (bei befristetem Vertrag).",
+        "Die Kündigung kann ordentlich (unter Einhaltung der Fristen) oder außerordentlich (fristlos, z. B. bei schwerem Fehlverhalten) erfolgen.",
+        "Kündigungsfristen richten sich nach dem Gesetz oder dem Arbeitsvertrag.",
+        "Ein besonderer Kündigungsschutz gilt u. a. für Schwangere, Betriebsräte und Schwerbehinderte.",
+        "Im Taxi- und Mietwagengewerbe gelten oft tarifvertragliche Sonderregelungen."
+      ],
+      "explain": "Du kannst kündigen oder gekündigt werden – aber es gibt Fristen und besonderen Schutz für bestimmte Gruppen.",
+      "example": "Ein Fahrer erhält nach mehreren Abmahnungen die fristgerechte Kündigung. Eine schwangere Fahrerin genießt besonderen Schutz.",
+      "media": null,
+      "tags": ["kündigung", "schutz", "arbeitsende"]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "chapter": "Mietwagen",
+  "topics": [
+    {
+      "id": "12.1",
+      "title": "Definition und Abgrenzung",
+      "content": [
+        "Mietwagen sind Kraftfahrzeuge, mit denen Fahrgäste befördert werden, wenn der Fahrtauftrag am Betriebssitz oder in der Wohnung des Unternehmers eingegangen ist.",
+        "Im Unterschied zum Taxi dürfen Mietwagen keine Fahrgäste an öffentlichen Plätzen aufnehmen oder sich zur Personenbeförderung bereithalten.",
+        "Mietwagen unterliegen der Rückkehrpflicht, das heißt, nach jeder Beförderung müssen sie zum Betriebssitz zurückkehren."
+      ],
+      "explain": "Mietwagen fahren nur nach vorherigem Auftrag und müssen nach jeder Tour zurück zum Betriebssitz – sie dürfen nicht wie Taxis auf Fahrgäste warten.",
+      "example": "Ein Fahrgast bestellt einen Mietwagen telefonisch, dieser holt ihn zu Hause ab und fährt ihn nach der Fahrt zurück zum Betriebssitz.",
+      "media": null,
+      "tags": ["mietwagen", "definition", "rückkehrpflicht"]
+    },
+    {
+      "id": "12.2",
+      "title": "Genehmigung und Pflichten",
+      "content": [
+        "Für den Betrieb eines Mietwagenunternehmens ist eine behördliche Genehmigung nach dem Personenbeförderungsgesetz (PBefG) erforderlich.",
+        "Die Genehmigung wird nur erteilt, wenn Zuverlässigkeit, finanzielle Leistungsfähigkeit und fachliche Eignung nachgewiesen werden.",
+        "Mietwagenunternehmer und Fahrer müssen die besonderen gesetzlichen Vorgaben einhalten, zum Beispiel Rückkehrpflicht, Dokumentationspflichten und korrekte Preisgestaltung."
+      ],
+      "explain": "Auch für Mietwagen gelten strenge Regeln. Ohne Genehmigung und Dokumentation geht nichts.",
+      "example": "Ein Unternehmer erhält nach bestandener Fachkundeprüfung und Vorlage aller Unterlagen die Mietwagengenehmigung.",
+      "media": null,
+      "tags": ["genehmigung", "pflichten"]
+    },
+    {
+      "id": "12.3",
+      "title": "Unterschiede zwischen Taxi und Mietwagen",
+      "content": [
+        "Taxis dürfen an Taxiständen warten, am Straßenrand anhalten und Fahrgäste direkt aufnehmen.",
+        "Mietwagen dürfen nur nach Vorbestellung Fahrgäste befördern und müssen nach der Fahrt direkt zum Betriebssitz zurückkehren.",
+        "Die Tarife für Taxis sind in der Regel behördlich festgelegt, bei Mietwagen sind die Preise frei vereinbar.",
+        "Mietwagenfahrten werden meistens telefonisch oder online bestellt."
+      ],
+      "explain": "Der größte Unterschied: Taxis dürfen sofort und überall Gäste aufnehmen, Mietwagen nur nach Auftrag und mit Rückkehrpflicht.",
+      "example": "Ein Taxi nimmt spontan einen Fahrgast am Bahnhof mit. Ein Mietwagen darf das nicht – er braucht einen Auftrag.",
+      "media": null,
+      "tags": ["taxi", "mietwagen", "unterschied"]
+    },
+    {
+      "id": "12.4",
+      "title": "Besondere Vorschriften für Mietwagen",
+      "content": [
+        "Für Mietwagen gelten besondere Kennzeichnungen, z. B. ein grünes Nummernschild und das Fehlen der Taxileuchte.",
+        "Fahrtenbuchführung ist Pflicht: Jede Fahrt muss dokumentiert werden (Auftrag, Zeit, Strecke).",
+        "Mietwagen dürfen keine Sammelfahrten wie Taxis anbieten (keine Fahrt mit mehreren fremden Fahrgästen zugleich)."
+      ],
+      "explain": "Mietwagen müssen alle Fahrten dokumentieren und dürfen nicht wie ein Sammeltaxi agieren.",
+      "example": "Nach jeder Fahrt trägt der Fahrer Start und Ziel sowie die Kundendaten in ein Fahrtenbuch ein.",
+      "media": null,
+      "tags": ["vorschriften", "kennzeichnung", "fahrtenbuch"]
+    }
+  ]
+}

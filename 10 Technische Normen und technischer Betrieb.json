@@ -1,0 +1,57 @@
+{
+  "chapter": "Technische Normen und technischer Betrieb",
+  "topics": [
+    {
+      "id": "10.1",
+      "title": "Technische Zulassungsvoraussetzungen",
+      "content": [
+        "Fahrzeuge, die im gewerblichen Personenverkehr eingesetzt werden, müssen besondere technische Zulassungsvoraussetzungen erfüllen.",
+        "Dazu gehören regelmäßige Hauptuntersuchung (HU), Sicherheitsprüfung (SP) und spezielle Ausstattungen wie Taxameter, Alarmanlage oder Notsignaleinrichtung.",
+        "Die Zulassung erfolgt durch die zuständige Zulassungsbehörde."
+      ],
+      "explain": "Für Taxi/Mietwagen gelten strengere technische Vorschriften als für Privatfahrzeuge – nur technisch einwandfreie Autos dürfen eingesetzt werden.",
+      "example": "Ein Taxi wird jährlich zur Hauptuntersuchung (TÜV) vorgestellt und muss ein geeichtes Taxameter haben.",
+      "media": null,
+      "tags": ["zulassung", "technik", "hu", "sp"]
+    },
+    {
+      "id": "10.2",
+      "title": "Sicherheit und Ausstattung",
+      "content": [
+        "Die Fahrzeuge müssen mit bestimmten Sicherheitseinrichtungen ausgerüstet sein: z. B. Warndreieck, Verbandskasten, Feuerlöscher, Warnweste.",
+        "Für Taxis sind zudem eine Dachleuchte, der Taxameter, ein sichtbares Namensschild des Fahrers und ggf. Trennscheiben vorgeschrieben.",
+        "Die regelmäßige Wartung und Pflege der Fahrzeuge ist Pflicht."
+      ],
+      "explain": "Taxen und Mietwagen brauchen zusätzliche Sicherheitseinrichtungen und müssen sauber, gepflegt und technisch sicher sein.",
+      "example": "Ohne Feuerlöscher oder defektem Taxameter darf das Taxi nicht eingesetzt werden.",
+      "media": null,
+      "tags": ["sicherheit", "ausstattung", "wartung"]
+    },
+    {
+      "id": "10.3",
+      "title": "Technische Betriebspflichten",
+      "content": [
+        "Unternehmer sind verpflichtet, die Fahrzeuge stets in verkehrssicherem und vorschriftsmäßigem Zustand zu halten.",
+        "Vor Fahrtantritt müssen Fahrzeuge auf Mängel kontrolliert werden (z. B. Bremsen, Licht, Bereifung).",
+        "Mängel sind unverzüglich zu beseitigen; bei Gefahr im Verzug darf das Fahrzeug nicht eingesetzt werden."
+      ],
+      "explain": "Vor jeder Schicht muss das Fahrzeug gecheckt werden. Sicherheitsmängel müssen sofort behoben werden.",
+      "example": "Ein Mietwagen mit defekten Bremsen bleibt stehen, bis die Reparatur erfolgt ist.",
+      "media": null,
+      "tags": ["betrieb", "pflichten", "kontrolle"]
+    },
+    {
+      "id": "10.4",
+      "title": "Dokumentations- und Nachweispflichten",
+      "content": [
+        "Betriebliche Unterlagen wie Prüfberichte, Wartungsnachweise und Ausstattungsnachweise sind aufzubewahren.",
+        "Diese Dokumente sind bei Kontrollen der Behörde vorzulegen.",
+        "Nicht ordnungsgemäß geführte Unterlagen können zu Sanktionen führen."
+      ],
+      "explain": "Wartungs- und Prüfprotokolle müssen sorgfältig geführt und immer griffbereit sein.",
+      "example": "Bei einer Verkehrskontrolle verlangt die Polizei die Vorlage des Prüfberichts zur Sicherheitsprüfung.",
+      "media": null,
+      "tags": ["dokumentation", "nachweis", "kontrolle"]
+    }
+  ]
+}

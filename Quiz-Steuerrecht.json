@@ -1,0 +1,112 @@
+[
+  {
+    "frage": "Was ist die Umsatzsteuer?",
+    "antworten": [
+      "Eine Steuer auf den Verkauf von Waren und Dienstleistungen.",
+      "Eine Steuer auf Einkommen.",
+      "Eine Steuer auf Immobilien.",
+      "Eine Steuer auf Benzin."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Die Umsatzsteuer wird auf den Umsatz (Verkauf) von Waren und Dienstleistungen erhoben."
+  },
+  {
+    "frage": "Wie hoch ist der reguläre Umsatzsteuersatz in Deutschland?",
+    "antworten": [
+      "19 Prozent.",
+      "7 Prozent.",
+      "25 Prozent.",
+      "5 Prozent."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Der Regelsteuersatz beträgt derzeit 19 % (Stand 2024)."
+  },
+  {
+    "frage": "Was ist die Einkommensteuer?",
+    "antworten": [
+      "Eine Steuer auf das Einkommen natürlicher Personen.",
+      "Eine Steuer auf Fahrzeuge.",
+      "Eine Steuer auf Zigaretten.",
+      "Eine Steuer auf Mieteinnahmen."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Die Einkommensteuer ist eine Steuer auf das Einkommen jeder natürlichen Person."
+  },
+  {
+    "frage": "Wer ist zur Abgabe einer Steuererklärung verpflichtet?",
+    "antworten": [
+      "Jeder Selbstständige und Unternehmer.",
+      "Nur Arbeitnehmer.",
+      "Nur Rentner.",
+      "Niemand."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Selbstständige und Unternehmer müssen immer eine Steuererklärung abgeben."
+  },
+  {
+    "frage": "Was versteht man unter Betriebsausgaben?",
+    "antworten": [
+      "Alle Ausgaben, die durch den Betrieb veranlasst sind.",
+      "Nur Ausgaben für das Privatleben.",
+      "Nur Steuern.",
+      "Nur Kosten für Versicherungen."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Betriebsausgaben sind alle Kosten, die betrieblich veranlasst sind und von der Steuer abgesetzt werden können."
+  },
+  {
+    "frage": "Was ist ein Steuerbescheid?",
+    "antworten": [
+      "Ein Schreiben des Finanzamts über die festgesetzte Steuer.",
+      "Ein Versicherungsschein.",
+      "Ein Mietvertrag.",
+      "Ein Kontoauszug."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Im Steuerbescheid steht, wie viel Steuern man zahlen oder zurückbekommen muss."
+  },
+  {
+    "frage": "Wer führt die Lohnsteuer an das Finanzamt ab?",
+    "antworten": [
+      "Der Arbeitgeber.",
+      "Der Arbeitnehmer selbst.",
+      "Die Krankenkasse.",
+      "Das Arbeitsamt."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Die Lohnsteuer wird direkt vom Arbeitgeber einbehalten und an das Finanzamt abgeführt."
+  },
+  {
+    "frage": "Was ist der Unterschied zwischen Brutto- und Nettoverdienst?",
+    "antworten": [
+      "Brutto ist der Verdienst vor Abzügen, Netto nach Steuern und Sozialabgaben.",
+      "Es gibt keinen Unterschied.",
+      "Brutto ist weniger als Netto.",
+      "Netto ist das Gehalt inklusive Urlaubsgeld."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Brutto = Gesamtverdienst, Netto = Betrag nach Steuern und Abgaben."
+  },
+  {
+    "frage": "Wann wird die Umsatzsteuer an das Finanzamt gezahlt?",
+    "antworten": [
+      "In der Regel monatlich oder vierteljährlich.",
+      "Jeden Tag.",
+      "Nur einmal im Leben.",
+      "Nie."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Unternehmer müssen regelmäßig (je nach Umsatz) die Umsatzsteuer melden und abführen."
+  },
+  {
+    "frage": "Was versteht man unter 'Vorsteuer'?",
+    "antworten": [
+      "Die von Unternehmen gezahlte Umsatzsteuer beim Einkauf, die mit der eigenen Umsatzsteuerschuld verrechnet werden kann.",
+      "Eine Steuer auf Autos.",
+      "Die Lohnsteuer.",
+      "Die Steuer auf den Gewinn."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Unternehmen können die beim Einkauf gezahlte Umsatzsteuer (Vorsteuer) gegen die eingenommene Umsatzsteuer verrechnen."
+  }
+]

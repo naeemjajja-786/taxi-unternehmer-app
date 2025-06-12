@@ -1,0 +1,96 @@
+{
+  "chapter": "Personenbeförderungsgesetz (PBefG)",
+  "topics": [
+    {
+      "id": "1.1",
+      "title": "Geltungsbereich des PBefG",
+      "content": [
+        "Das Personenbeförderungsgesetz (PBefG) regelt die gewerbliche Beförderung von Personen mit Kraftfahrzeugen im Straßenverkehr.",
+        "Es findet Anwendung auf folgende Verkehrsarten:",
+        "- Linienverkehr (z. B. Buslinien)",
+        "- Sonderformen des Linienverkehrs (z. B. Schülerverkehr)",
+        "- Gelegenheitsverkehr (z. B. Taxi, Mietwagen)",
+        "Das Gesetz gilt nicht für die Beförderung im privaten Bereich."
+      ],
+      "explain": "Das PBefG bestimmt, wann und wie Personen gegen Entgelt befördert werden dürfen, und unterscheidet zwischen verschiedenen Verkehrsarten.",
+      "example": "Eine Taxiunternehmung, die Fahrgäste im Stadtgebiet gegen Bezahlung befördert, fällt unter das PBefG.",
+      "media": null,
+      "tags": ["recht", "gesetz", "verkehrsarten"]
+    },
+    {
+      "id": "1.2",
+      "title": "Genehmigungspflicht und Voraussetzungen",
+      "content": [
+        "Für die gewerbliche Beförderung von Personen ist eine behördliche Genehmigung erforderlich.",
+        "Die Genehmigung wird auf Antrag für höchstens 5 Jahre erteilt und kann verlängert werden.",
+        "Voraussetzungen für die Genehmigung sind:",
+        "- persönliche Zuverlässigkeit des Unternehmers",
+        "- finanzielle Leistungsfähigkeit",
+        "- fachliche Eignung",
+        "Die Genehmigung kann bei Wegfall der Voraussetzungen widerrufen werden."
+      ],
+      "explain": "Wer gewerblich Fahrgäste transportieren will (z. B. Taxi), braucht eine offizielle Genehmigung und muss bestimmte Bedingungen erfüllen.",
+      "example": "Ein Taxiunternehmen ohne Genehmigung begeht eine Ordnungswidrigkeit.",
+      "media": null,
+      "tags": ["genehmigung", "bedingungen", "betrieb"]
+    },
+    {
+      "id": "1.3",
+      "title": "Rechte und Pflichten des Unternehmers",
+      "content": [
+        "Der Unternehmer muss einen ordnungsgemäßen, sicheren und zuverlässigen Betrieb sicherstellen.",
+        "Er ist für die Auswahl und Überwachung des Fahrpersonals verantwortlich.",
+        "Es sind alle gesetzlichen und behördlichen Vorgaben einzuhalten.",
+        "Der Unternehmer ist verpflichtet, geeignete Fahrzeuge und ausreichend qualifiziertes Personal einzusetzen.",
+        "Die Kontrolle der Einhaltung erfolgt durch die Genehmigungsbehörde."
+      ],
+      "explain": "Der Unternehmer trägt die Hauptverantwortung für einen reibungslosen und gesetzeskonformen Betrieb.",
+      "example": "Wenn ein Fahrer wiederholt gegen Verkehrsregeln verstößt, kann auch der Unternehmer belangt werden.",
+      "media": null,
+      "tags": ["pflichten", "unternehmen", "aufsicht"]
+    },
+    {
+      "id": "1.4",
+      "title": "Anforderungen an das Fahrpersonal",
+      "content": [
+        "Das Fahrpersonal muss zuverlässig, fachlich geeignet und gesundheitlich tauglich sein.",
+        "Für Taxifahrer ist ein Personenbeförderungsschein Pflicht.",
+        "Mindestalter: 21 Jahre, mindestens 2 Jahre Besitz der Fahrerlaubnis Klasse B.",
+        "Vorlage eines polizeilichen Führungszeugnisses und medizinische Untersuchungen.",
+        "Ortskundeprüfung kann vorgeschrieben sein."
+      ],
+      "explain": "Wer Fahrgäste befördern will, muss gesundheitlich fit, fachlich ausgebildet und persönlich zuverlässig sein.",
+      "example": "Ein Fahrer ohne Personenbeförderungsschein darf keine Fahrgäste befördern.",
+      "media": null,
+      "tags": ["fahrer", "voraussetzungen", "schein"]
+    },
+    {
+      "id": "1.5",
+      "title": "Arten der Personenbeförderung",
+      "content": [
+        "Das PBefG unterscheidet zwischen verschiedenen Arten von Personenbeförderung:",
+        "- Linienverkehr: Fahrten nach einem festen Fahrplan und Linienweg.",
+        "- Sonderformen des Linienverkehrs: Schülerverkehr, Behindertenbeförderung etc.",
+        "- Gelegenheitsverkehr: Taxis, Mietwagen, Ausflugsfahrten, Ferienziel-Reisen.",
+        "Für jede Verkehrsart gelten spezifische Regeln und Pflichten."
+      ],
+      "explain": "Je nach Art der Beförderung (z. B. Linie oder Gelegenheitsverkehr) gibt es unterschiedliche gesetzliche Vorschriften.",
+      "example": "Ein Mietwagenunternehmer muss die Rückkehrpflicht beachten, ein Taxiunternehmer hat eine Betriebspflicht.",
+      "media": null,
+      "tags": ["verkehrsarten", "spezialregeln"]
+    },
+    {
+      "id": "1.6",
+      "title": "Kontrollen, Sanktionen und Ordnungswidrigkeiten",
+      "content": [
+        "Die Genehmigungsbehörde sowie Polizei dürfen Betrieb und Fahrzeuge jederzeit kontrollieren.",
+        "Bei Verstößen gegen das PBefG drohen Bußgelder, Entzug der Genehmigung oder strafrechtliche Konsequenzen.",
+        "Insbesondere bei wiederholten oder schweren Verstößen kann der Betrieb untersagt werden."
+      ],
+      "explain": "Die Einhaltung der Vorschriften wird streng überwacht. Verstöße können sehr teuer werden oder zum Lizenzverlust führen.",
+      "example": "Wird ein Taxiunternehmer bei wiederholtem Schwarzfahren erwischt, kann seine Genehmigung entzogen werden.",
+      "media": null,
+      "tags": ["kontrolle", "strafe", "ordnung"]
+    }
+  ]
+}

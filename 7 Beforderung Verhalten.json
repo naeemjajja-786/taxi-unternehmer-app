@@ -1,0 +1,53 @@
+{
+  "chapter": "Beförderung & Verhalten",
+  "topics": [
+    {
+      "id": "7.1",
+      "title": "Verhalten des Fahrpersonals",
+      "content": [
+        "Das im Fahrdienst eingesetzte Betriebspersonal hat die besondere Sorgfalt anzuwenden, die sich daraus ergibt, dass ihm Personen zur Beförderung anvertraut sind.",
+        "Das Betriebspersonal, das im Fahrdienst oder zur Bedienung von Fahrgästen eingesetzt ist, hat sich rücksichtsvoll und besonnen zu verhalten."
+      ],
+      "explain": "Fahrer und Servicepersonal tragen Verantwortung für die Sicherheit und das Wohlbefinden der Fahrgäste. Freundlichkeit, Hilfsbereitschaft und Umsicht sind Pflicht.",
+      "example": "Ein Taxifahrer hilft einer älteren Dame beim Ein- und Aussteigen.",
+      "media": null,
+      "tags": ["verhalten", "fahrpersonal", "sorgfalt"]
+    },
+    {
+      "id": "7.2",
+      "title": "Alkoholverbot",
+      "content": [
+        "Im Fahrdienst eingesetztem Betriebspersonal ist es untersagt, während des Dienstes und der Dienstbereitschaft alkoholische Getränke oder andere die dienstliche Tätigkeit beeinträchtigende Mittel zu sich zu nehmen oder die Fahrt anzutreten."
+      ],
+      "explain": "Kein Alkohol oder berauschende Mittel während des Dienstes! Null Promille ist Pflicht für alle im Fahrdienst.",
+      "example": "Ein Fahrer darf nach dem Genuss von Bier kein Taxi mehr fahren.",
+      "media": null,
+      "tags": ["alkohol", "verbot", "dienst"]
+    },
+    {
+      "id": "7.3",
+      "title": "Umgang mit Fundsachen",
+      "content": [
+        "Nach jeder Fahrt ist zu prüfen, ob Gegenstände im Fahrzeug zurückgelassen wurden.",
+        "Nicht sofort zurückgegebene Fundsachen sind unverzüglich bei der zuständigen Stelle (Fundbüro) abzugeben."
+      ],
+      "explain": "Fahrer müssen nachsehen, ob Fahrgäste etwas vergessen haben, und Fundsachen schnell abgeben.",
+      "example": "Ein Handy wird im Taxi gefunden und im Fundbüro abgegeben.",
+      "media": null,
+      "tags": ["fundsachen", "pflicht", "ehrlichkeit"]
+    },
+    {
+      "id": "7.4",
+      "title": "Verhalten bei Beschwerden",
+      "content": [
+        "Beschwerden von Fahrgästen sind höflich und sachlich entgegenzunehmen.",
+        "Das Fahrpersonal muss sich auch in schwierigen Situationen korrekt verhalten und darf sich nicht provozieren lassen.",
+        "Bei schwerwiegenden Vorwürfen ist der Unternehmer zu informieren."
+      ],
+      "explain": "Freundlich bleiben – auch wenn ein Fahrgast sich beschwert. Probleme ruhig und professionell lösen.",
+      "example": "Ein Fahrgast beschwert sich über die Fahrtroute. Der Fahrer bleibt ruhig und erklärt seine Entscheidung sachlich.",
+      "media": null,
+      "tags": ["beschwerden", "kundenservice", "professionalität"]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "chapter": "Kostenrechnung",
+  "topics": [
+    {
+      "id": "5.1",
+      "title": "Grundlagen der Kostenrechnung",
+      "content": [
+        "Die Kostenrechnung ist ein Instrument zur Ermittlung und Überwachung der betrieblichen Kosten.",
+        "Sie dient dazu, die Wirtschaftlichkeit des Unternehmens zu kontrollieren, Preise zu kalkulieren und Entscheidungen zu treffen.",
+        "Im Taxi- und Mietwagengewerbe ist die Kostenrechnung besonders wichtig, um das Verhältnis von Einnahmen und Ausgaben zu überblicken."
+      ],
+      "explain": "Mit der Kostenrechnung findest du heraus, wie viel dein Betrieb wirklich kostet und was du mindestens einnehmen musst.",
+      "example": "Ein Unternehmer ermittelt die monatlichen Gesamtkosten (Fahrzeug, Löhne, Versicherung) und vergleicht sie mit den Einnahmen.",
+      "media": null,
+      "tags": ["kostenrechnung", "wirtschaftlichkeit", "controlling"]
+    },
+    {
+      "id": "5.2",
+      "title": "Kostenarten",
+      "content": [
+        "Typische Kostenarten sind:",
+        "- Fahrzeugkosten (Anschaffung, Abschreibung, Leasing, Wartung, Reparaturen)",
+        "- Kraftstoffkosten",
+        "- Personalkosten (Löhne, Sozialabgaben)",
+        "- Versicherungskosten (Haftpflicht, Kasko, Rechtsschutz)",
+        "- Steuerliche Abgaben (Kfz-Steuer, Gewerbesteuer)",
+        "- Sonstige Kosten (z. B. Funk, Werbung, Verwaltung)"
+      ],
+      "explain": "Alle Ausgaben im Unternehmen lassen sich verschiedenen Kategorien (Kostenarten) zuordnen. So weißt du genau, wohin dein Geld fließt.",
+      "example": "Zu den monatlichen Fixkosten gehören Miete für die Garage, Versicherungen und Löhne der Fahrer.",
+      "media": null,
+      "tags": ["kostenarten", "fixkosten", "betriebskosten"]
+    },
+    {
+      "id": "5.3",
+      "title": "Fixe und variable Kosten",
+      "content": [
+        "Fixe Kosten fallen unabhängig von der Fahrleistung immer an (z. B. Miete, Versicherungen, Abschreibung).",
+        "Variable Kosten hängen direkt von der Nutzung/Fahrleistung ab (z. B. Kraftstoff, Reparaturen, Löhne bei Stundenlohn)."
+      ],
+      "explain": "Fixkosten sind immer gleich hoch, egal ob du 10 oder 1.000 km fährst. Variable Kosten steigen mit der Nutzung.",
+      "example": "Die Kfz-Versicherung kostet jeden Monat gleich – Benzinkosten steigen mit mehr Fahrten.",
+      "media": null,
+      "tags": ["fixkosten", "variablekosten"]
+    },
+    {
+      "id": "5.4",
+      "title": "Berechnung der Gesamtkosten",
+      "content": [
+        "Gesamtkosten = Fixkosten + variable Kosten.",
+        "Für die betriebswirtschaftliche Analyse ist es wichtig, alle Kostenarten vollständig zu berücksichtigen.",
+        "Zur Ermittlung des Mindestumsatzes werden die Gesamtkosten durch die durchschnittlichen Kilometer geteilt."
+      ],
+      "explain": "Um zu wissen, wie viel du mindestens verdienen musst, rechne alle Kosten zusammen und teile sie durch die gefahrenen Kilometer.",
+      "example": "Gesamtkosten: 4.000 € pro Monat, 8.000 km/Monat → Mindestumsatz/km: 0,50 €.",
+      "media": null,
+      "tags": ["gesamtkosten", "berechnung", "umsatz"]
+    },
+    {
+      "id": "5.5",
+      "title": "Deckungsbeitrag und Gewinn",
+      "content": [
+        "Der Deckungsbeitrag ist die Differenz zwischen Erlös und variablen Kosten.",
+        "Er trägt zur Deckung der Fixkosten bei.",
+        "Erst wenn die Gesamtkosten gedeckt sind, wird Gewinn erzielt.",
+        "Gewinn = Umsatz – Gesamtkosten."
+      ],
+      "explain": "Der Deckungsbeitrag zeigt dir, wie viel nach Abzug der variablen Kosten noch für die Fixkosten und deinen Gewinn übrig bleibt.",
+      "example": "Einnahmen 10.000 € – variable Kosten 6.000 € = 4.000 € Deckungsbeitrag; Fixkosten 3.000 € → Gewinn: 1.000 €.",
+      "media": null,
+      "tags": ["deckungsbeitrag", "gewinn", "rechnung"]
+    },
+    {
+      "id": "5.6",
+      "title": "Kalkulation von Fahrpreisen",
+      "content": [
+        "Die Fahrpreiskalkulation basiert auf den ermittelten Kosten pro Kilometer und einer Gewinnmarge.",
+        "Zu berücksichtigen sind auch Leerfahrten, Wartezeiten, saisonale Schwankungen und Sonderkosten.",
+        "Die Tarifordnung der jeweiligen Stadt/Gemeinde setzt oft Mindest- und Höchstpreise fest."
+      ],
+      "explain": "Fahrpreise müssen so kalkuliert werden, dass alle Kosten gedeckt sind und ein Gewinn bleibt – die Tarifordnung setzt dabei Grenzen.",
+      "example": "Ermittelter Mindestpreis pro km 1,00 €; laut Tarifordnung darf der Preis zwischen 1,20 € und 1,60 € liegen.",
+      "media": null,
+      "tags": ["kalkulation", "fahrpreis", "tarif"]
+    }
+  ]
+}

@@ -1,0 +1,333 @@
+{
+    "frage": "Was versteht man unter dem Begriff 'Marketing'?",
+    "antworten": [
+      "Die Gestaltung eines Logos",
+      "Der Verkauf von Produkten durch Werbung und Strategie",
+      "Die Buchführung eines Unternehmens",
+      "Die Einstellung von Personal"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: مارکیٹنگ کا مطلب ہے کہ کس طرح مصنوعات یا خدمات کو مؤثر انداز میں خریداروں تک پہنچایا جائے۔"
+  },
+  {
+    "frage": "Was gehört zum Marketing-Mix?",
+    "antworten": [
+      "Produkt, Preis, Platz, Promotion",
+      "Planung, Prüfung, Zahlung, Position",
+      "Produkt, Personal, Post, Preis",
+      "Projekt, Präsentation, Power, Position"
+    ],
+    "korrekt": 0,
+    "erklaerung": "اردو: Marketing-Mix چار عناصر پر مشتمل ہوتا ہے: مصنوعات، قیمت، جگہ اور تشہیر۔"
+  },
+  {
+    "frage": "Was ist ein Ziel der Werbung?",
+    "antworten": [
+      "Steuern sparen",
+      "Produktion reduzieren",
+      "Aufmerksamkeit erregen und Kunden gewinnen",
+      "Rechnungen schreiben"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: اشتہار بازی کا مقصد صارفین کی توجہ حاصل کرنا اور انہیں خریدار میں بدلنا ہوتا ہے۔"
+  },
+  {
+    "frage": "Was ist Direktmarketing?",
+    "antworten": [
+      "Werbung in Zeitungen",
+      "Verkaufsgespräch mit dem Kunden ohne Zwischenhändler",
+      "Fernsehwerbung",
+      "Radiowerbung"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Direct Marketing کا مطلب ہے براہِ راست صارف سے رابطہ اور پیشکش۔"
+  },
+  {
+    "frage": "Was versteht man unter Zielgruppe?",
+    "antworten": [
+      "Alle Menschen weltweit",
+      "Die Gruppe von Menschen, die man mit Werbung erreichen will",
+      "Nur Kinder unter 12 Jahren",
+      "Nur Unternehmer"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Zielgruppe وہ خاص افراد ہوتے ہیں جنہیں ایک مخصوص پروڈکٹ یا سروس بیچنے کا ہدف ہوتا ہے۔"
+  },
+  {
+    "frage": "Was bedeutet USP im Marketing?",
+    "antworten": [
+      "Unterschriebene Produktliste",
+      "Unique Selling Proposition – Alleinstellungsmerkmal",
+      "Unterschiedliche Preisstrategie",
+      "Unterstützende Produktpalette"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: USP وہ خاص چیز ہے جو آپ کی پیشکش کو دوسروں سے ممتاز بناتی ہے۔"
+  },
+  {
+    "frage": "Welches Medium gehört zum Online-Marketing?",
+    "antworten": [
+      "TV",
+      "Zeitung",
+      "Radio",
+      "Soziale Medien"
+    ],
+    "korrekt": 3,
+    "erklaerung": "اردو: Online-Marketing میں Facebook، Instagram اور دیگر سوشل میڈیا پلیٹ فارم استعمال ہوتے ہیں۔"
+  },
+  {
+    "frage": "Was ist Guerilla-Marketing?",
+    "antworten": [
+      "Normale Fernsehwerbung",
+      "Marketing mit kleinem Budget, aber kreativer Wirkung",
+      "Nur Flugblätter verteilen",
+      "Verkauf über Großhändler"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Guerilla Marketing ایک تخلیقی اور غیر روایتی انداز ہے جس سے کم وسائل میں زیادہ اثر حاصل کیا جا سکتا ہے۔"
+  },
+  {
+    "frage": "Was bedeutet 'Markenbildung'?",
+    "antworten": [
+      "Ein Produkt kopieren",
+      "Ein einprägsames Image einer Firma oder eines Produkts schaffen",
+      "Ein Unternehmen schließen",
+      "Ein Preisausschreiben organisieren"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Markenbildung کا مطلب ہے کہ ایک ایسا تاثر پیدا کیا جائے جو صارفین کے ذہن میں بیٹھ جائے۔"
+  },
+  {
+    "frage": "Was ist ein Slogan?",
+    "antworten": [
+      "Eine Produktnummer",
+      "Ein Werbespruch",
+      "Ein Firmenname",
+      "Ein Preisangebot"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Slogan ایک مختصر اور مؤثر جملہ ہوتا ہے جو کسی برانڈ کی پہچان بن جاتا ہے۔"
+  }
+[
+  {
+    "frage": "Was ist der Zweck einer Marktanalyse?",
+    "antworten": [
+      "Um Produkte zu verpacken",
+      "Um die Konkurrenz zu ignorieren",
+      "Um den Markt, Kunden und Wettbewerb zu verstehen",
+      "Um Mitarbeiter zu entlassen"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: مارکیٹ انیلیسس کا مقصد مارکیٹ اور مقابلہ کو سمجھنا ہوتا ہے تاکہ بہتر حکمت عملی بنائی جا سکے۔"
+  },
+  {
+    "frage": "Welche Bedeutung hat Kundenbindung im Marketing?",
+    "antworten": [
+      "Kunden einmal bedienen und vergessen",
+      "Langfristige Beziehung zum Kunden aufbauen",
+      "Nur Preise senken",
+      "Rechnungen verstecken"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: گاہک سے دیرپا تعلق قائم رکھنا ایک کامیاب مارکیٹنگ کی بنیاد ہے۔"
+  },
+  {
+    "frage": "Was ist Influencer-Marketing?",
+    "antworten": [
+      "Werbung über bekannte Persönlichkeiten in sozialen Medien",
+      "Nur Fernsehwerbung",
+      "Zeitungsanzeigen schalten",
+      "Werbung durch Radio"
+    ],
+    "korrekt": 0,
+    "erklaerung": "اردو: Influencer Marketing میں مشہور افراد اپنے فالورز کو پروڈکٹ کی سفارش کرتے ہیں۔"
+  },
+  {
+    "frage": "Was ist der Unterschied zwischen B2B und B2C Marketing?",
+    "antworten": [
+      "B2B ist für Privatkunden, B2C für Unternehmen",
+      "B2B ist teurer",
+      "B2B richtet sich an Unternehmen, B2C an Endkunden",
+      "Es gibt keinen Unterschied"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: B2B بزنس ٹو بزنس جبکہ B2C بزنس ٹو کنزیومر مارکیٹنگ کہلاتی ہے۔"
+  },
+  {
+    "frage": "Was gehört zur Produktpolitik?",
+    "antworten": [
+      "Lagerhaltung",
+      "Gestaltung und Qualität eines Produkts",
+      "Steuern berechnen",
+      "Verträge kündigen"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Product Policy میں مصنوعات کا ڈیزائن، معیار اور خصوصیات شامل ہوتی ہیں۔"
+  },
+  {
+    "frage": "Was ist ein typisches Ziel von Promotion im Marketing-Mix?",
+    "antworten": [
+      "Steuern sparen",
+      "Produktbekanntheit steigern",
+      "Löhne kürzen",
+      "Personal abbauen"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: پروموشن کا مقصد مصنوعات یا خدمات کی پہچان بڑھانا ہے۔"
+  },
+  {
+    "frage": "Was versteht man unter Preisdifferenzierung?",
+    "antworten": [
+      "Einheitspreis für alle Kunden",
+      "Verschiedene Preise für unterschiedliche Kundengruppen",
+      "Kostenlose Lieferung",
+      "Nur Rabattaktionen"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Preisdifferenzierung میں مختلف صارفین کو مختلف قیمتیں دی جاتی ہیں۔"
+  },
+  {
+    "frage": "Was ist ein Marktsegment?",
+    "antworten": [
+      "Ein Verkaufsort",
+      "Ein bestimmter Teil des Gesamtmarktes",
+      "Ein Produktregal",
+      "Ein Verpackungstyp"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Marktsegment ایک خاص صارفین کی قسم ہوتی ہے جس کی مخصوص ضروریات ہوتی ہیں۔"
+  },
+  {
+    "frage": "Wofür steht CRM im Marketing?",
+    "antworten": [
+      "Computer Reparatur Management",
+      "Customer Relationship Management",
+      "Cash Return Model",
+      "Creative Resource Marketing"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: CRM گاہک کے ساتھ تعلقات کو منظم کرنے کا سسٹم ہے۔"
+  },
+  {
+    "frage": "Was ist ein Flyer im Marketing?",
+    "antworten": [
+      "Ein Flugzeug",
+      "Ein schriftliches Werbemittel",
+      "Ein Online-Shop",
+      "Ein Plakat im Radio"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Flyer ایک پرنٹ اشتہار ہوتا ہے جو عام طور پر ہاتھ سے تقسیم کیا جاتا ہے۔"
+  },
+
+  {
+    "frage": "Was bedeutet 'Marktforschung'?",
+    "antworten": [
+      "Untersuchung von Märkten und Kundenwünschen",
+      "Entwicklung neuer Logos",
+      "Reparatur von Geräten",
+      "Werbungskosten berechnen"
+    ],
+    "korrekt": 0,
+    "erklaerung": "اردو: Marktforschung کا مطلب ہے مارکیٹ کی تحقیق کرنا تاکہ صحیح فیصلے لیے جا سکیں۔"
+  },
+  {
+    "frage": "Was bedeutet 'Positionierung' im Marketing?",
+    "antworten": [
+      "GPS-Tracking",
+      "Die Wahrnehmung eines Produkts im Kopf des Kunden",
+      "Verpackung gestalten",
+      "Preis erhöhen"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Positionierung وہ طریقہ ہے جس سے صارف ایک برانڈ کو یاد رکھتا ہے۔"
+  },
+  {
+    "frage": "Welche Farbe steht oft für Vertrauen im Marketing?",
+    "antworten": [
+      "Rot",
+      "Grün",
+      "Blau",
+      "Gelb"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: نیلا رنگ اکثر بھروسے اور سیکیورٹی کا تاثر دیتا ہے۔"
+  },
+  {
+    "frage": "Was bedeutet 'Conversion Rate'?",
+    "antworten": [
+      "Währungsumrechnung",
+      "Anteil der Website-Besucher, die eine gewünschte Aktion durchführen",
+      "Anteil an Fernsehwerbung",
+      "Umfrageantworten"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Conversion Rate وہ فیصد ہے جو ظاہر کرتی ہے کتنے صارفین خریدار بنے۔"
+  },
+  {
+    "frage": "Was ist ein Werbespot?",
+    "antworten": [
+      "Ein Verkaufsstand",
+      "Ein kurzer Werbefilm im TV oder Internet",
+      "Ein Gutschein",
+      "Ein Gewinnspiel"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Werbespot ایک مختصر ویڈیو یا آڈیو اشتہار ہوتا ہے۔"
+  },
+  {
+    "frage": "Was bedeutet Markenloyalität?",
+    "antworten": [
+      "Kunden wechseln oft die Marke",
+      "Kunden bleiben einer Marke über längere Zeit treu",
+      "Marken dürfen nicht verwendet werden",
+      "Nur Rabatte nutzen"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Markenloyalität کا مطلب ہے گاہک کا مخصوص برانڈ پر وفادار رہنا۔"
+  },
+  {
+    "frage": "Was bedeutet 'Marktsättigung'?",
+    "antworten": [
+      "Es gibt keine Produkte",
+      "Die Nachfrage ist höher als das Angebot",
+      "Der Markt ist mit dem Produkt bereits voll versorgt",
+      "Produkte sind ausverkauft"
+    ],
+    "korrekt": 2,
+    "erklaerung": "اردو: Marktsättigung تب ہوتی ہے جب مارکیٹ میں نئی مانگ نہیں بچتی۔"
+  },
+  {
+    "frage": "Was ist ein Werbegeschenk?",
+    "antworten": [
+      "Ein teurer Preis",
+      "Ein kostenloser Artikel zur Werbung",
+      "Ein Produkt ohne Verpackung",
+      "Ein Einkaufsgutschein"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Werbegeschenk ایک مفت چیز ہوتی ہے جو گاہک کو متوجہ کرنے کے لیے دی جاتی ہے۔"
+  },
+  {
+    "frage": "Was bedeutet Cross-Selling?",
+    "antworten": [
+      "Produkte umtauschen",
+      "Zusätzliche, passende Produkte zum Hauptprodukt anbieten",
+      "Rückerstattungen geben",
+      "Verkauf an Freunde"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Cross-Selling کا مطلب ہے کہ کسی پروڈکٹ کے ساتھ دوسری متعلقہ چیزیں بھی فروخت کرنا۔"
+  },
+  {
+    "frage": "Was ist ein Corporate Design?",
+    "antworten": [
+      "Die Finanzplanung",
+      "Einheitliches Erscheinungsbild einer Firma",
+      "Ein Verkaufsbericht",
+      "Ein Betriebsrat"
+    ],
+    "korrekt": 1,
+    "erklaerung": "اردو: Corporate Design ایک کمپنی کی مکمل شناختی بصری ترتیب ہے۔"
+  }
+]

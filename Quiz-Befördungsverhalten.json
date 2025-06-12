@@ -1,0 +1,222 @@
+[[
+  {
+    "frage": "Worauf hat ein Fahrgast in einem Taxi immer Anspruch?",
+    "antworten": [
+      "Auf eine Quittung über den Fahrpreis.",
+      "Auf ein kostenloses Getränk.",
+      "Auf Musik nach Wunsch.",
+      "Auf einen Kindersitz."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Jeder Fahrgast kann eine Quittung über den gezahlten Fahrpreis verlangen."
+  },
+  {
+    "frage": "Darf ein Taxifahrer Fahrgäste ohne triftigen Grund ablehnen?",
+    "antworten": [
+      "Nein, es besteht Beförderungspflicht.",
+      "Ja, jederzeit.",
+      "Nur wenn es regnet.",
+      "Nur bei langen Strecken."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Taxifahrer sind zur Beförderung verpflichtet und dürfen Fahrgäste nur in Ausnahmefällen ablehnen."
+  },
+  {
+    "frage": "Wann darf ein Fahrgast die Route im Taxi bestimmen?",
+    "antworten": [
+      "Immer, solange keine Gesetze verletzt werden.",
+      "Nie.",
+      "Nur bei Fahrten außerhalb der Stadt.",
+      "Nur, wenn er mehr bezahlt."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Der Fahrgast darf die gewünschte Strecke vorgeben, sofern dies rechtlich zulässig ist."
+  },
+  {
+    "frage": "Wie muss ein Fahrpreis im Taxi abgerechnet werden?",
+    "antworten": [
+      "Nach dem behördlich festgelegten Taxitarif.",
+      "Nach Verhandlung mit dem Fahrer.",
+      "Nach Tageszeit.",
+      "Nach Alter des Fahrgasts."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Der Taxifahrer muss den vom Taxameter angezeigten, amtlich festgelegten Tarif verlangen."
+  },
+  {
+    "frage": "Darf ein Fahrgast verlangen, dass das Taxi rauchfrei ist?",
+    "antworten": [
+      "Ja, in Taxis gilt Rauchverbot.",
+      "Nein, es entscheidet der Fahrer.",
+      "Nur bei leerem Wagen.",
+      "Nur bei Fahrten unter 5 km."
+    ],
+    "korrekt": 0,
+    "erklaerung": "In allen Taxis gilt gesetzliches Rauchverbot – auch für Fahrer."
+  },
+  {
+    "frage": "Was tun bei vergessenen Gegenständen im Taxi?",
+    "antworten": [
+      "Das Taxiunternehmen oder das zuständige Fundbüro kontaktieren.",
+      "Nichts, die Sachen sind verloren.",
+      "Direkt die Polizei rufen.",
+      "Den Fahrer privat anrufen."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Fundsachen sind im Taxi beim Unternehmer/Fundbüro zu melden."
+  },
+  {
+    "frage": "Kann ein Fahrgast die Beförderung mit Rollstuhl verlangen?",
+    "antworten": [
+      "Ja, soweit es technisch und rechtlich möglich ist.",
+      "Nein, nie.",
+      "Nur wenn er allein fährt.",
+      "Nur mit eigenem Begleiter."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Taxis müssen nach Möglichkeit auch Rollstuhlfahrern die Beförderung ermöglichen."
+  },
+  {
+    "frage": "Wann darf ein Taxifahrer die Fahrt beenden oder abbrechen?",
+    "antworten": [
+      "Nur bei Gefahr oder schwerwiegenden Verstößen des Fahrgasts.",
+      "Wenn der Fahrgast zu viel Gepäck hat.",
+      "Bei jeder kurzen Strecke.",
+      "Wenn ihm das Ziel nicht gefällt."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Nur bei Gefahr oder schweren Verstößen darf die Fahrt abgebrochen werden."
+  },
+  {
+    "frage": "Darf ein Taxi Fahrgäste an beliebigen Orten absetzen?",
+    "antworten": [
+      "Ja, sofern es der Straßenverkehr zulässt.",
+      "Nein, nur an Taxiständen.",
+      "Nur am Hauptbahnhof.",
+      "Nur zu Hause beim Fahrer."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Fahrgäste dürfen im Rahmen der Straßenverkehrsordnung am gewünschten Ort aussteigen."
+  },
+  {
+    "frage": "Müssen Taxis Kindersitze mitführen?",
+    "antworten": [
+      "Nein, aber Kinder müssen besonders gesichert werden.",
+      "Ja, immer mindestens zwei.",
+      "Nur bei Nachtfahrten.",
+      "Nur bei Strecken über 10 km."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Taxis müssen grundsätzlich für die Sicherung von Kindern sorgen, Kindersitze sind aber nicht immer vorgeschrieben."
+  },
+  {
+    "frage": "Was regelt das Fahrpersonalrecht?",
+    "antworten": [
+      "Die Arbeits- und Lenkzeiten von Fahrern im gewerblichen Verkehr.",
+      "Das Mietrecht für Fahrzeuge.",
+      "Das Steuerrecht für Unternehmen.",
+      "Die Zulassung von Fahrzeugen."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Das Fahrpersonalrecht regelt die Lenk-, Arbeits- und Ruhezeiten für Fahrer im gewerblichen Verkehr."
+  },
+  {
+    "frage": "Was ist ein Fahrtenschreiber?",
+    "antworten": [
+      "Ein Gerät zur Aufzeichnung von Lenk- und Ruhezeiten.",
+      "Ein Navigationsgerät.",
+      "Ein Funkgerät.",
+      "Ein Reifendruckmessgerät."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Der Fahrtenschreiber (Tachograph) dokumentiert die Lenk- und Ruhezeiten von Fahrern."
+  },
+  {
+    "frage": "Wie lange dürfen Taxifahrer ohne Unterbrechung höchstens fahren?",
+    "antworten": [
+      "Maximal 4,5 Stunden am Stück.",
+      "Maximal 8 Stunden.",
+      "Maximal 2 Stunden.",
+      "Unbegrenzt."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Nach 4,5 Stunden Fahrt muss eine Pause eingelegt werden."
+  },
+  {
+    "frage": "Was muss nach einer Lenkzeit von 4,5 Stunden mindestens erfolgen?",
+    "antworten": [
+      "Eine Pause von mindestens 45 Minuten.",
+      "Eine neue Fahrt mit anderem Fahrzeug.",
+      "Ein Fahrzeugwechsel.",
+      "Eine Tankpause von 5 Minuten."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Nach 4,5 Stunden Lenkzeit ist eine Pause von mindestens 45 Minuten vorgeschrieben."
+  },
+  {
+    "frage": "Welche Gesamtlenkzeit darf ein Fahrer pro Woche nicht überschreiten?",
+    "antworten": [
+      "56 Stunden.",
+      "40 Stunden.",
+      "70 Stunden.",
+      "100 Stunden."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Die maximal zulässige Lenkzeit pro Woche beträgt 56 Stunden."
+  },
+  {
+    "frage": "Was ist unter 'Ruhezeit' zu verstehen?",
+    "antworten": [
+      "Die Zeit, in der der Fahrer keine beruflichen Tätigkeiten ausübt.",
+      "Die Fahrzeit auf der Autobahn.",
+      "Die Zeit zum Tanken.",
+      "Die Zeit für Fahrzeugpflege."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Ruhezeit ist die arbeitsfreie Zeit, in der keine beruflichen Tätigkeiten erfolgen."
+  },
+  {
+    "frage": "Müssen Fahrgäste auf Lenk- und Ruhezeiten achten?",
+    "antworten": [
+      "Nein, die Verantwortung liegt beim Fahrer und Unternehmer.",
+      "Ja, sie müssen den Fahrer überwachen.",
+      "Nur bei Busfahrten.",
+      "Nur auf Autobahnen."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Für die Einhaltung der Lenk- und Ruhezeiten sind Fahrer und Unternehmer verantwortlich."
+  },
+  {
+    "frage": "Was passiert bei Verstößen gegen das Fahrpersonalrecht?",
+    "antworten": [
+      "Es drohen Bußgelder und ggf. Fahrverbot.",
+      "Der Führerschein wird automatisch entzogen.",
+      "Das Fahrzeug wird eingezogen.",
+      "Es passiert nichts."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Verstöße gegen die Lenk- und Ruhezeiten werden mit Bußgeldern und ggf. Fahrverbot geahndet."
+  },
+  {
+    "frage": "Welche Dokumente muss ein Fahrer stets mitführen?",
+    "antworten": [
+      "Führerschein, Personalausweis und Nachweise über Lenk- und Ruhezeiten.",
+      "Nur den Führerschein.",
+      "Nur die Fahrzeugpapiere.",
+      "Gar keine Dokumente."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Fahrer müssen Führerschein und alle nötigen Nachweise über Arbeits-, Lenk- und Ruhezeiten bei sich führen."
+  },
+  {
+    "frage": "Wer ist für die Kontrolle der Lenk- und Ruhezeiten zuständig?",
+    "antworten": [
+      "Polizei und das Bundesamt für Güterverkehr.",
+      "Das Arbeitsamt.",
+      "Der Fahrgast.",
+      "Das Finanzamt."
+    ],
+    "korrekt": 0,
+    "erklaerung": "Die Polizei und das BAG kontrollieren die Einhaltung der Lenk- und Ruhezeiten."
+  }
+]
