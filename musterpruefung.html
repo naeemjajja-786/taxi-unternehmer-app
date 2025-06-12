@@ -9,23 +9,27 @@
 <body>
   <header>
     <h1>📑 Musterprüfung</h1>
-    <div class="timer" id="timer">⏳ 110:00</div>
   </header>
+
   <main id="app">
-    <div id="exam-container">
-      <div id="teil1">
-        <h2>Teil 1</h2>
-        <div id="questions1"></div>
-      </div>
-      <div id="teil2">
-        <h2>Teil 2</h2>
-        <div id="questions2"></div>
-      </div>
-      <button id="submit-btn" class="quiz-btn">Abschließen</button>
-      <div id="result"></div>
+    <div id="teil1-container" class="exam-section">
+      <h2>Teil 1</h2>
+      <p class="timer" id="timer1">⏳ 50:00</p>
+      <div id="teil1-questions"></div>
+      <button class="quiz-btn" onclick="finishTeil1()">Teil 1 abschließen</button>
     </div>
+
+    <div id="teil2-container" class="exam-section" style="display: none;">
+      <h2>Teil 2</h2>
+      <p class="timer" id="timer2">⏳ 60:00</p>
+      <div id="teil2-questions"></div>
+      <button class="quiz-btn" onclick="finishExam()">Gesamtergebnis anzeigen</button>
+    </div>
+
+    <div id="result"></div>
     <button class="zuruck-btn" onclick="history.back()">Zurück</button>
   </main>
+
   <script src="musterpruefung.js"></script>
 </body>
 </html>
