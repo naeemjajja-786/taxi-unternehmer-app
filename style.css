@@ -29,88 +29,86 @@ header, footer {
 }
 
 main#app {
-  max-width: 600px;
+  max-width: 800px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-h1, h2, h3 {
-  margin-bottom: 1rem;
+#main-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
-.quiz-btn, .zuruck-btn {
-  display: inline-block;
-  margin: 1rem 0.5rem 0 0;
-  padding: 0.8rem 1.2rem;
-  font-size: 1rem;
-  font-weight: bold;
+.menu-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  width: 80%;
+  max-width: 400px;
   border: none;
   border-radius: var(--radius);
-  cursor: pointer;
-  background: var(--accent);
+  background: var(--primary);
   color: var(--white);
+  cursor: pointer;
   transition: background var(--transition);
 }
 
-.quiz-btn:hover, .zuruck-btn:hover {
-  background: var(--primary);
+.menu-btn:hover {
+  background: var(--accent);
 }
 
-#exam-container {
-  background: var(--white);
+.quiz-topic-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.quiz-btn, .zuruck-btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border: none;
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 1.5rem;
-  margin-bottom: 2rem;
+  background: var(--accent);
+  color: var(--white);
+  cursor: pointer;
 }
 
 .question {
-  margin-bottom: 0.5rem;
-  font-weight: 600;
+  font-weight: bold;
+  margin-top: 1rem;
 }
 
 ul.options {
   list-style: none;
-  padding-left: 0;
-  margin-bottom: 2rem;
+  padding: 0;
 }
 
 ul.options li {
-  margin-bottom: 0.5rem;
+  margin: 0.3rem 0;
 }
 
 .option-button {
   width: 100%;
-  text-align: left;
   padding: 0.7rem;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: #f1f4fb;
   cursor: pointer;
-  transition: all var(--transition);
 }
 
 .option-button:hover {
   background: var(--primary);
-  color: var(--white);
+  color: white;
 }
 
 .option-button.selected {
   background: var(--accent);
-  color: var(--white);
-  border-color: var(--accent);
+  color: white;
 }
 
-#result {
-  margin-top: 1.5rem;
-  font-size: 1.1rem;
+.timer {
+  float: right;
   font-weight: bold;
-  color: var(--primary);
-}
-
-@media (max-width: 600px) {
-  .quiz-btn, .zuruck-btn {
-    width: 100%;
-    margin: 0.5rem 0;
-  }
 }
