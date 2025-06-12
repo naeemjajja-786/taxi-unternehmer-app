@@ -5,7 +5,6 @@
   <title>Musterprüfung</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script defer src="musterpruefung.js"></script>
 </head>
 <body>
   <header>
@@ -13,7 +12,7 @@
   </header>
   <main id="app">
     <div id="exam-container">
-      <div id="timer">⏱️ 110:00 Minuten</div>
+      <div id="timer">⏳ 1:50:00</div>
       <div id="teil1">
         <h2>Teil 1</h2>
         <div id="questions1"></div>
@@ -25,9 +24,9 @@
       <button id="submit-btn" class="quiz-btn">Abschließen</button>
       <div id="result"></div>
     </div>
-    <div class="button-wrapper">
-      <button class="zuruck-btn" onclick="history.back()">← Zurück</button>
-    </div>
+    <button class="zuruck-btn" onclick="history.back()">Zurück</button>
   </main>
+
+  <script src="musterpruefung.js"></script>
 </body>
 </html>
