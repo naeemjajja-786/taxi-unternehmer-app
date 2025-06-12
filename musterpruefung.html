@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Musterprüfung</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>📑 Musterprüfung</h1>
-  </header>
-
+  <header><h1>📑 Musterprüfung</h1></header>
   <main id="app">
-    <div id="timer" class="timer-box">⏱️ <span id="time">00:00</span></div>
+    <div id="timer">🕒 50:00</div>
     <div id="exam-container">
-      <div id="teil1" class="exam-section"></div>
-      <div id="teil2" class="exam-section" style="display: none;"></div>
+      <div id="teil1" class="exam-section">
+        <h2>Teil 1</h2>
+        <div id="questions1"></div>
+      </div>
+      <div id="teil2" class="exam-section hidden">
+        <h2>Teil 2</h2>
+        <div id="questions2"></div>
+      </div>
+    </div>
+    <div id="actions">
+      <button id="teil2-btn" class="hidden">Teil 2 starten</button>
+      <button id="submit-btn" class="hidden">Abschließen</button>
       <div id="result"></div>
     </div>
-    <button id="next-btn" class="quiz-btn" style="display:none;">Teil 2 Starten</button>
-    <button id="submit-btn" class="quiz-btn" style="display:none;">Abschließen</button>
     <button class="zuruck-btn" onclick="history.back()">← Zurück</button>
   </main>
-
   <script src="musterpruefung.js"></script>
 </body>
 </html>
