@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Themen Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🧠 Themen Quiz</h1>
+  </header>
+  <main id="app">
+    <div id="quiz-container">
+      <div id="question-container">
+        <div id="question" class="question"></div>
+        <ul id="options" class="options"></ul>
+      </div>
+      <div id="feedback" class="feedback"></div>
+      <button id="next-btn" class="quiz-btn">Nächstes</button>
+    </div>
+    <button class="zuruck-btn" onclick="history.back()">Zurück</button>
+  </main>
+
+  <script>
+    let quizData = [];
+    let currentQuestion = 0;
+
+    const params = new URLSearchParams(window.location.search);
+    const quizFile = params.get('file');
+
+    const questionEl = document.getElementById('question');
+    const optionsEl = document.getElementById('options');
+    const feedbackEl = document.getElementById('feedback');
+    const nextBtn = document.getElementById('next-btn');
+
+    // JSON سے سوالات لوڈ کریں
+    fetch(quizFile)
+      .then(res => res.json())
+      .then(data => {
+        quizData = data;
+        showQuestion();
+      })
+      .catch(err => {
+        questionEl.textContent = "Quiz آپ لوڈ نہیں ہو سکا۔";
+        console.error(err);
+      });
+
+    function showQuestion() {
+      feedbackEl.textContent = '';
+      optionsEl.innerHTML = '';
+      if (currentQuestion < quizData.length) {
+        const qObj = quizData[currentQuestion];
+        questionEl.textContent = qObj.frage || '';
+        // جوابات کے لیے بٹن
+        qObj.antworten.forEach(ans => {
+          const li = document.createElement('li');
+          const btn = document.createElement('button');
+          btn.className = 'option-button';
+          btn.textContent = ans;
+          btn.addEventListener('click', () => checkAnswer(ans));
+          li.appendChild(btn);
+          optionsEl.appendChild(li);
+        });
+        // اگلا بٹن غیرفعال کریں جب تک جواب نہ دیا جائے
+        nextBtn.disabled = true;
+      } else {
+        // جب تمام سوالات ختم ہوں
+        questionEl.textContent = "Quiz ختم ہو چکا ہے!";
+        nextBtn.style.display = 'none';
+      }
+    }
+
+    function checkAnswer(selected) {
+      const qObj = quizData[currentQuestion];
+      // درست اور غلط جواب پہچانیں
+      Array.from(optionsEl.children).forEach(li => {
+        const btn = li.firstChild;
+        if (btn.textContent === qObj.richtigeAntwort) {
+          btn.classList.add('correct');
+        }
+        if (btn.textContent === selected && selected !== qObj.richtigeAntwort) {
+          btn.classList.add('incorrect');
+        }
+        btn.disabled = true;
+      });
+      // feedback دکھائیں
+      if (selected === qObj.richtigeAntwort) {
+        feedbackEl.textContent = "درست! " + (qObj.erklärung || '');
+      } else {
+        feedbackEl.textContent = "غلط! صحیح جواب: " + qObj.richtigeAntwort + (qObj.erklärung ? ' | ' + qObj.erklärung : '');
+      }
+      nextBtn.disabled = false;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      currentQuestion++;
+      showQuestion();
+    });
+  </script>
+</body>
+</html>
