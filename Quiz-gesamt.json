@@ -1,3 +1,4 @@
+[
     {
       "id": 1,
       "question": "Tricky gefragt: In welchem Fall erblickt man die Vorschriften des Personenbeförderungsgesetzes (PBEFG) in Aktion?",
@@ -388,14 +389,7 @@
       "explanation": "Zur Entgeltberechnung im Mietwagen wird der Wegstreckenzähler oder ein gleichwertiges, konformitätsbewertetes, softwarebasiertes System verwendet.",
       "trickHint": "Denk nicht zu offensichtlich – es geht um die Erfassung der zurückgelegten Strecke!"
     }
-    /* --------------------------------------------------------------------------------
-         Frageobjekte 31 bis 271 folgen in gleichem "tricky" Stil und basieren auf den
-         originalen Prüfungsfragen aus der TAXI-DE.pdf Datei.
-         Aus Platzgründen folgt hier die vollständige JSON-Struktur mit allen 271 Fragen.
-         Die einzelnen Frageobjekte wurden aus dem Text extrahiert, um sicherzustellen,
-         dass jede Frage, ihr Inhalt, die vier Antwortoptionen, der richtige Eintrag,
-         eine kurze Erklärung und ein zusätzlicher Trick-Hinweis enthalten sind.
-         -------------------------------------------------------------------------------- */
+    
     ,
     {
       "id": 31,
@@ -657,12 +651,7 @@
       "explanation": "Ein Betriebsleiter muss bestellt werden, wenn es die Behörde anordnet, was insbesondere dann üblich ist, wenn das Unternehmen mehr als 10 Fahrzeuge einsetzt.",
       "trickHint": "Die Größe des Fuhrparks ist hier entscheidend!"
     }
-    /* --------------------------------------------------------------------------------
-         Die Frageobjekte 51 bis 271 werden in demselben Detailgrad und 'tricky' Stil fortgeführt.
-         Aufgrund der Länge liste ich hier nun alle weiteren Frageobjekte abschließend auf.
-         Alle 271 Fragen enthalten neben dem 'Tricky gefragt:' Fragetext auch vier Antwortoptionen,
-         den Schlüssel der richtigen Antwort, eine kurze Erklärung und einen Trick-Hinweis.
-         -------------------------------------------------------------------------------- */
+    
     ,
     {
       "id": 51,
@@ -782,4 +771,5 @@
       "trickHint": "Denken Sie: Werbung ist erlaubt – aber nicht jede Form davon!"
     },
     {
-      "id
+      "id":null}
+]
