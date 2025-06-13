@@ -1,33 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Musterprüfung</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>📑 Musterprüfung</h1>
-    <div id="timer">⏱️</div>
   </header>
   <main id="app">
     <div id="exam-container">
+      <div id="timer"></div>
       <div id="teil1">
         <h2>Teil 1</h2>
         <div id="questions1"></div>
-        <button id="next-to-teil2" class="quiz-btn">🡆 Teil 1 abschließen</button>
+        <button id="next-to-teil2" class="quiz-btn">Teil 1 abschließen &rarr; Teil 2</button>
       </div>
-      <div id="teil2" style="display:none;">
+      <div id="teil2" style="display:none">
         <h2>Teil 2</h2>
         <div id="questions2"></div>
-        <button id="submit-btn" class="quiz-btn">✅ Prüfung abschließen</button>
-        <div id="result"></div>
+        <button id="submit-btn" class="quiz-btn">Prüfung abschließen</button>
       </div>
+      <div id="result"></div>
     </div>
-    <button class="zuruck-btn" onclick="history.back()">Zurück</button>
+    <button class="back-btn" onclick="window.location.href='index.html'">Zurück zum Hauptmenü</button>
   </main>
+  <footer>
+    <p>&copy; 2025 Taxi LernApp</p>
+  </footer>
   <script src="musterpruefung.js"></script>
 </body>
 </html>
