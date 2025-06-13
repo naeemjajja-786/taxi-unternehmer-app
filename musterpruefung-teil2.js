@@ -1,86 +1,86 @@
-let teil2Fragen = [];
-let currentQuestionIndex2 = 0;
-let scoreTeil2 = 0;
-let answeredTeil2 = [];
+let teil2Data = [];
+let currentCaseIndex = 0;
+let currentTaskIndex = 0;
+let teil2Score = 0;
 
-function startExamTeil2() {
-  fetch("Exams-Teil2.json")
-    .then((res) => res.json())
-    .then((data) => {
-      teil2Fragen = data.slice(0, 10); // پہلی 10 Fallstudien یا Fragen
-      document.getElementById("start-buttons").style.display = "none";
-      document.getElementById("quiz-container").classList.remove("hidden");
-      document.getElementById("quiz-container").dataset.teil = "2";
-      currentQuestionIndex2 = 0;
-      scoreTeil2 = 0;
-      answeredTeil2 = [];
-      showQuestionTeil2();
-    })
-    .catch((err) => {
-      console.error("Fehler beim Laden von Teil 2:", err);
-      alert("❌ Teil 2 konnte nicht geladen werden.");
-    });
+async function startTeil2() {
+  document.getElementById("start-buttons").classList.add("hidden");
+  document.getElementById("quiz-container").classList.remove("hidden");
+
+  const response = await fetch("Exams-Teil2.json");
+  teil2Data = await response.json();
+
+  currentCaseIndex = 0;
+  currentTaskIndex = 0;
+  teil2Score = 0;
+
+  showTeil2Question();
 }
 
-function showQuestionTeil2() {
-  const frageObj = teil2Fragen[currentQuestionIndex2];
-  let text = "";
+function showTeil2Question() {
+  const currentCase = teil2Data[currentCaseIndex];
+  const currentTask = currentCase.tasks[currentTaskIndex];
 
-  if (frageObj.fallstudie && frageObj.tasks) {
-    // Fallstudie
-    text += `Fallstudie: ${frageObj.fallstudie}\n\n`;
-    frageObj.tasks.forEach((task, idx) => {
-      text += `${idx + 1}. ${task.frage}\n`;
-    });
+  document.getElementById("question-number").textContent = Fall ${currentCaseIndex + 1} – Aufgabe ${currentTaskIndex + 1} von ${currentCase.tasks.length};
+  document.getElementById("question-text").innerHTML = <strong>${currentCase.fallstudie}</strong><br><br>${currentTask.frage};
+  document.getElementById("feedback").textContent = "";
+
+  document.getElementById("user-answer").classList.remove("hidden");
+  document.getElementById("user-answer").value = "";
+  document.getElementById("options-container").innerHTML = "";
+}
+
+function submitAnswer() {
+  const answer = document.getElementById("user-answer").value.trim().toLowerCase();
+  const correctAnswer = teil2Data[currentCaseIndex].tasks[currentTaskIndex].richtigeAntwort.trim().toLowerCase();
+  const feedback = document.getElementById("feedback");
+
+  if (answer === correctAnswer) {
+    feedback.textContent = "Richtig!";
+    feedback.style.color = "green";
+    teil2Score += teil2Data[currentCaseIndex].tasks[currentTaskIndex].punkte;
   } else {
-    text = frageObj.frage;
+    feedback.textContent = Falsch! Richtige Antwort: ${teil2Data[currentCaseIndex].tasks[currentTaskIndex].richtigeAntwort};
+    feedback.style.color = "red";
   }
 
-  document.getElementById("question-number").textContent = `Frage ${currentQuestionIndex2 + 1} von ${teil2Fragen.length}`;
-  document.getElementById("question-text").textContent = text;
-  document.getElementById("user-answer").value = "";
-  document.getElementById("feedback").textContent = "";
+  setTimeout(() => {
+    nextTeil2Question();
+  }, 1500);
 }
 
-function submitAnswerTeil2() {
-  const input = document.getElementById("user-answer").value.trim();
-  const frageObj = teil2Fragen[currentQuestionIndex2];
-  let correct = false;
-
-  if (frageObj.fallstudie && frageObj.tasks) {
-    // Bei Fallstudien kein direkter Vergleich
-    document.getElementById("feedback").textContent = "Fallstudie beantwortet. Antwort gespeichert.";
-    correct = true; // Bewertet wird später manuell oder mit Tiefe
+function nextTeil2Question() {
+  currentTaskIndex++;
+  if (currentTaskIndex < teil2Data[currentCaseIndex].tasks.length) {
+    showTeil2Question();
   } else {
-    const richtigeAntwort = frageObj.richtigeAntwort?.trim() || "";
-    correct = input.toLowerCase() === richtigeAntwort.toLowerCase();
+    currentCaseIndex++;
+    currentTaskIndex = 0;
 
-    if (correct) {
-      document.getElementById("feedback").textContent = "✅ Richtig!";
-      scoreTeil2++;
+    if (currentCaseIndex < teil2Data.length) {
+      showTeil2Question();
     } else {
-      document.getElementById("feedback").textContent = `❌ Falsch. Richtige Antwort: ${richtigeAntwort}`;
+      showTeil2Ergebnis();
     }
   }
-
-  answeredTeil2.push({
-    frage: frageObj.frage || frageObj.fallstudie,
-    userAntwort: input,
-    richtig: correct,
-  });
-
-  currentQuestionIndex2++;
-  if (currentQuestionIndex2 < teil2Fragen.length) {
-    setTimeout(showQuestionTeil2, 2000);
-  } else {
-    showResultTeil2();
-  }
 }
 
-function showResultTeil2() {
+function showTeil2Ergebnis() {
   document.getElementById("quiz-container").classList.add("hidden");
-  const result = document.getElementById("teil2-result");
-  result.classList.remove("hidden");
-  result.innerHTML = `<h2>Teil 2 Ergebnis</h2><p>${scoreTeil2} von ${teil2Fragen.length} richtig beantwortet (bei Einzelaufgaben)</p>
-  <button onclick="location.reload()">Zurück zur Startseite</button>`;
+  const resultBox = document.getElementById("teil2-result");
+  resultBox.innerHTML = <h2>Teil 2 abgeschlossen</h2><p>Punkte: ${teil2Score}</p>;
+  resultBox.classList.remove("hidden");
+
+  showGesamtergebnis();
+}
+
+function showGesamtergebnis() {
+  document.getElementById("final-result").classList.remove("hidden");
+
+  const teil1Result = typeof teil1Score !== "undefined" ? teil1Score : 0;
+  document.getElementById("gesamtpunkte").textContent = Teil 1 Punkte: ${teil1Result} | Teil 2 Punkte: ${teil2Score};
+}
+
+function goBack() {
+  location.reload();
 }
