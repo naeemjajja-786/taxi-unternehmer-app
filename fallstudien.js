@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
       return resp.json();
     })
     .then(data => {
-      // Filtern: Nur Fälle mit 6 oder mehr Aufgaben
+      // Filtern: Nur Fälle mit 1 oder mehr Aufgaben
       let allCases = data.filter(
-        f => Array.isArray(f.tasks) && f.tasks.length >= 6 && typeof f.fall === "string"
+        f => Array.isArray(f.tasks) && f.tasks.length >= 1 && typeof f.fall === "string"
       );
       window.__fallCasesForReload = allCases; // für neue Fallstudie
       if (allCases.length === 0) {
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Zufälligen Fall nehmen
     const caseObj = allCases[Math.floor(Math.random() * allCases.length)];
     // 6–9 Aufgaben zufällig auswählen
-    let numTasks = Math.max(6, Math.min(9, caseObj.tasks.length));
+    let numTasks = Math.max(1, Math.min(9, caseObj.tasks.length));
     let tasks = [...caseObj.tasks];
     for (let i = tasks.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
