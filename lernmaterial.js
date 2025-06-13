@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // اپنی اصل فائل لسٹ یہاں پکا رکھیں
+  // اپنے json filenames یہاں درست رکھیں!
   const deutschFiles = [
     "1 Personenbeförderungsgesetz.json",
     "2 Gewerberecht.json",
@@ -183,6 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
     renderChapters("deutsch");
   };
 
+  // Back button (must be global!)
   window.goBack = function() {
     renderChapters(currentLang);
     backBtn.style.display = "none";
