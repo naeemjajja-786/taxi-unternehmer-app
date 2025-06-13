@@ -1,148 +1,99 @@
-// musterpruefung.js
-
+// JS für die Musterprüfung (Teil 1 & Teil 2)
 let teil1Fragen = [];
 let teil2Fallstudien = [];
-let currentTeil = 1;
+let currentTeil = null;
 let currentIndex = 0;
-let currentFragen = [];
-let userAnswers = [];
-let scoreTeil1 = 0;
-let scoreTeil2 = 0;
+let userPointsTeil1 = 0;
+let userPointsTeil2 = 0;
 
-async function loadExams() {
-  try {
-    const [teil1Response, teil2Response] = await Promise.all([
-      fetch('Exams-Teil1.json'),
-      fetch('Exams-Teil2.json')
-    ]);
-
-    teil1Fragen = await teil1Response.json();
-    teil2Fallstudien = await teil2Response.json();
-
-    document.getElementById("start-buttons").style.display = "block";
-  } catch (error) {
-    document.getElementById("quiz-container").innerHTML = "<p style='color:red;'>Fehler beim Laden der Prüfungsdaten.</p>";
-    console.error(error);
-  }
+function ladeDaten() {
+  Promise.all([
+    fetch('Exams-Teil1.json').then(r => r.json()),
+    fetch('Exams-Teil2.json').then(r => r.json())
+  ]).then(([teil1, teil2]) => {
+    teil1Fragen = shuffleArray(teil1);
+    teil2Fallstudien = shuffleArray(teil2);
+    document.getElementById('startContainer').style.display = 'block';
+  }).catch(err => {
+    alert('Fehler beim Laden der Prüfungsdaten: ' + err);
+  });
 }
 
-function startExam(teil) {
+document.addEventListener('DOMContentLoaded', ladeDaten);
+
+function starteTeil(teil) {
   currentTeil = teil;
   currentIndex = 0;
-  userAnswers = [];
-  currentFragen = teil === 1 ? teil1Fragen : teil2Fallstudien;
-  document.getElementById("start-buttons").style.display = "none";
-  document.getElementById("quiz-container").style.display = "block";
-  showQuestion();
+  userPointsTeil1 = 0;
+  userPointsTeil2 = 0;
+  document.getElementById('startContainer').style.display = 'none';
+  document.getElementById('quizContainer').style.display = 'block';
+  zeigeNaechsteFrage();
 }
 
-function showQuestion() {
-  const container = document.getElementById("quiz-container");
-  container.innerHTML = "";
+function zeigeNaechsteFrage() {
+  const container = document.getElementById('frageContainer');
+  container.innerHTML = '';
 
-  if (currentIndex >= currentFragen.length) {
-    calculateScore();
-    return;
-  }
-
-  const frageObj = currentFragen[currentIndex];
-
-  if (currentTeil === 1) {
-    const frageEl = document.createElement("div");
-    frageEl.innerHTML = `
-      <h3>Frage ${currentIndex + 1} von ${currentFragen.length}</h3>
-      <p><strong>${frageObj.frage}</strong></p>
-      <textarea id="antwort" rows="3" placeholder="Ihre Antwort..."></textarea>
-      <button onclick="nextQuestion()">Weiter</button>
+  if (currentTeil === 1 && currentIndex < teil1Fragen.length) {
+    const frageObj = teil1Fragen[currentIndex];
+    container.innerHTML = `
+      <div><strong>Frage ${currentIndex + 1}:</strong> ${frageObj.frage}</div>
+      <textarea id="antwortInput" rows="3" placeholder="Ihre Antwort..."></textarea>
+      <button onclick="bewerteAntwort()">Antwort prüfen</button>
     `;
-    container.appendChild(frageEl);
-  } else {
-    const fallstudieEl = document.createElement("div");
-    fallstudieEl.innerHTML = `
-      <h3>Fallstudie ${currentIndex + 1} von ${currentFragen.length}</h3>
-      <p><strong>${frageObj.fallstudie}</strong></p>
-    `;
-
-    frageObj.tasks.forEach((task, idx) => {
-      const taskEl = document.createElement("div");
-      taskEl.innerHTML = `
-        <p><strong>Aufgabe ${idx + 1}:</strong> ${task.frage}</p>
-        <textarea data-task="${idx}" rows="2" placeholder="Ihre Antwort..."></textarea>
+  } else if (currentTeil === 2 && currentIndex < teil2Fallstudien.length) {
+    const fallObj = teil2Fallstudien[currentIndex];
+    container.innerHTML = `<div><strong>Fallstudie ${currentIndex + 1}:</strong> ${fallObj.fallstudie}</div>`;
+    fallObj.tasks.forEach((task, i) => {
+      container.innerHTML += `
+        <div><strong>Teilaufgabe ${i + 1}:</strong> ${task.frage}</div>
+        <textarea id="antwortInput${i}" rows="2" placeholder="Ihre Antwort..."></textarea>
       `;
-      fallstudieEl.appendChild(taskEl);
     });
-
-    const nextBtn = document.createElement("button");
-    nextBtn.innerText = "Weiter";
-    nextBtn.onclick = nextQuestion;
-    fallstudieEl.appendChild(nextBtn);
-    container.appendChild(fallstudieEl);
-  }
-}
-
-function nextQuestion() {
-  if (currentTeil === 1) {
-    const answer = document.getElementById("antwort").value.trim();
-    userAnswers.push({
-      user: answer,
-      correct: currentFragen[currentIndex].richtigeAntwort,
-      punkte: currentFragen[currentIndex].punkte
-    });
+    container.innerHTML += '<button onclick="bewerteAntwort()">Antworten prüfen</button>';
   } else {
-    const inputs = document.querySelectorAll("textarea[data-task]");
-    const tasks = currentFragen[currentIndex].tasks;
-    inputs.forEach((input, i) => {
-      userAnswers.push({
-        user: input.value.trim(),
-        correct: tasks[i].richtigeAntwort,
-        punkte: tasks[i].punkte
-      });
-    });
+    zeigeErgebnis();
   }
-
-  currentIndex++;
-  showQuestion();
 }
 
-function calculateScore() {
-  let score = 0;
-  let max = 0;
-
-  userAnswers.forEach(entry => {
-    max += entry.punkte;
-    if (entry.user.toLowerCase() === entry.correct.toLowerCase()) {
-      score += entry.punkte;
+function bewerteAntwort() {
+  if (currentTeil === 1) {
+    const input = document.getElementById('antwortInput').value.trim().toLowerCase();
+    const korrekt = teil1Fragen[currentIndex].richtigeAntwort.trim().toLowerCase();
+    if (input === korrekt) {
+      userPointsTeil1 += teil1Fragen[currentIndex].punkte;
     }
-  });
+    currentIndex++;
+    zeigeNaechsteFrage();
 
-  if (currentTeil === 1) {
-    scoreTeil1 = score;
-  } else {
-    scoreTeil2 = score;
+  } else if (currentTeil === 2) {
+    const fall = teil2Fallstudien[currentIndex];
+    fall.tasks.forEach((task, i) => {
+      const userAntwort = document.getElementById('antwortInput' + i).value.trim().toLowerCase();
+      const richtigeAntwort = task.richtigeAntwort.trim().toLowerCase();
+      if (userAntwort === richtigeAntwort) {
+        userPointsTeil2 += task.punkte;
+      }
+    });
+    currentIndex++;
+    zeigeNaechsteFrage();
   }
+}
 
-  document.getElementById("quiz-container").innerHTML = `
-    <h2>Teil ${currentTeil} abgeschlossen</h2>
-    <p>Erreichte Punkte: ${score} von ${max}</p>
-    <button onclick="goToMenu()">Zurück zum Menü</button>
-    <button onclick="showFinalScore()">Gesamtergebnis anzeigen</button>
+function zeigeErgebnis() {
+  document.getElementById('quizContainer').style.display = 'none';
+  const ergebnis = document.getElementById('ergebnisContainer');
+  ergebnis.style.display = 'block';
+  ergebnis.innerHTML = `
+    <h2>Ergebnis</h2>
+    <p><strong>Teil 1 Punkte:</strong> ${userPointsTeil1}</p>
+    <p><strong>Teil 2 Punkte:</strong> ${userPointsTeil2}</p>
+    <p><strong>Gesamt:</strong> ${userPointsTeil1 + userPointsTeil2}</p>
+    <button onclick="location.reload()">Neu starten</button>
   `;
 }
 
-function goToMenu() {
-  document.getElementById("quiz-container").style.display = "none";
-  document.getElementById("start-buttons").style.display = "block";
+function shuffleArray(arr) {
+  return arr.map(x => [Math.random(), x]).sort().map(x => x[1]);
 }
-
-function showFinalScore() {
-  const total = scoreTeil1 + scoreTeil2;
-  document.getElementById("quiz-container").innerHTML = `
-    <h2>Gesamtergebnis</h2>
-    <p>Teil 1: ${scoreTeil1} Punkte</p>
-    <p>Teil 2: ${scoreTeil2} Punkte</p>
-    <p><strong>Gesamt: ${total} Punkte</strong></p>
-    <button onclick="goToMenu()">Zurück zum Menü</button>
-  `;
-}
-
-document.addEventListener("DOMContentLoaded", loadExams);
