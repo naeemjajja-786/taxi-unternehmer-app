@@ -5,9 +5,12 @@ window.onload = () => {
     fetch('Exams-Teil1.json').then(r => r.json()),
     fetch('Exams-Teil2.json').then(r => r.json())
   ]).then(([teil1data, teil2data]) => {
-    // Zufällige Fragen, 30 von Teil1, 10 von Teil2 (یا اپنی ضرورت)
-    teil1 = shuffle(teil1data).slice(0, 30);
-    teil2 = shuffle(teil2data).slice(0, 10);
+    // Flexible: جتنے سوال ہیں اتنے ہی اٹھیں گے (حد سے کم ہو تو error نہیں!)
+    teil1 = shuffle(teil1data).slice(0, Math.min(30, teil1data.length));
+    teil2 = shuffle(teil2data).slice(0, Math.min(10, teil2data.length));
+    // اگر صرف testing کر رہے ہیں تو یہ بھی لکھ سکتے ہیں:
+    // teil1 = teil1data;
+    // teil2 = teil2data;
     renderTeil1();
     startTimer(50 * 60, document.getElementById('timer'), () => {
       alert("⏰ Zeit für Teil 1 ist abgelaufen!");
