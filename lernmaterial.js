@@ -1,6 +1,5 @@
 // ----------- LERNMATERIAL.JS -------------
-// Deutsch: Nested (title > subchapters > subsections > points/etc)
-// Urdu: Supports full سوالات loop
+// For real-world "chapter/topics" structure, and robust urdu
 
 const deutschFiles = [
   "1 Personenbeförderungsgesetz.json",
@@ -51,156 +50,69 @@ function renderChapters(lang) {
 }
 
 function renderDeutschLesson(data) {
-  // data: array of chapter objects (wie Ihr Beispiel)
   chapterContent.innerHTML = "";
-  data.forEach(chapter => {
-    // Main title
-    let h1 = document.createElement("h2");
-    h1.textContent = chapter.title || chapter.titel || "Kapitel";
-    chapterContent.appendChild(h1);
+  // 1. Title
+  let h2 = document.createElement("h2");
+  h2.textContent = data.chapter || "Kapitel";
+  chapterContent.appendChild(h2);
 
-    // Subchapters
-    if (Array.isArray(chapter.subchapters)) {
-      chapter.subchapters.forEach(sub => {
-        let h2 = document.createElement("h3");
-        h2.textContent = sub.title || sub.id || "Unterkapitel";
-        chapterContent.appendChild(h2);
+  // 2. Topics
+  if (Array.isArray(data.topics)) {
+    data.topics.forEach(topic => {
+      let h3 = document.createElement("h3");
+      h3.textContent = (topic.id ? topic.id + " " : "") + (topic.title || "");
+      chapterContent.appendChild(h3);
 
-        if (sub.description) {
-          let d = document.createElement("div");
-          d.style.margin = "0.6rem 0 0.7rem 0";
-          d.textContent = sub.description;
-          chapterContent.appendChild(d);
+      // Main content (bullet points)
+      if (Array.isArray(topic.content)) {
+        let ul = document.createElement("ul");
+        topic.content.forEach(line => {
+          let li = document.createElement("li");
+          li.textContent = line;
+          ul.appendChild(li);
+        });
+        chapterContent.appendChild(ul);
+      }
+      // Explain
+      if (topic.explain) {
+        let div = document.createElement("div");
+        div.className = "note";
+        div.textContent = topic.explain;
+        chapterContent.appendChild(div);
+      }
+      // Example
+      if (topic.example) {
+        let div = document.createElement("div");
+        div.className = "note";
+        div.innerHTML = `<strong>Beispiel:</strong> ${topic.example}`;
+        chapterContent.appendChild(div);
+      }
+      // Media (if any, display as link or image)
+      if (topic.media) {
+        let mediaDiv = document.createElement("div");
+        mediaDiv.style.margin = "0.5em 0";
+        if (typeof topic.media === "string" && (topic.media.endsWith(".jpg") || topic.media.endsWith(".png"))) {
+          mediaDiv.innerHTML = `<img src="${topic.media}" alt="Media" style="max-width:100%;margin-top:7px;">`;
+        } else {
+          mediaDiv.textContent = topic.media;
         }
-
-        // Subsections
-        if (Array.isArray(sub.subsections)) {
-          sub.subsections.forEach(subsec => {
-            let h3 = document.createElement("h4");
-            h3.textContent = subsec.title || "Abschnitt";
-            chapterContent.appendChild(h3);
-
-            if (subsec.description) {
-              let sd = document.createElement("div");
-              sd.style.margin = "0.5rem 0 0.5rem 0";
-              sd.textContent = subsec.description;
-              chapterContent.appendChild(sd);
-            }
-
-            // Show points (as bullet list)
-            if (Array.isArray(subsec.points)) {
-              let ul = document.createElement("ul");
-              subsec.points.forEach(pt => {
-                let li = document.createElement("li");
-                li.textContent = pt;
-                ul.appendChild(li);
-              });
-              chapterContent.appendChild(ul);
-            }
-
-            // Show note, reporting, allowed, forbidden, etc.
-            ["note","silent_alarm","description"].forEach(k => {
-              if (subsec[k]) {
-                let div = document.createElement("div");
-                div.className = "note";
-                div.textContent = subsec[k];
-                chapterContent.appendChild(div);
-              }
-            });
-
-            // Show reporting (array)
-            if (Array.isArray(subsec.reporting)) {
-              let ul = document.createElement("ul");
-              subsec.reporting.forEach(rep => {
-                let li = document.createElement("li");
-                li.textContent = `${rep.entity} (${rep.timeframe})`;
-                ul.appendChild(li);
-              });
-              chapterContent.appendChild(ul);
-            }
-            // Show allowed, forbidden, with_permission, additional_alarms, etc.
-            ["allowed","forbidden","with_permission","features","additional_alarms"].forEach(k => {
-              if (Array.isArray(subsec[k])) {
-                let ul = document.createElement("ul");
-                subsec[k].forEach(item => {
-                  let li = document.createElement("li");
-                  li.textContent = item;
-                  ul.appendChild(li);
-                });
-                let label = document.createElement("strong");
-                label.textContent = (k.charAt(0).toUpperCase() + k.slice(1)) + ":";
-                chapterContent.appendChild(label);
-                chapterContent.appendChild(ul);
-              }
-            });
-
-            // Show categories with content/examples/themes
-            if (Array.isArray(subsec.categories)) {
-              subsec.categories.forEach(cat => {
-                let cTitle = document.createElement("strong");
-                cTitle.textContent = (cat.theme || cat.content || "") + ":";
-                chapterContent.appendChild(cTitle);
-                if (Array.isArray(cat.points)) {
-                  let ul = document.createElement("ul");
-                  cat.points.forEach(pt => {
-                    let li = document.createElement("li");
-                    li.textContent = pt;
-                    ul.appendChild(li);
-                  });
-                  chapterContent.appendChild(ul);
-                }
-                if (Array.isArray(cat.examples)) {
-                  let ul = document.createElement("ul");
-                  cat.examples.forEach(ex => {
-                    let li = document.createElement("li");
-                    li.textContent = ex;
-                    ul.appendChild(li);
-                  });
-                  chapterContent.appendChild(ul);
-                }
-              });
-            }
-
-            // Show example (array)
-            if (Array.isArray(subsec.example)) {
-              let ul = document.createElement("ul");
-              subsec.example.forEach(ex => {
-                let li = document.createElement("li");
-                li.textContent = ex;
-                ul.appendChild(li);
-              });
-              chapterContent.appendChild(ul);
-            }
-
-            // Show subsubsections
-            if (Array.isArray(subsec.subsections)) {
-              subsec.subsections.forEach(sss => {
-                let h4 = document.createElement("h5");
-                h4.textContent = sss.title || "";
-                chapterContent.appendChild(h4);
-                if (sss.description) {
-                  let desc = document.createElement("div");
-                  desc.textContent = sss.description;
-                  chapterContent.appendChild(desc);
-                }
-                if (Array.isArray(sss.points)) {
-                  let ul = document.createElement("ul");
-                  sss.points.forEach(pt => {
-                    let li = document.createElement("li");
-                    li.textContent = pt;
-                    ul.appendChild(li);
-                  });
-                  chapterContent.appendChild(ul);
-                }
-              });
-            }
-          });
-        }
-      });
-    }
-  });
+        chapterContent.appendChild(mediaDiv);
+      }
+      // Tags (if any)
+      if (topic.tags) {
+        let tagsDiv = document.createElement("div");
+        tagsDiv.style.fontSize = "0.95em";
+        tagsDiv.style.color = "#888";
+        tagsDiv.textContent = `Tags: ${topic.tags}`;
+        chapterContent.appendChild(tagsDiv);
+      }
+    });
+  } else {
+    chapterContent.innerHTML += "<div style='color:red'>Dieses Kapitel enthält keine Themen.</div>";
+  }
 }
 
+// ----------- Universal loader
 function loadChapter(filename, lang) {
   chapterList.innerHTML = "";
   chapterContent.innerHTML = "<div class='loading'>Lade Inhalt ...</div>";
@@ -211,12 +123,15 @@ function loadChapter(filename, lang) {
     .then(data => {
       chapterContent.innerHTML = "";
       if (lang === "deutsch") {
-        // Always expect array for this type
-        if (!Array.isArray(data)) {
-          chapterContent.innerHTML = "<div style='color:red'>Dieses Kapitel konnte nicht geladen werden (unbekanntes Format).</div>";
-          return;
+        // Detect "chapter/topics" structure or fallback
+        if (data && (data.chapter || data.topics)) {
+          renderDeutschLesson(data);
+        } else {
+          // fallback: show all keys/values as plain text
+          let pre = document.createElement("pre");
+          pre.textContent = JSON.stringify(data, null, 2);
+          chapterContent.appendChild(pre);
         }
-        renderDeutschLesson(data);
       } else {
         // Urdu lessons (as before)
         let h2 = document.createElement("h2");
