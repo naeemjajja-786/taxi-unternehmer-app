@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   let allCases = [];
-  let shuffledTasks = [];
-  let currentCase = null;
-  let currentTaskIdx = 0;
 
   function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
@@ -36,70 +33,67 @@ document.addEventListener("DOMContentLoaded", function () {
         "<div style='color:red'>Keine passenden Fallstudien gefunden.</div>";
       return;
     }
-    currentCase = allCases[Math.floor(Math.random() * allCases.length)];
-    shuffledTasks = shuffle(currentCase.tasks.slice()).slice(0, Math.min(9, Math.max(6, currentCase.tasks.length)));
-    currentTaskIdx = 0;
-    renderCurrentTask();
+    // Random case
+    const chosen = allCases[Math.floor(Math.random() * allCases.length)];
+    // Shuffle & pick 6–9 tasks
+    let minTasks = 6, maxTasks = 9;
+    let numTasks = Math.max(minTasks, Math.min(maxTasks, chosen.tasks.length));
+    let tasks = shuffle(chosen.tasks.slice()).slice(0, numTasks);
+
+    renderCase(chosen, tasks);
   }
 
-  function renderCurrentTask() {
-    const c = currentCase;
-    const task = shuffledTasks[currentTaskIdx];
+  function renderCase(c, tasks) {
     const cont = document.getElementById("fallstudien-container");
     cont.innerHTML = "";
 
-    let title = document.createElement("h2");
-    title.textContent = c.title;
-    cont.appendChild(title);
+    // Case statement only (no topic)
+    let statement = document.createElement("div");
+    statement.className = "fs-case-statement";
+    statement.textContent = c.case;
+    cont.appendChild(statement);
 
-    let t = document.createElement("div");
-    t.className = "fs-question";
-    t.innerHTML = `<b>Aufgabe ${currentTaskIdx + 1}:</b> ${task.frage || "—"}`;
-    cont.appendChild(t);
+    // All tasks vertically
+    tasks.forEach((task, i) => {
+      let block = document.createElement("div");
+      block.className = "fs-task-block";
 
-    let input = document.createElement("input");
-    input.type = (task.input_type === "number") ? "number" : "text";
-    input.placeholder = "Ihre Antwort …";
-    input.className = "fs-input";
-    cont.appendChild(input);
+      // Task no. & question
+      let q = document.createElement("div");
+      q.className = "fs-question";
+      q.innerHTML = `<b>Aufgabe ${i + 1}:</b> ${task.frage || "—"}`;
+      block.appendChild(q);
 
-    // حل کا بٹن
-    let btn = document.createElement("button");
-    btn.textContent = "Rechnungsweg anzeigen";
-    btn.className = "fs-show-btn";
-    btn.onclick = function () {
-      let fb = document.createElement("div");
-      fb.className = "fs-feedback";
-      if (task.solution_text && task.solution_text.trim()) {
-        fb.innerHTML = `<strong>Richtige Lösung:</strong> ${task.solution_text}<br>`;
-      }
-      if (task.rechnungsweg) {
-        fb.innerHTML += `<strong>Rechnungsweg:</strong> ${task.rechnungsweg}`;
-      }
-      cont.appendChild(fb);
-      btn.disabled = true;
-      input.disabled = true;
-    };
-    cont.appendChild(btn);
+      // Input field
+      let input = document.createElement("input");
+      input.type = (task.input_type === "number") ? "number" : "text";
+      input.placeholder = "Ihre Antwort …";
+      input.className = "fs-input";
+      block.appendChild(input);
 
-    // نیویگیشن بٹن
-    let nav = document.createElement("div");
-    nav.className = "fs-nav";
-    if (currentTaskIdx > 0) {
-      let prev = document.createElement("button");
-      prev.textContent = "Zurück";
-      prev.onclick = () => { currentTaskIdx--; renderCurrentTask(); };
-      nav.appendChild(prev);
-    }
-    if (currentTaskIdx < shuffledTasks.length - 1) {
-      let next = document.createElement("button");
-      next.textContent = "Weiter";
-      next.onclick = () => { currentTaskIdx++; renderCurrentTask(); };
-      nav.appendChild(next);
-    }
-    cont.appendChild(nav);
+      // Lösung anzeigen
+      let btn = document.createElement("button");
+      btn.textContent = "Lösung anzeigen";
+      btn.className = "fs-show-btn";
+      btn.onclick = function () {
+        let fb = document.createElement("div");
+        fb.className = "fs-feedback";
+        if (task.solution_text && task.solution_text.trim()) {
+          fb.innerHTML = `<strong>Richtige Lösung:</strong> ${task.solution_text}<br>`;
+        }
+        if (task.rechnungsweg) {
+          fb.innerHTML += `<strong>Rechnungsweg:</strong> ${task.rechnungsweg}`;
+        }
+        block.appendChild(fb);
+        btn.disabled = true;
+        input.disabled = true;
+      };
+      block.appendChild(btn);
 
-    // Neue Fallstudie
+      cont.appendChild(block);
+    });
+
+    // New case button below all
     let newCaseBtn = document.createElement("button");
     newCaseBtn.textContent = "Neue Fallstudie";
     newCaseBtn.className = "back-btn";
