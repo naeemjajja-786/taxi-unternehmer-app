@@ -1,8 +1,12 @@
-fetch("Fallstudien.json")
-  .then(resp => resp.json())
-  .then(data => {
-    console.log("Sample:", data[0]);
-  });
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("Fallstudien.json")
+    .then(resp => resp.json())
+    .then(data => {
+      console.log("Total Fallstudien loaded:", data.length);
+      let allCases = data.filter(
+        f => Array.isArray(f.tasks) && f.tasks.length >= 6 && typeof f.fall === "string"
+      );
+      console.log("Filtered cases:", allCases.length, allCases);
 
       window.__fallCasesForReload = allCases;
       if (allCases.length === 0) {
@@ -22,7 +26,7 @@ fetch("Fallstudien.json")
       [tasks[i], tasks[j]] = [tasks[j], tasks[i]];
     }
     tasks = tasks.slice(0, numTasks);
-    renderCase(caseObj.case, tasks);
+    renderCase(caseObj.fall, tasks);
   }
 
   function renderCase(caseText, tasks) {
