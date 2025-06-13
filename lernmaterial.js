@@ -135,4 +135,133 @@ function renderDeutschLesson(data) {
             });
 
             // Show categories with content/examples/themes
-            if (Array.is
+            if (Array.isArray(subsec.categories)) {
+              subsec.categories.forEach(cat => {
+                let cTitle = document.createElement("strong");
+                cTitle.textContent = (cat.theme || cat.content || "") + ":";
+                chapterContent.appendChild(cTitle);
+                if (Array.isArray(cat.points)) {
+                  let ul = document.createElement("ul");
+                  cat.points.forEach(pt => {
+                    let li = document.createElement("li");
+                    li.textContent = pt;
+                    ul.appendChild(li);
+                  });
+                  chapterContent.appendChild(ul);
+                }
+                if (Array.isArray(cat.examples)) {
+                  let ul = document.createElement("ul");
+                  cat.examples.forEach(ex => {
+                    let li = document.createElement("li");
+                    li.textContent = ex;
+                    ul.appendChild(li);
+                  });
+                  chapterContent.appendChild(ul);
+                }
+              });
+            }
+
+            // Show example (array)
+            if (Array.isArray(subsec.example)) {
+              let ul = document.createElement("ul");
+              subsec.example.forEach(ex => {
+                let li = document.createElement("li");
+                li.textContent = ex;
+                ul.appendChild(li);
+              });
+              chapterContent.appendChild(ul);
+            }
+
+            // Show subsubsections
+            if (Array.isArray(subsec.subsections)) {
+              subsec.subsections.forEach(sss => {
+                let h4 = document.createElement("h5");
+                h4.textContent = sss.title || "";
+                chapterContent.appendChild(h4);
+                if (sss.description) {
+                  let desc = document.createElement("div");
+                  desc.textContent = sss.description;
+                  chapterContent.appendChild(desc);
+                }
+                if (Array.isArray(sss.points)) {
+                  let ul = document.createElement("ul");
+                  sss.points.forEach(pt => {
+                    let li = document.createElement("li");
+                    li.textContent = pt;
+                    ul.appendChild(li);
+                  });
+                  chapterContent.appendChild(ul);
+                }
+              });
+            }
+          });
+        }
+      });
+    }
+  });
+}
+
+function loadChapter(filename, lang) {
+  chapterList.innerHTML = "";
+  chapterContent.innerHTML = "<div class='loading'>Lade Inhalt ...</div>";
+  backBtn.style.display = "inline-block";
+
+  fetch(`./${encodeURIComponent(filename)}`)
+    .then(resp => resp.json())
+    .then(data => {
+      chapterContent.innerHTML = "";
+      if (lang === "deutsch") {
+        // Always expect array for this type
+        if (!Array.isArray(data)) {
+          chapterContent.innerHTML = "<div style='color:red'>Dieses Kapitel konnte nicht geladen werden (unbekanntes Format).</div>";
+          return;
+        }
+        renderDeutschLesson(data);
+      } else {
+        // Urdu lessons (as before)
+        let h2 = document.createElement("h2");
+        h2.textContent = data["عنوان"] || "سبق";
+        chapterContent.appendChild(h2);
+
+        if (Array.isArray(data["سوالات"])) {
+          data["سوالات"].forEach((qa, idx) => {
+            let q = document.createElement("div");
+            q.className = "qa";
+            q.innerHTML = `<strong>سوال ${idx + 1}:</strong> ${qa.frage}`;
+            chapterContent.appendChild(q);
+
+            let a = document.createElement("div");
+            a.className = "qa-a";
+            a.innerHTML = `<em>جواب:</em> ${qa.antwort}`;
+            chapterContent.appendChild(a);
+          });
+        } else {
+          chapterContent.innerHTML += "<div style='color:red'>سوالات کی فہرست نہیں ملی۔</div>";
+        }
+      }
+    })
+    .catch(e => {
+      chapterContent.innerHTML = "<div style='color:red'>Fehler beim Laden des Kapitels.<br>" + e.message + "</div>";
+    });
+}
+
+btnUrdu.onclick = () => {
+  currentLang = "urdu";
+  btnUrdu.classList.add("active");
+  btnDeutsch.classList.remove("active");
+  renderChapters("urdu");
+};
+btnDeutsch.onclick = () => {
+  currentLang = "deutsch";
+  btnDeutsch.classList.add("active");
+  btnUrdu.classList.remove("active");
+  renderChapters("deutsch");
+};
+
+function goBack() {
+  renderChapters(currentLang);
+  backBtn.style.display = "none";
+}
+window.goBack = goBack;
+
+renderChapters("deutsch");
