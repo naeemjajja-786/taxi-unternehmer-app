@@ -1,3 +1,17 @@
+fetch("Fallstudien.json")
+  .then(resp => {
+    console.log("Fetch response:", resp.status, resp.statusText);
+    return resp.json();
+  })
+  .then(data => {
+    console.log("Fallstudien loaded:", data);
+    let allCases = data.filter(
+      f => Array.isArray(f.tasks) && f.tasks.length >= 6 && typeof f.case === "string"
+    );
+    console.log("Filtered cases:", allCases);
+    // ... باقی کوڈ یہاں ہو
+  });
+
 document.addEventListener("DOMContentLoaded", function () {
   fetch("Fallstudien.json")
     .then(resp => resp.json())
