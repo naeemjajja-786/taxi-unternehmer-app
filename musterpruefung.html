@@ -8,11 +8,11 @@
 </head>
 <body>
   <header>
-    <h1>Musterprüfung – Teil 1 & Teil 2</h1>
+    <h1>Musterprüfung</h1>
   </header>
 
   <main>
-    <div id="start-buttons" style="text-align: center; margin-top: 20px;">
+    <div id="start-buttons" style="text-align:center; margin-top:20px;">
       <button onclick="startExam(1)">Teil 1 starten</button>
       <button onclick="startExam(2)">Teil 2 starten</button>
     </div>
@@ -21,9 +21,11 @@
       <div id="question-number"></div>
       <div id="question-text"></div>
       <div id="answer-options"></div>
-      <textarea id="user-answer" placeholder="Antwort eingeben..."></textarea>
-      <button onclick="submitAnswer()">Antwort überprüfen</button>
-      <button onclick="goBack()">Zurück</button>
+      <textarea id="user-answer" class="hidden" placeholder="Antwort eingeben..."></textarea>
+      <div style="margin-top:10px;">
+        <button onclick="submitAnswer()">Antwort überprüfen</button>
+        <button onclick="goBack()">Zurück</button>
+      </div>
       <div id="feedback"></div>
     </div>
 
@@ -33,7 +35,7 @@
     <div id="final-result" class="hidden">
       <h2>Gesamtergebnis</h2>
       <p id="gesamtpunkte"></p>
-      <button onclick="location.reload()">Neu starten</button>
+      <button onclick="restartExam()">Neu starten</button>
     </div>
   </main>
 
@@ -41,8 +43,31 @@
     <p>&copy; 2025 Taxi/Mietwagen Lern-App</p>
   </footer>
 
-  <!-- Beide JS-Files einbinden -->
+  <!-- Beide Teile werden eingebunden -->
   <script src="musterpruefung-teil1.js"></script>
   <script src="musterpruefung-teil2.js"></script>
+  <script>
+    let currentTeil = null;
+
+    function startExam(teil) {
+      document.getElementById('start-buttons').style.display = 'none';
+      document.getElementById('quiz-container').classList.remove('hidden');
+      currentTeil = teil;
+      if (teil === 1) loadTeil1();
+      else if (teil === 2) loadTeil2();
+    }
+
+    function goBack() {
+      document.getElementById('quiz-container').classList.add('hidden');
+      document.getElementById('start-buttons').style.display = 'block';
+      document.getElementById('user-answer').value = '';
+      document.getElementById('answer-options').innerHTML = '';
+      document.getElementById('feedback').innerText = '';
+    }
+
+    function restartExam() {
+      location.reload();
+    }
+  </script>
 </body>
 </html>
