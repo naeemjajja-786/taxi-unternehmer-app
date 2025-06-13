@@ -1,21 +1,25 @@
 let teil1, teil2;
 
 window.onload = () => {
+  // Basic Diagnostic Console Logs (debug help)
+  console.log("Onload started!");
+  console.log("Exists questions1?", document.getElementById('questions1'));
+  console.log("Exists questions2?", document.getElementById('questions2'));
+
   Promise.all([
     fetch('Exams-Teil1.json').then(r => r.json()),
     fetch('Exams-Teil2.json').then(r => r.json())
   ]).then(([teil1data, teil2data]) => {
-    // Flexible: جتنے سوال ہیں اتنے ہی اٹھیں گے (حد سے کم ہو تو error نہیں!)
+    // آپ کے پاس جتنے سوال ہیں اتنے ہی نظر آئیں گے
     teil1 = shuffle(teil1data).slice(0, Math.min(30, teil1data.length));
     teil2 = shuffle(teil2data).slice(0, Math.min(10, teil2data.length));
-    // اگر صرف testing کر رہے ہیں تو یہ بھی لکھ سکتے ہیں:
-    // teil1 = teil1data;
-    // teil2 = teil2data;
     renderTeil1();
     startTimer(50 * 60, document.getElementById('timer'), () => {
       alert("⏰ Zeit für Teil 1 ist abgelaufen!");
       document.getElementById('next-to-teil2').click();
     });
+  }).catch(e => {
+    document.getElementById('questions1').innerHTML = "❌ Fragen konnten nicht geladen werden.<br>" + e;
   });
 };
 
