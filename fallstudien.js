@@ -2,10 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("Fallstudien.json")
     .then(resp => resp.json())
     .then(data => {
+      // صرف وہ کیسز جن کے پاس 6 یا اس سے زیادہ ٹاسکس ہیں
       let allCases = data.filter(
         f => Array.isArray(f.tasks) && f.tasks.length >= 6 && typeof f.case === "string"
       );
-      window.__fallCasesForReload = allCases; // for "Neue Fallstudie" button
+      window.__fallCasesForReload = allCases;
       if (allCases.length === 0) {
         document.getElementById("fallstudien-container").innerHTML =
           "<div style='color:red'>Keine passenden Fallstudien gefunden.</div>";
@@ -30,23 +31,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const cont = document.getElementById("fallstudien-container");
     cont.innerHTML = "";
 
+    // Case statement
     let statement = document.createElement("div");
     statement.className = "fs-case-statement";
     statement.textContent = caseText;
     cont.appendChild(statement);
 
+    // All tasks (6–9) in vertical blocks
     tasks.forEach((task, idx) => {
       let block = document.createElement("div");
       block.className = "fs-task-block";
 
+      // Unique id for a11y
       let inputId = `fs-input-${task.id || idx}`;
 
+      // Label for input
       let q = document.createElement("label");
       q.htmlFor = inputId;
       q.className = "fs-question";
       q.innerHTML = `<b>Aufgabe ${idx + 1}:</b> ${task.frage || "—"}`;
       block.appendChild(q);
 
+      // Input field
       let input = document.createElement("input");
       input.type = (task.input_type === "number") ? "number" : "text";
       input.placeholder = "Ihre Antwort …";
@@ -54,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
       input.id = inputId;
       block.appendChild(input);
 
+      // Lösung anzeigen button
       let btn = document.createElement("button");
       btn.textContent = "Lösung anzeigen";
       btn.className = "fs-show-btn";
@@ -75,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
       cont.appendChild(block);
     });
 
+    // Neue Fallstudie button
     let newCaseBtn = document.createElement("button");
     newCaseBtn.textContent = "Neue Fallstudie";
     newCaseBtn.className = "back-btn";
