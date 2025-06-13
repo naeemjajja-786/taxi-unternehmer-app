@@ -1,10 +1,6 @@
 // ----------- LERNMATERIAL.JS -------------
-// Dieses Skript lädt Urdu & Deutsch Lernmaterial, erzeugt Kapitel-Buttons
-// und zeigt den Inhalt mit Überschriften und Abschnitten.
-// JSON-Filenames bleiben unverändert!
+// Updated: vertical button layout, "Zurück", Urdu improved, file loading fix!
 
-// -----------------------------------
-// Config: Namen der Deutsch & Urdu Files
 const deutschFiles = [
   "1 Personenbeförderungsgesetz.json",
   "2 Gewerberecht.json",
@@ -31,25 +27,19 @@ const urduFiles = [
   "urdu-lesson-9.json"
 ];
 
-// -----------------------------------
-// Element-Referenzen
 const chapterList = document.getElementById("chapter-list");
 const chapterContent = document.getElementById("chapter-content");
 const btnUrdu = document.getElementById("btn-urdu");
 const btnDeutsch = document.getElementById("btn-deutsch");
 const backBtn = document.getElementById("backBtn");
 
-// Default: Deutsch anzeigen
 let currentLang = "deutsch";
 
-// -----------------------
-// Kapitel-Button-Generator
 function renderChapters(lang) {
   chapterList.innerHTML = "";
   chapterContent.innerHTML = "";
   backBtn.style.display = "none";
   let files = lang === "urdu" ? urduFiles : deutschFiles;
-
   files.forEach((file, idx) => {
     let btn = document.createElement("button");
     btn.textContent = lang === "urdu" ? `سبق ${idx + 1}` : `Kapitel ${idx + 1}`;
@@ -59,19 +49,17 @@ function renderChapters(lang) {
   });
 }
 
-// --------------------------
-// Kapitel laden & anzeigen
 function loadChapter(filename, lang) {
   chapterList.innerHTML = "";
   chapterContent.innerHTML = "<div class='loading'>Lade Inhalt ...</div>";
   backBtn.style.display = "inline-block";
 
-  fetch(`./${filename}`)
+  // handle spaces in filename!
+  fetch(`./${encodeURIComponent(filename)}`)
     .then(resp => resp.json())
     .then(data => {
       chapterContent.innerHTML = "";
       if (lang === "deutsch") {
-        // Deutsch-Format: [{titel, text}, ...]
         data.forEach(section => {
           let h2 = document.createElement("h2");
           h2.textContent = section.titel || section.überschrift || "Abschnitt";
@@ -82,7 +70,6 @@ function loadChapter(filename, lang) {
           chapterContent.appendChild(p);
         });
       } else {
-        // Urdu-Format: {عنوان: "...", سوالات: [{frage, antwort}] }
         let h2 = document.createElement("h2");
         h2.textContent = data["عنوان"] || "سبق";
         chapterContent.appendChild(h2);
@@ -101,12 +88,10 @@ function loadChapter(filename, lang) {
       }
     })
     .catch(e => {
-      chapterContent.innerHTML = "<div style='color:red'>Fehler beim Laden des Kapitels.</div>";
+      chapterContent.innerHTML = "<div style='color:red'>Fehler beim Laden des Kapitels.<br>"+e.message+"</div>";
     });
 }
 
-// ---------------------------
-// Sprachumschaltung
 btnUrdu.onclick = () => {
   currentLang = "urdu";
   btnUrdu.classList.add("active");
@@ -120,11 +105,10 @@ btnDeutsch.onclick = () => {
   renderChapters("deutsch");
 };
 
-// Back-Button
 function goBack() {
   renderChapters(currentLang);
+  backBtn.style.display = "none";
 }
 window.goBack = goBack;
 
-// ------------- Initialisierung
 renderChapters("deutsch");
