@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     // Random case
     const chosen = allCases[Math.floor(Math.random() * allCases.length)];
-    // Shuffle & pick 6–9 tasks
-    let minTasks = 6, maxTasks = 9;
+    // Shuffle & pick 1–9 tasks
+    let minTasks = 1, maxTasks = 9;
     let numTasks = Math.max(minTasks, Math.min(maxTasks, chosen.tasks.length));
     let tasks = shuffle(chosen.tasks.slice()).slice(0, numTasks);
 
