@@ -1,1901 +1,1898 @@
 {
-  "teil_1": [
-    {
-      "frage": "Was ist der Unterschied zwischen einem Taxi und einem Mietwagen?",
-      "antworten": [
-        "Taxi darf Fahrgäste am Straßenrand aufnehmen, Mietwagen nur nach vorheriger Bestellung.",
-        "Taxi braucht keinen Fahrpreisanzeiger.",
-        "Mietwagen darf im Pflichtfahrgebiet stehen.",
-        "Taxi darf keine Quittungen ausstellen."
-      ],
-      "richtigeAntwort": "Taxi darf Fahrgäste am Straßenrand aufnehmen, Mietwagen nur nach vorheriger Bestellung.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie wird der Begriff 'Betriebssitz' im Personenbeförderungsrecht definiert?",
-      "antworten": [
-        "Der Ort, an dem die Fahrzeuge regelmäßig abgestellt werden.",
-        "Der Ort, an dem die Buchhaltung erledigt wird.",
-        "Der Wohnsitz des Unternehmers.",
-        "Die Adresse des Kunden."
-      ],
-      "richtigeAntwort": "Der Ort, an dem die Fahrzeuge regelmäßig abgestellt werden.",
-      "punkte": 1
-    },
-    {
-      "frage": "Nennen Sie drei Unterlagen, die ein Taxiunternehmer immer im Fahrzeug mitführen muss.",
-      "antworten": [
-        "Fahrzeugschein, Genehmigungsurkunde, Versicherungsnachweis"
-      ],
-      "richtigeAntwort": "Fahrzeugschein, Genehmigungsurkunde, Versicherungsnachweis",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Kosten sind bei der Selbstkostenkalkulation eines Taxibetriebs als Fixkosten zu berücksichtigen?",
-      "antworten": [
-        "Abschreibung, Versicherungen, Steuern"
-      ],
-      "richtigeAntwort": "Abschreibung, Versicherungen, Steuern",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche der folgenden Aussagen zur Fahrpreisanzeigerpflicht trifft zu?",
-      "antworten": [
-        "Taxis müssen mit einem Fahrpreisanzeiger ausgestattet sein.",
-        "Mietwagen müssen immer einen Fahrpreisanzeiger haben.",
-        "Der Fahrpreisanzeiger ist freiwillig.",
-        "Nur Fahrzeuge mit mehr als 8 Sitzen benötigen einen Fahrpreisanzeiger."
-      ],
-      "richtigeAntwort": "Taxis müssen mit einem Fahrpreisanzeiger ausgestattet sein.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie hoch ist die Umsatzsteuer auf Taxifahrten in Deutschland?",
-      "antworten": [
-        "7%",
-        "10%",
-        "19%",
-        "21%"
-      ],
-      "richtigeAntwort": "7%",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer ist verpflichtet, den Fahrpreisanzeiger zu bedienen?",
-      "antworten": [
-        "Der Fahrer",
-        "Der Fahrgast",
-        "Der Unternehmer",
-        "Die Polizei"
-      ],
-      "richtigeAntwort": "Der Fahrer",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Versicherung ist für ein Taxi gesetzlich vorgeschrieben?",
-      "antworten": [
-        "Haftpflichtversicherung",
-        "Hausratversicherung",
-        "Lebensversicherung",
-        "Unfallversicherung"
-      ],
-      "richtigeAntwort": "Haftpflichtversicherung",
-      "punkte": 1
-    },
-    {
-      "frage": "Nennen Sie zwei Beispiele für Betriebskosten eines Taxis.",
-      "antworten": [
-        "Kraftstoff, Wartung"
-      ],
-      "richtigeAntwort": "Kraftstoff, Wartung",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer genehmigt den Betrieb eines Taxis?",
-      "antworten": [
-        "Die örtliche Genehmigungsbehörde",
-        "Der TÜV",
-        "Das Finanzamt",
-        "Das Gewerbeamt"
-      ],
-      "richtigeAntwort": "Die örtliche Genehmigungsbehörde",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Dokumente muss ein Taxiunternehmer dem Fahrgast auf Wunsch vorlegen können?",
-      "antworten": [
-        "Fahrzeugschein und Genehmigungsurkunde",
-        "Führerschein",
-        "Kfz-Steuerbescheid",
-        "Versicherungsnachweis"
-      ],
-      "richtigeAntwort": "Fahrzeugschein und Genehmigungsurkunde",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist die Ortskundeprüfung?",
-      "antworten": [
-        "Eine Prüfung über das örtliche Straßennetz und wichtige Ziele.",
-        "Eine Prüfung über Steuerrecht.",
-        "Ein TÜV-Test für das Fahrzeug.",
-        "Eine Prüfung über Versicherungen."
-      ],
-      "richtigeAntwort": "Eine Prüfung über das örtliche Straßennetz und wichtige Ziele.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer darf eine Ortskundeprüfung abnehmen?",
-      "antworten": [
-        "Die zuständige Genehmigungsbehörde",
-        "Der Fahrgast",
-        "Der Unternehmer selbst",
-        "Die Polizei"
-      ],
-      "richtigeAntwort": "Die zuständige Genehmigungsbehörde",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann gilt ein Taxi als konzessioniert?",
-      "antworten": [
-        "Wenn eine Genehmigung nach § 47 PBefG vorliegt.",
-        "Wenn es eine Ortskundeprüfung hat.",
-        "Wenn es regelmäßig gewartet wird.",
-        "Wenn es eine Taxameterprüfung hat."
-      ],
-      "richtigeAntwort": "Wenn eine Genehmigung nach § 47 PBefG vorliegt.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Farbe muss ein Taxi in Deutschland üblicherweise haben?",
-      "antworten": [
-        "Hellelfenbein (cremefarben)",
-        "Schwarz",
-        "Rot",
-        "Blau"
-      ],
-      "richtigeAntwort": "Hellelfenbein (cremefarben)",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie lange ist die Genehmigung für ein Taxi in der Regel gültig?",
-      "antworten": [
-        "5 Jahre",
-        "1 Jahr",
-        "10 Jahre",
-        "Unbegrenzt"
-      ],
-      "richtigeAntwort": "5 Jahre",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist der Mindestinhalt einer Taxi-Quittung?",
-      "antworten": [
-        "Datum, Fahrpreis, Name/Anschrift Unternehmer, Unterschrift Fahrer",
-        "Nur Datum und Fahrpreis",
-        "Nur der Name des Unternehmers",
-        "Nur die Unterschrift des Fahrers"
-      ],
-      "richtigeAntwort": "Datum, Fahrpreis, Name/Anschrift Unternehmer, Unterschrift Fahrer",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche technische Überprüfung muss ein Taxi regelmäßig bestehen?",
-      "antworten": [
-        "TÜV-Hauptuntersuchung",
-        "Fahrpreisanzeigerprüfung",
-        "Umweltprüfung",
-        "Unfallprüfung"
-      ],
-      "richtigeAntwort": "TÜV-Hauptuntersuchung",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist die Hauptaufgabe eines Taxifahrers?",
-      "antworten": [
-        "Beförderung von Fahrgästen gegen Entgelt",
-        "Wartung des Fahrzeugs",
-        "Fahrzeug reinigen",
-        "Versicherungen abschließen"
-      ],
-      "richtigeAntwort": "Beförderung von Fahrgästen gegen Entgelt",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer trägt die Verantwortung für die Verkehrssicherheit des Taxis?",
-      "antworten": [
-        "Der Fahrer und der Unternehmer",
-        "Nur der Fahrgast",
-        "Nur die Polizei",
-        "Das Ordnungsamt"
-      ],
-      "richtigeAntwort": "Der Fahrer und der Unternehmer",
-      "punkte": 1
-    },
-    {
-      "frage": "Was versteht man unter Betriebspflicht?",
-      "antworten": [
-        "Pflicht zur ständigen Bereitstellung eines Fahrzeugs im Pflichtfahrgebiet.",
-        "Pflicht, das Fahrzeug zu reinigen.",
-        "Pflicht, Quittungen auszustellen.",
-        "Pflicht, Rabatte zu gewähren."
-      ],
-      "richtigeAntwort": "Pflicht zur ständigen Bereitstellung eines Fahrzeugs im Pflichtfahrgebiet.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann beginnt die Pflichtfahrgebietspflicht?",
-      "antworten": [
-        "Mit Erteilung der Genehmigung.",
-        "Bei der ersten Fahrt.",
-        "Nach dem ersten Jahr.",
-        "Erst bei Betriebsauslastung."
-      ],
-      "richtigeAntwort": "Mit Erteilung der Genehmigung.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist eine Taxameterprüfung?",
-      "antworten": [
-        "Regelmäßige Überprüfung des Fahrpreisanzeigers.",
-        "Reinigung des Fahrzeugs.",
-        "Überprüfung der Bremsen.",
-        "Überprüfung des Motors."
-      ],
-      "richtigeAntwort": "Regelmäßige Überprüfung des Fahrpreisanzeigers.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welcher Paragraph regelt den Gelegenheitsverkehr mit Taxen?",
-      "antworten": [
-        "§ 47 PBefG",
-        "§ 1 BGB",
-        "§ 21 StVO",
-        "§ 29 GewO"
-      ],
-      "richtigeAntwort": "§ 47 PBefG",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Kosten zählen zu den variablen Kosten?",
-      "antworten": [
-        "Kraftstoff, Wartung, Reparaturen",
-        "Abschreibung",
-        "Versicherung",
-        "Steuern"
-      ],
-      "richtigeAntwort": "Kraftstoff, Wartung, Reparaturen",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer darf eine Ortskundeprüfung verlangen?",
-      "antworten": [
-        "Die Genehmigungsbehörde",
-        "Der Fahrgast",
-        "Der Unternehmer",
-        "Der TÜV"
-      ],
-      "richtigeAntwort": "Die Genehmigungsbehörde",
-      "punkte": 1
-    },
-    {
-      "frage": "Wozu dient die Quittungspflicht?",
-      "antworten": [
-        "Nachweis der Fahrt und des Fahrpreises für den Fahrgast.",
-        "Beleg für die Steuer.",
-        "Beweis für das Finanzamt.",
-        "Beweis für die Versicherung."
-      ],
-      "richtigeAntwort": "Nachweis der Fahrt und des Fahrpreises für den Fahrgast.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Angaben müssen auf einer Quittung für den Fahrgast mindestens enthalten sein?",
-      "antworten": [
-        "Datum, Fahrpreis, Name/Anschrift Unternehmer, Unterschrift Fahrer",
-        "Nur das Datum",
-        "Nur die Fahrstrecke",
-        "Nur die Unterschrift des Fahrers"
-      ],
-      "richtigeAntwort": "Datum, Fahrpreis, Name/Anschrift Unternehmer, Unterschrift Fahrer",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer kontrolliert die Einhaltung der Taxiordnung?",
-      "antworten": [
-        "Das Ordnungsamt",
-        "Der Unternehmer",
-        "Der Fahrgast",
-        "Die Versicherung"
-      ],
-      "richtigeAntwort": "Das Ordnungsamt",
-      "punkte": 1
-    } ,
-    {
-      "frage": "Welche Vorschriften gelten für die Beförderung von Kindern im Taxi?",
-      "antworten": [
-        "Kindersitze und Sitzerhöhungen müssen je nach Alter und Größe vorhanden sein.",
-        "Kinder dürfen nur vorne sitzen.",
-        "Es gibt keine besonderen Vorschriften.",
-        "Kinder müssen immer angeschnallt sein, aber Kindersitze sind freiwillig."
-      ],
-      "richtigeAntwort": "Kindersitze und Sitzerhöhungen müssen je nach Alter und Größe vorhanden sein.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie oft muss das Taxi auf technische Mängel überprüft werden?",
-      "antworten": [
-        "Mindestens einmal jährlich.",
-        "Alle zwei Jahre.",
-        "Nur vor der ersten Inbetriebnahme.",
-        "Gar nicht."
-      ],
-      "richtigeAntwort": "Mindestens einmal jährlich.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer ist verantwortlich für die Einhaltung der Lenk- und Ruhezeiten?",
-      "antworten": [
-        "Der Fahrer und der Unternehmer gemeinsam.",
-        "Nur der Unternehmer.",
-        "Nur der Fahrer.",
-        "Die Polizei."
-      ],
-      "richtigeAntwort": "Der Fahrer und der Unternehmer gemeinsam.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was versteht man unter dem Pflichtfahrgebiet?",
-      "antworten": [
-        "Das geografische Gebiet, in dem das Taxi zur Aufnahme von Fahrgästen verpflichtet ist.",
-        "Das Gebiet, in dem das Taxi gewartet wird.",
-        "Das Gebiet, in dem das Taxi abgestellt wird.",
-        "Das Bundesland des Unternehmens."
-      ],
-      "richtigeAntwort": "Das geografische Gebiet, in dem das Taxi zur Aufnahme von Fahrgästen verpflichtet ist.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann dürfen Taxen den Funk benutzen?",
-      "antworten": [
-        "Für die Annahme von Aufträgen und betriebliche Kommunikation.",
-        "Für private Gespräche.",
-        "Nur in Notfällen.",
-        "Nie, Funk ist verboten."
-      ],
-      "richtigeAntwort": "Für die Annahme von Aufträgen und betriebliche Kommunikation.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist bei der Beförderung von Menschen mit Behinderung zu beachten?",
-      "antworten": [
-        "Barrierefreiheit und Hilfestellung müssen gewährt werden.",
-        "Nichts Besonderes.",
-        "Sie zahlen einen Aufpreis.",
-        "Sie dürfen nicht befördert werden."
-      ],
-      "richtigeAntwort": "Barrierefreiheit und Hilfestellung müssen gewährt werden.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welches Verhalten wird vom Taxifahrer im Fahrdienst erwartet?",
-      "antworten": [
-        "Höflich, rücksichtsvoll und hilfsbereit.",
-        "Neutral und zurückhaltend.",
-        "Bestimmend und fordernd.",
-        "Gleichgültig."
-      ],
-      "richtigeAntwort": "Höflich, rücksichtsvoll und hilfsbereit.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie ist mit Fundsachen im Taxi zu verfahren?",
-      "antworten": [
-        "Dem Fundbüro melden und abgeben.",
-        "Selbst behalten.",
-        "Dem nächsten Fahrgast geben.",
-        "Im Fahrzeug liegen lassen."
-      ],
-      "richtigeAntwort": "Dem Fundbüro melden und abgeben.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann darf ein Taxi die Fahrt ablehnen?",
-      "antworten": [
-        "Bei Gefahr für Sicherheit oder wenn Fahrgast stark alkoholisiert ist.",
-        "Wenn die Strecke zu kurz ist.",
-        "Wenn der Fahrgast ein Kind ist.",
-        "Nie, jede Fahrt muss angenommen werden."
-      ],
-      "richtigeAntwort": "Bei Gefahr für Sicherheit oder wenn Fahrgast stark alkoholisiert ist.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie müssen Fahrpreise im Taxi abgerechnet werden?",
-      "antworten": [
-        "Über den Fahrpreisanzeiger (Taxameter) gemäß Tarifordnung.",
-        "Schätzung durch den Fahrer.",
-        "Nach Tageszeit.",
-        "Je nach Anzahl der Fahrgäste."
-      ],
-      "richtigeAntwort": "Über den Fahrpreisanzeiger (Taxameter) gemäß Tarifordnung.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Versicherung deckt Schäden am eigenen Taxi bei selbst verschuldetem Unfall?",
-      "antworten": [
-        "Kaskoversicherung.",
-        "Haftpflichtversicherung.",
-        "Unfallversicherung.",
-        "Hausratversicherung."
-      ],
-      "richtigeAntwort": "Kaskoversicherung.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann muss ein Taxifahrer ein Fahrtenbuch führen?",
-      "antworten": [
-        "Wenn dies steuerlich vorgeschrieben ist.",
-        "Immer.",
-        "Nie.",
-        "Nur bei Fahrten ins Ausland."
-      ],
-      "richtigeAntwort": "Wenn dies steuerlich vorgeschrieben ist.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist bei der Anmietung von Ersatzfahrzeugen zu beachten?",
-      "antworten": [
-        "Sie müssen für den Taxibetrieb zugelassen sein.",
-        "Sie können jedes beliebige Fahrzeug nutzen.",
-        "Nur Mietwagenunternehmen dürfen Ersatzfahrzeuge stellen.",
-        "Es gibt keine Vorschriften."
-      ],
-      "richtigeAntwort": "Sie müssen für den Taxibetrieb zugelassen sein.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie hoch ist die Promillegrenze für Taxifahrer während des Dienstes?",
-      "antworten": [
-        "0,0 Promille.",
-        "0,3 Promille.",
-        "0,5 Promille.",
-        "1,1 Promille."
-      ],
-      "richtigeAntwort": "0,0 Promille.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Sanktionen drohen bei Verstoß gegen die Betriebspflicht?",
-      "antworten": [
-        "Bußgelder oder Entzug der Genehmigung.",
-        "Es gibt keine Sanktionen.",
-        "Ermahnung durch den Fahrgast.",
-        "Sperrung der Funkverbindung."
-      ],
-      "richtigeAntwort": "Bußgelder oder Entzug der Genehmigung.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist ein Pflichtfahrgebiet?",
-      "antworten": [
-        "Ein festgelegtes Gebiet, in dem das Taxi zur Beförderung bereitstehen muss.",
-        "Ein Gebiet, in dem keine Taxis fahren dürfen.",
-        "Der Betriebssitz des Unternehmers.",
-        "Das Bundesland."
-      ],
-      "richtigeAntwort": "Ein festgelegtes Gebiet, in dem das Taxi zur Beförderung bereitstehen muss.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer ist für die Einhaltung des Arbeitszeitgesetzes im Taxigewerbe verantwortlich?",
-      "antworten": [
-        "Der Unternehmer und der Fahrer gemeinsam.",
-        "Nur der Unternehmer.",
-        "Nur der Fahrer.",
-        "Das Gewerbeamt."
-      ],
-      "richtigeAntwort": "Der Unternehmer und der Fahrer gemeinsam.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie werden die Fahrpreise für Taxis in Deutschland festgelegt?",
-      "antworten": [
-        "Durch die jeweilige örtliche Tarifordnung.",
-        "Vom Unternehmer nach Belieben.",
-        "Vom Fahrgast.",
-        "Vom Bundesverkehrsministerium."
-      ],
-      "richtigeAntwort": "Durch die jeweilige örtliche Tarifordnung.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie lange muss ein Taxiunternehmer Auftragsbelege aufbewahren?",
-      "antworten": [
-        "Mindestens 1 Jahr.",
-        "1 Monat.",
-        "5 Jahre.",
-        "Unbegrenzt."
-      ],
-      "richtigeAntwort": "Mindestens 1 Jahr.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Pflichten hat ein Taxifahrer gegenüber mobilitätseingeschränkten Personen?",
-      "antworten": [
-        "Besondere Hilfestellung, z.B. beim Ein- und Aussteigen.",
-        "Keine besonderen Pflichten.",
-        "Nur die Fahrt selbst durchführen.",
-        "Rabatt auf den Fahrpreis geben."
-      ],
-      "richtigeAntwort": "Besondere Hilfestellung, z.B. beim Ein- und Aussteigen.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist bei der Fahrgastbeförderung im Grenzverkehr zu beachten?",
-      "antworten": [
-        "Die jeweiligen gesetzlichen Vorschriften des Ziellandes müssen eingehalten werden.",
-        "Es gelten nur die deutschen Vorschriften.",
-        "Grenzverkehr ist nur für LKW erlaubt.",
-        "Der Fahrgast muss eine Sondergenehmigung vorweisen."
-      ],
-      "richtigeAntwort": "Die jeweiligen gesetzlichen Vorschriften des Ziellandes müssen eingehalten werden.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Unterlagen benötigt man für die Personenbeförderung ins Ausland?",
-      "antworten": [
-        "Genehmigungsurkunde, Fahrzeugschein, eventuell internationale Versicherungskarte.",
-        "Nur den Führerschein.",
-        "Einen speziellen internationalen Ausweis.",
-        "Nur eine Quittung."
-      ],
-      "richtigeAntwort": "Genehmigungsurkunde, Fahrzeugschein, eventuell internationale Versicherungskarte.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer ist berechtigt, im Taxi zu rauchen?",
-      "antworten": [
-        "Niemand, Rauchen ist im Taxi grundsätzlich verboten.",
-        "Nur der Fahrer.",
-        "Nur der Fahrgast.",
-        "Fahrer und Fahrgast, wenn Fenster offen ist."
-      ],
-      "richtigeAntwort": "Niemand, Rauchen ist im Taxi grundsätzlich verboten.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was muss bei einer Fahrt ins Ausland zusätzlich beachtet werden?",
-      "antworten": [
-        "Mögliche Maut- und Zollvorschriften.",
-        "Es gibt keine Besonderheiten.",
-        "Nur der Fahrpreis ändert sich.",
-        "Fahrgäste müssen sich ausweisen."
-      ],
-      "richtigeAntwort": "Mögliche Maut- und Zollvorschriften.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann ist eine Zusatzversicherung für Auslandsfahrten erforderlich?",
-      "antworten": [
-        "Wenn das Zielland nicht im Versicherungsumfang enthalten ist.",
-        "Immer.",
-        "Nie.",
-        "Nur bei Fahrten nach Frankreich."
-      ],
-      "richtigeAntwort": "Wenn das Zielland nicht im Versicherungsumfang enthalten ist.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie hoch ist das zulässige Gesamtgewicht eines Taxis in der Regel?",
-      "antworten": [
-        "Abhängig vom Fahrzeugtyp, meist zwischen 2 und 3,5 Tonnen.",
-        "Immer 2 Tonnen.",
-        "Unbegrenzt.",
-        "Mindestens 5 Tonnen."
-      ],
-      "richtigeAntwort": "Abhängig vom Fahrzeugtyp, meist zwischen 2 und 3,5 Tonnen.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist bei der Mitnahme von Gepäck im Taxi zu beachten?",
-      "antworten": [
-        "Das Gepäck muss sicher verstaut und darf niemanden gefährden.",
-        "Das Gepäck muss immer im Kofferraum transportiert werden.",
-        "Nur Handgepäck ist erlaubt.",
-        "Gepäck ist verboten."
-      ],
-      "richtigeAntwort": "Das Gepäck muss sicher verstaut und darf niemanden gefährden.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Vorteile bietet ein Fiskaltaxameter?",
-      "antworten": [
-        "Sichere und prüfbare Aufzeichnung aller Fahrten und Umsätze.",
-        "Günstigere Tarife.",
-        "Er spart Treibstoff.",
-        "Er ist kleiner als herkömmliche Taxameter."
-      ],
-      "richtigeAntwort": "Sichere und prüfbare Aufzeichnung aller Fahrten und Umsätze.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann muss eine Betriebserlaubnis für das Taxi erneuert werden?",
-      "antworten": [
-        "Vor Ablauf der Gültigkeit oder bei wesentlichen Änderungen am Fahrzeug.",
-        "Nie.",
-        "Nur nach einem Unfall.",
-        "Bei jedem Fahrerwechsel."
-      ],
-      "richtigeAntwort": "Vor Ablauf der Gültigkeit oder bei wesentlichen Änderungen am Fahrzeug.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was sind Sozialvorschriften im Fahrdienst?",
-      "antworten": [
-        "Vorschriften zu Lenkzeiten, Pausen und Arbeitszeiten.",
-        "Vorschriften für das Sozialverhalten der Fahrer.",
-        "Versicherungsbedingungen.",
-        "Steuervorschriften."
-      ],
-      "richtigeAntwort": "Vorschriften zu Lenkzeiten, Pausen und Arbeitszeiten.",
-      "punkte": 1
-    },
-
-    {
-      "frage": "Wie oft muss das Fahrzeug zur Hauptuntersuchung (TÜV)?",
-      "antworten": [
-        "Alle 12 Monate.",
-        "Alle 24 Monate.",
-        "Alle 6 Monate.",
-        "Nur einmal bei Inbetriebnahme."
-      ],
-      "richtigeAntwort": "Alle 12 Monate.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was versteht man unter einem Betriebssitz?",
-      "antworten": [
-        "Der Ort, an dem das Unternehmen organisiert und Fahrzeuge stationiert werden.",
-        "Der Wohnsitz des Fahrers.",
-        "Das Büro des Steuerberaters.",
-        "Die Werkstatt."
-      ],
-      "richtigeAntwort": "Der Ort, an dem das Unternehmen organisiert und Fahrzeuge stationiert werden.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Vorschrift regelt die Pflicht zur Führung eines Fahrtenbuchs?",
-      "antworten": [
-        "Die Abgabenordnung (AO).",
-        "Das Personenbeförderungsgesetz (PBefG).",
-        "Die StVO.",
-        "Die Tarifordnung."
-      ],
-      "richtigeAntwort": "Die Abgabenordnung (AO).",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Personengruppen haben einen Anspruch auf Beförderung?",
-      "antworten": [
-        "Jeder, außer Personen mit Gefahr für Sicherheit oder Ordnung.",
-        "Nur ältere Menschen.",
-        "Nur Kinder.",
-        "Niemand hat einen Anspruch."
-      ],
-      "richtigeAntwort": "Jeder, außer Personen mit Gefahr für Sicherheit oder Ordnung.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie wird die Mehrwertsteuer auf Taxifahrten ausgewiesen?",
-      "antworten": [
-        "Sie ist auf der Quittung gesondert anzugeben.",
-        "Sie wird nie ausgewiesen.",
-        "Nur auf Nachfrage.",
-        "Nur bei Auslandsgästen."
-      ],
-      "richtigeAntwort": "Sie ist auf der Quittung gesondert anzugeben.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Ausstattung ist in einem Taxi Pflicht?",
-      "antworten": [
-        "Fahrpreisanzeiger, Funk, Quittungsblock, Verbandkasten, Warnweste.",
-        "Musikanlage.",
-        "Navigationsgerät.",
-        "Kaffeemaschine."
-      ],
-      "richtigeAntwort": "Fahrpreisanzeiger, Funk, Quittungsblock, Verbandkasten, Warnweste.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wozu dient das Pflichtfahrgebiet?",
-      "antworten": [
-        "Dort muss das Taxi jederzeit bereitstehen.",
-        "Dort dürfen keine Taxis stehen.",
-        "Dort muss der Unternehmer wohnen.",
-        "Es ist eine Tarifzone."
-      ],
-      "richtigeAntwort": "Dort muss das Taxi jederzeit bereitstehen.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist bei der Fahrzeugwahl für den Taxibetrieb zu beachten?",
-      "antworten": [
-        "Das Fahrzeug muss technisch und optisch geeignet und entsprechend genehmigt sein.",
-        "Es kann jedes beliebige Fahrzeug genutzt werden.",
-        "Es muss immer ein Kombi sein.",
-        "Das Fahrzeug muss schwarz sein."
-      ],
-      "richtigeAntwort": "Das Fahrzeug muss technisch und optisch geeignet und entsprechend genehmigt sein.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Unterlagen müssen bei einer Kontrolle vorgelegt werden?",
-      "antworten": [
-        "Fahrzeugschein, Genehmigung, Führerschein.",
-        "Personalausweis.",
-        "Kassenbuch.",
-        "Werkstattrechnung."
-      ],
-      "richtigeAntwort": "Fahrzeugschein, Genehmigung, Führerschein.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist eine Unternehmerpflicht im Taxigewerbe?",
-      "antworten": [
-        "Organisation des Betriebs und Überwachung der Einhaltung aller Vorschriften.",
-        "Nur Fahrgäste befördern.",
-        "Das Fahrzeug reinigen.",
-        "Keine besonderen Pflichten."
-      ],
-      "richtigeAntwort": "Organisation des Betriebs und Überwachung der Einhaltung aller Vorschriften.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Versicherungen sind für Taxifahrzeuge üblich?",
-      "antworten": [
-        "Haftpflicht-, Kasko- und ggf. Insassenunfallversicherung.",
-        "Lebensversicherung.",
-        "Hausratversicherung.",
-        "Rechtsschutzversicherung."
-      ],
-      "richtigeAntwort": "Haftpflicht-, Kasko- und ggf. Insassenunfallversicherung.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer ist für die ordnungsgemäße Wartung des Taxis verantwortlich?",
-      "antworten": [
-        "Der Unternehmer.",
-        "Der Fahrgast.",
-        "Der Hersteller.",
-        "Die Polizei."
-      ],
-      "richtigeAntwort": "Der Unternehmer.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie viele Sitzplätze (einschließlich Fahrersitz) darf ein Taxi maximal haben?",
-      "antworten": [
-        "9",
-        "6",
-        "8",
-        "12"
-      ],
-      "richtigeAntwort": "9",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Regelung gilt für das Mitführen von Haustieren im Taxi?",
-      "antworten": [
-        "Blindenhunde müssen immer befördert werden.",
-        "Keine Tiere sind erlaubt.",
-        "Nur kleine Tiere sind erlaubt.",
-        "Nur mit schriftlicher Erlaubnis des Unternehmers."
-      ],
-      "richtigeAntwort": "Blindenhunde müssen immer befördert werden.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann besteht eine Beförderungspflicht für Rollstuhlfahrer?",
-      "antworten": [
-        "Wenn das Taxi dafür ausgerüstet ist.",
-        "Nie.",
-        "Nur nach Voranmeldung.",
-        "Immer, unabhängig vom Fahrzeug."
-      ],
-      "richtigeAntwort": "Wenn das Taxi dafür ausgerüstet ist.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Besonderheiten gelten bei der Abrechnung von Fahrten mit mehreren Fahrgästen?",
-      "antworten": [
-        "Der Fahrpreis richtet sich nach der gesamten Strecke, nicht nach der Anzahl der Fahrgäste.",
-        "Jeder Fahrgast zahlt einzeln.",
-        "Rabatt ab dem dritten Fahrgast.",
-        "Nur ein Fahrgast zahlt."
-      ],
-      "richtigeAntwort": "Der Fahrpreis richtet sich nach der gesamten Strecke, nicht nach der Anzahl der Fahrgäste.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist bei der Ausrüstung von Taxis hinsichtlich Barrierefreiheit vorgeschrieben?",
-      "antworten": [
-        "Es müssen bestimmte Fahrzeuge für Menschen mit Behinderung bereitgehalten werden.",
-        "Alle Taxis müssen rollstuhlgerecht sein.",
-        "Es gibt keine Vorschriften.",
-        "Nur große Unternehmen müssen darauf achten."
-      ],
-      "richtigeAntwort": "Es müssen bestimmte Fahrzeuge für Menschen mit Behinderung bereitgehalten werden.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann ist eine Alkoholfahrt als Ordnungswidrigkeit oder Straftat zu werten?",
-      "antworten": [
-        "Bereits ab 0,0 Promille im Dienst.",
-        "Erst ab 1,1 Promille.",
-        "Erst wenn ein Unfall passiert.",
-        "Ab 0,3 Promille."
-      ],
-      "richtigeAntwort": "Bereits ab 0,0 Promille im Dienst.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer trägt das Risiko für beschädigtes Gepäck im Taxi?",
-      "antworten": [
-        "Der Unternehmer, sofern ihn ein Verschulden trifft.",
-        "Der Fahrgast immer.",
-        "Die Versicherung zahlt immer.",
-        "Niemand."
-      ],
-      "richtigeAntwort": "Der Unternehmer, sofern ihn ein Verschulden trifft.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie oft muss der Fahrpreisanzeiger (Taxameter) geeicht werden?",
-      "antworten": [
-        "Jährlich.",
-        "Alle zwei Jahre.",
-        "Alle fünf Jahre.",
-        "Nie."
-      ],
-      "richtigeAntwort": "Jährlich.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was gilt beim Transport von Gepäck, das nicht in den Kofferraum passt?",
-      "antworten": [
-        "Es darf auf den Beifahrersitz gelegt werden, wenn niemand dort sitzt.",
-        "Es darf niemals transportiert werden.",
-        "Es wird abgelehnt.",
-        "Der Fahrgast trägt die Verantwortung."
-      ],
-      "richtigeAntwort": "Es darf auf den Beifahrersitz gelegt werden, wenn niemand dort sitzt.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie müssen Fahrgäste während der Fahrt gesichert sein?",
-      "antworten": [
-        "Alle müssen angeschnallt sein.",
-        "Nur Kinder müssen angeschnallt werden.",
-        "Anschnallpflicht besteht nicht.",
-        "Nur auf der Rückbank gilt keine Anschnallpflicht."
-      ],
-      "richtigeAntwort": "Alle müssen angeschnallt sein.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann kann einem Taxiunternehmer die Genehmigung entzogen werden?",
-      "antworten": [
-        "Bei wiederholten schweren Verstößen gegen die Vorschriften.",
-        "Nur bei Insolvenz.",
-        "Nie.",
-        "Bei Krankheit des Unternehmers."
-      ],
-      "richtigeAntwort": "Bei wiederholten schweren Verstößen gegen die Vorschriften.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist bei Unfällen mit Personenschaden im Taxi zu tun?",
-      "antworten": [
-        "Unverzüglich Polizei und Rettungsdienste informieren.",
-        "Nur eine Quittung ausstellen.",
-        "Unfallstelle sofort verlassen.",
-        "Das Fahrzeug verstecken."
-      ],
-      "richtigeAntwort": "Unverzüglich Polizei und Rettungsdienste informieren.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie lange darf ein Taxifahrer ohne Pause fahren?",
-      "antworten": [
-        "Maximal 4,5 Stunden.",
-        "Unbegrenzt.",
-        "6 Stunden.",
-        "3 Stunden."
-      ],
-      "richtigeAntwort": "Maximal 4,5 Stunden.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist im Krankheitsfall des Unternehmers zu tun?",
-      "antworten": [
-        "Eine Vertretung bestellen oder Betrieb ruhen lassen.",
-        "Der Betrieb läuft immer weiter.",
-        "Mitarbeiter dürfen ohne Kontrolle arbeiten.",
-        "Es gibt keine Vorschrift."
-      ],
-      "richtigeAntwort": "Eine Vertretung bestellen oder Betrieb ruhen lassen.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann gilt die Anschnallpflicht für Taxifahrer nicht?",
-      "antworten": [
-        "Bei Fahrten mit Fahrgästen im Ortsbereich.",
-        "Nie.",
-        "Immer.",
-        "Bei Fahrten ohne Fahrgäste."
-      ],
-      "richtigeAntwort": "Bei Fahrten mit Fahrgästen im Ortsbereich.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Maßnahme ist bei Arbeitsunfällen zu ergreifen?",
-      "antworten": [
-        "Unfall der Berufsgenossenschaft melden.",
-        "Unfall ignorieren.",
-        "Nichts tun.",
-        "Fahrgast informieren."
-      ],
-      "richtigeAntwort": "Unfall der Berufsgenossenschaft melden.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie lange sind Quittungsblöcke aufzubewahren?",
-      "antworten": [
-        "Mindestens 1 Jahr.",
-        "1 Monat.",
-        "5 Jahre.",
-        "Unbegrenzt."
-      ],
-      "richtigeAntwort": "Mindestens 1 Jahr.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist ein Mietwagen im Sinne des Personenbeförderungsgesetzes?",
-      "antworten": [
-        "Ein Fahrzeug, das nur nach vorheriger Bestellung Fahrgäste befördert.",
-        "Ein beliebiges Fahrzeug zur Miete.",
-        "Ein Taxi im Ausland.",
-        "Ein Bus."
-      ],
-      "richtigeAntwort": "Ein Fahrzeug, das nur nach vorheriger Bestellung Fahrgäste befördert.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann darf ein Taxi am Taxistand stehen?",
-      "antworten": [
-        "Nur mit Genehmigung und wenn es dienstbereit ist.",
-        "Immer.",
-        "Nur nachts.",
-        "Nie."
-      ],
-      "richtigeAntwort": "Nur mit Genehmigung und wenn es dienstbereit ist.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Unterlagen müssen im Fahrzeug mitgeführt werden?",
-      "antworten": [
-        "Fahrzeugschein, Genehmigungsurkunde, Versicherungsnachweis.",
-        "Nur der Führerschein.",
-        "Nur eine Quittung.",
-        "Steuerbescheid."
-      ],
-      "richtigeAntwort": "Fahrzeugschein, Genehmigungsurkunde, Versicherungsnachweis.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer ist für die ordnungsgemäße Wartung des Taxis verantwortlich?",
-      "antworten": [
-        "Der Unternehmer.",
-        "Der Fahrgast.",
-        "Der Hersteller.",
-        "Die Polizei."
-      ],
-      "richtigeAntwort": "Der Unternehmer.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was gilt beim Transport von Tieren im Taxi?",
-      "antworten": [
-        "Blindenhunde müssen immer mitgenommen werden.",
-        "Tiere dürfen nur mit Erlaubnis des Unternehmers befördert werden.",
-        "Tiere sind grundsätzlich verboten.",
-        "Nur kleine Tiere sind erlaubt."
-      ],
-      "richtigeAntwort": "Blindenhunde müssen immer mitgenommen werden.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was muss ein Taxiunternehmer bei der Anstellung von Fahrern beachten?",
-      "antworten": [
-        "Fahrer müssen im Besitz eines Personenbeförderungsscheins sein.",
-        "Fahrer dürfen jünger als 18 Jahre sein.",
-        "Fahrer müssen keine Ausbildung vorweisen.",
-        "Nur verwandte Personen dürfen beschäftigt werden."
-      ],
-      "richtigeAntwort": "Fahrer müssen im Besitz eines Personenbeförderungsscheins sein.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Arten von Genehmigungen gibt es im Taxigewerbe?",
-      "antworten": [
-        "Genehmigung für Taxen, Mietwagen und Linienverkehr.",
-        "Nur für Taxis.",
-        "Nur für Mietwagen.",
-        "Nur für Busse."
-      ],
-      "richtigeAntwort": "Genehmigung für Taxen, Mietwagen und Linienverkehr.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist bei der Rückgabe von Fundsachen im Taxi zu tun?",
-      "antworten": [
-        "Unverzüglich beim zuständigen Fundbüro abgeben.",
-        "Dem Fahrgast zurückgeben, wenn erreichbar.",
-        "Selbst behalten.",
-        "Dem Unternehmer geben."
-      ],
-      "richtigeAntwort": "Unverzüglich beim zuständigen Fundbüro abgeben.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie oft muss der Unternehmer das Fahrzeug auf Verkehrssicherheit überprüfen?",
-      "antworten": [
-        "Regelmäßig, mindestens jedoch täglich vor Dienstbeginn.",
-        "Nur beim TÜV-Termin.",
-        "Alle zwei Wochen.",
-        "Nie."
-      ],
-      "richtigeAntwort": "Regelmäßig, mindestens jedoch täglich vor Dienstbeginn.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Pflichten gelten für den Taxiunternehmer in Bezug auf seine Fahrer?",
-      "antworten": [
-        "Überwachung der Einhaltung aller rechtlichen Vorgaben und Schulung.",
-        "Keine Pflichten.",
-        "Nur Auszahlung des Lohns.",
-        "Nur Kontrolle der Quittungsblöcke."
-      ],
-      "richtigeAntwort": "Überwachung der Einhaltung aller rechtlichen Vorgaben und Schulung.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist die Hauptaufgabe des Taxameters?",
-      "antworten": [
-        "Fahrpreisermittlung und Aufzeichnung der Fahrtstrecke.",
-        "Steuerberechnung.",
-        "Wartung des Fahrzeugs.",
-        "Fahrerschulung."
-      ],
-      "richtigeAntwort": "Fahrpreisermittlung und Aufzeichnung der Fahrtstrecke.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann dürfen Kinder ohne Kindersitz im Taxi mitfahren?",
-      "antworten": [
-        "Nur wenn kein Sitz vorhanden ist und eine Ausnahme nachgewiesen wird.",
-        "Immer.",
-        "Nie.",
-        "Nur bei Fahrten unter 2 km."
-      ],
-      "richtigeAntwort": "Nur wenn kein Sitz vorhanden ist und eine Ausnahme nachgewiesen wird.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer haftet bei Diebstahl von Fahrgasteigentum im Taxi?",
-      "antworten": [
-        "Der Unternehmer, wenn ein Verschulden vorliegt.",
-        "Immer der Fahrgast.",
-        "Niemand.",
-        "Die Versicherung zahlt immer."
-      ],
-      "richtigeAntwort": "Der Unternehmer, wenn ein Verschulden vorliegt.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was versteht man unter Beförderungspflicht?",
-      "antworten": [
-        "Pflicht zur Beförderung von Fahrgästen im Pflichtfahrgebiet.",
-        "Pflicht zur Überprüfung des Fahrzeugs.",
-        "Pflicht zur Reinigung des Taxis.",
-        "Pflicht, Quittungen auszustellen."
-      ],
-      "richtigeAntwort": "Pflicht zur Beförderung von Fahrgästen im Pflichtfahrgebiet.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer ist verpflichtet, einen Verbandkasten mitzuführen?",
-      "antworten": [
-        "Jeder Taxifahrer.",
-        "Nur der Unternehmer.",
-        "Nur der Fahrgast.",
-        "Niemand."
-      ],
-      "richtigeAntwort": "Jeder Taxifahrer.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was muss auf einer Taxi-Quittung stehen?",
-      "antworten": [
-        "Name und Anschrift des Unternehmers, Datum, Fahrpreis, Unterschrift des Fahrers.",
-        "Nur der Fahrpreis.",
-        "Nur das Datum.",
-        "Nur die Unterschrift."
-      ],
-      "richtigeAntwort": "Name und Anschrift des Unternehmers, Datum, Fahrpreis, Unterschrift des Fahrers.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Bedeutung hat das Pflichtfahrgebiet für den Taxibetrieb?",
-      "antworten": [
-        "Innerhalb dieses Gebiets besteht Betriebs- und Beförderungspflicht.",
-        "Nur dort dürfen Taxis abgestellt werden.",
-        "Dort dürfen keine Fahrgäste einsteigen.",
-        "Das Gebiet hat keine Bedeutung."
-      ],
-      "richtigeAntwort": "Innerhalb dieses Gebiets besteht Betriebs- und Beförderungspflicht.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer darf ein Taxi führen?",
-      "antworten": [
-        "Personen mit Führerschein Klasse B und Personenbeförderungsschein.",
-        "Jeder mit Führerschein.",
-        "Nur der Unternehmer.",
-        "Nur Fahrlehrer."
-      ],
-      "richtigeAntwort": "Personen mit Führerschein Klasse B und Personenbeförderungsschein.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann endet die Pflicht zur Betriebsbereitschaft?",
-      "antworten": [
-        "Mit Ablauf der Betriebszeit laut Genehmigung.",
-        "Nie.",
-        "Bei Schichtwechsel.",
-        "Nur bei Krankheit."
-      ],
-      "richtigeAntwort": "Mit Ablauf der Betriebszeit laut Genehmigung.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist ein Funkauftrag?",
-      "antworten": [
-        "Eine Fahrgastbestellung, die per Funk an das Taxi vermittelt wird.",
-        "Eine Anweisung vom Unternehmer.",
-        "Eine Polizeimeldung.",
-        "Eine Musikübertragung."
-      ],
-      "richtigeAntwort": "Eine Fahrgastbestellung, die per Funk an das Taxi vermittelt wird.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Kosten sind beim Betrieb eines Taxis zu berücksichtigen?",
-      "antworten": [
-        "Betriebs-, Personal-, Sach- und Gemeinkosten.",
-        "Nur Treibstoff.",
-        "Nur Löhne.",
-        "Keine, wenn das Fahrzeug abbezahlt ist."
-      ],
-      "richtigeAntwort": "Betriebs-, Personal-, Sach- und Gemeinkosten.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was gilt für die Beförderung von Blindenhunden?",
-      "antworten": [
-        "Sie müssen kostenfrei mitgenommen werden.",
-        "Sie dürfen nicht befördert werden.",
-        "Nur auf dem Rücksitz.",
-        "Nur nach Absprache."
-      ],
-      "richtigeAntwort": "Sie müssen kostenfrei mitgenommen werden.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann darf ein Taxifahrer die Beförderung verweigern?",
-      "antworten": [
-        "Bei Gefahr für Sicherheit und Ordnung.",
-        "Nie.",
-        "Wenn ihm das Ziel nicht passt.",
-        "Wenn der Fahrgast allein ist."
-      ],
-      "richtigeAntwort": "Bei Gefahr für Sicherheit und Ordnung.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie ist mit gefundenen Gegenständen im Taxi zu verfahren?",
-      "antworten": [
-        "Sie sind unverzüglich beim Fundbüro abzugeben.",
-        "Sie dürfen behalten werden.",
-        "Sie sind an den Unternehmer zu geben.",
-        "Sie werden vernichtet."
-      ],
-      "richtigeAntwort": "Sie sind unverzüglich beim Fundbüro abzugeben.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist ein Taxameter?",
-      "antworten": [
-        "Ein Gerät zur Ermittlung des Fahrpreises.",
-        "Ein Bordcomputer.",
-        "Ein Navigationsgerät.",
-        "Eine Musikanlage."
-      ],
-      "richtigeAntwort": "Ein Gerät zur Ermittlung des Fahrpreises.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Unterlagen müssen Taxifahrer bei einer Kontrolle vorlegen?",
-      "antworten": [
-        "Führerschein, Personenbeförderungsschein, Fahrzeugschein, Genehmigungsurkunde.",
-        "Personalausweis.",
-        "Fahrtenbuch.",
-        "Kassenbuch."
-      ],
-      "richtigeAntwort": "Führerschein, Personenbeförderungsschein, Fahrzeugschein, Genehmigungsurkunde.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Funktion hat die Betriebspflicht?",
-      "antworten": [
-        "Sicherstellung der jederzeitigen Betriebsbereitschaft im Pflichtfahrgebiet.",
-        "Nur für den Unternehmer relevant.",
-        "Sie gilt nur für Mietwagen.",
-        "Keine Funktion."
-      ],
-      "richtigeAntwort": "Sicherstellung der jederzeitigen Betriebsbereitschaft im Pflichtfahrgebiet.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann ist das Fahrtenbuch erforderlich?",
-      "antworten": [
-        "Bei steuerlicher Notwendigkeit.",
-        "Immer.",
-        "Nie.",
-        "Nur für Mietwagen."
-      ],
-      "richtigeAntwort": "Bei steuerlicher Notwendigkeit.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Angaben müssen in der Fahrtenbuchführung enthalten sein?",
-      "antworten": [
-        "Datum, Start, Ziel, Kilometerstand, Zweck der Fahrt.",
-        "Nur Start und Ziel.",
-        "Nur das Datum.",
-        "Nur der Kilometerstand."
-      ],
-      "richtigeAntwort": "Datum, Start, Ziel, Kilometerstand, Zweck der Fahrt.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was versteht man unter Tarifpflicht?",
-      "antworten": [
-        "Die Pflicht, die festgelegten Tarife einzuhalten.",
-        "Die Pflicht, Rabatte zu gewähren.",
-        "Die Pflicht, frei über Preise zu entscheiden.",
-        "Keine Bedeutung."
-      ],
-      "richtigeAntwort": "Die Pflicht, die festgelegten Tarife einzuhalten.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist bei der Überlassung des Taxis an Fahrer zu beachten?",
-      "antworten": [
-        "Fahrer müssen geeignet und zuverlässig sein.",
-        "Nur Verwandte dürfen fahren.",
-        "Keine besonderen Vorschriften.",
-        "Fahrzeuge dürfen nicht überlassen werden."
-      ],
-      "richtigeAntwort": "Fahrer müssen geeignet und zuverlässig sein.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie müssen Taxifahrzeuge gekennzeichnet sein?",
-      "antworten": [
-        "Mit dem Taxischild und der Ordnungsnummer.",
-        "Mit bunten Aufklebern.",
-        "Keine Kennzeichnung erforderlich.",
-        "Nur mit dem Firmennamen."
-      ],
-      "richtigeAntwort": "Mit dem Taxischild und der Ordnungsnummer.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer kontrolliert die Einhaltung der Tarifordnung?",
-      "antworten": [
-        "Das Ordnungsamt.",
-        "Das Finanzamt.",
-        "Der Unternehmer.",
-        "Die Fahrgäste."
-      ],
-      "richtigeAntwort": "Das Ordnungsamt.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie müssen Quittungen ausgestellt werden?",
-      "antworten": [
-        "Leserlich, vollständig und mit allen Pflichtangaben.",
-        "Nur mit Fahrpreis.",
-        "Nur mit Datum.",
-        "Unterschrift reicht."
-      ],
-      "richtigeAntwort": "Leserlich, vollständig und mit allen Pflichtangaben.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann ist die jährliche Hauptuntersuchung für Taxis fällig?",
-      "antworten": [
-        "Nach 12 Monaten.",
-        "Alle 24 Monate.",
-        "Alle 6 Monate.",
-        "Nie."
-      ],
-      "richtigeAntwort": "Nach 12 Monaten.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Folgen kann das Fahren ohne gültige Betriebserlaubnis haben?",
-      "antworten": [
-        "Bußgeld und Stilllegung des Fahrzeugs.",
-        "Keine.",
-        "Nur Verwarnung.",
-        "Der Fahrer muss ausgetauscht werden."
-      ],
-      "richtigeAntwort": "Bußgeld und Stilllegung des Fahrzeugs.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist beim Wechsel der Taxiversicherung zu beachten?",
-      "antworten": [
-        "Neue Versicherungsbestätigung muss bei der Behörde eingereicht werden.",
-        "Nichts.",
-        "Nur dem Fahrer mitteilen.",
-        "Nur die Versicherung anrufen."
-      ],
-      "richtigeAntwort": "Neue Versicherungsbestätigung muss bei der Behörde eingereicht werden.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Rolle spielt der Unternehmer bei der Abführung der Umsatzsteuer?",
-      "antworten": [
-        "Er muss alle steuerlichen Pflichten erfüllen.",
-        "Nur die Buchhaltung informiert sich.",
-        "Nur der Fahrer haftet.",
-        "Niemand."
-      ],
-      "richtigeAntwort": "Er muss alle steuerlichen Pflichten erfüllen.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann ist der Austausch des Verbandskastens im Taxi erforderlich?",
-      "antworten": [
-        "Nach Ablauf des Verfallsdatums.",
-        "Nie.",
-        "Nur bei Fahrten ins Ausland.",
-        "Wenn ein Fahrgast es verlangt."
-      ],
-      "richtigeAntwort": "Nach Ablauf des Verfallsdatums.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer darf den Taxameter plombieren?",
-      "antworten": [
-        "Nur eine zugelassene Werkstatt.",
-        "Jeder.",
-        "Der Fahrer.",
-        "Der Unternehmer."
-      ],
-      "richtigeAntwort": "Nur eine zugelassene Werkstatt.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist bei einer Fahrt mit Kindern im Taxi zu beachten?",
-      "antworten": [
-        "Kinder müssen mit Kindersitz oder Sitzerhöhung gesichert werden.",
-        "Nichts.",
-        "Nur wenn Eltern zustimmen.",
-        "Nur bei langen Fahrten."
-      ],
-      "richtigeAntwort": "Kinder müssen mit Kindersitz oder Sitzerhöhung gesichert werden.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie lange muss der Unternehmer Aufzeichnungen über Umsätze führen?",
-      "antworten": [
-        "Mindestens 10 Jahre.",
-        "Nur 1 Jahr.",
-        "Nur 5 Jahre.",
-        "Unbegrenzt."
-      ],
-      "richtigeAntwort": "Mindestens 10 Jahre.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was versteht man unter einer Ortskundeprüfung?",
-      "antworten": [
-        "Kenntnisprüfung über die örtlichen Gegebenheiten und Wege.",
-        "Führerscheinprüfung.",
-        "Technikprüfung.",
-        "Sprachtest."
-      ],
-      "richtigeAntwort": "Kenntnisprüfung über die örtlichen Gegebenheiten und Wege.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann endet die Betriebspflicht eines Taxis?",
-      "antworten": [
-        "Mit Ablauf der Genehmigungszeit oder vorübergehender Betriebsstilllegung.",
-        "Nie.",
-        "Immer um Mitternacht.",
-        "Mit Ablauf des Monats."
-      ],
-      "richtigeAntwort": "Mit Ablauf der Genehmigungszeit oder vorübergehender Betriebsstilllegung.",
-      "punkte": 1
-    },
-
-    {
-      "frage": "Welche Aufgaben übernimmt die IHK im Zusammenhang mit Taxiunternehmen?",
-      "antworten": [
-        "Fachkundeprüfung und Beratung.",
-        "Fahrzeugzulassung.",
-        "Taxitarife festsetzen.",
-        "Fahrzeugwartung."
-      ],
-      "richtigeAntwort": "Fachkundeprüfung und Beratung.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann ist eine Umsatzsteuervoranmeldung abzugeben?",
-      "antworten": [
-        "In der Regel monatlich beim Finanzamt.",
-        "Nie.",
-        "Nur am Jahresende.",
-        "Bei Betriebsaufgabe."
-      ],
-      "richtigeAntwort": "In der Regel monatlich beim Finanzamt.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer ist verantwortlich für die Einhaltung der Arbeitszeitgesetze?",
-      "antworten": [
-        "Der Unternehmer.",
-        "Der Fahrgast.",
-        "Die Werkstatt.",
-        "Das Finanzamt."
-      ],
-      "richtigeAntwort": "Der Unternehmer.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie werden Streitigkeiten zwischen Fahrgast und Fahrer gelöst?",
-      "antworten": [
-        "Erst Schlichtungsstelle, dann ggf. Gericht.",
-        "Immer sofort vor Ort.",
-        "Nur durch Polizei.",
-        "Nie."
-      ],
-      "richtigeAntwort": "Erst Schlichtungsstelle, dann ggf. Gericht.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist bei der Preisgestaltung im Taxigewerbe zu beachten?",
-      "antworten": [
-        "Die gesetzlich vorgeschriebenen Tarife sind einzuhalten.",
-        "Freie Preisgestaltung ist immer möglich.",
-        "Jeder Fahrer entscheidet selbst.",
-        "Nur Rabattaktionen sind erlaubt."
-      ],
-      "richtigeAntwort": "Die gesetzlich vorgeschriebenen Tarife sind einzuhalten.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann muss der Taxameter eingeschaltet werden?",
-      "antworten": [
-        "Zu Beginn jeder Fahrt.",
-        "Nie.",
-        "Nur auf Verlangen des Fahrgasts.",
-        "Nach der Hälfte der Strecke."
-      ],
-      "richtigeAntwort": "Zu Beginn jeder Fahrt.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist bei Fahrten im Auftrag von Behörden zu beachten?",
-      "antworten": [
-        "Die jeweiligen besonderen Vereinbarungen sind zu beachten.",
-        "Es gibt keine Unterschiede.",
-        "Der Fahrpreis verdoppelt sich.",
-        "Das Taxi darf nicht genutzt werden."
-      ],
-      "richtigeAntwort": "Die jeweiligen besonderen Vereinbarungen sind zu beachten.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer kontrolliert die Einhaltung der Genehmigungsauflagen?",
-      "antworten": [
-        "Die Genehmigungsbehörde.",
-        "Der Fahrgast.",
-        "Die Polizei.",
-        "Das Finanzamt."
-      ],
-      "richtigeAntwort": "Die Genehmigungsbehörde.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist zu tun, wenn ein Fahrer gegen Vorschriften verstößt?",
-      "antworten": [
-        "Der Unternehmer muss entsprechende Maßnahmen ergreifen.",
-        "Nichts.",
-        "Immer die Polizei informieren.",
-        "Den Fahrgast fragen."
-      ],
-      "richtigeAntwort": "Der Unternehmer muss entsprechende Maßnahmen ergreifen.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche steuerlichen Unterlagen sind für das Finanzamt bereitzuhalten?",
-      "antworten": [
-        "Buchhaltungsunterlagen, Quittungen, Fahraufträge.",
-        "Nur der Führerschein.",
-        "Nur Taxameterbelege.",
-        "Keine."
-      ],
-      "richtigeAntwort": "Buchhaltungsunterlagen, Quittungen, Fahraufträge.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist bei einem Fahrzeugwechsel zu beachten?",
-      "antworten": [
-        "Genehmigung muss auf das neue Fahrzeug übertragen werden.",
-        "Nichts.",
-        "Nur der Fahrer muss informiert werden.",
-        "Die Werkstatt informieren."
-      ],
-      "richtigeAntwort": "Genehmigung muss auf das neue Fahrzeug übertragen werden.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist bei der Erstellung von Quittungen im Taxigewerbe zu beachten?",
-      "antworten": [
-        "Alle Pflichtangaben wie Preis, Datum, Unternehmer, Unterschrift müssen enthalten sein.",
-        "Nur der Fahrpreis genügt.",
-        "Es ist keine Quittung notwendig.",
-        "Quittungen sind nur bei Auslandsgästen vorgeschrieben."
-      ],
-      "richtigeAntwort": "Alle Pflichtangaben wie Preis, Datum, Unternehmer, Unterschrift müssen enthalten sein.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer ist für die Ausbildung und Einweisung neuer Fahrer zuständig?",
-      "antworten": [
-        "Der Unternehmer.",
-        "Das Ordnungsamt.",
-        "Die IHK.",
-        "Der Fahrgast."
-      ],
-      "richtigeAntwort": "Der Unternehmer.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann dürfen Taxifahrzeuge mit Werbung beklebt werden?",
-      "antworten": [
-        "Nur wenn die Werbung genehmigt ist und keine Verkehrssicherheit beeinträchtigt wird.",
-        "Immer.",
-        "Nie.",
-        "Nur für eigene Werbung."
-      ],
-      "richtigeAntwort": "Nur wenn die Werbung genehmigt ist und keine Verkehrssicherheit beeinträchtigt wird.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Bedeutung hat die Konzession im Taxigewerbe?",
-      "antworten": [
-        "Sie berechtigt zur gewerblichen Personenbeförderung mit dem Taxi.",
-        "Sie ist nur für Mietwagen relevant.",
-        "Sie ersetzt den Führerschein.",
-        "Sie gilt nur im Ausland."
-      ],
-      "richtigeAntwort": "Sie berechtigt zur gewerblichen Personenbeförderung mit dem Taxi.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was versteht man unter einer Umsatzsteuer-Identifikationsnummer im Taxigewerbe?",
-      "antworten": [
-        "Eine Nummer zur eindeutigen steuerlichen Identifikation des Unternehmers.",
-        "Eine interne Betriebsnummer.",
-        "Die Nummer auf dem Taxischild.",
-        "Eine Versicherungsnummer."
-      ],
-      "richtigeAntwort": "Eine Nummer zur eindeutigen steuerlichen Identifikation des Unternehmers.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer darf Funkgespräche im Taxi abhören?",
-      "antworten": [
-        "Nur berechtigte Personen wie Polizei oder Unternehmer.",
-        "Jeder Fahrgast.",
-        "Alle Mitarbeiter.",
-        "Niemand."
-      ],
-      "richtigeAntwort": "Nur berechtigte Personen wie Polizei oder Unternehmer.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Konsequenzen hat die Verletzung der Beförderungspflicht?",
-      "antworten": [
-        "Bußgeld und evtl. Entzug der Konzession.",
-        "Gar keine.",
-        "Nur ein Verweis.",
-        "Der Fahrgast zahlt weniger."
-      ],
-      "richtigeAntwort": "Bußgeld und evtl. Entzug der Konzession.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie lange ist die Aufbewahrungspflicht für steuerrelevante Unterlagen im Taxigewerbe?",
-      "antworten": [
-        "10 Jahre.",
-        "1 Jahr.",
-        "2 Jahre.",
-        "Unbegrenzt."
-      ],
-      "richtigeAntwort": "10 Jahre.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann ist eine Betriebsunterbrechung im Taxigewerbe zu melden?",
-      "antworten": [
-        "Unverzüglich bei der Genehmigungsbehörde.",
-        "Nur nach 30 Tagen.",
-        "Nie.",
-        "Erst nach einem Jahr."
-      ],
-      "richtigeAntwort": "Unverzüglich bei der Genehmigungsbehörde.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Unterlagen müssen bei einer Betriebsprüfung vorliegen?",
-      "antworten": [
-        "Alle betrieblichen und steuerlichen Unterlagen.",
-        "Nur Quittungen.",
-        "Nur Genehmigungsurkunde.",
-        "Keine."
-      ],
-      "richtigeAntwort": "Alle betrieblichen und steuerlichen Unterlagen.",
-      "punkte": 1
-    },
-
-    {
-      "frage": "Was ist bei der Auswahl von Ersatzfahrzeugen zu beachten?",
-      "antworten": [
-        "Sie müssen für den Taxibetrieb genehmigt sein.",
-        "Jedes Fahrzeug kann genutzt werden.",
-        "Es gibt keine Regelung.",
-        "Nur Mietwagen dürfen verwendet werden."
-      ],
-      "richtigeAntwort": "Sie müssen für den Taxibetrieb genehmigt sein.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer darf die Quittungen im Taxigewerbe ausstellen?",
-      "antworten": [
-        "Nur der Fahrer oder der Unternehmer.",
-        "Der Fahrgast.",
-        "Jeder Mitarbeiter.",
-        "Nur das Finanzamt."
-      ],
-      "richtigeAntwort": "Nur der Fahrer oder der Unternehmer.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist im Fall eines Unfalls während der Fahrt zu tun?",
-      "antworten": [
-        "Unverzüglich anhalten, sichern und Hilfe leisten.",
-        "Weiterfahren.",
-        "Den Fahrgast fragen.",
-        "Nur Polizei rufen."
-      ],
-      "richtigeAntwort": "Unverzüglich anhalten, sichern und Hilfe leisten.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann darf ein Taxi als Mietwagen genutzt werden?",
-      "antworten": [
-        "Nur mit entsprechender Genehmigung.",
-        "Immer.",
-        "Nie.",
-        "Nur bei Regen."
-      ],
-      "richtigeAntwort": "Nur mit entsprechender Genehmigung.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Vorteile bringt eine Fahrerschulung?",
-      "antworten": [
-        "Verbesserte Sicherheit und Servicequalität.",
-        "Keine.",
-        "Günstigere Versicherung.",
-        "Schnelleres Fahren."
-      ],
-      "richtigeAntwort": "Verbesserte Sicherheit und Servicequalität.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist bei der Ausrüstung mit Navigationsgeräten zu beachten?",
-      "antworten": [
-        "Sie müssen stets einsatzbereit und aktuell sein.",
-        "Sie sind nicht erlaubt.",
-        "Sie dürfen nur vom Unternehmer bedient werden.",
-        "Es gibt keine Vorschrift."
-      ],
-      "richtigeAntwort": "Sie müssen stets einsatzbereit und aktuell sein.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann ist ein Einsatzfahrzeug als Taxi kenntlich zu machen?",
-      "antworten": [
-        "Immer während des Betriebs.",
-        "Nur bei Nacht.",
-        "Nie.",
-        "Nur bei Fahrgästen."
-      ],
-      "richtigeAntwort": "Immer während des Betriebs.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer entscheidet über die Anordnung von Fahrtenbüchern?",
-      "antworten": [
-        "Das Finanzamt.",
-        "Der Unternehmer.",
-        "Der Fahrer.",
-        "Die Polizei."
-      ],
-      "richtigeAntwort": "Das Finanzamt.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wann dürfen Taxameter-Einstellungen verändert werden?",
-      "antworten": [
-        "Nur von zugelassenen Fachbetrieben.",
-        "Vom Fahrer selbst.",
-        "Jederzeit vom Fahrgast.",
-        "Nie."
-      ],
-      "richtigeAntwort": "Nur von zugelassenen Fachbetrieben.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wie lange müssen Fahraufträge aufbewahrt werden?",
-      "antworten": [
-        "Mindestens ein Jahr.",
-        "Nur einen Monat.",
-        "Drei Jahre.",
-        "Unbegrenzt."
-      ],
-      "richtigeAntwort": "Mindestens ein Jahr.",
-      "punkte": 1
-    },
-
-    {
-      "frage": "Wann darf ein Taxi zum Zwecke der Eigenwerbung genutzt werden?",
-      "antworten": [
-        "Wenn die Werbung genehmigt ist.",
-        "Immer.",
-        "Nie.",
-        "Nur bei Fahrten ohne Fahrgäste."
-      ],
-      "richtigeAntwort": "Wenn die Werbung genehmigt ist.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Unterlagen müssen bei der Einstellung neuer Fahrer geprüft werden?",
-      "antworten": [
-        "Führerschein, Personenbeförderungsschein und Zuverlässigkeit.",
-        "Nur der Führerschein.",
-        "Nur die Quittungsblöcke.",
-        "Keine."
-      ],
-      "richtigeAntwort": "Führerschein, Personenbeförderungsschein und Zuverlässigkeit.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was muss bei der Anmeldung eines Taxis beim Gewerbeamt vorgelegt werden?",
-      "antworten": [
-        "Genehmigungsurkunde, Fahrzeugschein, Versicherungsnachweis.",
-        "Nur der Fahrzeugschein.",
-        "Nur die Konzession.",
-        "Nur der Führerschein."
-      ],
-      "richtigeAntwort": "Genehmigungsurkunde, Fahrzeugschein, Versicherungsnachweis.",
-      "punkte": 1
-    },
-    {
-      "frage": "Welche Fahrten sind im Fahrtenbuch besonders zu kennzeichnen?",
-      "antworten": [
-        "Dienst- und Privatfahrten.",
-        "Nur Dienstfahrten.",
-        "Nur Privatfahrten.",
-        "Es gibt keine Kennzeichnungspflicht."
-      ],
-      "richtigeAntwort": "Dienst- und Privatfahrten.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer ist Ansprechpartner für technische Fragen zum Taxameter?",
-      "antworten": [
-        "Zugelassener Fachbetrieb oder Hersteller.",
-        "Der Fahrgast.",
-        "Die Polizei.",
-        "Das Ordnungsamt."
-      ],
-      "richtigeAntwort": "Zugelassener Fachbetrieb oder Hersteller.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist beim Wechsel des Unternehmers mit dem Taxi zu tun?",
-      "antworten": [
-        "Das Fahrzeug und die Genehmigung ummelden.",
-        "Nichts.",
-        "Die Konzession bleibt bestehen.",
-        "Nur das Taxischild abmontieren."
-      ],
-      "richtigeAntwort": "Das Fahrzeug und die Genehmigung ummelden.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was gilt für die Bereitstellung von Kindersitzen im Taxi?",
-      "antworten": [
-        "Kindersitze müssen vorhanden sein, wenn Kinder befördert werden.",
-        "Nicht notwendig.",
-        "Nur bei Fahrten außerhalb des Pflichtfahrgebiets.",
-        "Nur auf Nachfrage."
-      ],
-      "richtigeAntwort": "Kindersitze müssen vorhanden sein, wenn Kinder befördert werden.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist bei der Betriebsaufgabe zu beachten?",
-      "antworten": [
-        "Meldung an die Genehmigungsbehörde und ggf. Rückgabe der Genehmigung.",
-        "Nur das Finanzamt informieren.",
-        "Fahrzeuge abmelden.",
-        "Nichts."
-      ],
-      "richtigeAntwort": "Meldung an die Genehmigungsbehörde und ggf. Rückgabe der Genehmigung.",
-      "punkte": 1
-    },
-    {
-      "frage": "Was ist bei der Einstellung von Aushilfsfahrern zu beachten?",
-      "antworten": [
-        "Sie benötigen ebenfalls einen Personenbeförderungsschein.",
-        "Keine Vorschrift.",
-        "Nur Nachweis über Versicherung.",
-        "Keine Quittungen nötig."
-      ],
-      "richtigeAntwort": "Sie benötigen ebenfalls einen Personenbeförderungsschein.",
-      "punkte": 1
-    },
-    {
-      "frage": "Wer ist für die Einhaltung der Unfallverhütungsvorschriften im Betrieb verantwortlich?",
-      "antworten": [
-        "Der Unternehmer.",
-        "Nur die Berufsgenossenschaft.",
-        "Der Fahrer.",
-        "Die Polizei."
-      ],
-      "richtigeAntwort": "Der Unternehmer.",
-      "punkte": 1
-    },
- ]
+    "teil_1": [
+        {
+            "frage": "Was ist der Unterschied zwischen einem Taxi und einem Mietwagen?",
+            "antworten": [
+                "Taxi darf Fahrgäste am Straßenrand aufnehmen, Mietwagen nur nach vorheriger Bestellung.",
+                "Taxi braucht keinen Fahrpreisanzeiger.",
+                "Mietwagen darf im Pflichtfahrgebiet stehen.",
+                "Taxi darf keine Quittungen ausstellen."
+            ],
+            "richtigeAntwort": "Taxi darf Fahrgäste am Straßenrand aufnehmen, Mietwagen nur nach vorheriger Bestellung.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie wird der Begriff 'Betriebssitz' im Personenbeförderungsrecht definiert?",
+            "antworten": [
+                "Der Ort, an dem die Fahrzeuge regelmäßig abgestellt werden.",
+                "Der Ort, an dem die Buchhaltung erledigt wird.",
+                "Der Wohnsitz des Unternehmers.",
+                "Die Adresse des Kunden."
+            ],
+            "richtigeAntwort": "Der Ort, an dem die Fahrzeuge regelmäßig abgestellt werden.",
+            "punkte": 1
+        },
+        {
+            "frage": "Nennen Sie drei Unterlagen, die ein Taxiunternehmer immer im Fahrzeug mitführen muss.",
+            "antworten": [
+                "Fahrzeugschein, Genehmigungsurkunde, Versicherungsnachweis"
+            ],
+            "richtigeAntwort": "Fahrzeugschein, Genehmigungsurkunde, Versicherungsnachweis",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Kosten sind bei der Selbstkostenkalkulation eines Taxibetriebs als Fixkosten zu berücksichtigen?",
+            "antworten": [
+                "Abschreibung, Versicherungen, Steuern"
+            ],
+            "richtigeAntwort": "Abschreibung, Versicherungen, Steuern",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche der folgenden Aussagen zur Fahrpreisanzeigerpflicht trifft zu?",
+            "antworten": [
+                "Taxis müssen mit einem Fahrpreisanzeiger ausgestattet sein.",
+                "Mietwagen müssen immer einen Fahrpreisanzeiger haben.",
+                "Der Fahrpreisanzeiger ist freiwillig.",
+                "Nur Fahrzeuge mit mehr als 8 Sitzen benötigen einen Fahrpreisanzeiger."
+            ],
+            "richtigeAntwort": "Taxis müssen mit einem Fahrpreisanzeiger ausgestattet sein.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie hoch ist die Umsatzsteuer auf Taxifahrten in Deutschland?",
+            "antworten": [
+                "7%",
+                "10%",
+                "19%",
+                "21%"
+            ],
+            "richtigeAntwort": "7%",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer ist verpflichtet, den Fahrpreisanzeiger zu bedienen?",
+            "antworten": [
+                "Der Fahrer",
+                "Der Fahrgast",
+                "Der Unternehmer",
+                "Die Polizei"
+            ],
+            "richtigeAntwort": "Der Fahrer",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Versicherung ist für ein Taxi gesetzlich vorgeschrieben?",
+            "antworten": [
+                "Haftpflichtversicherung",
+                "Hausratversicherung",
+                "Lebensversicherung",
+                "Unfallversicherung"
+            ],
+            "richtigeAntwort": "Haftpflichtversicherung",
+            "punkte": 1
+        },
+        {
+            "frage": "Nennen Sie zwei Beispiele für Betriebskosten eines Taxis.",
+            "antworten": [
+                "Kraftstoff, Wartung"
+            ],
+            "richtigeAntwort": "Kraftstoff, Wartung",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer genehmigt den Betrieb eines Taxis?",
+            "antworten": [
+                "Die örtliche Genehmigungsbehörde",
+                "Der TÜV",
+                "Das Finanzamt",
+                "Das Gewerbeamt"
+            ],
+            "richtigeAntwort": "Die örtliche Genehmigungsbehörde",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Dokumente muss ein Taxiunternehmer dem Fahrgast auf Wunsch vorlegen können?",
+            "antworten": [
+                "Fahrzeugschein und Genehmigungsurkunde",
+                "Führerschein",
+                "Kfz-Steuerbescheid",
+                "Versicherungsnachweis"
+            ],
+            "richtigeAntwort": "Fahrzeugschein und Genehmigungsurkunde",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist die Ortskundeprüfung?",
+            "antworten": [
+                "Eine Prüfung über das örtliche Straßennetz und wichtige Ziele.",
+                "Eine Prüfung über Steuerrecht.",
+                "Ein TÜV-Test für das Fahrzeug.",
+                "Eine Prüfung über Versicherungen."
+            ],
+            "richtigeAntwort": "Eine Prüfung über das örtliche Straßennetz und wichtige Ziele.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer darf eine Ortskundeprüfung abnehmen?",
+            "antworten": [
+                "Die zuständige Genehmigungsbehörde",
+                "Der Fahrgast",
+                "Der Unternehmer selbst",
+                "Die Polizei"
+            ],
+            "richtigeAntwort": "Die zuständige Genehmigungsbehörde",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann gilt ein Taxi als konzessioniert?",
+            "antworten": [
+                "Wenn eine Genehmigung nach § 47 PBefG vorliegt.",
+                "Wenn es eine Ortskundeprüfung hat.",
+                "Wenn es regelmäßig gewartet wird.",
+                "Wenn es eine Taxameterprüfung hat."
+            ],
+            "richtigeAntwort": "Wenn eine Genehmigung nach § 47 PBefG vorliegt.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Farbe muss ein Taxi in Deutschland üblicherweise haben?",
+            "antworten": [
+                "Hellelfenbein (cremefarben)",
+                "Schwarz",
+                "Rot",
+                "Blau"
+            ],
+            "richtigeAntwort": "Hellelfenbein (cremefarben)",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie lange ist die Genehmigung für ein Taxi in der Regel gültig?",
+            "antworten": [
+                "5 Jahre",
+                "1 Jahr",
+                "10 Jahre",
+                "Unbegrenzt"
+            ],
+            "richtigeAntwort": "5 Jahre",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist der Mindestinhalt einer Taxi-Quittung?",
+            "antworten": [
+                "Datum, Fahrpreis, Name/Anschrift Unternehmer, Unterschrift Fahrer",
+                "Nur Datum und Fahrpreis",
+                "Nur der Name des Unternehmers",
+                "Nur die Unterschrift des Fahrers"
+            ],
+            "richtigeAntwort": "Datum, Fahrpreis, Name/Anschrift Unternehmer, Unterschrift Fahrer",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche technische Überprüfung muss ein Taxi regelmäßig bestehen?",
+            "antworten": [
+                "TÜV-Hauptuntersuchung",
+                "Fahrpreisanzeigerprüfung",
+                "Umweltprüfung",
+                "Unfallprüfung"
+            ],
+            "richtigeAntwort": "TÜV-Hauptuntersuchung",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist die Hauptaufgabe eines Taxifahrers?",
+            "antworten": [
+                "Beförderung von Fahrgästen gegen Entgelt",
+                "Wartung des Fahrzeugs",
+                "Fahrzeug reinigen",
+                "Versicherungen abschließen"
+            ],
+            "richtigeAntwort": "Beförderung von Fahrgästen gegen Entgelt",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer trägt die Verantwortung für die Verkehrssicherheit des Taxis?",
+            "antworten": [
+                "Der Fahrer und der Unternehmer",
+                "Nur der Fahrgast",
+                "Nur die Polizei",
+                "Das Ordnungsamt"
+            ],
+            "richtigeAntwort": "Der Fahrer und der Unternehmer",
+            "punkte": 1
+        },
+        {
+            "frage": "Was versteht man unter Betriebspflicht?",
+            "antworten": [
+                "Pflicht zur ständigen Bereitstellung eines Fahrzeugs im Pflichtfahrgebiet.",
+                "Pflicht, das Fahrzeug zu reinigen.",
+                "Pflicht, Quittungen auszustellen.",
+                "Pflicht, Rabatte zu gewähren."
+            ],
+            "richtigeAntwort": "Pflicht zur ständigen Bereitstellung eines Fahrzeugs im Pflichtfahrgebiet.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann beginnt die Pflichtfahrgebietspflicht?",
+            "antworten": [
+                "Mit Erteilung der Genehmigung.",
+                "Bei der ersten Fahrt.",
+                "Nach dem ersten Jahr.",
+                "Erst bei Betriebsauslastung."
+            ],
+            "richtigeAntwort": "Mit Erteilung der Genehmigung.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist eine Taxameterprüfung?",
+            "antworten": [
+                "Regelmäßige Überprüfung des Fahrpreisanzeigers.",
+                "Reinigung des Fahrzeugs.",
+                "Überprüfung der Bremsen.",
+                "Überprüfung des Motors."
+            ],
+            "richtigeAntwort": "Regelmäßige Überprüfung des Fahrpreisanzeigers.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welcher Paragraph regelt den Gelegenheitsverkehr mit Taxen?",
+            "antworten": [
+                "§ 47 PBefG",
+                "§ 1 BGB",
+                "§ 21 StVO",
+                "§ 29 GewO"
+            ],
+            "richtigeAntwort": "§ 47 PBefG",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Kosten zählen zu den variablen Kosten?",
+            "antworten": [
+                "Kraftstoff, Wartung, Reparaturen",
+                "Abschreibung",
+                "Versicherung",
+                "Steuern"
+            ],
+            "richtigeAntwort": "Kraftstoff, Wartung, Reparaturen",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer darf eine Ortskundeprüfung verlangen?",
+            "antworten": [
+                "Die Genehmigungsbehörde",
+                "Der Fahrgast",
+                "Der Unternehmer",
+                "Der TÜV"
+            ],
+            "richtigeAntwort": "Die Genehmigungsbehörde",
+            "punkte": 1
+        },
+        {
+            "frage": "Wozu dient die Quittungspflicht?",
+            "antworten": [
+                "Nachweis der Fahrt und des Fahrpreises für den Fahrgast.",
+                "Beleg für die Steuer.",
+                "Beweis für das Finanzamt.",
+                "Beweis für die Versicherung."
+            ],
+            "richtigeAntwort": "Nachweis der Fahrt und des Fahrpreises für den Fahrgast.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Angaben müssen auf einer Quittung für den Fahrgast mindestens enthalten sein?",
+            "antworten": [
+                "Datum, Fahrpreis, Name/Anschrift Unternehmer, Unterschrift Fahrer",
+                "Nur das Datum",
+                "Nur die Fahrstrecke",
+                "Nur die Unterschrift des Fahrers"
+            ],
+            "richtigeAntwort": "Datum, Fahrpreis, Name/Anschrift Unternehmer, Unterschrift Fahrer",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer kontrolliert die Einhaltung der Taxiordnung?",
+            "antworten": [
+                "Das Ordnungsamt",
+                "Der Unternehmer",
+                "Der Fahrgast",
+                "Die Versicherung"
+            ],
+            "richtigeAntwort": "Das Ordnungsamt",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Vorschriften gelten für die Beförderung von Kindern im Taxi?",
+            "antworten": [
+                "Kindersitze und Sitzerhöhungen müssen je nach Alter und Größe vorhanden sein.",
+                "Kinder dürfen nur vorne sitzen.",
+                "Es gibt keine besonderen Vorschriften.",
+                "Kinder müssen immer angeschnallt sein, aber Kindersitze sind freiwillig."
+            ],
+            "richtigeAntwort": "Kindersitze und Sitzerhöhungen müssen je nach Alter und Größe vorhanden sein.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie oft muss das Taxi auf technische Mängel überprüft werden?",
+            "antworten": [
+                "Mindestens einmal jährlich.",
+                "Alle zwei Jahre.",
+                "Nur vor der ersten Inbetriebnahme.",
+                "Gar nicht."
+            ],
+            "richtigeAntwort": "Mindestens einmal jährlich.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer ist verantwortlich für die Einhaltung der Lenk- und Ruhezeiten?",
+            "antworten": [
+                "Der Fahrer und der Unternehmer gemeinsam.",
+                "Nur der Unternehmer.",
+                "Nur der Fahrer.",
+                "Die Polizei."
+            ],
+            "richtigeAntwort": "Der Fahrer und der Unternehmer gemeinsam.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was versteht man unter dem Pflichtfahrgebiet?",
+            "antworten": [
+                "Das geografische Gebiet, in dem das Taxi zur Aufnahme von Fahrgästen verpflichtet ist.",
+                "Das Gebiet, in dem das Taxi gewartet wird.",
+                "Das Gebiet, in dem das Taxi abgestellt wird.",
+                "Das Bundesland des Unternehmens."
+            ],
+            "richtigeAntwort": "Das geografische Gebiet, in dem das Taxi zur Aufnahme von Fahrgästen verpflichtet ist.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann dürfen Taxen den Funk benutzen?",
+            "antworten": [
+                "Für die Annahme von Aufträgen und betriebliche Kommunikation.",
+                "Für private Gespräche.",
+                "Nur in Notfällen.",
+                "Nie, Funk ist verboten."
+            ],
+            "richtigeAntwort": "Für die Annahme von Aufträgen und betriebliche Kommunikation.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei der Beförderung von Menschen mit Behinderung zu beachten?",
+            "antworten": [
+                "Barrierefreiheit und Hilfestellung müssen gewährt werden.",
+                "Nichts Besonderes.",
+                "Sie zahlen einen Aufpreis.",
+                "Sie dürfen nicht befördert werden."
+            ],
+            "richtigeAntwort": "Barrierefreiheit und Hilfestellung müssen gewährt werden.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welches Verhalten wird vom Taxifahrer im Fahrdienst erwartet?",
+            "antworten": [
+                "Höflich, rücksichtsvoll und hilfsbereit.",
+                "Neutral und zurückhaltend.",
+                "Bestimmend und fordernd.",
+                "Gleichgültig."
+            ],
+            "richtigeAntwort": "Höflich, rücksichtsvoll und hilfsbereit.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie ist mit Fundsachen im Taxi zu verfahren?",
+            "antworten": [
+                "Dem Fundbüro melden und abgeben.",
+                "Selbst behalten.",
+                "Dem nächsten Fahrgast geben.",
+                "Im Fahrzeug liegen lassen."
+            ],
+            "richtigeAntwort": "Dem Fundbüro melden und abgeben.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann darf ein Taxi die Fahrt ablehnen?",
+            "antworten": [
+                "Bei Gefahr für Sicherheit oder wenn Fahrgast stark alkoholisiert ist.",
+                "Wenn die Strecke zu kurz ist.",
+                "Wenn der Fahrgast ein Kind ist.",
+                "Nie, jede Fahrt muss angenommen werden."
+            ],
+            "richtigeAntwort": "Bei Gefahr für Sicherheit oder wenn Fahrgast stark alkoholisiert ist.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie müssen Fahrpreise im Taxi abgerechnet werden?",
+            "antworten": [
+                "Über den Fahrpreisanzeiger (Taxameter) gemäß Tarifordnung.",
+                "Schätzung durch den Fahrer.",
+                "Nach Tageszeit.",
+                "Je nach Anzahl der Fahrgäste."
+            ],
+            "richtigeAntwort": "Über den Fahrpreisanzeiger (Taxameter) gemäß Tarifordnung.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Versicherung deckt Schäden am eigenen Taxi bei selbst verschuldetem Unfall?",
+            "antworten": [
+                "Kaskoversicherung.",
+                "Haftpflichtversicherung.",
+                "Unfallversicherung.",
+                "Hausratversicherung."
+            ],
+            "richtigeAntwort": "Kaskoversicherung.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann muss ein Taxifahrer ein Fahrtenbuch führen?",
+            "antworten": [
+                "Wenn dies steuerlich vorgeschrieben ist.",
+                "Immer.",
+                "Nie.",
+                "Nur bei Fahrten ins Ausland."
+            ],
+            "richtigeAntwort": "Wenn dies steuerlich vorgeschrieben ist.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei der Anmietung von Ersatzfahrzeugen zu beachten?",
+            "antworten": [
+                "Sie müssen für den Taxibetrieb zugelassen sein.",
+                "Sie können jedes beliebige Fahrzeug nutzen.",
+                "Nur Mietwagenunternehmen dürfen Ersatzfahrzeuge stellen.",
+                "Es gibt keine Vorschriften."
+            ],
+            "richtigeAntwort": "Sie müssen für den Taxibetrieb zugelassen sein.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie hoch ist die Promillegrenze für Taxifahrer während des Dienstes?",
+            "antworten": [
+                "0,0 Promille.",
+                "0,3 Promille.",
+                "0,5 Promille.",
+                "1,1 Promille."
+            ],
+            "richtigeAntwort": "0,0 Promille.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Sanktionen drohen bei Verstoß gegen die Betriebspflicht?",
+            "antworten": [
+                "Bußgelder oder Entzug der Genehmigung.",
+                "Es gibt keine Sanktionen.",
+                "Ermahnung durch den Fahrgast.",
+                "Sperrung der Funkverbindung."
+            ],
+            "richtigeAntwort": "Bußgelder oder Entzug der Genehmigung.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist ein Pflichtfahrgebiet?",
+            "antworten": [
+                "Ein festgelegtes Gebiet, in dem das Taxi zur Beförderung bereitstehen muss.",
+                "Ein Gebiet, in dem keine Taxis fahren dürfen.",
+                "Der Betriebssitz des Unternehmers.",
+                "Das Bundesland."
+            ],
+            "richtigeAntwort": "Ein festgelegtes Gebiet, in dem das Taxi zur Beförderung bereitstehen muss.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer ist für die Einhaltung des Arbeitszeitgesetzes im Taxigewerbe verantwortlich?",
+            "antworten": [
+                "Der Unternehmer und der Fahrer gemeinsam.",
+                "Nur der Unternehmer.",
+                "Nur der Fahrer.",
+                "Das Gewerbeamt."
+            ],
+            "richtigeAntwort": "Der Unternehmer und der Fahrer gemeinsam.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie werden die Fahrpreise für Taxis in Deutschland festgelegt?",
+            "antworten": [
+                "Durch die jeweilige örtliche Tarifordnung.",
+                "Vom Unternehmer nach Belieben.",
+                "Vom Fahrgast.",
+                "Vom Bundesverkehrsministerium."
+            ],
+            "richtigeAntwort": "Durch die jeweilige örtliche Tarifordnung.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie lange muss ein Taxiunternehmer Auftragsbelege aufbewahren?",
+            "antworten": [
+                "Mindestens 1 Jahr.",
+                "1 Monat.",
+                "5 Jahre.",
+                "Unbegrenzt."
+            ],
+            "richtigeAntwort": "Mindestens 1 Jahr.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Pflichten hat ein Taxifahrer gegenüber mobilitätseingeschränkten Personen?",
+            "antworten": [
+                "Besondere Hilfestellung, z.B. beim Ein- und Aussteigen.",
+                "Keine besonderen Pflichten.",
+                "Nur die Fahrt selbst durchführen.",
+                "Rabatt auf den Fahrpreis geben."
+            ],
+            "richtigeAntwort": "Besondere Hilfestellung, z.B. beim Ein- und Aussteigen.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei der Fahrgastbeförderung im Grenzverkehr zu beachten?",
+            "antworten": [
+                "Die jeweiligen gesetzlichen Vorschriften des Ziellandes müssen eingehalten werden.",
+                "Es gelten nur die deutschen Vorschriften.",
+                "Grenzverkehr ist nur für LKW erlaubt.",
+                "Der Fahrgast muss eine Sondergenehmigung vorweisen."
+            ],
+            "richtigeAntwort": "Die jeweiligen gesetzlichen Vorschriften des Ziellandes müssen eingehalten werden.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Unterlagen benötigt man für die Personenbeförderung ins Ausland?",
+            "antworten": [
+                "Genehmigungsurkunde, Fahrzeugschein, eventuell internationale Versicherungskarte.",
+                "Nur den Führerschein.",
+                "Einen speziellen internationalen Ausweis.",
+                "Nur eine Quittung."
+            ],
+            "richtigeAntwort": "Genehmigungsurkunde, Fahrzeugschein, eventuell internationale Versicherungskarte.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer ist berechtigt, im Taxi zu rauchen?",
+            "antworten": [
+                "Niemand, Rauchen ist im Taxi grundsätzlich verboten.",
+                "Nur der Fahrer.",
+                "Nur der Fahrgast.",
+                "Fahrer und Fahrgast, wenn Fenster offen ist."
+            ],
+            "richtigeAntwort": "Niemand, Rauchen ist im Taxi grundsätzlich verboten.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was muss bei einer Fahrt ins Ausland zusätzlich beachtet werden?",
+            "antworten": [
+                "Mögliche Maut- und Zollvorschriften.",
+                "Es gibt keine Besonderheiten.",
+                "Nur der Fahrpreis ändert sich.",
+                "Fahrgäste müssen sich ausweisen."
+            ],
+            "richtigeAntwort": "Mögliche Maut- und Zollvorschriften.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann ist eine Zusatzversicherung für Auslandsfahrten erforderlich?",
+            "antworten": [
+                "Wenn das Zielland nicht im Versicherungsumfang enthalten ist.",
+                "Immer.",
+                "Nie.",
+                "Nur bei Fahrten nach Frankreich."
+            ],
+            "richtigeAntwort": "Wenn das Zielland nicht im Versicherungsumfang enthalten ist.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie hoch ist das zulässige Gesamtgewicht eines Taxis in der Regel?",
+            "antworten": [
+                "Abhängig vom Fahrzeugtyp, meist zwischen 2 und 3,5 Tonnen.",
+                "Immer 2 Tonnen.",
+                "Unbegrenzt.",
+                "Mindestens 5 Tonnen."
+            ],
+            "richtigeAntwort": "Abhängig vom Fahrzeugtyp, meist zwischen 2 und 3,5 Tonnen.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei der Mitnahme von Gepäck im Taxi zu beachten?",
+            "antworten": [
+                "Das Gepäck muss sicher verstaut und darf niemanden gefährden.",
+                "Das Gepäck muss immer im Kofferraum transportiert werden.",
+                "Nur Handgepäck ist erlaubt.",
+                "Gepäck ist verboten."
+            ],
+            "richtigeAntwort": "Das Gepäck muss sicher verstaut und darf niemanden gefährden.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Vorteile bietet ein Fiskaltaxameter?",
+            "antworten": [
+                "Sichere und prüfbare Aufzeichnung aller Fahrten und Umsätze.",
+                "Günstigere Tarife.",
+                "Er spart Treibstoff.",
+                "Er ist kleiner als herkömmliche Taxameter."
+            ],
+            "richtigeAntwort": "Sichere und prüfbare Aufzeichnung aller Fahrten und Umsätze.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann muss eine Betriebserlaubnis für das Taxi erneuert werden?",
+            "antworten": [
+                "Vor Ablauf der Gültigkeit oder bei wesentlichen Änderungen am Fahrzeug.",
+                "Nie.",
+                "Nur nach einem Unfall.",
+                "Bei jedem Fahrerwechsel."
+            ],
+            "richtigeAntwort": "Vor Ablauf der Gültigkeit oder bei wesentlichen Änderungen am Fahrzeug.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was sind Sozialvorschriften im Fahrdienst?",
+            "antworten": [
+                "Vorschriften zu Lenkzeiten, Pausen und Arbeitszeiten.",
+                "Vorschriften für das Sozialverhalten der Fahrer.",
+                "Versicherungsbedingungen.",
+                "Steuervorschriften."
+            ],
+            "richtigeAntwort": "Vorschriften zu Lenkzeiten, Pausen und Arbeitszeiten.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie oft muss das Fahrzeug zur Hauptuntersuchung (TÜV)?",
+            "antworten": [
+                "Alle 12 Monate.",
+                "Alle 24 Monate.",
+                "Alle 6 Monate.",
+                "Nur einmal bei Inbetriebnahme."
+            ],
+            "richtigeAntwort": "Alle 12 Monate.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was versteht man unter einem Betriebssitz?",
+            "antworten": [
+                "Der Ort, an dem das Unternehmen organisiert und Fahrzeuge stationiert werden.",
+                "Der Wohnsitz des Fahrers.",
+                "Das Büro des Steuerberaters.",
+                "Die Werkstatt."
+            ],
+            "richtigeAntwort": "Der Ort, an dem das Unternehmen organisiert und Fahrzeuge stationiert werden.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Vorschrift regelt die Pflicht zur Führung eines Fahrtenbuchs?",
+            "antworten": [
+                "Die Abgabenordnung (AO).",
+                "Das Personenbeförderungsgesetz (PBefG).",
+                "Die StVO.",
+                "Die Tarifordnung."
+            ],
+            "richtigeAntwort": "Die Abgabenordnung (AO).",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Personengruppen haben einen Anspruch auf Beförderung?",
+            "antworten": [
+                "Jeder, außer Personen mit Gefahr für Sicherheit oder Ordnung.",
+                "Nur ältere Menschen.",
+                "Nur Kinder.",
+                "Niemand hat einen Anspruch."
+            ],
+            "richtigeAntwort": "Jeder, außer Personen mit Gefahr für Sicherheit oder Ordnung.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie wird die Mehrwertsteuer auf Taxifahrten ausgewiesen?",
+            "antworten": [
+                "Sie ist auf der Quittung gesondert anzugeben.",
+                "Sie wird nie ausgewiesen.",
+                "Nur auf Nachfrage.",
+                "Nur bei Auslandsgästen."
+            ],
+            "richtigeAntwort": "Sie ist auf der Quittung gesondert anzugeben.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Ausstattung ist in einem Taxi Pflicht?",
+            "antworten": [
+                "Fahrpreisanzeiger, Funk, Quittungsblock, Verbandkasten, Warnweste.",
+                "Musikanlage.",
+                "Navigationsgerät.",
+                "Kaffeemaschine."
+            ],
+            "richtigeAntwort": "Fahrpreisanzeiger, Funk, Quittungsblock, Verbandkasten, Warnweste.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wozu dient das Pflichtfahrgebiet?",
+            "antworten": [
+                "Dort muss das Taxi jederzeit bereitstehen.",
+                "Dort dürfen keine Taxis stehen.",
+                "Dort muss der Unternehmer wohnen.",
+                "Es ist eine Tarifzone."
+            ],
+            "richtigeAntwort": "Dort muss das Taxi jederzeit bereitstehen.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei der Fahrzeugwahl für den Taxibetrieb zu beachten?",
+            "antworten": [
+                "Das Fahrzeug muss technisch und optisch geeignet und entsprechend genehmigt sein.",
+                "Es kann jedes beliebige Fahrzeug genutzt werden.",
+                "Es muss immer ein Kombi sein.",
+                "Das Fahrzeug muss schwarz sein."
+            ],
+            "richtigeAntwort": "Das Fahrzeug muss technisch und optisch geeignet und entsprechend genehmigt sein.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Unterlagen müssen bei einer Kontrolle vorgelegt werden?",
+            "antworten": [
+                "Fahrzeugschein, Genehmigung, Führerschein.",
+                "Personalausweis.",
+                "Kassenbuch.",
+                "Werkstattrechnung."
+            ],
+            "richtigeAntwort": "Fahrzeugschein, Genehmigung, Führerschein.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist eine Unternehmerpflicht im Taxigewerbe?",
+            "antworten": [
+                "Organisation des Betriebs und Überwachung der Einhaltung aller Vorschriften.",
+                "Nur Fahrgäste befördern.",
+                "Das Fahrzeug reinigen.",
+                "Keine besonderen Pflichten."
+            ],
+            "richtigeAntwort": "Organisation des Betriebs und Überwachung der Einhaltung aller Vorschriften.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Versicherungen sind für Taxifahrzeuge üblich?",
+            "antworten": [
+                "Haftpflicht-, Kasko- und ggf. Insassenunfallversicherung.",
+                "Lebensversicherung.",
+                "Hausratversicherung.",
+                "Rechtsschutzversicherung."
+            ],
+            "richtigeAntwort": "Haftpflicht-, Kasko- und ggf. Insassenunfallversicherung.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer ist für die ordnungsgemäße Wartung des Taxis verantwortlich?",
+            "antworten": [
+                "Der Unternehmer.",
+                "Der Fahrgast.",
+                "Der Hersteller.",
+                "Die Polizei."
+            ],
+            "richtigeAntwort": "Der Unternehmer.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie viele Sitzplätze (einschließlich Fahrersitz) darf ein Taxi maximal haben?",
+            "antworten": [
+                "9",
+                "6",
+                "8",
+                "12"
+            ],
+            "richtigeAntwort": "9",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Regelung gilt für das Mitführen von Haustieren im Taxi?",
+            "antworten": [
+                "Blindenhunde müssen immer befördert werden.",
+                "Keine Tiere sind erlaubt.",
+                "Nur kleine Tiere sind erlaubt.",
+                "Nur mit schriftlicher Erlaubnis des Unternehmers."
+            ],
+            "richtigeAntwort": "Blindenhunde müssen immer befördert werden.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann besteht eine Beförderungspflicht für Rollstuhlfahrer?",
+            "antworten": [
+                "Wenn das Taxi dafür ausgerüstet ist.",
+                "Nie.",
+                "Nur nach Voranmeldung.",
+                "Immer, unabhängig vom Fahrzeug."
+            ],
+            "richtigeAntwort": "Wenn das Taxi dafür ausgerüstet ist.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Besonderheiten gelten bei der Abrechnung von Fahrten mit mehreren Fahrgästen?",
+            "antworten": [
+                "Der Fahrpreis richtet sich nach der gesamten Strecke, nicht nach der Anzahl der Fahrgäste.",
+                "Jeder Fahrgast zahlt einzeln.",
+                "Rabatt ab dem dritten Fahrgast.",
+                "Nur ein Fahrgast zahlt."
+            ],
+            "richtigeAntwort": "Der Fahrpreis richtet sich nach der gesamten Strecke, nicht nach der Anzahl der Fahrgäste.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei der Ausrüstung von Taxis hinsichtlich Barrierefreiheit vorgeschrieben?",
+            "antworten": [
+                "Es müssen bestimmte Fahrzeuge für Menschen mit Behinderung bereitgehalten werden.",
+                "Alle Taxis müssen rollstuhlgerecht sein.",
+                "Es gibt keine Vorschriften.",
+                "Nur große Unternehmen müssen darauf achten."
+            ],
+            "richtigeAntwort": "Es müssen bestimmte Fahrzeuge für Menschen mit Behinderung bereitgehalten werden.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann ist eine Alkoholfahrt als Ordnungswidrigkeit oder Straftat zu werten?",
+            "antworten": [
+                "Bereits ab 0,0 Promille im Dienst.",
+                "Erst ab 1,1 Promille.",
+                "Erst wenn ein Unfall passiert.",
+                "Ab 0,3 Promille."
+            ],
+            "richtigeAntwort": "Bereits ab 0,0 Promille im Dienst.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer trägt das Risiko für beschädigtes Gepäck im Taxi?",
+            "antworten": [
+                "Der Unternehmer, sofern ihn ein Verschulden trifft.",
+                "Der Fahrgast immer.",
+                "Die Versicherung zahlt immer.",
+                "Niemand."
+            ],
+            "richtigeAntwort": "Der Unternehmer, sofern ihn ein Verschulden trifft.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie oft muss der Fahrpreisanzeiger (Taxameter) geeicht werden?",
+            "antworten": [
+                "Jährlich.",
+                "Alle zwei Jahre.",
+                "Alle fünf Jahre.",
+                "Nie."
+            ],
+            "richtigeAntwort": "Jährlich.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was gilt beim Transport von Gepäck, das nicht in den Kofferraum passt?",
+            "antworten": [
+                "Es darf auf den Beifahrersitz gelegt werden, wenn niemand dort sitzt.",
+                "Es darf niemals transportiert werden.",
+                "Es wird abgelehnt.",
+                "Der Fahrgast trägt die Verantwortung."
+            ],
+            "richtigeAntwort": "Es darf auf den Beifahrersitz gelegt werden, wenn niemand dort sitzt.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie müssen Fahrgäste während der Fahrt gesichert sein?",
+            "antworten": [
+                "Alle müssen angeschnallt sein.",
+                "Nur Kinder müssen angeschnallt werden.",
+                "Anschnallpflicht besteht nicht.",
+                "Nur auf der Rückbank gilt keine Anschnallpflicht."
+            ],
+            "richtigeAntwort": "Alle müssen angeschnallt sein.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann kann einem Taxiunternehmer die Genehmigung entzogen werden?",
+            "antworten": [
+                "Bei wiederholten schweren Verstößen gegen die Vorschriften.",
+                "Nur bei Insolvenz.",
+                "Nie.",
+                "Bei Krankheit des Unternehmers."
+            ],
+            "richtigeAntwort": "Bei wiederholten schweren Verstößen gegen die Vorschriften.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei Unfällen mit Personenschaden im Taxi zu tun?",
+            "antworten": [
+                "Unverzüglich Polizei und Rettungsdienste informieren.",
+                "Nur eine Quittung ausstellen.",
+                "Unfallstelle sofort verlassen.",
+                "Das Fahrzeug verstecken."
+            ],
+            "richtigeAntwort": "Unverzüglich Polizei und Rettungsdienste informieren.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie lange darf ein Taxifahrer ohne Pause fahren?",
+            "antworten": [
+                "Maximal 4,5 Stunden.",
+                "Unbegrenzt.",
+                "6 Stunden.",
+                "3 Stunden."
+            ],
+            "richtigeAntwort": "Maximal 4,5 Stunden.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist im Krankheitsfall des Unternehmers zu tun?",
+            "antworten": [
+                "Eine Vertretung bestellen oder Betrieb ruhen lassen.",
+                "Der Betrieb läuft immer weiter.",
+                "Mitarbeiter dürfen ohne Kontrolle arbeiten.",
+                "Es gibt keine Vorschrift."
+            ],
+            "richtigeAntwort": "Eine Vertretung bestellen oder Betrieb ruhen lassen.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann gilt die Anschnallpflicht für Taxifahrer nicht?",
+            "antworten": [
+                "Bei Fahrten mit Fahrgästen im Ortsbereich.",
+                "Nie.",
+                "Immer.",
+                "Bei Fahrten ohne Fahrgäste."
+            ],
+            "richtigeAntwort": "Bei Fahrten mit Fahrgästen im Ortsbereich.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Maßnahme ist bei Arbeitsunfällen zu ergreifen?",
+            "antworten": [
+                "Unfall der Berufsgenossenschaft melden.",
+                "Unfall ignorieren.",
+                "Nichts tun.",
+                "Fahrgast informieren."
+            ],
+            "richtigeAntwort": "Unfall der Berufsgenossenschaft melden.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie lange sind Quittungsblöcke aufzubewahren?",
+            "antworten": [
+                "Mindestens 1 Jahr.",
+                "1 Monat.",
+                "5 Jahre.",
+                "Unbegrenzt."
+            ],
+            "richtigeAntwort": "Mindestens 1 Jahr.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist ein Mietwagen im Sinne des Personenbeförderungsgesetzes?",
+            "antworten": [
+                "Ein Fahrzeug, das nur nach vorheriger Bestellung Fahrgäste befördert.",
+                "Ein beliebiges Fahrzeug zur Miete.",
+                "Ein Taxi im Ausland.",
+                "Ein Bus."
+            ],
+            "richtigeAntwort": "Ein Fahrzeug, das nur nach vorheriger Bestellung Fahrgäste befördert.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann darf ein Taxi am Taxistand stehen?",
+            "antworten": [
+                "Nur mit Genehmigung und wenn es dienstbereit ist.",
+                "Immer.",
+                "Nur nachts.",
+                "Nie."
+            ],
+            "richtigeAntwort": "Nur mit Genehmigung und wenn es dienstbereit ist.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Unterlagen müssen im Fahrzeug mitgeführt werden?",
+            "antworten": [
+                "Fahrzeugschein, Genehmigungsurkunde, Versicherungsnachweis.",
+                "Nur der Führerschein.",
+                "Nur eine Quittung.",
+                "Steuerbescheid."
+            ],
+            "richtigeAntwort": "Fahrzeugschein, Genehmigungsurkunde, Versicherungsnachweis.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer ist für die ordnungsgemäße Wartung des Taxis verantwortlich?",
+            "antworten": [
+                "Der Unternehmer.",
+                "Der Fahrgast.",
+                "Der Hersteller.",
+                "Die Polizei."
+            ],
+            "richtigeAntwort": "Der Unternehmer.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was gilt beim Transport von Tieren im Taxi?",
+            "antworten": [
+                "Blindenhunde müssen immer mitgenommen werden.",
+                "Tiere dürfen nur mit Erlaubnis des Unternehmers befördert werden.",
+                "Tiere sind grundsätzlich verboten.",
+                "Nur kleine Tiere sind erlaubt."
+            ],
+            "richtigeAntwort": "Blindenhunde müssen immer mitgenommen werden.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was muss ein Taxiunternehmer bei der Anstellung von Fahrern beachten?",
+            "antworten": [
+                "Fahrer müssen im Besitz eines Personenbeförderungsscheins sein.",
+                "Fahrer dürfen jünger als 18 Jahre sein.",
+                "Fahrer müssen keine Ausbildung vorweisen.",
+                "Nur verwandte Personen dürfen beschäftigt werden."
+            ],
+            "richtigeAntwort": "Fahrer müssen im Besitz eines Personenbeförderungsscheins sein.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Arten von Genehmigungen gibt es im Taxigewerbe?",
+            "antworten": [
+                "Genehmigung für Taxen, Mietwagen und Linienverkehr.",
+                "Nur für Taxis.",
+                "Nur für Mietwagen.",
+                "Nur für Busse."
+            ],
+            "richtigeAntwort": "Genehmigung für Taxen, Mietwagen und Linienverkehr.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei der Rückgabe von Fundsachen im Taxi zu tun?",
+            "antworten": [
+                "Unverzüglich beim zuständigen Fundbüro abgeben.",
+                "Dem Fahrgast zurückgeben, wenn erreichbar.",
+                "Selbst behalten.",
+                "Dem Unternehmer geben."
+            ],
+            "richtigeAntwort": "Unverzüglich beim zuständigen Fundbüro abgeben.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie oft muss der Unternehmer das Fahrzeug auf Verkehrssicherheit überprüfen?",
+            "antworten": [
+                "Regelmäßig, mindestens jedoch täglich vor Dienstbeginn.",
+                "Nur beim TÜV-Termin.",
+                "Alle zwei Wochen.",
+                "Nie."
+            ],
+            "richtigeAntwort": "Regelmäßig, mindestens jedoch täglich vor Dienstbeginn.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Pflichten gelten für den Taxiunternehmer in Bezug auf seine Fahrer?",
+            "antworten": [
+                "Überwachung der Einhaltung aller rechtlichen Vorgaben und Schulung.",
+                "Keine Pflichten.",
+                "Nur Auszahlung des Lohns.",
+                "Nur Kontrolle der Quittungsblöcke."
+            ],
+            "richtigeAntwort": "Überwachung der Einhaltung aller rechtlichen Vorgaben und Schulung.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist die Hauptaufgabe des Taxameters?",
+            "antworten": [
+                "Fahrpreisermittlung und Aufzeichnung der Fahrtstrecke.",
+                "Steuerberechnung.",
+                "Wartung des Fahrzeugs.",
+                "Fahrerschulung."
+            ],
+            "richtigeAntwort": "Fahrpreisermittlung und Aufzeichnung der Fahrtstrecke.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann dürfen Kinder ohne Kindersitz im Taxi mitfahren?",
+            "antworten": [
+                "Nur wenn kein Sitz vorhanden ist und eine Ausnahme nachgewiesen wird.",
+                "Immer.",
+                "Nie.",
+                "Nur bei Fahrten unter 2 km."
+            ],
+            "richtigeAntwort": "Nur wenn kein Sitz vorhanden ist und eine Ausnahme nachgewiesen wird.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer haftet bei Diebstahl von Fahrgasteigentum im Taxi?",
+            "antworten": [
+                "Der Unternehmer, wenn ein Verschulden vorliegt.",
+                "Immer der Fahrgast.",
+                "Niemand.",
+                "Die Versicherung zahlt immer."
+            ],
+            "richtigeAntwort": "Der Unternehmer, wenn ein Verschulden vorliegt.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was versteht man unter Beförderungspflicht?",
+            "antworten": [
+                "Pflicht zur Beförderung von Fahrgästen im Pflichtfahrgebiet.",
+                "Pflicht zur Überprüfung des Fahrzeugs.",
+                "Pflicht zur Reinigung des Taxis.",
+                "Pflicht, Quittungen auszustellen."
+            ],
+            "richtigeAntwort": "Pflicht zur Beförderung von Fahrgästen im Pflichtfahrgebiet.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer ist verpflichtet, einen Verbandkasten mitzuführen?",
+            "antworten": [
+                "Jeder Taxifahrer.",
+                "Nur der Unternehmer.",
+                "Nur der Fahrgast.",
+                "Niemand."
+            ],
+            "richtigeAntwort": "Jeder Taxifahrer.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was muss auf einer Taxi-Quittung stehen?",
+            "antworten": [
+                "Name und Anschrift des Unternehmers, Datum, Fahrpreis, Unterschrift des Fahrers.",
+                "Nur der Fahrpreis.",
+                "Nur das Datum.",
+                "Nur die Unterschrift."
+            ],
+            "richtigeAntwort": "Name und Anschrift des Unternehmers, Datum, Fahrpreis, Unterschrift des Fahrers.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Bedeutung hat das Pflichtfahrgebiet für den Taxibetrieb?",
+            "antworten": [
+                "Innerhalb dieses Gebiets besteht Betriebs- und Beförderungspflicht.",
+                "Nur dort dürfen Taxis abgestellt werden.",
+                "Dort dürfen keine Fahrgäste einsteigen.",
+                "Das Gebiet hat keine Bedeutung."
+            ],
+            "richtigeAntwort": "Innerhalb dieses Gebiets besteht Betriebs- und Beförderungspflicht.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer darf ein Taxi führen?",
+            "antworten": [
+                "Personen mit Führerschein Klasse B und Personenbeförderungsschein.",
+                "Jeder mit Führerschein.",
+                "Nur der Unternehmer.",
+                "Nur Fahrlehrer."
+            ],
+            "richtigeAntwort": "Personen mit Führerschein Klasse B und Personenbeförderungsschein.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann endet die Pflicht zur Betriebsbereitschaft?",
+            "antworten": [
+                "Mit Ablauf der Betriebszeit laut Genehmigung.",
+                "Nie.",
+                "Bei Schichtwechsel.",
+                "Nur bei Krankheit."
+            ],
+            "richtigeAntwort": "Mit Ablauf der Betriebszeit laut Genehmigung.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist ein Funkauftrag?",
+            "antworten": [
+                "Eine Fahrgastbestellung, die per Funk an das Taxi vermittelt wird.",
+                "Eine Anweisung vom Unternehmer.",
+                "Eine Polizeimeldung.",
+                "Eine Musikübertragung."
+            ],
+            "richtigeAntwort": "Eine Fahrgastbestellung, die per Funk an das Taxi vermittelt wird.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Kosten sind beim Betrieb eines Taxis zu berücksichtigen?",
+            "antworten": [
+                "Betriebs-, Personal-, Sach- und Gemeinkosten.",
+                "Nur Treibstoff.",
+                "Nur Löhne.",
+                "Keine, wenn das Fahrzeug abbezahlt ist."
+            ],
+            "richtigeAntwort": "Betriebs-, Personal-, Sach- und Gemeinkosten.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was gilt für die Beförderung von Blindenhunden?",
+            "antworten": [
+                "Sie müssen kostenfrei mitgenommen werden.",
+                "Sie dürfen nicht befördert werden.",
+                "Nur auf dem Rücksitz.",
+                "Nur nach Absprache."
+            ],
+            "richtigeAntwort": "Sie müssen kostenfrei mitgenommen werden.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann darf ein Taxifahrer die Beförderung verweigern?",
+            "antworten": [
+                "Bei Gefahr für Sicherheit und Ordnung.",
+                "Nie.",
+                "Wenn ihm das Ziel nicht passt.",
+                "Wenn der Fahrgast allein ist."
+            ],
+            "richtigeAntwort": "Bei Gefahr für Sicherheit und Ordnung.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie ist mit gefundenen Gegenständen im Taxi zu verfahren?",
+            "antworten": [
+                "Sie sind unverzüglich beim Fundbüro abzugeben.",
+                "Sie dürfen behalten werden.",
+                "Sie sind an den Unternehmer zu geben.",
+                "Sie werden vernichtet."
+            ],
+            "richtigeAntwort": "Sie sind unverzüglich beim Fundbüro abzugeben.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist ein Taxameter?",
+            "antworten": [
+                "Ein Gerät zur Ermittlung des Fahrpreises.",
+                "Ein Bordcomputer.",
+                "Ein Navigationsgerät.",
+                "Eine Musikanlage."
+            ],
+            "richtigeAntwort": "Ein Gerät zur Ermittlung des Fahrpreises.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Unterlagen müssen Taxifahrer bei einer Kontrolle vorlegen?",
+            "antworten": [
+                "Führerschein, Personenbeförderungsschein, Fahrzeugschein, Genehmigungsurkunde.",
+                "Personalausweis.",
+                "Fahrtenbuch.",
+                "Kassenbuch."
+            ],
+            "richtigeAntwort": "Führerschein, Personenbeförderungsschein, Fahrzeugschein, Genehmigungsurkunde.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Funktion hat die Betriebspflicht?",
+            "antworten": [
+                "Sicherstellung der jederzeitigen Betriebsbereitschaft im Pflichtfahrgebiet.",
+                "Nur für den Unternehmer relevant.",
+                "Sie gilt nur für Mietwagen.",
+                "Keine Funktion."
+            ],
+            "richtigeAntwort": "Sicherstellung der jederzeitigen Betriebsbereitschaft im Pflichtfahrgebiet.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann ist das Fahrtenbuch erforderlich?",
+            "antworten": [
+                "Bei steuerlicher Notwendigkeit.",
+                "Immer.",
+                "Nie.",
+                "Nur für Mietwagen."
+            ],
+            "richtigeAntwort": "Bei steuerlicher Notwendigkeit.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Angaben müssen in der Fahrtenbuchführung enthalten sein?",
+            "antworten": [
+                "Datum, Start, Ziel, Kilometerstand, Zweck der Fahrt.",
+                "Nur Start und Ziel.",
+                "Nur das Datum.",
+                "Nur der Kilometerstand."
+            ],
+            "richtigeAntwort": "Datum, Start, Ziel, Kilometerstand, Zweck der Fahrt.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was versteht man unter Tarifpflicht?",
+            "antworten": [
+                "Die Pflicht, die festgelegten Tarife einzuhalten.",
+                "Die Pflicht, Rabatte zu gewähren.",
+                "Die Pflicht, frei über Preise zu entscheiden.",
+                "Keine Bedeutung."
+            ],
+            "richtigeAntwort": "Die Pflicht, die festgelegten Tarife einzuhalten.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei der Überlassung des Taxis an Fahrer zu beachten?",
+            "antworten": [
+                "Fahrer müssen geeignet und zuverlässig sein.",
+                "Nur Verwandte dürfen fahren.",
+                "Keine besonderen Vorschriften.",
+                "Fahrzeuge dürfen nicht überlassen werden."
+            ],
+            "richtigeAntwort": "Fahrer müssen geeignet und zuverlässig sein.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie müssen Taxifahrzeuge gekennzeichnet sein?",
+            "antworten": [
+                "Mit dem Taxischild und der Ordnungsnummer.",
+                "Mit bunten Aufklebern.",
+                "Keine Kennzeichnung erforderlich.",
+                "Nur mit dem Firmennamen."
+            ],
+            "richtigeAntwort": "Mit dem Taxischild und der Ordnungsnummer.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer kontrolliert die Einhaltung der Tarifordnung?",
+            "antworten": [
+                "Das Ordnungsamt.",
+                "Das Finanzamt.",
+                "Der Unternehmer.",
+                "Die Fahrgäste."
+            ],
+            "richtigeAntwort": "Das Ordnungsamt.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie müssen Quittungen ausgestellt werden?",
+            "antworten": [
+                "Leserlich, vollständig und mit allen Pflichtangaben.",
+                "Nur mit Fahrpreis.",
+                "Nur mit Datum.",
+                "Unterschrift reicht."
+            ],
+            "richtigeAntwort": "Leserlich, vollständig und mit allen Pflichtangaben.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann ist die jährliche Hauptuntersuchung für Taxis fällig?",
+            "antworten": [
+                "Nach 12 Monaten.",
+                "Alle 24 Monate.",
+                "Alle 6 Monate.",
+                "Nie."
+            ],
+            "richtigeAntwort": "Nach 12 Monaten.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Folgen kann das Fahren ohne gültige Betriebserlaubnis haben?",
+            "antworten": [
+                "Bußgeld und Stilllegung des Fahrzeugs.",
+                "Keine.",
+                "Nur Verwarnung.",
+                "Der Fahrer muss ausgetauscht werden."
+            ],
+            "richtigeAntwort": "Bußgeld und Stilllegung des Fahrzeugs.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist beim Wechsel der Taxiversicherung zu beachten?",
+            "antworten": [
+                "Neue Versicherungsbestätigung muss bei der Behörde eingereicht werden.",
+                "Nichts.",
+                "Nur dem Fahrer mitteilen.",
+                "Nur die Versicherung anrufen."
+            ],
+            "richtigeAntwort": "Neue Versicherungsbestätigung muss bei der Behörde eingereicht werden.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Rolle spielt der Unternehmer bei der Abführung der Umsatzsteuer?",
+            "antworten": [
+                "Er muss alle steuerlichen Pflichten erfüllen.",
+                "Nur die Buchhaltung informiert sich.",
+                "Nur der Fahrer haftet.",
+                "Niemand."
+            ],
+            "richtigeAntwort": "Er muss alle steuerlichen Pflichten erfüllen.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann ist der Austausch des Verbandskastens im Taxi erforderlich?",
+            "antworten": [
+                "Nach Ablauf des Verfallsdatums.",
+                "Nie.",
+                "Nur bei Fahrten ins Ausland.",
+                "Wenn ein Fahrgast es verlangt."
+            ],
+            "richtigeAntwort": "Nach Ablauf des Verfallsdatums.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer darf den Taxameter plombieren?",
+            "antworten": [
+                "Nur eine zugelassene Werkstatt.",
+                "Jeder.",
+                "Der Fahrer.",
+                "Der Unternehmer."
+            ],
+            "richtigeAntwort": "Nur eine zugelassene Werkstatt.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei einer Fahrt mit Kindern im Taxi zu beachten?",
+            "antworten": [
+                "Kinder müssen mit Kindersitz oder Sitzerhöhung gesichert werden.",
+                "Nichts.",
+                "Nur wenn Eltern zustimmen.",
+                "Nur bei langen Fahrten."
+            ],
+            "richtigeAntwort": "Kinder müssen mit Kindersitz oder Sitzerhöhung gesichert werden.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie lange muss der Unternehmer Aufzeichnungen über Umsätze führen?",
+            "antworten": [
+                "Mindestens 10 Jahre.",
+                "Nur 1 Jahr.",
+                "Nur 5 Jahre.",
+                "Unbegrenzt."
+            ],
+            "richtigeAntwort": "Mindestens 10 Jahre.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was versteht man unter einer Ortskundeprüfung?",
+            "antworten": [
+                "Kenntnisprüfung über die örtlichen Gegebenheiten und Wege.",
+                "Führerscheinprüfung.",
+                "Technikprüfung.",
+                "Sprachtest."
+            ],
+            "richtigeAntwort": "Kenntnisprüfung über die örtlichen Gegebenheiten und Wege.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann endet die Betriebspflicht eines Taxis?",
+            "antworten": [
+                "Mit Ablauf der Genehmigungszeit oder vorübergehender Betriebsstilllegung.",
+                "Nie.",
+                "Immer um Mitternacht.",
+                "Mit Ablauf des Monats."
+            ],
+            "richtigeAntwort": "Mit Ablauf der Genehmigungszeit oder vorübergehender Betriebsstilllegung.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Aufgaben übernimmt die IHK im Zusammenhang mit Taxiunternehmen?",
+            "antworten": [
+                "Fachkundeprüfung und Beratung.",
+                "Fahrzeugzulassung.",
+                "Taxitarife festsetzen.",
+                "Fahrzeugwartung."
+            ],
+            "richtigeAntwort": "Fachkundeprüfung und Beratung.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann ist eine Umsatzsteuervoranmeldung abzugeben?",
+            "antworten": [
+                "In der Regel monatlich beim Finanzamt.",
+                "Nie.",
+                "Nur am Jahresende.",
+                "Bei Betriebsaufgabe."
+            ],
+            "richtigeAntwort": "In der Regel monatlich beim Finanzamt.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer ist verantwortlich für die Einhaltung der Arbeitszeitgesetze?",
+            "antworten": [
+                "Der Unternehmer.",
+                "Der Fahrgast.",
+                "Die Werkstatt.",
+                "Das Finanzamt."
+            ],
+            "richtigeAntwort": "Der Unternehmer.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie werden Streitigkeiten zwischen Fahrgast und Fahrer gelöst?",
+            "antworten": [
+                "Erst Schlichtungsstelle, dann ggf. Gericht.",
+                "Immer sofort vor Ort.",
+                "Nur durch Polizei.",
+                "Nie."
+            ],
+            "richtigeAntwort": "Erst Schlichtungsstelle, dann ggf. Gericht.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei der Preisgestaltung im Taxigewerbe zu beachten?",
+            "antworten": [
+                "Die gesetzlich vorgeschriebenen Tarife sind einzuhalten.",
+                "Freie Preisgestaltung ist immer möglich.",
+                "Jeder Fahrer entscheidet selbst.",
+                "Nur Rabattaktionen sind erlaubt."
+            ],
+            "richtigeAntwort": "Die gesetzlich vorgeschriebenen Tarife sind einzuhalten.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann muss der Taxameter eingeschaltet werden?",
+            "antworten": [
+                "Zu Beginn jeder Fahrt.",
+                "Nie.",
+                "Nur auf Verlangen des Fahrgasts.",
+                "Nach der Hälfte der Strecke."
+            ],
+            "richtigeAntwort": "Zu Beginn jeder Fahrt.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei Fahrten im Auftrag von Behörden zu beachten?",
+            "antworten": [
+                "Die jeweiligen besonderen Vereinbarungen sind zu beachten.",
+                "Es gibt keine Unterschiede.",
+                "Der Fahrpreis verdoppelt sich.",
+                "Das Taxi darf nicht genutzt werden."
+            ],
+            "richtigeAntwort": "Die jeweiligen besonderen Vereinbarungen sind zu beachten.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer kontrolliert die Einhaltung der Genehmigungsauflagen?",
+            "antworten": [
+                "Die Genehmigungsbehörde.",
+                "Der Fahrgast.",
+                "Die Polizei.",
+                "Das Finanzamt."
+            ],
+            "richtigeAntwort": "Die Genehmigungsbehörde.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist zu tun, wenn ein Fahrer gegen Vorschriften verstößt?",
+            "antworten": [
+                "Der Unternehmer muss entsprechende Maßnahmen ergreifen.",
+                "Nichts.",
+                "Immer die Polizei informieren.",
+                "Den Fahrgast fragen."
+            ],
+            "richtigeAntwort": "Der Unternehmer muss entsprechende Maßnahmen ergreifen.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche steuerlichen Unterlagen sind für das Finanzamt bereitzuhalten?",
+            "antworten": [
+                "Buchhaltungsunterlagen, Quittungen, Fahraufträge.",
+                "Nur der Führerschein.",
+                "Nur Taxameterbelege.",
+                "Keine."
+            ],
+            "richtigeAntwort": "Buchhaltungsunterlagen, Quittungen, Fahraufträge.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei einem Fahrzeugwechsel zu beachten?",
+            "antworten": [
+                "Genehmigung muss auf das neue Fahrzeug übertragen werden.",
+                "Nichts.",
+                "Nur der Fahrer muss informiert werden.",
+                "Die Werkstatt informieren."
+            ],
+            "richtigeAntwort": "Genehmigung muss auf das neue Fahrzeug übertragen werden.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei der Erstellung von Quittungen im Taxigewerbe zu beachten?",
+            "antworten": [
+                "Alle Pflichtangaben wie Preis, Datum, Unternehmer, Unterschrift müssen enthalten sein.",
+                "Nur der Fahrpreis genügt.",
+                "Es ist keine Quittung notwendig.",
+                "Quittungen sind nur bei Auslandsgästen vorgeschrieben."
+            ],
+            "richtigeAntwort": "Alle Pflichtangaben wie Preis, Datum, Unternehmer, Unterschrift müssen enthalten sein.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer ist für die Ausbildung und Einweisung neuer Fahrer zuständig?",
+            "antworten": [
+                "Der Unternehmer.",
+                "Das Ordnungsamt.",
+                "Die IHK.",
+                "Der Fahrgast."
+            ],
+            "richtigeAntwort": "Der Unternehmer.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann dürfen Taxifahrzeuge mit Werbung beklebt werden?",
+            "antworten": [
+                "Nur wenn die Werbung genehmigt ist und keine Verkehrssicherheit beeinträchtigt wird.",
+                "Immer.",
+                "Nie.",
+                "Nur für eigene Werbung."
+            ],
+            "richtigeAntwort": "Nur wenn die Werbung genehmigt ist und keine Verkehrssicherheit beeinträchtigt wird.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Bedeutung hat die Konzession im Taxigewerbe?",
+            "antworten": [
+                "Sie berechtigt zur gewerblichen Personenbeförderung mit dem Taxi.",
+                "Sie ist nur für Mietwagen relevant.",
+                "Sie ersetzt den Führerschein.",
+                "Sie gilt nur im Ausland."
+            ],
+            "richtigeAntwort": "Sie berechtigt zur gewerblichen Personenbeförderung mit dem Taxi.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was versteht man unter einer Umsatzsteuer-Identifikationsnummer im Taxigewerbe?",
+            "antworten": [
+                "Eine Nummer zur eindeutigen steuerlichen Identifikation des Unternehmers.",
+                "Eine interne Betriebsnummer.",
+                "Die Nummer auf dem Taxischild.",
+                "Eine Versicherungsnummer."
+            ],
+            "richtigeAntwort": "Eine Nummer zur eindeutigen steuerlichen Identifikation des Unternehmers.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer darf Funkgespräche im Taxi abhören?",
+            "antworten": [
+                "Nur berechtigte Personen wie Polizei oder Unternehmer.",
+                "Jeder Fahrgast.",
+                "Alle Mitarbeiter.",
+                "Niemand."
+            ],
+            "richtigeAntwort": "Nur berechtigte Personen wie Polizei oder Unternehmer.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Konsequenzen hat die Verletzung der Beförderungspflicht?",
+            "antworten": [
+                "Bußgeld und evtl. Entzug der Konzession.",
+                "Gar keine.",
+                "Nur ein Verweis.",
+                "Der Fahrgast zahlt weniger."
+            ],
+            "richtigeAntwort": "Bußgeld und evtl. Entzug der Konzession.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie lange ist die Aufbewahrungspflicht für steuerrelevante Unterlagen im Taxigewerbe?",
+            "antworten": [
+                "10 Jahre.",
+                "1 Jahr.",
+                "2 Jahre.",
+                "Unbegrenzt."
+            ],
+            "richtigeAntwort": "10 Jahre.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann ist eine Betriebsunterbrechung im Taxigewerbe zu melden?",
+            "antworten": [
+                "Unverzüglich bei der Genehmigungsbehörde.",
+                "Nur nach 30 Tagen.",
+                "Nie.",
+                "Erst nach einem Jahr."
+            ],
+            "richtigeAntwort": "Unverzüglich bei der Genehmigungsbehörde.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Unterlagen müssen bei einer Betriebsprüfung vorliegen?",
+            "antworten": [
+                "Alle betrieblichen und steuerlichen Unterlagen.",
+                "Nur Quittungen.",
+                "Nur Genehmigungsurkunde.",
+                "Keine."
+            ],
+            "richtigeAntwort": "Alle betrieblichen und steuerlichen Unterlagen.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei der Auswahl von Ersatzfahrzeugen zu beachten?",
+            "antworten": [
+                "Sie müssen für den Taxibetrieb genehmigt sein.",
+                "Jedes Fahrzeug kann genutzt werden.",
+                "Es gibt keine Regelung.",
+                "Nur Mietwagen dürfen verwendet werden."
+            ],
+            "richtigeAntwort": "Sie müssen für den Taxibetrieb genehmigt sein.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer darf die Quittungen im Taxigewerbe ausstellen?",
+            "antworten": [
+                "Nur der Fahrer oder der Unternehmer.",
+                "Der Fahrgast.",
+                "Jeder Mitarbeiter.",
+                "Nur das Finanzamt."
+            ],
+            "richtigeAntwort": "Nur der Fahrer oder der Unternehmer.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist im Fall eines Unfalls während der Fahrt zu tun?",
+            "antworten": [
+                "Unverzüglich anhalten, sichern und Hilfe leisten.",
+                "Weiterfahren.",
+                "Den Fahrgast fragen.",
+                "Nur Polizei rufen."
+            ],
+            "richtigeAntwort": "Unverzüglich anhalten, sichern und Hilfe leisten.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann darf ein Taxi als Mietwagen genutzt werden?",
+            "antworten": [
+                "Nur mit entsprechender Genehmigung.",
+                "Immer.",
+                "Nie.",
+                "Nur bei Regen."
+            ],
+            "richtigeAntwort": "Nur mit entsprechender Genehmigung.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Vorteile bringt eine Fahrerschulung?",
+            "antworten": [
+                "Verbesserte Sicherheit und Servicequalität.",
+                "Keine.",
+                "Günstigere Versicherung.",
+                "Schnelleres Fahren."
+            ],
+            "richtigeAntwort": "Verbesserte Sicherheit und Servicequalität.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei der Ausrüstung mit Navigationsgeräten zu beachten?",
+            "antworten": [
+                "Sie müssen stets einsatzbereit und aktuell sein.",
+                "Sie sind nicht erlaubt.",
+                "Sie dürfen nur vom Unternehmer bedient werden.",
+                "Es gibt keine Vorschrift."
+            ],
+            "richtigeAntwort": "Sie müssen stets einsatzbereit und aktuell sein.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann ist ein Einsatzfahrzeug als Taxi kenntlich zu machen?",
+            "antworten": [
+                "Immer während des Betriebs.",
+                "Nur bei Nacht.",
+                "Nie.",
+                "Nur bei Fahrgästen."
+            ],
+            "richtigeAntwort": "Immer während des Betriebs.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer entscheidet über die Anordnung von Fahrtenbüchern?",
+            "antworten": [
+                "Das Finanzamt.",
+                "Der Unternehmer.",
+                "Der Fahrer.",
+                "Die Polizei."
+            ],
+            "richtigeAntwort": "Das Finanzamt.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann dürfen Taxameter-Einstellungen verändert werden?",
+            "antworten": [
+                "Nur von zugelassenen Fachbetrieben.",
+                "Vom Fahrer selbst.",
+                "Jederzeit vom Fahrgast.",
+                "Nie."
+            ],
+            "richtigeAntwort": "Nur von zugelassenen Fachbetrieben.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wie lange müssen Fahraufträge aufbewahrt werden?",
+            "antworten": [
+                "Mindestens ein Jahr.",
+                "Nur einen Monat.",
+                "Drei Jahre.",
+                "Unbegrenzt."
+            ],
+            "richtigeAntwort": "Mindestens ein Jahr.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wann darf ein Taxi zum Zwecke der Eigenwerbung genutzt werden?",
+            "antworten": [
+                "Wenn die Werbung genehmigt ist.",
+                "Immer.",
+                "Nie.",
+                "Nur bei Fahrten ohne Fahrgäste."
+            ],
+            "richtigeAntwort": "Wenn die Werbung genehmigt ist.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Unterlagen müssen bei der Einstellung neuer Fahrer geprüft werden?",
+            "antworten": [
+                "Führerschein, Personenbeförderungsschein und Zuverlässigkeit.",
+                "Nur der Führerschein.",
+                "Nur die Quittungsblöcke.",
+                "Keine."
+            ],
+            "richtigeAntwort": "Führerschein, Personenbeförderungsschein und Zuverlässigkeit.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was muss bei der Anmeldung eines Taxis beim Gewerbeamt vorgelegt werden?",
+            "antworten": [
+                "Genehmigungsurkunde, Fahrzeugschein, Versicherungsnachweis.",
+                "Nur der Fahrzeugschein.",
+                "Nur die Konzession.",
+                "Nur der Führerschein."
+            ],
+            "richtigeAntwort": "Genehmigungsurkunde, Fahrzeugschein, Versicherungsnachweis.",
+            "punkte": 1
+        },
+        {
+            "frage": "Welche Fahrten sind im Fahrtenbuch besonders zu kennzeichnen?",
+            "antworten": [
+                "Dienst- und Privatfahrten.",
+                "Nur Dienstfahrten.",
+                "Nur Privatfahrten.",
+                "Es gibt keine Kennzeichnungspflicht."
+            ],
+            "richtigeAntwort": "Dienst- und Privatfahrten.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer ist Ansprechpartner für technische Fragen zum Taxameter?",
+            "antworten": [
+                "Zugelassener Fachbetrieb oder Hersteller.",
+                "Der Fahrgast.",
+                "Die Polizei.",
+                "Das Ordnungsamt."
+            ],
+            "richtigeAntwort": "Zugelassener Fachbetrieb oder Hersteller.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist beim Wechsel des Unternehmers mit dem Taxi zu tun?",
+            "antworten": [
+                "Das Fahrzeug und die Genehmigung ummelden.",
+                "Nichts.",
+                "Die Konzession bleibt bestehen.",
+                "Nur das Taxischild abmontieren."
+            ],
+            "richtigeAntwort": "Das Fahrzeug und die Genehmigung ummelden.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was gilt für die Bereitstellung von Kindersitzen im Taxi?",
+            "antworten": [
+                "Kindersitze müssen vorhanden sein, wenn Kinder befördert werden.",
+                "Nicht notwendig.",
+                "Nur bei Fahrten außerhalb des Pflichtfahrgebiets.",
+                "Nur auf Nachfrage."
+            ],
+            "richtigeAntwort": "Kindersitze müssen vorhanden sein, wenn Kinder befördert werden.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei der Betriebsaufgabe zu beachten?",
+            "antworten": [
+                "Meldung an die Genehmigungsbehörde und ggf. Rückgabe der Genehmigung.",
+                "Nur das Finanzamt informieren.",
+                "Fahrzeuge abmelden.",
+                "Nichts."
+            ],
+            "richtigeAntwort": "Meldung an die Genehmigungsbehörde und ggf. Rückgabe der Genehmigung.",
+            "punkte": 1
+        },
+        {
+            "frage": "Was ist bei der Einstellung von Aushilfsfahrern zu beachten?",
+            "antworten": [
+                "Sie benötigen ebenfalls einen Personenbeförderungsschein.",
+                "Keine Vorschrift.",
+                "Nur Nachweis über Versicherung.",
+                "Keine Quittungen nötig."
+            ],
+            "richtigeAntwort": "Sie benötigen ebenfalls einen Personenbeförderungsschein.",
+            "punkte": 1
+        },
+        {
+            "frage": "Wer ist für die Einhaltung der Unfallverhütungsvorschriften im Betrieb verantwortlich?",
+            "antworten": [
+                "Der Unternehmer.",
+                "Nur die Berufsgenossenschaft.",
+                "Der Fahrer.",
+                "Die Polizei."
+            ],
+            "richtigeAntwort": "Der Unternehmer.",
+            "punkte": 1
+        }
+    ]
+}
