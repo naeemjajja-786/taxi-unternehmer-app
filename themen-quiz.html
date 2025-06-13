@@ -2,30 +2,22 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Themen Quiz</title>
+  <title>Themen Quiz – Taxi & Mietwagen Unternehmer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <h1>🧠 Themen Quiz</h1>
+    <h1>Themen Quiz</h1>
   </header>
-  <main id="app">
-    <ul class="quiz-list">
-      <li><button class="quiz-btn" onclick="location.href='quiz.html?file=Quiz-Sonderrecht.json'">Sonderrecht</button></li>
-      <li><button class="quiz-btn" onclick="location.href='quiz.html?file=Quiz-Personenbeförderung.json'">Personenbeförderung</button></li>
-      <li><button class="quiz-btn" onclick="location.href='quiz.html?file=Quiz-Gewerberecht.json'">Gewerberecht</button></li>
-      <li><button class="quiz-btn" onclick="location.href='quiz.html?file=Quiz-Arbeitsrecht.json'">Arbeitsrecht</button></li>
-      <li><button class="quiz-btn" onclick="location.href='quiz.html?file=Quiz-Kostenrechnung.json'">Kostenrechnung</button></li>
-      <li><button class="quiz-btn" onclick="location.href='quiz.html?file=Quiz-Straßenverkehrsrecht.json'">Straßenverkehrsrecht</button></li>
-      <li><button class="quiz-btn" onclick="location.href='quiz.html?file=Quiz-Beförderungsverhalten.json'">Beförderungsverhalten</button></li>
-      <li><button class="quiz-btn" onclick="location.href='quiz.html?file=Quiz-Grenzverkehr.json'">Grenzverkehr</button></li>
-      <li><button class="quiz-btn" onclick="location.href='quiz.html?file=Quiz-Versicherungen.json'">Versicherungen</button></li>
-      <li><button class="quiz-btn" onclick="location.href='quiz.html?file=Quiz-TechnischeNormen.json'">Technische Normen</button></li>
-      <li><button class="quiz-btn" onclick="location.href='quiz.html?file=Quiz-Umweltschutz.json'">Umweltschutz</button></li>
-      <li><button class="quiz-btn" onclick="location.href='quiz.html?file=Quiz-Mietwagen.json'">Mietwagen</button></li>
-    </ul>
-    <button class="zuruck-btn header-back" onclick="history.back()">Zurück</button>
+  <main id="themenquiz-app">
+    <section id="topic-select" class="quiz-topic-list"></section>
+    <section id="quiz-area" style="display:none;"></section>
+    <button id="backBtnTQ" class="back-btn" onclick="goBackThemenQuiz()" style="display:none;">Zurück</button>
   </main>
+  <footer>
+    <p>&copy; 2025 Taxi/Mietwagen Unternehmer Lern-App</p>
+  </footer>
+  <script src="js/themenquiz.js"></script>
 </body>
 </html>
