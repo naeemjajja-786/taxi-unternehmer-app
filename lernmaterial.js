@@ -1,5 +1,5 @@
 // ----------- LERNMATERIAL.JS -------------
-// Updated: vertical button layout, "Zurück", Urdu improved, file loading fix!
+// Updated: handles array/object, vertical button layout, "Zurück", Urdu improved, file loading fix!
 
 const deutschFiles = [
   "1 Personenbeförderungsgesetz.json",
@@ -49,18 +49,38 @@ function renderChapters(lang) {
   });
 }
 
+// ----------- Robust chapter loader
 function loadChapter(filename, lang) {
   chapterList.innerHTML = "";
   chapterContent.innerHTML = "<div class='loading'>Lade Inhalt ...</div>";
   backBtn.style.display = "inline-block";
 
-  // handle spaces in filename!
   fetch(`./${encodeURIComponent(filename)}`)
     .then(resp => resp.json())
     .then(data => {
       chapterContent.innerHTML = "";
       if (lang === "deutsch") {
-        data.forEach(section => {
+        // Robust: handle Array, {kapitel: []}, {chapters: []}, {abschnitte: []}
+        let sections = [];
+        if (Array.isArray(data)) {
+          sections = data;
+        } else if (Array.isArray(data.kapitel)) {
+          sections = data.kapitel;
+        } else if (Array.isArray(data.chapters)) {
+          sections = data.chapters;
+        } else if (Array.isArray(data.abschnitte)) {
+          sections = data.abschnitte;
+        } else {
+          // Try generic object: collect all {titel, text}
+          sections = Object.values(data).filter(
+            v => typeof v === "object" && (v.titel || v.überschrift) && v.text
+          );
+        }
+        if (!sections.length) {
+          chapterContent.innerHTML = "<div style='color:red'>Dieses Kapitel konnte nicht geladen werden (unbekanntes Format).</div>";
+          return;
+        }
+        sections.forEach(section => {
           let h2 = document.createElement("h2");
           h2.textContent = section.titel || section.überschrift || "Abschnitt";
           chapterContent.appendChild(h2);
@@ -70,25 +90,30 @@ function loadChapter(filename, lang) {
           chapterContent.appendChild(p);
         });
       } else {
+        // Urdu format: {عنوان: "...", سوالات: [...] }
         let h2 = document.createElement("h2");
         h2.textContent = data["عنوان"] || "سبق";
         chapterContent.appendChild(h2);
 
-        data["سوالات"].forEach((qa, idx) => {
-          let q = document.createElement("div");
-          q.className = "qa";
-          q.innerHTML = `<strong>سوال ${idx + 1}:</strong> ${qa.frage}`;
-          chapterContent.appendChild(q);
+        if (Array.isArray(data["سوالات"])) {
+          data["سوالات"].forEach((qa, idx) => {
+            let q = document.createElement("div");
+            q.className = "qa";
+            q.innerHTML = `<strong>سوال ${idx + 1}:</strong> ${qa.frage}`;
+            chapterContent.appendChild(q);
 
-          let a = document.createElement("div");
-          a.className = "qa-a";
-          a.innerHTML = `<em>جواب:</em> ${qa.antwort}`;
-          chapterContent.appendChild(a);
-        });
+            let a = document.createElement("div");
+            a.className = "qa-a";
+            a.innerHTML = `<em>جواب:</em> ${qa.antwort}`;
+            chapterContent.appendChild(a);
+          });
+        } else {
+          chapterContent.innerHTML += "<div style='color:red'>سوالات کی فہرست نہیں ملی۔</div>";
+        }
       }
     })
     .catch(e => {
-      chapterContent.innerHTML = "<div style='color:red'>Fehler beim Laden des Kapitels.<br>"+e.message+"</div>";
+      chapterContent.innerHTML = "<div style='color:red'>Fehler beim Laden des Kapitels.<br>" + e.message + "</div>";
     });
 }
 
