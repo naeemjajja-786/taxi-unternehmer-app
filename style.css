@@ -73,6 +73,8 @@ footer {
   transform: scale(1.03);
 }
 
+./* ===== Fallstudien-Spezifisch (nur diese Blöcke ändern) ===== */
+
 .fallstudien-container {
   margin: 2.2rem auto 2.5rem auto;
   max-width: 650px;
@@ -81,12 +83,14 @@ footer {
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   padding: 2rem 1.6rem 1.2rem 1.6rem;
 }
+
 .fs-case-statement {
   font-size: 1.18rem;
   margin-bottom: 2.2rem;
   font-weight: 500;
   color: #12375b;
 }
+
 .fs-task-block {
   background: #f7fbff;
   border-radius: 9px;
@@ -97,9 +101,12 @@ footer {
   flex-direction: column;
   gap: 0.6rem;
 }
+
 .fs-question {
   font-weight: 500;
+  margin-bottom: 0.35rem;
 }
+
 .fs-input {
   width: 100%;
   max-width: 370px;
@@ -108,7 +115,9 @@ footer {
   padding: 0.6rem;
   border-radius: 7px;
   border: 1px solid #b5d3ee;
+  background: #faffff;
 }
+
 .fs-show-btn {
   margin-bottom: 0.4rem;
   background: #007bb5;
@@ -118,16 +127,33 @@ footer {
   padding: 0.8rem 1.9rem;
   cursor: pointer;
   width: 100%;
+  font-size: 1.03rem;
+  transition: background 0.18s;
 }
-.fs-show-btn:disabled { opacity: 0.7; }
+.fs-show-btn:disabled { opacity: 0.7; background: #b0dbe6; }
+
 .fs-feedback {
   background: #e8f9e2;
   margin: 1.1rem 0 0.8rem 0;
   padding: 0.9rem 1.1rem;
   border-radius: 8px;
   font-size: 1.06rem;
+  color: #184f0b;
 }
-.back-btn { background: #aaa; color: #fff; width: 100%; margin-top: 2rem; }
+
+.back-btn {
+  background: #aaa;
+  color: #fff;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0.9rem 0;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.09rem;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.back-btn:hover { background: #444; }
 
 @media (max-width: 700px) {
   .fallstudien-container { max-width: 98vw; }
