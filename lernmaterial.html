@@ -1,39 +1,27 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Musterprüfung</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Lernmaterial – Taxi & Mietwagen Unternehmer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <h1>Musterprüfung</h1>
+    <h1>Lernmaterial</h1>
   </header>
-
-  <main id="main-content">
-    <div id="intro">
-      <button onclick="startExam(1)">Teil 1 starten (200 Fragen)</button>
-      <button onclick="startExam(2)">Teil 2 starten (Fallstudien)</button>
-    </div>
-
-    <div id="quiz" style="display: none;">
-      <div id="question-container"></div>
-      <div id="answer-container"></div>
-      <button onclick="nextQuestion()" id="next-btn">Nächste Frage</button>
-    </div>
-
-    <div id="result" style="display: none;">
-      <h2>Ergebnis</h2>
-      <p id="score"></p>
-      <button onclick="location.reload()">Zurück zur Startseite</button>
-    </div>
+  <main id="lernmaterial-app">
+    <nav class="lang-switch">
+      <button id="btn-urdu">Urdu</button>
+      <button id="btn-deutsch" class="active">Deutsch</button>
+    </nav>
+    <section id="chapter-list" class="chapter-list"></section>
+    <section id="chapter-content" class="chapter-content"></section>
+    <button id="backBtn" class="back-btn" onclick="goBack()" style="display:none;">Zurück</button>
   </main>
-
   <footer>
-    <p>&copy; 2025 Taxi Unternehmer Lern-App</p>
+    <p>&copy; 2025 Taxi/Mietwagen Unternehmer Lern-App</p>
   </footer>
-
-  <script src="musterpruefung.js"></script>
+  <script src="js/lernmaterial.js"></script>
 </body>
 </html>
