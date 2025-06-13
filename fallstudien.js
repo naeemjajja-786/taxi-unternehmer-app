@@ -1,103 +1,143 @@
-// WICHTIG: 100% kompatibel mit Ihrer Fallstudien.json!
+// --------- fallstudien.js -----------
+let allCases = [];
+const fsContainer = document.getElementById('fallstudien-container');
+const btnNeueFallstudie = document.getElementById('btn-neue-fallstudie');
 
-document.addEventListener("DOMContentLoaded", function () {
-  fetch("Fallstudien.json")
-    .then(resp => {
-      if (!resp.ok) throw new Error("Fallstudien.json nicht gefunden!");
-      return resp.json();
-    })
-    .then(data => {
-      // Filtern: Nur Fälle mit 6 oder mehr Aufgaben
-      let allCases = data.filter(
-        f => Array.isArray(f.tasks) && f.tasks.length >= 6 && typeof f.fall === "string"
-      );
-      window.__fallCasesForReload = allCases; // für neue Fallstudie
-      if (allCases.length === 0) {
-        document.getElementById("fallstudien-container").innerHTML =
-          "<div style='color:red'>Keine passenden Fallstudien gefunden.</div>";
-        return;
-      }
-      startNewCase(allCases);
-    })
-    .catch(err => {
-      document.getElementById("fallstudien-container").innerHTML =
-        "<div style='color:red'>Fehler beim Laden der Fallstudien:<br>" + err.message + "</div>";
-    });
+async function loadFallstudien() {
+  const resp = await fetch('Fallstudien.json');
+  allCases = await resp.json();
+  showRandomCase();
+}
 
-  function startNewCase(allCases) {
-    // Zufälligen Fall nehmen
-    const caseObj.fall = allCases[Math.floor(Math.random() * allCases.length)];
-    // 6–9 Aufgaben zufällig auswählen
-    let numTasks = Math.max(6, Math.min(9, caseObj.tasks.length));
-    let tasks = [...caseObj.fall.tasks];
-    for (let i = tasks.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [tasks[i], tasks[j]] = [tasks[j], tasks[i]];
+function showRandomCase() {
+  if (!allCases.length) return;
+  const idx = Math.floor(Math.random() * allCases.length);
+  renderCase(allCases[idx]);
+}
+
+function renderCase(caseData) {
+  // 1. Randomisierte Werte generieren
+  const vars = {};
+  for (const [key, v] of Object.entries(caseData.variables || {})) {
+    let min = v.min, max = v.max, step = v.step || 1;
+    let nsteps = Math.round((max - min) / step);
+    let rnd = min + Math.round(Math.random() * nsteps) * step;
+    vars[key] = (Math.round(rnd * 100) / 100); // auf 2 Nachkommastellen runden
+  }
+
+  // 2. Hilfsfunktionen
+  const interpolate = (str) =>
+    typeof str === 'string'
+      ? str.replace(/{([^}]+)}/g, (_, k) =>
+          vars[k] !== undefined ? vars[k] : '❓'
+        )
+      : str;
+
+  function evalFormula(expr) {
+    if (!expr) return '';
+    // Platzhalter ersetzen
+    let f = expr.replace(/{([^}]+)}/g, (_, k) => vars[k] ?? 0);
+    // Spezielle math functions unterstützen
+    f = f.replace(/\bMAX\s*\(([^,]+),([^)]+)\)/gi, 'Math.max($1,$2)')
+         .replace(/\bMIN\s*\(([^,]+),([^)]+)\)/gi, 'Math.min($1,$2)')
+         .replace(/\bFLOOR\s*\(([^)]+)\)/gi, 'Math.floor($1)')
+         .replace(/\bROUND\s*\(([^)]+)\)/gi, 'Math.round($1)');
+    try {
+      let result = Function(`return (${f});`)();
+      return (typeof result === "number" && !isNaN(result)) ? Math.round(result * 100) / 100 : result;
+    } catch {
+      return '❓';
     }
-    tasks = tasks.slice(0, numTasks);
-    renderCase(caseObj.fall, tasks);   // <- Hier: "fall", nicht "case"
   }
 
-  function renderCase(caseText, tasks) {
-    const cont = document.getElementById("fallstudien-container");
-    cont.innerHTML = "";
+  // 3. Render HTML
+  let html = `<h2 style="margin-bottom:2rem">${interpolate(caseData.case)}</h2>`;
 
-    // Fallbeschreibung
-    let statement = document.createElement("div");
-    statement.className = "fs-case-statement";
-    statement.textContent = caseText;
-    cont.appendChild(statement);
-
-    // Jede Aufgabe rendern
-    tasks.forEach((task, idx) => {
-      let block = document.createElement("div");
-      block.className = "fs-task-block";
-
-      // Eindeutige input id
-      let inputId = `fs-input-${task.id || idx}`;
-
-      // Frage
-      let q = document.createElement("label");
-      q.htmlFor = inputId;
-      q.className = "fs-question";
-      q.innerHTML = `<b>Aufgabe ${idx + 1}:</b> ${task.frage || "—"}`;
-      block.appendChild(q);
-
-      // Antwortfeld
-      let input = document.createElement("input");
-      input.type = (task.input_type === "number") ? "number" : "text";
-      input.placeholder = "Ihre Antwort …";
-      input.className = "fs-input";
-      input.id = inputId;
-      block.appendChild(input);
-
-      // Lösung anzeigen-Button
-      let btn = document.createElement("button");
-      btn.textContent = "Lösung anzeigen";
-      btn.className = "fs-show-btn";
-      btn.onclick = function () {
-        let fb = document.createElement("div");
-        fb.className = "fs-feedback";
-        if (task.solution_text && task.solution_text.trim()) {
-          fb.innerHTML = `<strong>Richtige Lösung:</strong> ${task.solution_text}<br>`;
-        }
-        if (task.rechnungsweg) {
-          fb.innerHTML += `<strong>Rechnungsweg:</strong> ${task.rechnungsweg}`;
-        }
-        block.appendChild(fb);
-        btn.disabled = true;
-        input.disabled = true;
-      };
-      block.appendChild(btn);
-
-      cont.appendChild(block);
-    });
-
-    // Neue Fallstudie-Button
-    let newCaseBtn = document.createElement("button");
-    newCaseBtn.textContent = "Neue Fallstudie";
-    newCaseBtn.className = "back-btn";
-    newCaseBtn.onclick = function () { startNewCase(window.__fallCasesForReload); };
-    cont.appendChild(newCaseBtn);
+  // Tabelle
+  if (caseData.table && caseData.table.length) {
+    html += `<table class="fs-table" style="margin-bottom:2.3rem;width:100%;max-width:550px;">`;
+    for (const row of caseData.table) {
+      html += `<tr><td>${interpolate(row[0])}</td><td style="font-weight:500;text-align:right">${interpolate(row[1])}</td></tr>`;
+    }
+    html += `</table>`;
   }
-});
+
+  // Tasks
+  html += `<div class="fs-tasks">`;
+  (caseData.tasks || []).forEach((task, i) => {
+    const inputId = `fsinput-${i}-${Math.random().toString(36).slice(2,8)}`;
+    html += `<div class="fs-task-block">
+      <div class="fs-question">${i+1}. ${interpolate(task.frage)}</div>
+      ${
+        task.input_type === "text"
+          ? `<textarea id="${inputId}" class="fs-input" rows="2" placeholder="Antwort eingeben"></textarea>`
+          : `<input type="${task.input_type||'number'}" id="${inputId}" class="fs-input" autocomplete="off" />`
+      }
+      <button class="fs-show-btn" onclick="zeigeLoesung('${inputId}', '${encodeURIComponent(JSON.stringify(task))}', '${encodeURIComponent(JSON.stringify(vars))}')">Lösung anzeigen</button>
+      <div id="fsfeedback-${inputId}" class="fs-feedback" style="display:none"></div>
+    </div>`;
+  });
+  html += `</div>`;
+
+  fsContainer.innerHTML = html;
+}
+
+// --------- Lösung anzeigen handler (globale function) ---------
+window.zeigeLoesung = function(inputId, encTask, encVars) {
+  const task = JSON.parse(decodeURIComponent(encTask));
+  const vars = JSON.parse(decodeURIComponent(encVars));
+  const inputElem = document.getElementById(inputId);
+  const feedback = document.getElementById('fsfeedback-' + inputId);
+
+  let user = (inputElem.value||'').trim();
+  let solution = '';
+
+  // interpolate helper
+  const interpolate = (str) =>
+    typeof str === 'string'
+      ? str.replace(/{([^}]+)}/g, (_, k) => vars[k] !== undefined ? vars[k] : '❓')
+      : str;
+
+  // Lösung berechnen
+  if (task.solution_formula) {
+    let expr = task.solution_formula.replace(/{([^}]+)}/g, (_, k) => vars[k] ?? 0);
+    expr = expr.replace(/\bMAX\s*\(([^,]+),([^)]+)\)/gi, 'Math.max($1,$2)')
+               .replace(/\bMIN\s*\(([^,]+),([^)]+)\)/gi, 'Math.min($1,$2)')
+               .replace(/\bFLOOR\s*\(([^)]+)\)/gi, 'Math.floor($1)')
+               .replace(/\bROUND\s*\(([^)]+)\)/gi, 'Math.round($1)');
+    try {
+      solution = Function(`return (${expr});`)();
+      solution = (typeof solution === "number" && !isNaN(solution)) ? Math.round(solution * 100) / 100 : solution;
+    } catch { solution = '❓'; }
+  } else if (task.solution_text) {
+    solution = interpolate(task.solution_text);
+  } else {
+    solution = 'Keine Lösung vorhanden.';
+  }
+
+  // Vergleich für number
+  let korrekt = false;
+  if (task.input_type === "number") {
+    let userNum = parseFloat(user.replace(",", "."));
+    korrekt = (Math.abs(userNum - solution) < 0.02); // Toleranz
+  } else {
+    korrekt = (user.toLowerCase().trim() === String(solution).toLowerCase().trim());
+  }
+
+  let feedbackMsg = "";
+  if (user.length > 0) {
+    if (task.input_type === "number") {
+      feedbackMsg += korrekt
+        ? "✔️ <b>Richtig!</b><br>"
+        : "❌ <b>Falsch.</b><br>";
+    }
+  }
+  feedbackMsg += `<b>Lösung:</b> ${solution}<br><span style="color:#555">${interpolate(task.rechnungsweg || '')}</span>`;
+  feedback.style.display = "block";
+  feedback.innerHTML = feedbackMsg;
+};
+
+btnNeueFallstudie.onclick = showRandomCase;
+
+// --------- Start -----------
+loadFallstudien();
