@@ -2,47 +2,21 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Fallstudien</title>
+  <title>Fallstudien – Taxi & Mietwagen Unternehmer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <h1>📂 Fallstudien</h1>
+    <h1>Fallstudien</h1>
   </header>
-  <main id="app">
-    <div id="fall-container"></div>
-    <button class="zuruck-btn" onclick="history.back()">Zurück</button>
+  <main>
+    <div id="fallstudien-container" class="fallstudien-container"></div>
+    <button class="back-btn" onclick="window.location.href='index.html'">Zurück zum Hauptmenü</button>
   </main>
-
-  <script>
-    fetch('Fallstudien.json')
-      .then(res => res.json())
-      .then(data => {
-        // 7–18 رینڈم سوالات منتخب کریں
-        const count = Math.floor(Math.random() * 12) + 7; // 7 تا 18 سوالات
-        const shuffled = data.sort(() => 0.5 - Math.random()).slice(0, count);
-        const container = document.getElementById('fall-container');
-        shuffled.forEach((fall, idx) => {
-          const q = document.createElement('p');
-          q.className = 'question';
-          q.textContent = (idx+1) + ". " + (fall.text || 'سوال');
-          container.appendChild(q);
-          const sol = document.createElement('p');
-          sol.textContent = "Lösung: " + (fall.loesung || '');
-          sol.style.display = 'none';
-          container.appendChild(sol);
-          const btn = document.createElement('button');
-          btn.textContent = "Lösung zeigen";
-          btn.onclick = () => { sol.style.display = 'block'; btn.style.display = 'none'; };
-          container.appendChild(btn);
-        });
-      })
-      .catch(err => {
-        const container = document.getElementById('fall-container');
-        container.textContent = "Fallstudien لوڈ نہیں ہو سکیں۔";
-        console.error(err);
-      });
-  </script>
+  <footer>
+    <p>&copy; 2025 Taxi/Mietwagen Unternehmer Lern-App</p>
+  </footer>
+  <script src="fallstudien.js"></script>
 </body>
 </html>
