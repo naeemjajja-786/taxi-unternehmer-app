@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("Fallstudien.json")
     .then(resp => resp.json())
     .then(data => {
-      // Filter only valid cases (6+ tasks, proper case text)
+      // Filter only valid cases (3+ tasks, proper case text)
       let allCases = data.filter(
-        f => Array.isArray(f.tasks) && f.tasks.length >= 6 && typeof f.case === "string"
+        f => Array.isArray(f.tasks) && f.tasks.length >= 4 && typeof f.case === "string"
       );
       window.__fallCasesForReload = allCases; // For reload btn
       if (allCases.length === 0) {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function startNewCase(allCases) {
     const caseObj = allCases[Math.floor(Math.random() * allCases.length)];
-    let numTasks = Math.max(6, Math.min(9, caseObj.tasks.length));
+    let numTasks = Math.max(3, Math.min(9, caseObj.tasks.length));
     let tasks = [...caseObj.tasks];
     // Shuffle tasks (Fisher-Yates)
     for (let i = tasks.length - 1; i > 0; i--) {
