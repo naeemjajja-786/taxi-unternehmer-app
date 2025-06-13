@@ -1,3 +1,8 @@
+fetch("Fallstudien.json")
+  .then(resp => resp.json())
+  .then(data => {
+    console.log("Sample:", data[0]);
+  });
 document.addEventListener("DOMContentLoaded", function () {
   .then(data => {
     console.log("Fallstudien loaded:", data);
