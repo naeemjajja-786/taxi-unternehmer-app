@@ -46,7 +46,7 @@ footer {
   transform: scale(1.03);
 }
 
-/* --- Kapitel-Liste, Urdu/Deutsch Switch --- */
+/* Kapitel-Liste, Urdu/Deutsch Switch */
 .chapter-list {
   display: flex;
   flex-direction: column;
@@ -127,6 +127,22 @@ footer {
 }
 .back-btn:hover {
   background: #444;
+}
+
+/* Themen Quiz: Topics 2-column grid */
+.quiz-topic-list .topic-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1rem 1.4rem;
+  margin: 2rem auto 2.3rem auto;
+  max-width: 640px;
+}
+@media (max-width: 600px) {
+  .quiz-topic-list .topic-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 98vw;
+  }
 }
 
 /* Quiz & Fallstudien: Fragen/Antworten Cards */
