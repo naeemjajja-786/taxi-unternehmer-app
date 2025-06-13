@@ -1,14 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let fallstudienData = [];
-  let currentIdx = 0;
+  let allCases = [];
+  let shuffledTasks = [];
+  let currentCase = null;
+  let currentTaskIdx = 0;
+
+  function shuffle(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
 
   function loadFallstudien() {
     fetch("Fallstudien.json")
       .then(resp => resp.json())
       .then(data => {
-        fallstudienData = data;
-        currentIdx = 0;
-        renderFallstudie(currentIdx);
+        if (!Array.isArray(data) || data.length === 0) {
+          document.getElementById("fallstudien-container").innerHTML =
+            "<div style='color:red'>Keine Fallstudien gefunden.</div>";
+        } else {
+          allCases = data.filter(f => Array.isArray(f.tasks) && f.tasks.length >= 6);
+          startNewCase();
+        }
       })
       .catch(e => {
         document.getElementById("fallstudien-container").innerHTML =
@@ -16,8 +30,21 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 
-  function renderFallstudie(idx) {
-    const c = fallstudienData[idx];
+  function startNewCase() {
+    if (allCases.length === 0) {
+      document.getElementById("fallstudien-container").innerHTML =
+        "<div style='color:red'>Keine passenden Fallstudien gefunden.</div>";
+      return;
+    }
+    currentCase = allCases[Math.floor(Math.random() * allCases.length)];
+    shuffledTasks = shuffle(currentCase.tasks.slice()).slice(0, Math.min(9, Math.max(6, currentCase.tasks.length)));
+    currentTaskIdx = 0;
+    renderCurrentTask();
+  }
+
+  function renderCurrentTask() {
+    const c = currentCase;
+    const task = shuffledTasks[currentTaskIdx];
     const cont = document.getElementById("fallstudien-container");
     cont.innerHTML = "";
 
@@ -25,55 +52,60 @@ document.addEventListener("DOMContentLoaded", function () {
     title.textContent = c.title;
     cont.appendChild(title);
 
-    if (c.question && c.question.trim()) {
-      let q = document.createElement("div");
-      q.className = "fs-question";
-      q.textContent = c.question;
-      cont.appendChild(q);
-    }
+    let t = document.createElement("div");
+    t.className = "fs-question";
+    t.innerHTML = `<b>Aufgabe ${currentTaskIdx + 1}:</b> ${task.frage || "—"}`;
+    cont.appendChild(t);
 
-    // Input field (text)
     let input = document.createElement("input");
-    input.type = "text";
+    input.type = (task.input_type === "number") ? "number" : "text";
     input.placeholder = "Ihre Antwort …";
     input.className = "fs-input";
     cont.appendChild(input);
 
+    // حل کا بٹن
     let btn = document.createElement("button");
-    btn.textContent = "Lösung anzeigen";
+    btn.textContent = "Rechnungsweg anzeigen";
     btn.className = "fs-show-btn";
-    btn.onclick = function() {
-      // Feedback show
+    btn.onclick = function () {
       let fb = document.createElement("div");
       fb.className = "fs-feedback";
-      if (c.feedback.solution_text && c.feedback.solution_text.trim()) {
-        fb.innerHTML = `<strong>Richtige Lösung:</strong> ${c.feedback.solution_text}<br>`;
+      if (task.solution_text && task.solution_text.trim()) {
+        fb.innerHTML = `<strong>Richtige Lösung:</strong> ${task.solution_text}<br>`;
       }
-      fb.innerHTML += `<strong>Erklärung:</strong> ${c.feedback.explanation}`;
+      if (task.rechnungsweg) {
+        fb.innerHTML += `<strong>Rechnungsweg:</strong> ${task.rechnungsweg}`;
+      }
       cont.appendChild(fb);
       btn.disabled = true;
       input.disabled = true;
     };
     cont.appendChild(btn);
 
-    // Navigation (next/prev)
+    // نیویگیشن بٹن
     let nav = document.createElement("div");
     nav.className = "fs-nav";
-    if (idx > 0) {
+    if (currentTaskIdx > 0) {
       let prev = document.createElement("button");
       prev.textContent = "Zurück";
-      prev.onclick = () => renderFallstudie(idx - 1);
+      prev.onclick = () => { currentTaskIdx--; renderCurrentTask(); };
       nav.appendChild(prev);
     }
-    if (idx < fallstudienData.length - 1) {
+    if (currentTaskIdx < shuffledTasks.length - 1) {
       let next = document.createElement("button");
       next.textContent = "Weiter";
-      next.onclick = () => renderFallstudie(idx + 1);
+      next.onclick = () => { currentTaskIdx++; renderCurrentTask(); };
       nav.appendChild(next);
     }
     cont.appendChild(nav);
+
+    // Neue Fallstudie
+    let newCaseBtn = document.createElement("button");
+    newCaseBtn.textContent = "Neue Fallstudie";
+    newCaseBtn.className = "back-btn";
+    newCaseBtn.onclick = startNewCase;
+    cont.appendChild(newCaseBtn);
   }
 
-  // سکرپٹ لوڈ ہونے پر فوراً ڈیٹا لائیں
   loadFallstudien();
 });
