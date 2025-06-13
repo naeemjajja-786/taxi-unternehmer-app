@@ -1,7 +1,6 @@
-// WICHTIG: Dieser Code ist komplett kompatibel mit Ihrer Fallstudien.json Struktur!
+// WICHTIG: 100% kompatibel mit Ihrer Fallstudien.json!
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Fallstudien.json laden
   fetch("Fallstudien.json")
     .then(resp => {
       if (!resp.ok) throw new Error("Fallstudien.json nicht gefunden!");
@@ -10,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(data => {
       // Filtern: Nur Fälle mit 6 oder mehr Aufgaben
       let allCases = data.filter(
-        f => Array.isArray(f.tasks) && f.tasks.length >= 2 && typeof f.case === "string"
+        f => Array.isArray(f.tasks) && f.tasks.length >= 6 && typeof f.fall === "string"
       );
       window.__fallCasesForReload = allCases; // für neue Fallstudie
       if (allCases.length === 0) {
@@ -29,14 +28,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Zufälligen Fall nehmen
     const caseObj = allCases[Math.floor(Math.random() * allCases.length)];
     // 6–9 Aufgaben zufällig auswählen
-    let numTasks = Math.max(2, Math.min(9, caseObj.tasks.length));
+    let numTasks = Math.max(6, Math.min(9, caseObj.tasks.length));
     let tasks = [...caseObj.tasks];
     for (let i = tasks.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [tasks[i], tasks[j]] = [tasks[j], tasks[i]];
     }
     tasks = tasks.slice(0, numTasks);
-    renderCase(caseObj.case, tasks);
+    renderCase(caseObj.fall, tasks);   // <- Hier: "fall", nicht "case"
   }
 
   function renderCase(caseText, tasks) {
