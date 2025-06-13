@@ -12,29 +12,37 @@
   </header>
 
   <main>
-    <div id="start-buttons" style="text-align: center; margin-top: 20px;">
+    <div id="start-section" style="text-align: center;">
       <button onclick="startTeil(1)">Teil 1 starten</button>
       <button onclick="startTeil(2)">Teil 2 starten</button>
     </div>
 
-    <!-- Container für Fragen -->
-    <div id="quiz-container" class="hidden">
-      <div id="question-number"></div>
-      <div id="question-text"></div>
-      <div id="options-container" class="hidden"></div>
-      <textarea id="user-answer" class="hidden" placeholder="Antwort eingeben..."></textarea>
+    <!-- Teil 1 -->
+    <div id="teil1-container" class="hidden">
+      <div id="teil1-question-number"></div>
+      <div id="teil1-question-text"></div>
+      <div id="teil1-options"></div>
+      <textarea id="teil1-user-answer" placeholder="Antwort eingeben..."></textarea>
       <div>
-        <button onclick="submitAnswer()">Antwort überprüfen</button>
-        <button onclick="goBack()">Zurück</button>
+        <button onclick="submitTeil1Answer()">Antwort überprüfen</button>
+        <button onclick="backToStart()">Zurück</button>
       </div>
-      <div id="feedback"></div>
+      <div id="teil1-feedback"></div>
     </div>
 
-    <!-- Ergebnisse -->
-    <div id="teil1-result" class="hidden"></div>
-    <div id="teil2-result" class="hidden"></div>
+    <!-- Teil 2 -->
+    <div id="teil2-container" class="hidden">
+      <div id="teil2-question-number"></div>
+      <div id="teil2-question-text"></div>
+      <textarea id="teil2-user-answer" placeholder="Antwort eingeben..."></textarea>
+      <div>
+        <button onclick="submitTeil2Answer()">Antwort überprüfen</button>
+        <button onclick="backToStart()">Zurück</button>
+      </div>
+      <div id="teil2-feedback"></div>
+    </div>
 
-    <!-- Gesamtergebnis -->
+    <!-- Ergebnis -->
     <div id="final-result" class="hidden">
       <h2>Gesamtergebnis</h2>
       <p id="gesamtpunkte"></p>
@@ -46,8 +54,24 @@
     <p>&copy; 2025 Taxi/Mietwagen Lern-App</p>
   </footer>
 
-  <!-- Beide Scripts einbinden -->
-  <script src="teil1.js"></script>
-  <script src="teil2.js"></script>
+  <!-- Nur eine von diesen wird zur Laufzeit dynamisch geladen -->
+  <script>
+    function startTeil(teil) {
+      document.getElementById('start-section').style.display = 'none';
+      if (teil === 1) {
+        const script = document.createElement('script');
+        script.src = 'teil1.js';
+        document.body.appendChild(script);
+      } else if (teil === 2) {
+        const script = document.createElement('script');
+        script.src = 'musterpruefung-teil2.js';
+        document.body.appendChild(script);
+      }
+    }
+
+    function backToStart() {
+      location.reload();
+    }
+  </script>
 </body>
 </html>
