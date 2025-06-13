@@ -1,79 +1,77 @@
-function $(id) {
-  return document.getElementById(id);
-}
+// اس حصے کو اپنے Fallstudien JS میں رکھیں
 
-let allCases = [];
+let fallstudienData = [];
+let currentIdx = 0;
 
-// Fetch the case studies JSON on page load and show the list
-window.onload = function() {
-  fetch("Fallbeistudien.json")
-    .then(res => res.json())
+function loadFallstudien() {
+  fetch("Fallstudien.json")
+    .then(resp => resp.json())
     .then(data => {
-      allCases = Array.isArray(data) ? data : [];
-      renderFallList();
+      fallstudienData = data;
+      currentIdx = 0;
+      renderFallstudie(currentIdx);
     })
-    .catch(() => {
-      $("dynamic-content").innerHTML = "<p>❌ Fallstudien konnten nicht geladen werden.</p>";
+    .catch(e => {
+      document.getElementById("fallstudien-container").innerHTML =
+        "<div style='color:red'>Fehler beim Laden der Fallstudien.<br>" + e.message + "</div>";
     });
-};
-
-// Render the list of all case studies
-function renderFallList() {
-  if (!allCases.length) {
-    $("dynamic-content").innerHTML = "<p>⚠️ Keine Fallstudien verfügbar.</p>";
-    return;
-  }
-  let html = "<h3>Alle Fallstudien:</h3>";
-  allCases.forEach((cs, idx) => {
-    html += `<button class="sub-btn" onclick="openCase(${idx})">${cs.title}</button><br>`;
-  });
-  html += `<br><button class="back-btn" onclick="window.location.href='index.html'">← Zurück zum Hauptmenü</button>`;
-  $("dynamic-content").innerHTML = html;
 }
 
-// Open a specific case study by index, showing its details
-function openCase(index) {
-  const cs = allCases[index];
-  if (!cs) {
-    // If no data found, go back to list
-    return renderFallList();
+function renderFallstudie(idx) {
+  const c = fallstudienData[idx];
+  const cont = document.getElementById("fallstudien-container");
+  cont.innerHTML = "";
+
+  let title = document.createElement("h2");
+  title.textContent = c.title;
+  cont.appendChild(title);
+
+  if (c.question && c.question.trim()) {
+    let q = document.createElement("div");
+    q.className = "fs-question";
+    q.textContent = c.question;
+    cont.appendChild(q);
   }
-  let html = `<h3>${cs.title}</h3>`;
-  if (cs.question && cs.question.trim() !== "") {
-    // Preserve line breaks in the question text
-    const qText = cs.question.replace(/\n/g, "<br>");
-    html += `<p>${qText}</p>`;
-  } else {
-    html += `<p><em>Keine Aufgabenstellung verfügbar.</em></p>`;
+
+  // Input field (text)
+  let input = document.createElement("input");
+  input.type = "text";
+  input.placeholder = "Ihre Antwort …";
+  input.className = "fs-input";
+  cont.appendChild(input);
+
+  let btn = document.createElement("button");
+  btn.textContent = "Lösung anzeigen";
+  btn.onclick = function() {
+    // Feedback show
+    let fb = document.createElement("div");
+    fb.className = "fs-feedback";
+    if (c.feedback.solution_text && c.feedback.solution_text.trim()) {
+      fb.innerHTML = `<strong>Richtige Lösung:</strong> ${c.feedback.solution_text}<br>`;
+    }
+    fb.innerHTML += `<strong>Erklärung:</strong> ${c.feedback.explanation}`;
+    cont.appendChild(fb);
+    btn.disabled = true;
+  };
+  cont.appendChild(btn);
+
+  // Navigation (next/prev)
+  let nav = document.createElement("div");
+  nav.className = "fs-nav";
+  if (idx > 0) {
+    let prev = document.createElement("button");
+    prev.textContent = "Zurück";
+    prev.onclick = () => renderFallstudie(idx - 1);
+    nav.appendChild(prev);
   }
-  // Placeholder for solution content
-  html += `<div id="solution-box"></div>`;
-  // Button to show the solution (if any), and a back button to return to list
-  html += `<br><button id="show-solution-btn" class="sub-btn" onclick="showSolution(${index})">Lösung anzeigen</button><br>`;
-  html += `<button class="back-btn" onclick="renderFallList()">← Zurück</button>`;
-  $("dynamic-content").innerHTML = html;
+  if (idx < fallstudienData.length - 1) {
+    let next = document.createElement("button");
+    next.textContent = "Weiter";
+    next.onclick = () => renderFallstudie(idx + 1);
+    nav.appendChild(next);
+  }
+  cont.appendChild(nav);
 }
 
-// Display the solution and explanation for a given case study
-function showSolution(index) {
-  const cs = allCases[index];
-  if (!cs || !cs.feedback) return;
-  const sol = cs.feedback;
-  let html = "";
-  if (sol.solution_text && sol.solution_text.trim() !== "") {
-    const solText = sol.solution_text.replace(/\n/g, "<br>");
-    html += `<div class="explanation"><strong>Lösung:</strong><br>${solText}</div>`;
-  }
-  if (sol.explanation && sol.explanation.trim() !== "") {
-    html += `<div class="hinweis">${sol.explanation}</div>`;
-  }
-  const solutionBox = $("solution-box");
-  if (solutionBox) {
-    solutionBox.innerHTML = html;
-  }
-  // Hide the "Show Solution" button after revealing the solution
-  const btn = $("show-solution-btn");
-  if (btn) {
-    btn.style.display = "none";
-  }
-}
+// آپ کی Fallstudien بٹن پر
+// loadFallstudien() کو کال کریں اور ایک div دیں id="fallstudien-container"
