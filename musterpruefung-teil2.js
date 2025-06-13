@@ -1,81 +1,86 @@
-// === teil2.js ===
-
 let teil2Fragen = [];
-let teil2AktuelleFrage = 0;
-let teil2Punkte = 0;
+let currentQuestionIndex2 = 0;
+let scoreTeil2 = 0;
+let answeredTeil2 = [];
 
-async function ladeTeil2Fragen() {
-  try {
-    const res = await fetch('Exams-Teil2.json');
-    const data = await res.json();
-    teil2Fragen = data;
-    teil2AktuelleFrage = 0;
-    teil2Punkte = 0;
-    zeigeTeil2Frage();
-  } catch (err) {
-    document.getElementById('question-text').innerText = 'Fehler beim Laden der Teil 2 Prüfungsdaten: ' + err;
+function startExamTeil2() {
+  fetch("Exams-Teil2.json")
+    .then((res) => res.json())
+    .then((data) => {
+      teil2Fragen = data.slice(0, 10); // پہلی 10 Fallstudien یا Fragen
+      document.getElementById("start-buttons").style.display = "none";
+      document.getElementById("quiz-container").classList.remove("hidden");
+      document.getElementById("quiz-container").dataset.teil = "2";
+      currentQuestionIndex2 = 0;
+      scoreTeil2 = 0;
+      answeredTeil2 = [];
+      showQuestionTeil2();
+    })
+    .catch((err) => {
+      console.error("Fehler beim Laden von Teil 2:", err);
+      alert("❌ Teil 2 konnte nicht geladen werden.");
+    });
+}
+
+function showQuestionTeil2() {
+  const frageObj = teil2Fragen[currentQuestionIndex2];
+  let text = "";
+
+  if (frageObj.fallstudie && frageObj.tasks) {
+    // Fallstudie
+    text += `Fallstudie: ${frageObj.fallstudie}\n\n`;
+    frageObj.tasks.forEach((task, idx) => {
+      text += `${idx + 1}. ${task.frage}\n`;
+    });
+  } else {
+    text = frageObj.frage;
+  }
+
+  document.getElementById("question-number").textContent = `Frage ${currentQuestionIndex2 + 1} von ${teil2Fragen.length}`;
+  document.getElementById("question-text").textContent = text;
+  document.getElementById("user-answer").value = "";
+  document.getElementById("feedback").textContent = "";
+}
+
+function submitAnswerTeil2() {
+  const input = document.getElementById("user-answer").value.trim();
+  const frageObj = teil2Fragen[currentQuestionIndex2];
+  let correct = false;
+
+  if (frageObj.fallstudie && frageObj.tasks) {
+    // Bei Fallstudien kein direkter Vergleich
+    document.getElementById("feedback").textContent = "Fallstudie beantwortet. Antwort gespeichert.";
+    correct = true; // Bewertet wird später manuell oder mit Tiefe
+  } else {
+    const richtigeAntwort = frageObj.richtigeAntwort?.trim() || "";
+    correct = input.toLowerCase() === richtigeAntwort.toLowerCase();
+
+    if (correct) {
+      document.getElementById("feedback").textContent = "✅ Richtig!";
+      scoreTeil2++;
+    } else {
+      document.getElementById("feedback").textContent = `❌ Falsch. Richtige Antwort: ${richtigeAntwort}`;
+    }
+  }
+
+  answeredTeil2.push({
+    frage: frageObj.frage || frageObj.fallstudie,
+    userAntwort: input,
+    richtig: correct,
+  });
+
+  currentQuestionIndex2++;
+  if (currentQuestionIndex2 < teil2Fragen.length) {
+    setTimeout(showQuestionTeil2, 2000);
+  } else {
+    showResultTeil2();
   }
 }
 
-function zeigeTeil2Frage() {
-  const frageBlock = teil2Fragen[teil2AktuelleFrage];
-  const questionDiv = document.getElementById('question-text');
-  const numberDiv = document.getElementById('question-number');
-  const feedbackDiv = document.getElementById('feedback');
-
-  if (!frageBlock) {
-    zeigeTeil2Ergebnis();
-    return;
-  }
-
-  feedbackDiv.innerHTML = '';
-  numberDiv.innerText = Teil 2 – Fallstudie ${teil2AktuelleFrage + 1} von ${teil2Fragen.length};
-
-  let html = <strong>${frageBlock.fallstudie}</strong><br/><br/>;
-
-  frageBlock.tasks.forEach((task, index) => {
-    html += <div><strong>${task.frage}</strong><br/> +
-            <textarea id="answer-${index}" placeholder="Antwort eingeben..."></textarea></div><br/>;
-  });
-
-  html += <button onclick="pruefeTeil2Antworten()">Antworten überprüfen</button>;
-  questionDiv.innerHTML = html;
-}
-
-function pruefeTeil2Antworten() {
-  const frageBlock = teil2Fragen[teil2AktuelleFrage];
-  const feedbackDiv = document.getElementById('feedback');
-  let richtigInDieserFrage = 0;
-  let punkteInDieserFrage = 0;
-
-  let feedbackHTML = '<h4>Rückmeldung:</h4><ul>';
-
-  frageBlock.tasks.forEach((task, index) => {
-    const userInput = document.getElementById(answer-${index}).value.trim().toLowerCase();
-    const correct = task.richtigeAntwort.trim().toLowerCase();
-    const istRichtig = userInput === correct;
-    if (istRichtig) richtigInDieserFrage++;
-    if (istRichtig) teil2Punkte += task.punkte;
-    punkteInDieserFrage += task.punkte;
-    feedbackHTML += <li>${task.frage}<br/><em>Ihre Antwort:</em> ${userInput || 'Keine Antwort'}<br/><em>Richtige Antwort:</em> ${task.richtigeAntwort} – <strong>${istRichtig ? 'Richtig' : 'Falsch'}</strong> (${task.punkte} Punkte)</li>;
-  });
-
-  feedbackHTML += '</ul>';
-  feedbackHTML += <p><strong>Punkte in dieser Fallstudie: ${richtigInDieserFrage} / ${frageBlock.tasks.length}</strong></p>;
-
-  feedbackDiv.innerHTML = feedbackHTML;
-  teil2AktuelleFrage++;
-
-  setTimeout(() => {
-    zeigeTeil2Frage();
-  }, 3000);
-}
-
-function zeigeTeil2Ergebnis() {
-  document.getElementById('quiz-container').classList.add('hidden');
-  const resultBox = document.getElementById('teil2-result');
-  resultBox.classList.remove('hidden');
-  resultBox.innerHTML = <h2>Teil 2 abgeschlossen</h2><p>Gesamtpunkte Teil 2: ${teil2Punkte}</p>;
-  document.getElementById('final-result').classList.remove('hidden');
-  aktualisiereGesamtpunkte();
+function showResultTeil2() {
+  document.getElementById("quiz-container").classList.add("hidden");
+  const result = document.getElementById("teil2-result");
+  result.classList.remove("hidden");
+  result.innerHTML = `<h2>Teil 2 Ergebnis</h2><p>${scoreTeil2} von ${teil2Fragen.length} richtig beantwortet (bei Einzelaufgaben)</p>
+  <button onclick="location.reload()">Zurück zur Startseite</button>`;
 }
