@@ -30,7 +30,7 @@ let currentQuiz = null;
 let currentQ = 0;
 let userAnswers = [];
 
-// ---------- Zwei-Spalten Topics anzeigen
+// ---------- Vertikale Topics anzeigen
 function renderTopicButtons() {
   quizArea.style.display = "none";
   backBtnTQ.style.display = "none";
@@ -49,7 +49,7 @@ function renderTopicButtons() {
 
 // ----------- Quiz laden (aus JSON) + Start
 function loadTopicQuiz(jsonFile, topicLabel) {
-  fetch(`./${jsonFile}`)
+  fetch(`./${encodeURIComponent(jsonFile)}`)
     .then(r => r.json())
     .then(data => {
       // Shuffle questions (min 5, max 20 per topic)
@@ -70,7 +70,7 @@ function loadTopicQuiz(jsonFile, topicLabel) {
       showQuestion(topicLabel);
     })
     .catch(e => {
-      quizArea.innerHTML = "<div style='color:red'>Fehler beim Laden des Quiz.</div>";
+      quizArea.innerHTML = "<div style='color:red'>Fehler beim Laden des Quiz.<br>"+e.message+"</div>";
     });
 }
 
