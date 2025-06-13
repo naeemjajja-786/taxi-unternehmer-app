@@ -3,15 +3,6 @@ fetch("Fallstudien.json")
   .then(data => {
     console.log("Sample:", data[0]);
   });
-document.addEventListener("DOMContentLoaded", function () {
-  .then(data => {
-    console.log("Fallstudien loaded:", data);
-    let allCases = data.filter(
-      f => Array.isArray(f.tasks) && f.tasks.length >= 6 && typeof f.case === "string"
-    );
-    console.log("Filtered cases:", allCases.length, allCases);
-    // ... باقی کوڈ
-});
 
       window.__fallCasesForReload = allCases;
       if (allCases.length === 0) {
