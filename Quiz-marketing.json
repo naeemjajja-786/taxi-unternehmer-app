@@ -1,333 +1,112 @@
-{
-    "frage": "Was versteht man unter dem Begriff 'Marketing'?",
-    "antworten": [
-      "Die Gestaltung eines Logos",
-      "Der Verkauf von Produkten durch Werbung und Strategie",
-      "Die Buchführung eines Unternehmens",
-      "Die Einstellung von Personal"
-    ],
-    "korrekt": 1,
-    "erklaerung": "اردو: مارکیٹنگ کا مطلب ہے کہ کس طرح مصنوعات یا خدمات کو مؤثر انداز میں خریداروں تک پہنچایا جائے۔"
-  },
-  {
-    "frage": "Was gehört zum Marketing-Mix?",
-    "antworten": [
-      "Produkt, Preis, Platz, Promotion",
-      "Planung, Prüfung, Zahlung, Position",
-      "Produkt, Personal, Post, Preis",
-      "Projekt, Präsentation, Power, Position"
-    ],
-    "korrekt": 0,
-    "erklaerung": "اردو: Marketing-Mix چار عناصر پر مشتمل ہوتا ہے: مصنوعات، قیمت، جگہ اور تشہیر۔"
-  },
-  {
-    "frage": "Was ist ein Ziel der Werbung?",
-    "antworten": [
-      "Steuern sparen",
-      "Produktion reduzieren",
-      "Aufmerksamkeit erregen und Kunden gewinnen",
-      "Rechnungen schreiben"
-    ],
-    "korrekt": 2,
-    "erklaerung": "اردو: اشتہار بازی کا مقصد صارفین کی توجہ حاصل کرنا اور انہیں خریدار میں بدلنا ہوتا ہے۔"
-  },
-  {
-    "frage": "Was ist Direktmarketing?",
-    "antworten": [
-      "Werbung in Zeitungen",
-      "Verkaufsgespräch mit dem Kunden ohne Zwischenhändler",
-      "Fernsehwerbung",
-      "Radiowerbung"
-    ],
-    "korrekt": 1,
-    "erklaerung": "اردو: Direct Marketing کا مطلب ہے براہِ راست صارف سے رابطہ اور پیشکش۔"
-  },
-  {
-    "frage": "Was versteht man unter Zielgruppe?",
-    "antworten": [
-      "Alle Menschen weltweit",
-      "Die Gruppe von Menschen, die man mit Werbung erreichen will",
-      "Nur Kinder unter 12 Jahren",
-      "Nur Unternehmer"
-    ],
-    "korrekt": 1,
-    "erklaerung": "اردو: Zielgruppe وہ خاص افراد ہوتے ہیں جنہیں ایک مخصوص پروڈکٹ یا سروس بیچنے کا ہدف ہوتا ہے۔"
-  },
-  {
-    "frage": "Was bedeutet USP im Marketing?",
-    "antworten": [
-      "Unterschriebene Produktliste",
-      "Unique Selling Proposition – Alleinstellungsmerkmal",
-      "Unterschiedliche Preisstrategie",
-      "Unterstützende Produktpalette"
-    ],
-    "korrekt": 1,
-    "erklaerung": "اردو: USP وہ خاص چیز ہے جو آپ کی پیشکش کو دوسروں سے ممتاز بناتی ہے۔"
-  },
-  {
-    "frage": "Welches Medium gehört zum Online-Marketing?",
-    "antworten": [
-      "TV",
-      "Zeitung",
-      "Radio",
-      "Soziale Medien"
-    ],
-    "korrekt": 3,
-    "erklaerung": "اردو: Online-Marketing میں Facebook، Instagram اور دیگر سوشل میڈیا پلیٹ فارم استعمال ہوتے ہیں۔"
-  },
-  {
-    "frage": "Was ist Guerilla-Marketing?",
-    "antworten": [
-      "Normale Fernsehwerbung",
-      "Marketing mit kleinem Budget, aber kreativer Wirkung",
-      "Nur Flugblätter verteilen",
-      "Verkauf über Großhändler"
-    ],
-    "korrekt": 1,
-    "erklaerung": "اردو: Guerilla Marketing ایک تخلیقی اور غیر روایتی انداز ہے جس سے کم وسائل میں زیادہ اثر حاصل کیا جا سکتا ہے۔"
-  },
-  {
-    "frage": "Was bedeutet 'Markenbildung'?",
-    "antworten": [
-      "Ein Produkt kopieren",
-      "Ein einprägsames Image einer Firma oder eines Produkts schaffen",
-      "Ein Unternehmen schließen",
-      "Ein Preisausschreiben organisieren"
-    ],
-    "korrekt": 1,
-    "erklaerung": "اردو: Markenbildung کا مطلب ہے کہ ایک ایسا تاثر پیدا کیا جائے جو صارفین کے ذہن میں بیٹھ جائے۔"
-  },
-  {
-    "frage": "Was ist ein Slogan?",
-    "antworten": [
-      "Eine Produktnummer",
-      "Ein Werbespruch",
-      "Ein Firmenname",
-      "Ein Preisangebot"
-    ],
-    "korrekt": 1,
-    "erklaerung": "اردو: Slogan ایک مختصر اور مؤثر جملہ ہوتا ہے جو کسی برانڈ کی پہچان بن جاتا ہے۔"
-  }
 [
   {
-    "frage": "Was ist der Zweck einer Marktanalyse?",
+    "frage": "Was unterscheidet einen Mietwagen von einem Taxi im Personenbeförderungsrecht?",
     "antworten": [
-      "Um Produkte zu verpacken",
-      "Um die Konkurrenz zu ignorieren",
-      "Um den Markt, Kunden und Wettbewerb zu verstehen",
-      "Um Mitarbeiter zu entlassen"
-    ],
-    "korrekt": 2,
-    "erklaerung": "اردو: مارکیٹ انیلیسس کا مقصد مارکیٹ اور مقابلہ کو سمجھنا ہوتا ہے تاکہ بہتر حکمت عملی بنائی جا سکے۔"
-  },
-  {
-    "frage": "Welche Bedeutung hat Kundenbindung im Marketing?",
-    "antworten": [
-      "Kunden einmal bedienen und vergessen",
-      "Langfristige Beziehung zum Kunden aufbauen",
-      "Nur Preise senken",
-      "Rechnungen verstecken"
-    ],
-    "korrekt": 1,
-    "erklaerung": "اردو: گاہک سے دیرپا تعلق قائم رکھنا ایک کامیاب مارکیٹنگ کی بنیاد ہے۔"
-  },
-  {
-    "frage": "Was ist Influencer-Marketing?",
-    "antworten": [
-      "Werbung über bekannte Persönlichkeiten in sozialen Medien",
-      "Nur Fernsehwerbung",
-      "Zeitungsanzeigen schalten",
-      "Werbung durch Radio"
+      "Mietwagen dürfen nur nach vorheriger Bestellung eingesetzt werden.",
+      "Mietwagen dürfen an Taxiständen warten.",
+      "Mietwagen haben immer einen Taxameter.",
+      "Mietwagen fahren nur im Ausland."
     ],
     "korrekt": 0,
-    "erklaerung": "اردو: Influencer Marketing میں مشہور افراد اپنے فالورز کو پروڈکٹ کی سفارش کرتے ہیں۔"
+    "erklaerung": "Mietwagen müssen vorab bestellt werden und dürfen nicht an Taxiständen auf Kunden warten."
   },
   {
-    "frage": "Was ist der Unterschied zwischen B2B und B2C Marketing?",
+    "frage": "Was ist eine Pflicht für Mietwagen nach abgeschlossener Fahrt?",
     "antworten": [
-      "B2B ist für Privatkunden, B2C für Unternehmen",
-      "B2B ist teurer",
-      "B2B richtet sich an Unternehmen, B2C an Endkunden",
-      "Es gibt keinen Unterschied"
-    ],
-    "korrekt": 2,
-    "erklaerung": "اردو: B2B بزنس ٹو بزنس جبکہ B2C بزنس ٹو کنزیومر مارکیٹنگ کہلاتی ہے۔"
-  },
-  {
-    "frage": "Was gehört zur Produktpolitik?",
-    "antworten": [
-      "Lagerhaltung",
-      "Gestaltung und Qualität eines Produkts",
-      "Steuern berechnen",
-      "Verträge kündigen"
-    ],
-    "korrekt": 1,
-    "erklaerung": "اردو: Product Policy میں مصنوعات کا ڈیزائن، معیار اور خصوصیات شامل ہوتی ہیں۔"
-  },
-  {
-    "frage": "Was ist ein typisches Ziel von Promotion im Marketing-Mix?",
-    "antworten": [
-      "Steuern sparen",
-      "Produktbekanntheit steigern",
-      "Löhne kürzen",
-      "Personal abbauen"
-    ],
-    "korrekt": 1,
-    "erklaerung": "اردو: پروموشن کا مقصد مصنوعات یا خدمات کی پہچان بڑھانا ہے۔"
-  },
-  {
-    "frage": "Was versteht man unter Preisdifferenzierung?",
-    "antworten": [
-      "Einheitspreis für alle Kunden",
-      "Verschiedene Preise für unterschiedliche Kundengruppen",
-      "Kostenlose Lieferung",
-      "Nur Rabattaktionen"
-    ],
-    "korrekt": 1,
-    "erklaerung": "اردو: Preisdifferenzierung میں مختلف صارفین کو مختلف قیمتیں دی جاتی ہیں۔"
-  },
-  {
-    "frage": "Was ist ein Marktsegment?",
-    "antworten": [
-      "Ein Verkaufsort",
-      "Ein bestimmter Teil des Gesamtmarktes",
-      "Ein Produktregal",
-      "Ein Verpackungstyp"
-    ],
-    "korrekt": 1,
-    "erklaerung": "اردو: Marktsegment ایک خاص صارفین کی قسم ہوتی ہے جس کی مخصوص ضروریات ہوتی ہیں۔"
-  },
-  {
-    "frage": "Wofür steht CRM im Marketing?",
-    "antworten": [
-      "Computer Reparatur Management",
-      "Customer Relationship Management",
-      "Cash Return Model",
-      "Creative Resource Marketing"
-    ],
-    "korrekt": 1,
-    "erklaerung": "اردو: CRM گاہک کے ساتھ تعلقات کو منظم کرنے کا سسٹم ہے۔"
-  },
-  {
-    "frage": "Was ist ein Flyer im Marketing?",
-    "antworten": [
-      "Ein Flugzeug",
-      "Ein schriftliches Werbemittel",
-      "Ein Online-Shop",
-      "Ein Plakat im Radio"
-    ],
-    "korrekt": 1,
-    "erklaerung": "اردو: Flyer ایک پرنٹ اشتہار ہوتا ہے جو عام طور پر ہاتھ سے تقسیم کیا جاتا ہے۔"
-  },
-
-  {
-    "frage": "Was bedeutet 'Marktforschung'?",
-    "antworten": [
-      "Untersuchung von Märkten und Kundenwünschen",
-      "Entwicklung neuer Logos",
-      "Reparatur von Geräten",
-      "Werbungskosten berechnen"
+      "Die Rückkehrpflicht zum Betriebssitz.",
+      "Direkt zur nächsten Fahrt fahren.",
+      "Am Bahnhof warten.",
+      "Immer die gleiche Strecke fahren."
     ],
     "korrekt": 0,
-    "erklaerung": "اردو: Marktforschung کا مطلب ہے مارکیٹ کی تحقیق کرنا تاکہ صحیح فیصلے لیے جا سکیں۔"
+    "erklaerung": "Mietwagen müssen nach jeder Fahrt unverzüglich zum Betriebssitz zurückkehren, außer bei Anschlussaufträgen."
   },
   {
-    "frage": "Was bedeutet 'Positionierung' im Marketing?",
+    "frage": "Darf ein Mietwagen ohne Bestellung Fahrgäste aufnehmen?",
     "antworten": [
-      "GPS-Tracking",
-      "Die Wahrnehmung eines Produkts im Kopf des Kunden",
-      "Verpackung gestalten",
-      "Preis erhöhen"
+      "Nein, das ist verboten.",
+      "Ja, überall.",
+      "Nur an Flughäfen.",
+      "Nur bei schlechtem Wetter."
     ],
-    "korrekt": 1,
-    "erklaerung": "اردو: Positionierung وہ طریقہ ہے جس سے صارف ایک برانڈ کو یاد رکھتا ہے۔"
+    "korrekt": 0,
+    "erklaerung": "Fahrgäste dürfen nur nach vorheriger Bestellung aufgenommen werden."
   },
   {
-    "frage": "Welche Farbe steht oft für Vertrauen im Marketing?",
+    "frage": "Wer legt die Preise für Mietwagenfahrten fest?",
     "antworten": [
-      "Rot",
-      "Grün",
-      "Blau",
-      "Gelb"
+      "Das Mietwagenunternehmen selbst.",
+      "Die Gemeinde.",
+      "Die Industrie- und Handelskammer.",
+      "Der Fahrgast."
     ],
-    "korrekt": 2,
-    "erklaerung": "اردو: نیلا رنگ اکثر بھروسے اور سیکیورٹی کا تاثر دیتا ہے۔"
+    "korrekt": 0,
+    "erklaerung": "Mietwagenpreise sind frei vereinbar und unterliegen nicht dem behördlichen Taxitarif."
   },
   {
-    "frage": "Was bedeutet 'Conversion Rate'?",
+    "frage": "Müssen Mietwagen besonders gekennzeichnet sein?",
     "antworten": [
-      "Währungsumrechnung",
-      "Anteil der Website-Besucher, die eine gewünschte Aktion durchführen",
-      "Anteil an Fernsehwerbung",
-      "Umfrageantworten"
+      "Ja, durch ein grünes oder blaues Nummernschild und keine Taxi-Aufschrift.",
+      "Ja, mit Taxischild.",
+      "Mit gelbem Streifen.",
+      "Nein, sie haben keine Kennzeichnung."
     ],
-    "korrekt": 1,
-    "erklaerung": "اردو: Conversion Rate وہ فیصد ہے جو ظاہر کرتی ہے کتنے صارفین خریدار بنے۔"
+    "korrekt": 0,
+    "erklaerung": "Mietwagen tragen keine Taxi-Aufschrift, aber besondere Kennzeichen (z.B. grünes Nummernschild)."
   },
   {
-    "frage": "Was ist ein Werbespot?",
+    "frage": "Was ist ein Anschlussauftrag im Mietwagenverkehr?",
     "antworten": [
-      "Ein Verkaufsstand",
-      "Ein kurzer Werbefilm im TV oder Internet",
-      "Ein Gutschein",
-      "Ein Gewinnspiel"
+      "Ein Auftrag, der vor Abschluss der aktuellen Fahrt an den Betriebssitz übermittelt wird.",
+      "Ein Auftrag vom Taxistand.",
+      "Eine Fahrt zum Restaurant.",
+      "Eine Fahrt mit mehreren Stopps."
     ],
-    "korrekt": 1,
-    "erklaerung": "اردو: Werbespot ایک مختصر ویڈیو یا آڈیو اشتہار ہوتا ہے۔"
+    "korrekt": 0,
+    "erklaerung": "Ein Anschlussauftrag liegt vor, wenn vor Fahrtende ein neuer Auftrag am Betriebssitz eingeht."
   },
   {
-    "frage": "Was bedeutet Markenloyalität?",
+    "frage": "Welche Genehmigung braucht ein Mietwagenunternehmer?",
     "antworten": [
-      "Kunden wechseln oft die Marke",
-      "Kunden bleiben einer Marke über längere Zeit treu",
-      "Marken dürfen nicht verwendet werden",
-      "Nur Rabatte nutzen"
+      "Genehmigung nach Personenbeförderungsgesetz (§ 49 PBefG).",
+      "Nur einen Führerschein.",
+      "Gar keine.",
+      "Die Genehmigung der Industrie- und Handelskammer."
     ],
-    "korrekt": 1,
-    "erklaerung": "اردو: Markenloyalität کا مطلب ہے گاہک کا مخصوص برانڈ پر وفادار رہنا۔"
+    "korrekt": 0,
+    "erklaerung": "Für gewerbliche Mietwagenbeförderung ist eine PBefG-Genehmigung erforderlich."
   },
   {
-    "frage": "Was bedeutet 'Marktsättigung'?",
+    "frage": "Darf ein Mietwagen mit Funk ausgestattet sein?",
     "antworten": [
-      "Es gibt keine Produkte",
-      "Die Nachfrage ist höher als das Angebot",
-      "Der Markt ist mit dem Produkt bereits voll versorgt",
-      "Produkte sind ausverkauft"
+      "Ja, aber Fahrten dürfen nur vom Betriebssitz aus vermittelt werden.",
+      "Nein, nie.",
+      "Ja, auch für spontane Fahrgastaufnahme.",
+      "Nur auf Autobahnen."
     ],
-    "korrekt": 2,
-    "erklaerung": "اردو: Marktsättigung تب ہوتی ہے جب مارکیٹ میں نئی مانگ نہیں بچتی۔"
+    "korrekt": 0,
+    "erklaerung": "Mietwagen können über Funk Aufträge annehmen, aber immer nur über den Betriebssitz."
   },
   {
-    "frage": "Was ist ein Werbegeschenk?",
+    "frage": "Wer ist für die Kontrolle des Mietwagenverkehrs zuständig?",
     "antworten": [
-      "Ein teurer Preis",
-      "Ein kostenloser Artikel zur Werbung",
-      "Ein Produkt ohne Verpackung",
-      "Ein Einkaufsgutschein"
+      "Die örtliche Genehmigungsbehörde.",
+      "Das Arbeitsamt.",
+      "Der Fahrgast.",
+      "Der Taxifahrer."
     ],
-    "korrekt": 1,
-    "erklaerung": "اردو: Werbegeschenk ایک مفت چیز ہوتی ہے جو گاہک کو متوجہ کرنے کے لیے دی جاتی ہے۔"
+    "korrekt": 0,
+    "erklaerung": "Die Behörde überwacht die Einhaltung der Vorschriften für Mietwagen."
   },
   {
-    "frage": "Was bedeutet Cross-Selling?",
+    "frage": "Wann kann ein Mietwagenunternehmer seine Genehmigung verlieren?",
     "antworten": [
-      "Produkte umtauschen",
-      "Zusätzliche, passende Produkte zum Hauptprodukt anbieten",
-      "Rückerstattungen geben",
-      "Verkauf an Freunde"
+      "Bei schweren oder wiederholten Verstößen gegen das Personenbeförderungsgesetz.",
+      "Wenn er viele Fahrgäste hat.",
+      "Wenn das Fahrzeug zu groß ist.",
+      "Nur bei Unfällen."
     ],
-    "korrekt": 1,
-    "erklaerung": "اردو: Cross-Selling کا مطلب ہے کہ کسی پروڈکٹ کے ساتھ دوسری متعلقہ چیزیں بھی فروخت کرنا۔"
-  },
-  {
-    "frage": "Was ist ein Corporate Design?",
-    "antworten": [
-      "Die Finanzplanung",
-      "Einheitliches Erscheinungsbild einer Firma",
-      "Ein Verkaufsbericht",
-      "Ein Betriebsrat"
-    ],
-    "korrekt": 1,
-    "erklaerung": "اردو: Corporate Design ایک کمپنی کی مکمل شناختی بصری ترتیب ہے۔"
+    "korrekt": 0,
+    "erklaerung": "Die Genehmigung kann bei groben oder wiederholten Gesetzesverstößen entzogen werden."
   }
 ]
