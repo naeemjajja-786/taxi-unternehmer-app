@@ -1,98 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // ... (فائل لسٹ، باقی سب جیسا پہلے)
-
-  // ---------- یہ helper function سب nested کو recursive render کرتا ہے -----------
-  function renderSection(section, container, level = 2) {
-    // Headings
-    let heading = document.createElement("h" + Math.min(level, 5));
-    heading.textContent = section.title || section.titel || section.überschrift || section.id || "";
-    if (heading.textContent.trim() !== "") container.appendChild(heading);
-
-    // Main text/description
-    if (section.text || section.description) {
-      let p = document.createElement("p");
-      p.textContent = section.text || section.description;
-      container.appendChild(p);
-    }
-    // Points (ul)
-    if (Array.isArray(section.points)) {
-      let ul = document.createElement("ul");
-      section.points.forEach(pt => {
-        let li = document.createElement("li");
-        li.textContent = pt;
-        ul.appendChild(li);
-      });
-      container.appendChild(ul);
-    }
-    // Notes
-    if (section.note) {
-      let div = document.createElement("div");
-      div.className = "note";
-      div.textContent = section.note;
-      container.appendChild(div);
-    }
-    // Features, allowed, forbidden, with_permission, additional_alarms, reporting, example, categories
-    ["features", "allowed", "forbidden", "with_permission", "additional_alarms", "example"].forEach(key => {
-      if (Array.isArray(section[key])) {
-        let ul = document.createElement("ul");
-        section[key].forEach(item => {
-          let li = document.createElement("li");
-          li.textContent = item;
-          ul.appendChild(li);
-        });
-        let lbl = document.createElement("strong");
-        lbl.textContent = (key.charAt(0).toUpperCase() + key.slice(1)) + ":";
-        container.appendChild(lbl);
-        container.appendChild(ul);
-      }
-    });
-    // Reporting: array of entity/timeframe
-    if (Array.isArray(section.reporting)) {
-      let ul = document.createElement("ul");
-      section.reporting.forEach(rep => {
-        let li = document.createElement("li");
-        li.textContent = `${rep.entity} (${rep.timeframe})`;
-        ul.appendChild(li);
-      });
-      container.appendChild(ul);
-    }
-    // Categories: (theme/content + examples/points)
-    if (Array.isArray(section.categories)) {
-      section.categories.forEach(cat => {
-        if (cat.theme || cat.content) {
-          let lbl = document.createElement("strong");
-          lbl.textContent = (cat.theme || cat.content) + ":";
-          container.appendChild(lbl);
-        }
-        if (Array.isArray(cat.points)) {
-          let ul = document.createElement("ul");
-          cat.points.forEach(pt => {
-            let li = document.createElement("li");
-            li.textContent = pt;
-            ul.appendChild(li);
-          });
-          container.appendChild(ul);
-        }
-        if (Array.isArray(cat.examples)) {
-          let ul = document.createElement("ul");
-          cat.examples.forEach(ex => {
-            let li = document.createElement("li");
-            li.textContent = ex;
-            ul.appendChild(li);
-          });
-          container.appendChild(ul);
-        }
-      });
-    }
-    // Subsections/subchapters recursive
-    ["subsections", "subchapters"].forEach(key => {
-      if (Array.isArray(section[key])) {
-        section[key].forEach(subsec => renderSection(subsec, container, level + 1));
-      }
-    });
-  }
-
-  // -------------------- باقی سب جیسا پہلے --------------------
+  // --- فائل لسٹ جیسے اوپر ---
   const deutschFiles = [
     "1 Personenbeförderungsgesetz.json", "2 Gewerberecht.json", "3 Arbeitsrecht.json",
     "4 Kaufmännische und finanzielle Führung des Unternehmens.json", "5 Kostenrechnung.json",
@@ -126,6 +33,52 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // ---------- یہ فنکشن سب جرمن 12 فائلز کے لیے کافی ہے ----------
+  function renderGermanChapter(data, container) {
+    if (data.chapter) {
+      let h2 = document.createElement("h2");
+      h2.textContent = data.chapter;
+      container.appendChild(h2);
+    }
+    if (Array.isArray(data.topics)) {
+      data.topics.forEach(topic => {
+        let t = document.createElement("section");
+        t.className = "g-topic";
+        let h3 = document.createElement("h3");
+        h3.textContent = topic.title || "";
+        t.appendChild(h3);
+        if (Array.isArray(topic.content)) {
+          let ul = document.createElement("ul");
+          topic.content.forEach(line => {
+            let li = document.createElement("li");
+            li.textContent = line;
+            ul.appendChild(li);
+          });
+          t.appendChild(ul);
+        }
+        if (topic.explain) {
+          let div = document.createElement("div");
+          div.className = "note";
+          div.innerHTML = "<strong>Erklärung:</strong> " + topic.explain;
+          t.appendChild(div);
+        }
+        if (topic.example) {
+          let div = document.createElement("div");
+          div.className = "note";
+          div.innerHTML = "<strong>Beispiel:</strong> " + topic.example;
+          t.appendChild(div);
+        }
+        if (Array.isArray(topic.tags) && topic.tags.length > 0) {
+          let tagDiv = document.createElement("div");
+          tagDiv.className = "tags";
+          tagDiv.innerHTML = topic.tags.map(tag => `<span class="tag">${tag}</span>`).join(" ");
+          t.appendChild(tagDiv);
+        }
+        container.appendChild(t);
+      });
+    }
+  }
+
   function loadChapter(filename, lang) {
     chapterList.innerHTML = "";
     chapterContent.innerHTML = "<div class='loading'>Lade Inhalt ...</div>";
@@ -135,28 +88,9 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(data => {
         chapterContent.innerHTML = "";
         if (lang === "deutsch") {
-          let sections = [];
-          if (Array.isArray(data)) {
-            sections = data;
-          } else {
-            for (let key in data) {
-              if (Array.isArray(data[key])) {
-                sections = data[key];
-                break;
-              }
-            }
-            if (!sections.length) {
-              sections = Object.values(data).filter(
-                v => typeof v === "object" && (v.title || v.titel || v.überschrift) && (v.text || v.description)
-              );
-            }
-          }
-          if (!sections.length) {
-            chapterContent.innerHTML = "<div style='color:red'>Dieses Kapitel konnte nicht geladen werden (unbekanntes Format).</div>";
-            return;
-          }
-          sections.forEach(section => renderSection(section, chapterContent, 2));
+          renderGermanChapter(data, chapterContent);
         } else {
+          // Urdu lessons (جیسا اوپر کامیاب تھا)
           let h2 = document.createElement("h2");
           h2.textContent = data["عنوان"] || "سبق";
           chapterContent.appendChild(h2);
