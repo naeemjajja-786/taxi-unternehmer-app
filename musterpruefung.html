@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Musterprüfung – Taxi Unternehmer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Musterprüfung</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Musterprüfung</h1>
-    <button onclick="startExam()">Prüfung starten</button>
+    <h1>Musterprüfung – Teil 1 & Teil 2</h1>
   </header>
 
-  <main id="exam-container" style="display: none;">
-    <div id="teil1-section">
-      <h2>Teil 1: Wissen & Verständnis</h2>
-      <div id="teil1-questions"></div>
+  <main>
+    <div id="start-buttons">
+      <button onclick="startTeil1()">Teil 1 starten</button>
+      <button onclick="startTeil2()">Teil 2 starten</button>
     </div>
 
-    <div id="teil2-section">
-      <h2>Teil 2: Fallstudien & Rechnen</h2>
-      <div id="teil2-cases"></div>
+    <div id="quiz-container" class="hidden">
+      <div id="question-number"></div>
+      <div id="question-text"></div>
+      <textarea id="user-answer" placeholder="Antwort eingeben..."></textarea>
+      <button onclick="submitAnswer()">Antwort überprüfen</button>
+      <div id="feedback"></div>
     </div>
 
-    <button onclick="submitExam()">Abschicken</button>
+    <div id="teil1-result" class="hidden"></div>
+    <div id="teil2-result" class="hidden"></div>
+
+    <div id="final-result" class="hidden">
+      <h2>Gesamtergebnis</h2>
+      <p id="gesamtpunkte"></p>
+      <button onclick="location.reload()">Neu starten</button>
+    </div>
   </main>
 
-  <section id="result-section" style="display: none;">
-    <h2>Ergebnis</h2>
-    <p id="score"></p>
-    <div id="feedback"></div>
-    <button onclick="location.reload()">Neu starten</button>
-  </section>
+  <footer>
+    <p>&copy; 2025 Taxi/Mietwagen Lern-App</p>
+  </footer>
 
   <script src="musterpruefung.js"></script>
 </body>
