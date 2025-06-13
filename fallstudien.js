@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("Fallstudien.json")
-    .then(resp => resp.json())
-    .then(data => {
-      console.log("Total Fallstudien loaded:", data.length);
-      let allCases = data.filter(
-        f => Array.isArray(f.tasks) && f.tasks.length >= 6 && typeof f.case === "string"
-      );
-      console.log("Filtered cases:", allCases.length, allCases);
+  .then(data => {
+    console.log("Fallstudien loaded:", data);
+    let allCases = data.filter(
+      f => Array.isArray(f.tasks) && f.tasks.length >= 6 && typeof f.case === "string"
+    );
+    console.log("Filtered cases:", allCases.length, allCases);
+    // ... باقی کوڈ
+});
 
       window.__fallCasesForReload = allCases;
       if (allCases.length === 0) {
