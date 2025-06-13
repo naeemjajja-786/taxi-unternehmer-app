@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // --- فائل لسٹ جیسے اوپر ---
   const deutschFiles = [
     "1 Personenbeförderungsgesetz.json", "2 Gewerberecht.json", "3 Arbeitsrecht.json",
     "4 Kaufmännische und finanzielle Führung des Unternehmens.json", "5 Kostenrechnung.json",
@@ -33,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // ---------- یہ فنکشن سب جرمن 12 فائلز کے لیے کافی ہے ----------
   function renderGermanChapter(data, container) {
     if (data.chapter) {
       let h2 = document.createElement("h2");
@@ -42,11 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     if (Array.isArray(data.topics)) {
       data.topics.forEach(topic => {
-        let t = document.createElement("section");
-        t.className = "g-topic";
-        let h3 = document.createElement("h3");
-        h3.textContent = topic.title || "";
-        t.appendChild(h3);
+        let s = document.createElement("section");
+        s.className = "g-topic";
+        if (topic.title) {
+          let h3 = document.createElement("h3");
+          h3.textContent = topic.title;
+          s.appendChild(h3);
+        }
         if (Array.isArray(topic.content)) {
           let ul = document.createElement("ul");
           topic.content.forEach(line => {
@@ -54,27 +54,27 @@ document.addEventListener("DOMContentLoaded", function () {
             li.textContent = line;
             ul.appendChild(li);
           });
-          t.appendChild(ul);
+          s.appendChild(ul);
         }
         if (topic.explain) {
           let div = document.createElement("div");
           div.className = "note";
           div.innerHTML = "<strong>Erklärung:</strong> " + topic.explain;
-          t.appendChild(div);
+          s.appendChild(div);
         }
         if (topic.example) {
           let div = document.createElement("div");
           div.className = "note";
           div.innerHTML = "<strong>Beispiel:</strong> " + topic.example;
-          t.appendChild(div);
+          s.appendChild(div);
         }
         if (Array.isArray(topic.tags) && topic.tags.length > 0) {
           let tagDiv = document.createElement("div");
           tagDiv.className = "tags";
           tagDiv.innerHTML = topic.tags.map(tag => `<span class="tag">${tag}</span>`).join(" ");
-          t.appendChild(tagDiv);
+          s.appendChild(tagDiv);
         }
-        container.appendChild(t);
+        container.appendChild(s);
       });
     }
   }
@@ -90,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (lang === "deutsch") {
           renderGermanChapter(data, chapterContent);
         } else {
-          // Urdu lessons (جیسا اوپر کامیاب تھا)
           let h2 = document.createElement("h2");
           h2.textContent = data["عنوان"] || "سبق";
           chapterContent.appendChild(h2);
