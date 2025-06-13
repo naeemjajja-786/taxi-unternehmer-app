@@ -2,6 +2,11 @@ fetch("Fallstudien.json")
   .then(resp => {
     console.log("Fetch response:", resp.status, resp.statusText);
     return resp.json();
+    
+    fetch("Fallstudien.json")
+  .then(resp => resp.json())
+  .then(data => alert(data.length));
+
   })
   .then(data => {
     console.log("Fallstudien loaded:", data);
