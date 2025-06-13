@@ -20,156 +20,60 @@ footer {
   font-size: 0.95em;
 }
 
-/* Main menu (vertical) */
-.main-menu {
+.main-menu,
+.chapter-list,
+.quiz-topic-list .topic-grid,
+.fs-nav,
+.quiz-answers,
+.quiz-nav-btns {
   display: flex;
   flex-direction: column;
-  gap: 1.3rem;
-  align-items: center;
-  justify-content: center;
-  min-height: 60vh;
-}
-
-.main-menu button {
-  background: #0096db;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.35rem;
-  padding: 1.2rem 3.5rem;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  transition: background 0.2s, transform 0.2s;
-  display: block;
-  width: 100%;
-  max-width: 350px;
-}
-.main-menu button:hover,
-.main-menu button:focus {
-  background: #007bb5;
-  transform: scale(1.03);
-}
-
-/* Kapitel-Liste, Urdu/Deutsch Switch (vertical) */
-.chapter-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  gap: 1.1rem;
   align-items: stretch;
-  margin: 2rem auto 1.5rem auto;
-  max-width: 500px;
   width: 100%;
-}
-.chapter-btn {
-  background: #007bb5;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 0.8rem 1.7rem;
-  font-size: 1.1rem;
-  margin-bottom: 0.2rem;
-  cursor: pointer;
-  text-align: left;
-  transition: background 0.2s;
-  width: 100%;
-}
-.chapter-btn:hover, .chapter-btn:focus {
-  background: #005e9e;
-}
-.chapter-content {
-  margin: 0 auto 2.5rem auto;
-  max-width: 800px;
-  line-height: 1.6;
-  font-size: 1.1rem;
+  max-width: 420px;
+  margin: 0 auto;
 }
 
-/* Language Switcher (vertical on mobile) */
-.lang-switch {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 2rem;
-}
-.lang-switch button {
-  background: #fff;
-  border: 2px solid #007bb5;
-  color: #007bb5;
-  border-radius: 8px;
-  padding: 0.6rem 1.3rem;
-  font-size: 1.08rem;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.lang-switch button.active, .lang-switch button:focus {
-  background: #007bb5;
-  color: #fff;
-}
-
-/* Urdu Q/A */
-.qa {
-  margin: 1.5rem 0 0.3rem 0;
-  font-weight: 500;
-  direction: rtl;
-  font-family: 'Noto Nastaliq Urdu', 'Segoe UI', Arial, serif;
-}
-.qa-a {
-  margin-bottom: 0.7rem;
-  direction: rtl;
-  color: #0c3;
-  font-family: 'Noto Nastaliq Urdu', 'Segoe UI', Arial, serif;
-}
-
-/* Loader, Back */
-.loading {
-  text-align: center;
-  color: #777;
-  font-size: 1.1em;
-}
+.main-menu button,
+.chapter-btn,
+.quiz-topic-btn,
+.quiz-answers button,
+.fs-nav button,
+.fs-show-btn,
 .back-btn {
-  margin: 2rem auto 1.5rem auto;
-  display: block;
-  padding: 0.8rem 2.2rem;
-  background: #aaa;
-  color: #fff;
-  border: none;
-  border-radius: 7px;
-  font-size: 1.06rem;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.back-btn:hover {
-  background: #444;
-}
-
-/* Themen Quiz: Topics Vertical! */
-.quiz-topic-list .topic-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin: 2rem auto 2.3rem auto;
-  max-width: 450px;
-  width: 100%;
-}
-.quiz-topic-btn {
   background: #007bb5;
   color: #fff;
   border: none;
   border-radius: 7px;
   font-size: 1.13rem;
-  padding: 0.9rem 1.2rem;
-  margin-bottom: 0.3rem;
-  text-align: left;
+  padding: 1rem 1.5rem;
+  margin: 0.2rem 0;
   cursor: pointer;
   width: 100%;
-  transition: background 0.2s;
+  text-align: left;
+  transition: background 0.2s, transform 0.2s;
+  box-sizing: border-box;
 }
-.quiz-topic-btn:hover, .quiz-topic-btn:focus {
+.main-menu button:hover,
+.chapter-btn:hover,
+.quiz-topic-btn:hover,
+.quiz-answers button:hover,
+.fs-nav button:hover,
+.fs-show-btn:hover,
+.back-btn:hover,
+.main-menu button:focus,
+.chapter-btn:focus,
+.quiz-topic-btn:focus,
+.quiz-answers button:focus,
+.fs-nav button:focus,
+.fs-show-btn:focus,
+.back-btn:focus {
   background: #005e9e;
+  transform: scale(1.03);
 }
 
-/* Quiz & Fallstudien: Fragen/Antworten Cards */
-.quiz-container, .fallstudien-container {
+.fallstudien-container {
   margin: 2.2rem auto 2.5rem auto;
   max-width: 650px;
   background: #fff;
@@ -178,117 +82,55 @@ footer {
   padding: 2rem 1.6rem 1.2rem 1.6rem;
 }
 
-.quiz-question {
-  font-size: 1.15rem;
-  margin-bottom: 1.5rem;
+.fs-question {
   font-weight: 500;
-  color: #12375b;
+  margin-bottom: 1rem;
 }
-.quiz-answers {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-  margin-bottom: 1.6rem;
-}
-.quiz-answers button {
-  background: #eef6fb;
-  color: #005e9e;
-  border: 2px solid #cce2f7;
-  border-radius: 7px;
+
+.fs-input {
   width: 100%;
-  text-align: left;
-  padding: 0.65rem 1.2rem;
-  font-size: 1.04rem;
-  cursor: pointer;
-  transition: background 0.15s, border 0.15s;
-}
-.quiz-answers button.selected {
-  background: #cbeafe;
-  border-color: #6bb6e7;
-}
-.quiz-answers button.correct {
-  background: #caefc8;
-  color: #177500;
-  border-color: #8ed88b;
-}
-.quiz-answers button.wrong {
-  background: #ffd8d8;
-  color: #cc0000;
-  border-color: #ffadad;
-}
-.quiz-answers button:disabled {
-  opacity: 0.7;
-  cursor: default;
-}
-.quiz-feedback {
-  margin: 1rem 0 1.2rem 0;
-  padding: 0.9rem 1.1rem;
+  max-width: 370px;
+  margin-bottom: 1.2rem;
+  font-size: 1.09rem;
+  padding: 0.6rem;
   border-radius: 7px;
-  background: #e9f9e3;
-  color: #146d00;
-  font-size: 1.01rem;
-  line-height: 1.5;
+  border: 1px solid #b5d3ee;
 }
-.quiz-feedback.incorrect {
-  background: #fbe7e7;
-  color: #bb2222;
+
+.fs-feedback {
+  background: #e8f9e2;
+  margin: 1.4rem 0 1.2rem 0;
+  padding: 1.1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
 }
-.quiz-nav-btns {
-  display: flex;
-  flex-direction: column;
+
+.fs-nav {
   gap: 0.7rem;
-  justify-content: flex-end;
-  margin-top: 1.5rem;
+  margin-top: 1.7rem;
 }
-
-.result-summary {
-  background: #e4f2f7;
-  border-radius: 10px;
-  padding: 2rem 1.6rem 1.3rem 1.6rem;
-  margin: 2rem auto 2.5rem auto;
-  max-width: 650px;
-  box-shadow: 0 2px 7px rgba(0,0,0,0.08);
-  font-size: 1.14rem;
-  color: #175380;
+.fs-nav button {
+  background: #aaa;
+  color: #fff;
+  border: none;
 }
+.fs-nav button:hover { background: #444; }
 
-/* Fallstudien Vertical Inputs/Navigation */
-.fs-question { font-weight: 500; margin-bottom: 1rem; }
-.fs-input { width: 100%; max-width: 350px; margin-bottom: 1.2rem; font-size: 1.09rem; padding: 0.6rem; border-radius: 7px; border: 1px solid #b5d3ee;}
-.fs-show-btn { margin-bottom: 1.2rem; background: #007bb5; color: #fff; border: none; border-radius: 7px; padding: 0.8rem 1.9rem; cursor: pointer;}
 .fs-show-btn:disabled { opacity: 0.7; }
-.fs-feedback { background: #e8f9e2; margin: 1.4rem 0 1.2rem 0; padding: 1.1rem; border-radius: 8px; font-size: 1.1rem;}
-.fs-nav { display: flex; flex-direction: column; gap: 0.8rem; margin-top: 1.7rem;}
-.fs-nav button { padding: 0.8rem 1.6rem; border-radius: 7px; background: #aaa; color: #fff; border: none; cursor: pointer;}
-.fs-nav button:hover { background: #444;}
-
-/* Notes, tags */
-.note { margin: 1.1rem 0 0.8rem 0; background: #f6ffe0; padding: 0.7rem 1rem; border-radius: 7px; color: #375100; font-size: 1.05rem;}
-.tags { margin: 0.5rem 0 1.1rem 0;}
-.tag { display: inline-block; background: #d3ecff; color: #2370ad; border-radius: 5px; padding: 2px 10px; margin-right: 7px; font-size: 0.98em;}
+.back-btn { background: #aaa; color: #fff; }
 
 @media (max-width: 700px) {
-  .quiz-container, .fallstudien-container, .result-summary, .chapter-content {
-    max-width: 99vw;
-    padding: 1.15rem 0.6rem 1rem 0.6rem;
+  .fallstudien-container {
+    max-width: 98vw;
+    padding: 1.15rem 0.7rem 1rem 0.7rem;
   }
-  .chapter-list {
-    max-width: 97vw;
+  .main-menu,
+  .chapter-list,
+  .quiz-topic-list .topic-grid,
+  .fs-nav,
+  .quiz-answers,
+  .quiz-nav-btns {
+    max-width: 98vw;
   }
-}
-@media (max-width: 600px) {
-  .main-menu {
-    gap: 1rem;
-    min-height: 55vh;
-  }
-  .main-menu button {
-    font-size: 1rem;
-    padding: 0.9rem 1.5rem;
-    width: 97vw;
-    max-width: 350px;
-  }
-  .quiz-topic-list .topic-grid {
-    max-width: 97vw;
-  }
-  .fs-input { max-width: 97vw; }
+  .fs-input { max-width: 98vw; }
 }
