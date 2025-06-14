@@ -5,9 +5,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;      /* <--- Centers all direct children */
 }
 
-/* ==== Header/Footer ==== */
 header, footer {
   background: linear-gradient(90deg, #007bb5 70%, #00c6fb 100%);
   color: #fff;
@@ -15,20 +15,23 @@ header, footer {
   text-align: center;
   letter-spacing: 1px;
   box-shadow: 0 1px 7px rgba(0,0,0,0.08);
+  width: 100vw;
 }
+
 header h1 {
   font-size: 2.1rem;
   font-weight: 700;
   margin: 0;
   letter-spacing: 1.5px;
 }
+
 footer {
   margin-top: auto;
   font-size: 1.08em;
   background: linear-gradient(90deg, #0096db 60%, #005e9e 100%);
+  width: 100vw;
 }
 
-/* ==== Vertikale Menüs und Buttons ==== */
 .main-menu,
 .chapter-list,
 .quiz-topic-grid .topic-grid,
@@ -37,7 +40,7 @@ footer {
 .quiz-nav-btns {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   gap: 1.6rem;
   width: 100%;
   max-width: 430px;
@@ -60,13 +63,14 @@ footer {
   margin: 0.35rem 0;
   cursor: pointer;
   width: 100%;
-  text-align: left;
+  text-align: center;  /* Center button text! */
   box-shadow: 0 2.5px 12px rgba(0,0,0,0.09);
   transition: background 0.16s, transform 0.16s, box-shadow 0.15s;
   outline: none;
   font-weight: 600;
   letter-spacing: 0.01em;
 }
+
 .main-menu button:hover,
 .chapter-btn:hover,
 .quiz-topic-btn:hover,
@@ -85,6 +89,7 @@ footer {
   transform: scale(1.032);
   box-shadow: 0 8px 28px rgba(0,128,180,0.14);
 }
+
 .back-btn {
   background: linear-gradient(90deg, #aaa 60%, #bbb 100%);
   color: #fff;
@@ -98,15 +103,15 @@ footer {
   text-align: center;
   font-weight: 600;
 }
+
 .back-btn:hover { background: linear-gradient(90deg, #333 60%, #666 100%); }
 
-/* ==== Card-Layout für alle Blöcke ==== */
 .fallstudien-container,
 .quiz-container,
 .result-summary,
 .chapter-content {
   margin: 2.1rem auto 2.1rem auto;
-  max-width: 650px;
+  max-width: 520px;
   background: #fff;
   border-radius: 17px;
   box-shadow: 0 3px 25px 0 rgba(0,128,180,0.12), 0 0.5px 2px rgba(0,0,0,0.03);
@@ -115,25 +120,28 @@ footer {
   flex-direction: column;
   gap: 0.6rem;
   min-width: 0;
+  align-items: center;   /* Card content centered */
 }
 
-/* ==== Text-Blocks und Inhaltsbreite ==== */
 .fs-case-statement,
 .chapter-content,
 .result-summary {
-  max-width: 540px;
+  max-width: 470px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.65;
   font-size: 1.13rem;
   color: #12375b;
+  text-align: center;        /* Center all card text */
 }
+
 .fs-case-statement { 
-  font-size: 1.20rem; 
+  font-size: 1.22rem; 
   margin-bottom: 2.1rem; 
   font-weight: 700; 
   color: #13486b; 
   line-height: 1.67; 
+  text-align: center; 
 }
 
 .quiz-question {
@@ -141,6 +149,7 @@ footer {
   font-weight: 600;
   color: #13486b;
   margin-bottom: 1.15rem;
+  text-align: center;
 }
 
 .fs-task-block,
@@ -156,27 +165,31 @@ footer {
   flex-direction: column;
   gap: 0.65rem;
   border-left: 5px solid #0096db;
+  align-items: center;
 }
+
 .fs-question {
   font-weight: 600;
   margin-bottom: 0.33rem;
   color: #007bb5;
   font-size: 1.08rem;
+  text-align: center;
 }
 
 /* ==== Input- und Antwortfelder ==== */
 .fs-input,
 .fs-task-block textarea.fs-input {
-  width: 100%;
-  max-width: 410px;
+  width: 90%;
+  max-width: 380px;
   margin-bottom: 0.7rem;
-  font-size: 1.10rem;
-  padding: 0.74rem 0.7rem;
+  font-size: 1.12rem;
+  padding: 0.72rem 0.7rem;
   border-radius: 10px;
   border: 1.6px solid #b5d3ee;
   background: #faffff;
   resize: vertical;
   transition: border-color 0.18s, box-shadow 0.17s;
+  text-align: center;
 }
 .fs-input:focus {
   border-color: #0096db;
@@ -184,7 +197,6 @@ footer {
   outline: none;
 }
 
-/* ==== Feedback-Farben ==== */
 .fs-feedback {
   background: #e8f9e2;
   margin: 1.1rem 0 0.8rem 0;
@@ -194,6 +206,7 @@ footer {
   color: #1e7e1a;
   box-shadow: 0 1.5px 5px rgba(50,150,70,0.06);
   font-weight: 600;
+  text-align: center;
 }
 .fs-feedback.incorrect {
   background: #fbe7e7;
@@ -218,7 +231,7 @@ table td,
 table th {
   padding: 0.62rem 0.3rem;
   border-bottom: 1px solid #e2e9ef;
-  text-align: left;
+  text-align: center;      /* Center table data! */
 }
 .fs-table th,
 table th {
@@ -226,6 +239,7 @@ table th {
   font-weight: 700;
   color: #007bb5;
   border-bottom: 2px solid #c3e3f8;
+  text-align: center;
 }
 .fs-table tr:last-child td,
 table tr:last-child td {
@@ -235,20 +249,20 @@ table tr:last-child td {
 /* ==== Responsive Anpassung ==== */
 @media (max-width: 900px) {
   .fallstudien-container, .quiz-container, .result-summary, .chapter-content { 
-    max-width: 99vw; 
-    padding: 1.1rem 0.3rem 1rem 0.3rem; 
+    max-width: 98vw; 
+    padding: 1.1rem 1vw 1rem 1vw; 
   }
   .fs-input { max-width: 96vw; }
   .fs-table, table { font-size: 1.01rem; }
 }
 @media (max-width: 600px) {
   .main-menu { gap: 1.09rem; min-height: 52vh; }
-  .main-menu button { font-size: 0.97rem; padding: 0.8rem 1.0rem; max-width: 99vw; }
-  .fs-input { max-width: 98vw; }
+  .main-menu button { font-size: 0.98rem; padding: 0.75rem 1.0rem; max-width: 99vw; }
+  .fs-input { max-width: 99vw; }
   .fallstudien-container, .quiz-container, .result-summary, .chapter-content { 
     padding: 0.5rem 0.08rem 0.7rem 0.08rem; 
   }
   .fs-case-statement, .chapter-content, .result-summary { 
-    font-size: 1.01rem; max-width: 99vw;
+    font-size: 1.02rem; max-width: 99vw;
   }
 }
