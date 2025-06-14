@@ -4,7 +4,7 @@ let teil2ShortData = [];
 let teil2Cases = [];
 let teil1Quiz = [];
 let teil2ShortQuiz = [];
-let teil2CaseQuiz = [];
+let teil2CaseQuiz = null;
 let currentTeil = 0; // 1=Teil1, 2=Teil2
 let currentQ = 0;
 let userScore = 0;
@@ -52,24 +52,27 @@ function goBackExam() {
 
 // === Lade Daten ===
 async function loadAllData() {
-  // Lade beide Dateien parallel
   let [teil1, teil2] = await Promise.all([
     fetch("Exams-Teil1.json").then(r => r.json()),
     fetch("Exams-Teil2.json").then(r => r.json())
   ]);
-  // Exams-Teil1: Flache Array (aus verschachteltem [ {Kapitel: [Fragen]} ] in eine Liste)
+  // Teil 1 flach machen
   teil1Data = [];
   for (let kap of teil1) {
     for (let key in kap) {
       teil1Data = teil1Data.concat(kap[key]);
     }
   }
-  // Exams-Teil2: Short questions & Cases
+  // Teil 2 short/case aufteilen
   teil2ShortData = [];
   teil2Cases = [];
   for (let blk of teil2) {
-    if (blk.type === "short") teil2ShortData = teil2ShortData.concat(blk.questions);
-    if (blk.type === "case") teil2Cases = teil2Cases.concat(blk.cases);
+    if (blk.type === "short" && Array.isArray(blk.questions)) {
+      teil2ShortData = teil2ShortData.concat(blk.questions);
+    }
+    if (blk.type === "case" && Array.isArray(blk.cases)) {
+      teil2Cases = teil2Cases.concat(blk.cases);
+    }
   }
 }
 
@@ -81,8 +84,7 @@ function startTeil1() {
   document.getElementById('teil1-container').style.display = "block";
   document.getElementById('teil2-container').style.display = "none";
   document.getElementById('backBtn').style.display = "block";
-  // Wähle 25 Fragen (oder: min 20, max 30)
-  teil1Quiz = shuffle(teil1Data).slice(0, 25);
+  teil1Quiz = shuffle(teil1Data).slice(0, 25); // beliebig 25 (min 20, max 30)
   currentQ = 0;
   startTimer();
   showTeil1Frage();
@@ -97,7 +99,7 @@ function showTeil1Frage() {
         Frage ${currentQ+1} von ${teil1Quiz.length}: ${decodeHTML(q.frage)}
       </div>
       <div class="quiz-answers">
-        ${allOpts.map((opt, i) => `
+        ${allOpts.map(opt => `
           <button class="quiz-opt" data-idx="${opt.idx}">${decodeHTML(opt.txt)}</button>
         `).join('')}
       </div>
@@ -115,7 +117,7 @@ function showTeil1Frage() {
       let idx = parseInt(this.getAttribute('data-idx'));
       let correct = (idx === q.richtigeAntwort);
       if (correct) {
-        userScore += (q.punkte || 1);
+        userScore += (q.punkte || 2);
         this.classList.add('correct');
         document.getElementById('feedback').innerHTML = `<div class="fs-feedback">Richtig! ${q.erklaerung || ''}</div>`;
       } else {
@@ -159,7 +161,7 @@ function showTeil2ShortFrage() {
         Frage ${currentQ+1} von ${teil2ShortQuiz.length}: ${decodeHTML(q.frage)}
       </div>
       <div class="quiz-answers">
-        ${allOpts.map((opt, i) => `
+        ${allOpts.map(opt => `
           <button class="quiz-opt" data-idx="${opt.idx}">${decodeHTML(opt.txt)}</button>
         `).join('')}
       </div>
@@ -196,16 +198,21 @@ function showTeil2ShortFrage() {
 }
 function showTeil2Case() {
   let caseObj = teil2CaseQuiz;
+  if (!caseObj || !caseObj.tasks || !Array.isArray(caseObj.tasks)) {
+    // Fallback für fehlerhafte/corrupted JSON
+    document.getElementById('teil2-container').innerHTML = `<div class="result-summary"><h2>Kein Case geladen!</h2></div>`;
+    return;
+  }
   let caseHtml = `
     <div class="fallstudien-container">
-      <div class="fs-case-statement">${decodeHTML(caseObj.falltext)}</div>
+      <div class="fs-case-statement">${decodeHTML(caseObj.falltext || "")}</div>
       <div class="fs-tasks">
         ${caseObj.tasks.map((task, i) => `
           <div class="fs-task-block">
             <div class="fs-question">Aufgabe ${i+1}: ${decodeHTML(task.frage)}</div>
             <input class="fs-input" id="caseAns${i}" type="text" autocomplete="off" placeholder="Ihre Antwort ...">
             <button class="fs-show-btn" onclick="document.getElementById('fs-solution-${i}').style.display='block'">Lösung anzeigen</button>
-            <div id="fs-solution-${i}" style="display:none;" class="fs-feedback">${decodeHTML(task.loesung)}</div>
+            <div id="fs-solution-${i}" style="display:none;" class="fs-feedback">${decodeHTML(task.loesung || "")}</div>
           </div>
         `).join('')}
       </div>
@@ -223,7 +230,7 @@ function showTeil2Case() {
       // if(val === task.richtigeAntwort) points += (task.punkte||2);
     });
     userScore += points;
-    teil2Points = total;
+    teil2Points = total + 28; // +28 von short Fragen (14*2 Pkt default)
     showResult();
   }
 }
@@ -231,10 +238,11 @@ function showTeil2Case() {
 // === Ergebnisse ===
 function showResult() {
   clearInterval(timerInterval);
+  let maxPoints = (currentTeil==1 ? teil1Quiz.reduce((sum, q) => sum + (q.punkte||2),0) : teil2Points);
   let html = `
     <div class="result-summary">
       <h2>Prüfung abgeschlossen!</h2>
-      <p>Sie haben <b>${userScore}</b> von <b>${currentTeil==1?teil1Quiz.length*2:teil2Points||32}</b> möglichen Punkten erreicht.</p>
+      <p>Sie haben <b>${userScore}</b> von <b>${maxPoints}</b> möglichen Punkten erreicht.</p>
       <button class="back-btn" onclick="goBackExam()">Zurück zum Prüfungsmenü</button>
     </div>
   `;
@@ -245,8 +253,16 @@ function showResult() {
 // === INIT ===
 window.onload = async function() {
   await loadAllData();
-  // Buttons Event
-  document.getElementById('start-teil1').onclick = startTeil1;
-  document.getElementById('start-teil2').onclick = startTeil2;
+  document.getElementById('start-teil1').onclick = function() {
+    // disable both to prevent double start
+    document.getElementById('start-teil1').disabled = true;
+    document.getElementById('start-teil2').disabled = true;
+    startTeil1();
+  };
+  document.getElementById('start-teil2').onclick = function() {
+    document.getElementById('start-teil1').disabled = true;
+    document.getElementById('start-teil2').disabled = true;
+    startTeil2();
+  };
   document.getElementById('backBtn').onclick = goBackExam;
 };
