@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #eef4fa 0%, #eaf2fb 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==== Header/Footer ==== */
+header, footer {
+  background: linear-gradient(90deg, #007bb5 70%, #00c6fb 100%);
+  color: #fff;
+  padding: 1.25rem 0;
+  text-align: center;
+  letter-spacing: 1px;
+  box-shadow: 0 1px 7px rgba(0,0,0,0.08);
+}
+header h1 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1.5px;
+}
+footer {
+  margin-top: auto;
+  font-size: 1.08em;
+  background: linear-gradient(90deg, #0096db 60%, #005e9e 100%);
+}
+
+/* ==== Vertikale Menüs und Buttons ==== */
+.main-menu,
+.chapter-list,
+.quiz-topic-grid .topic-grid,
+.quiz-answers,
+.fs-nav,
+.quiz-nav-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.6rem;
+  width: 100%;
+  max-width: 430px;
+  margin: 3rem auto 1.5rem auto;
+}
+
+.main-menu button,
+.chapter-btn,
+.quiz-topic-btn,
+.quiz-answers button,
+.fs-nav button,
+.fs-show-btn,
+.back-btn {
+  background: linear-gradient(90deg, #0096db 60%, #00c6fb 100%);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.15rem;
+  padding: 1.13rem 1.7rem;
+  margin: 0.35rem 0;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 2.5px 12px rgba(0,0,0,0.09);
+  transition: background 0.16s, transform 0.16s, box-shadow 0.15s;
+  outline: none;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+.main-menu button:hover,
+.chapter-btn:hover,
+.quiz-topic-btn:hover,
+.quiz-answers button:hover,
+.fs-nav button:hover,
+.fs-show-btn:hover,
+.back-btn:hover,
+.main-menu button:focus,
+.chapter-btn:focus,
+.quiz-topic-btn:focus,
+.quiz-answers button:focus,
+.fs-nav button:focus,
+.fs-show-btn:focus,
+.back-btn:focus {
+  background: linear-gradient(90deg, #005e9e 65%, #00a5cf 100%);
+  transform: scale(1.032);
+  box-shadow: 0 8px 28px rgba(0,128,180,0.14);
+}
+.back-btn {
+  background: linear-gradient(90deg, #aaa 60%, #bbb 100%);
+  color: #fff;
+  margin-top: 2.3rem;
+  padding: 1.08rem 0;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.11rem;
+  cursor: pointer;
+  transition: background 0.13s;
+  text-align: center;
+  font-weight: 600;
+}
+.back-btn:hover { background: linear-gradient(90deg, #333 60%, #666 100%); }
+
+/* ==== Card-Layout für alle Blöcke ==== */
+.fallstudien-container,
+.quiz-container,
+.result-summary,
+.chapter-content {
+  margin: 2.1rem auto 2.1rem auto;
+  max-width: 650px;
+  background: #fff;
+  border-radius: 17px;
+  box-shadow: 0 3px 25px 0 rgba(0,128,180,0.12), 0 0.5px 2px rgba(0,0,0,0.03);
+  padding: 2.2rem 2rem 1.2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-width: 0;
+}
+
+/* ==== Text-Blocks und Inhaltsbreite ==== */
+.fs-case-statement,
+.chapter-content,
+.result-summary {
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.65;
+  font-size: 1.13rem;
+  color: #12375b;
+}
+.fs-case-statement { 
+  font-size: 1.20rem; 
+  margin-bottom: 2.1rem; 
+  font-weight: 700; 
+  color: #13486b; 
+  line-height: 1.67; 
+}
+
+.quiz-question {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #13486b;
+  margin-bottom: 1.15rem;
+}
+
+.fs-task-block,
+.quiz-answers button.selected,
+.quiz-answers button.correct,
+.quiz-answers button.wrong {
+  background: #f6fafd;
+  border-radius: 13px;
+  box-shadow: 0 1.5px 8px rgba(0,160,220,0.05);
+  padding: 1.12rem 1.1rem 1rem 1.1rem;
+  margin-bottom: 1.12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  border-left: 5px solid #0096db;
+}
+.fs-question {
+  font-weight: 600;
+  margin-bottom: 0.33rem;
+  color: #007bb5;
+  font-size: 1.08rem;
+}
+
+/* ==== Input- und Antwortfelder ==== */
+.fs-input,
+.fs-task-block textarea.fs-input {
+  width: 100%;
+  max-width: 410px;
+  margin-bottom: 0.7rem;
+  font-size: 1.10rem;
+  padding: 0.74rem 0.7rem;
+  border-radius: 10px;
+  border: 1.6px solid #b5d3ee;
+  background: #faffff;
+  resize: vertical;
+  transition: border-color 0.18s, box-shadow 0.17s;
+}
+.fs-input:focus {
+  border-color: #0096db;
+  box-shadow: 0 0 0 2px #0096db33;
+  outline: none;
+}
+
+/* ==== Feedback-Farben ==== */
+.fs-feedback {
+  background: #e8f9e2;
+  margin: 1.1rem 0 0.8rem 0;
+  padding: 1.0rem 1.1rem;
+  border-radius: 10px;
+  font-size: 1.10rem;
+  color: #1e7e1a;
+  box-shadow: 0 1.5px 5px rgba(50,150,70,0.06);
+  font-weight: 600;
+}
+.fs-feedback.incorrect {
+  background: #fbe7e7;
+  color: #bb2222;
+}
+
+/* ==== Tabellen ==== */
+.fs-table,
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2.3rem;
+  background: #fafdff;
+  font-size: 1.08rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0.5px 2px rgba(0,128,180,0.07);
+}
+.fs-table td,
+.fs-table th,
+table td,
+table th {
+  padding: 0.62rem 0.3rem;
+  border-bottom: 1px solid #e2e9ef;
+  text-align: left;
+}
+.fs-table th,
+table th {
+  background: #e3f3fc;
+  font-weight: 700;
+  color: #007bb5;
+  border-bottom: 2px solid #c3e3f8;
+}
+.fs-table tr:last-child td,
+table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ==== Responsive Anpassung ==== */
+@media (max-width: 900px) {
+  .fallstudien-container, .quiz-container, .result-summary, .chapter-content { 
+    max-width: 99vw; 
+    padding: 1.1rem 0.3rem 1rem 0.3rem; 
+  }
+  .fs-input { max-width: 96vw; }
+  .fs-table, table { font-size: 1.01rem; }
+}
+@media (max-width: 600px) {
+  .main-menu { gap: 1.09rem; min-height: 52vh; }
+  .main-menu button { font-size: 0.97rem; padding: 0.8rem 1.0rem; max-width: 99vw; }
+  .fs-input { max-width: 98vw; }
+  .fallstudien-container, .quiz-container, .result-summary, .chapter-content { 
+    padding: 0.5rem 0.08rem 0.7rem 0.08rem; 
+  }
+  .fs-case-statement, .chapter-content, .result-summary { 
+    font-size: 1.01rem; max-width: 99vw;
+  }
+}
