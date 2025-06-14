@@ -173,3 +173,7 @@ window.restartExam = function(teil) {
   if(teil===1) document.getElementById("start-teil1").onclick();
   else document.getElementById("start-teil2").onclick();
 };
+function showTimer(time) {
+  const timerElem = document.getElementById('timer');
+  if (timerElem) timerElem.innerText = time;
+}
