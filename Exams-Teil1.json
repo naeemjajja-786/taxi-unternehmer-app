@@ -1,4 +1,473 @@
 {
+  "Recht": [
+    {
+      "frage": "Welche Genehmigung ist in Deutschland für den Taxiverkehr gesetzlich vorgeschrieben?",
+      "optionen": [
+        "Genehmigung nach PBefG",
+        "Gewerbeanmeldung genügt",
+        "BOKraft-Erlaubnis reicht aus",
+        "Fahrzeugbrief vom TÜV"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Nach PBefG ist eine behördliche Genehmigung zwingend erforderlich.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie viele Jahre ist eine Taxigenehmigung höchstens gültig?",
+      "optionen": ["5 Jahre", "10 Jahre", "Unbegrenzt", "2 Jahre"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Maximal 5 Jahre, danach muss sie verlängert werden.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche drei Voraussetzungen müssen für eine Taxigenehmigung erfüllt sein?",
+      "optionen": [
+        "Zuverlässigkeit, finanzielle Leistungsfähigkeit, fachliche Eignung",
+        "Nur Wohnsitz im Betriebssitz",
+        "Mitgliedschaft im Taxiverband",
+        "Pkw-Führerschein und Gewerbeschein"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Diese drei Voraussetzungen sind im PBefG festgelegt.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wer trägt die Hauptverantwortung für die Einhaltung der gesetzlichen Vorgaben im Taxiunternehmen?",
+      "optionen": [
+        "Der Unternehmer",
+        "Der Fahrer",
+        "Die Fahrgäste",
+        "Das Ordnungsamt"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Der Unternehmer ist immer hauptverantwortlich.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wann ist eine gewerbliche Personenbeförderung genehmigungspflichtig?",
+      "optionen": [
+        "Sobald sie gegen Entgelt erfolgt",
+        "Nur bei Fahrten ins Ausland",
+        "Ab einer Fahrstrecke von 50 km",
+        "Nur bei mehr als drei Fahrgästen"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Alle gewerblichen, entgeltlichen Fahrten benötigen eine Genehmigung.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Aussage über das Personenbeförderungsgesetz (PBefG) ist korrekt?",
+      "optionen": [
+        "Es regelt die gewerbliche Personenbeförderung im Straßenverkehr.",
+        "Es gilt nur für Mietwagenunternehmen.",
+        "Es betrifft ausschließlich private Fahrten.",
+        "Es betrifft nur Linienbusse."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Das PBefG gilt für alle gewerblichen Personenbeförderungen.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Unterlagen müssen im Taxi mitgeführt werden?",
+      "optionen": [
+        "Genehmigungsurkunde, Fahrzeugschein, Versicherungsnachweis",
+        "Nur der Führerschein",
+        "Das letzte Fahrtenbuch",
+        "Eine Quittung des Finanzamts"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Die wichtigsten Nachweise müssen immer im Fahrzeug sein.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie lange sind Geschäftsunterlagen aufzubewahren?",
+      "optionen": [
+        "10 Jahre",
+        "2 Jahre",
+        "5 Jahre",
+        "1 Jahr"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Aufbewahrungsfrist für steuerliche Unterlagen beträgt 10 Jahre.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wer kontrolliert die Einhaltung der Vorschriften im Taxi- und Mietwagengewerbe?",
+      "optionen": [
+        "Genehmigungsbehörde und Polizei",
+        "Nur der Unternehmer",
+        "Nur das Finanzamt",
+        "Nur die Kunden"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Kontrolle erfolgt durch Behörden und Polizei.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Konsequenzen drohen bei wiederholtem Verstoß gegen das PBefG?",
+      "optionen": [
+        "Bußgeld, Entzug der Genehmigung, Strafanzeige möglich",
+        "Gar keine Konsequenz",
+        "Rabatt auf die Kfz-Steuer",
+        "Nur eine mündliche Verwarnung"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Mehrfache Verstöße werden streng geahndet.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie lange ist die regelmäßige Verjährungsfrist für Zahlungsansprüche im Geschäftsverkehr?",
+      "optionen": [
+        "3 Jahre",
+        "5 Jahre",
+        "10 Jahre",
+        "1 Jahr"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Regelmäßige Verjährung nach BGB beträgt 3 Jahre.",
+      "punkte": 1
+    },
+    {
+      "frage": "Darf ein Taxiunternehmer die Beförderung eines Fahrgastes grundlos ablehnen?",
+      "optionen": [
+        "Nein, es besteht Beförderungspflicht.",
+        "Ja, immer nach eigenem Ermessen.",
+        "Nur bei schlechtem Wetter.",
+        "Nur wenn der Fahrgast kein Bargeld hat."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Ablehnung ist nur bei sachlichem Grund erlaubt.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wahr oder falsch: Eine behördliche Genehmigung nach PBefG ist für jeden Taxibetrieb vorgeschrieben.",
+      "optionen": ["Wahr", "Falsch"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Ohne Genehmigung kein Taxibetrieb.",
+      "punkte": 1
+    },
+    {
+      "frage": "Für welche Fahrten ist keine Genehmigung nach PBefG nötig?",
+      "optionen": [
+        "Unentgeltliche Privatfahrten",
+        "Fahrten im Pflichtfahrgebiet",
+        "Mietwagenfahrten",
+        "Krankenfahrten"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Nur gewerbliche/entgeltliche Fahrten sind genehmigungspflichtig.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was passiert, wenn Unterlagen nicht 10 Jahre aufbewahrt werden?",
+      "optionen": [
+        "Bußgeld und ggf. steuerliche Schätzung",
+        "Nichts, wenn die Fahrgäste es erlauben",
+        "Rabatt bei der Versicherung",
+        "Fahrverbot für das Taxi"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Verstoß gegen Aufbewahrungspflicht kann teuer werden.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch ist die maximale Gültigkeitsdauer der Mietwagengenehmigung?",
+      "optionen": ["5 Jahre", "8 Jahre", "Unbegrenzt", "1 Jahr"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Auch für Mietwagen gilt die 5-Jahres-Frist.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was regelt die BOKraft?",
+      "optionen": [
+        "Betrieb und Ausrüstung von Kraftfahrunternehmen im Personenverkehr",
+        "Die private Nutzung von Mietwagen",
+        "Versicherungspflichten von Unternehmern",
+        "Nur die Taxifarbe"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Die BOKraft regelt technische, betriebliche und organisatorische Pflichten.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Pflicht ergibt sich aus der Beförderungspflicht?",
+      "optionen": [
+        "Jeder Fahrgast ist grundsätzlich zu befördern, außer bei Gefahr oder berechtigtem Grund.",
+        "Nur Stammkunden müssen befördert werden.",
+        "Beförderung ist freiwillig.",
+        "Fahrgäste mit Gepäck können abgelehnt werden."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Ablehnung nur aus sachlichem Grund.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was bedeutet Verjährung im Geschäftsverkehr?",
+      "optionen": [
+        "Ansprüche verfallen nach Ablauf der Frist.",
+        "Steuern werden zurückerstattet.",
+        "Fahrtenbücher werden automatisch gelöscht.",
+        "Kunden zahlen weniger."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Nach Ablauf der Verjährungsfrist können Forderungen nicht mehr durchgesetzt werden.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Aussage zum Beförderungsvertrag ist korrekt?",
+      "optionen": [
+        "Er kommt mit Einsteigen und Zielangabe zustande.",
+        "Er muss immer schriftlich sein.",
+        "Nur für Langstreckenfahrten",
+        "Es gibt keinen Vertrag im Taxi"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Der Vertrag entsteht bereits beim Einsteigen und Nennung des Ziels.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wer haftet für Verstöße gegen BOKraft-Vorschriften?",
+      "optionen": [
+        "Der Unternehmer und ggf. der Fahrer",
+        "Immer der Fahrgast",
+        "Das Ordnungsamt",
+        "Das Finanzamt"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Verantwortlich ist vor allem der Unternehmer.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was droht, wenn ein Taxi ohne gültigen Personenbeförderungsschein geführt wird?",
+      "optionen": [
+        "Bußgeld und ggf. Entzug der Fahrerlaubnis",
+        "Nichts, wenn niemand kontrolliert",
+        "Der Fahrgast haftet",
+        "Nur eine Verwarnung"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Fahren ohne P-Schein ist eine Ordnungswidrigkeit.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie muss sich ein Unternehmer bei einer Betriebsprüfung verhalten?",
+      "optionen": [
+        "Alle Unterlagen bereithalten und kooperieren.",
+        "Keine Auskunft geben.",
+        "Nur den Fahrgästen Bericht erstatten.",
+        "Einen Anwalt einschalten."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Kooperation und Nachweise bereithalten ist Pflicht.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was ist ein sachlicher Grund für die Ablehnung der Beförderung?",
+      "optionen": [
+        "Gefahr für Fahrer oder Fahrgäste",
+        "Schlechte Laune des Fahrers",
+        "Bargeldloses Zahlen",
+        "Regenwetter"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Nur Gefahr, Zahlungsunfähigkeit oder ähnliche Gründe zählen.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welcher Gesetzestext regelt die Betriebspflicht, Ausrüstung und Ordnung im Taxenbetrieb?",
+      "optionen": [
+        "BOKraft",
+        "PBefG",
+        "StVO",
+        "Gewerbeordnung"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Die BOKraft regelt Betrieb, Ordnung und Ausrüstung.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wann kommt der Beförderungsvertrag im Taxi zustande?",
+      "optionen": [
+        "Mit Einsteigen und Nennung des Fahrziels",
+        "Nur nach Unterschrift",
+        "Erst nach Fahrtbeginn",
+        "Wenn das Taxameter läuft"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Schon das Einsteigen und Fahrziel gilt als Vertragsschluss.",
+      "punkte": 2
+    },
+    {
+      "frage": "Darf die Behörde eine Taxigenehmigung widerrufen?",
+      "optionen": [
+        "Ja, wenn die Voraussetzungen entfallen.",
+        "Nein, sie ist unbefristet gültig.",
+        "Nur bei Fahrern unter 25 Jahren.",
+        "Nur auf Wunsch des Fahrers."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Die Genehmigung kann widerrufen werden, wenn z.B. Zuverlässigkeit fehlt.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wer kontrolliert die Einhaltung der Betriebspflicht und Ausrüstung im Taxi?",
+      "optionen": [
+        "Behörde und Polizei",
+        "Nur der Fahrgast",
+        "Das Finanzamt",
+        "Die Werkstatt"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Behörden sind für Kontrollen zuständig.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was ist KEIN sachlicher Grund für die Ablehnung der Beförderung?",
+      "optionen": [
+        "Schlechte Laune des Fahrers",
+        "Gefahr für Fahrer/Fahrgast",
+        "Zahlungsunfähigkeit",
+        "Gefahrguttransport ohne Genehmigung"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Laune ist kein sachlicher Grund, nur Gefahr etc.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Aussage zur Aufbewahrungspflicht ist FALSCH?",
+      "optionen": [
+        "Fahrtenbücher dürfen nach 2 Jahren vernichtet werden.",
+        "Alle Unterlagen müssen 10 Jahre aufbewahrt werden.",
+        "Quittungen sind aufzubewahren.",
+        "Die Frist gilt auch für elektronische Dokumente."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Alle Unterlagen 10 Jahre aufbewahren, auch digital.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Person gilt als zuverlässig nach PBefG?",
+      "optionen": [
+        "Wer keine schweren Straftaten begangen hat und geordnete Finanzen hat.",
+        "Wer mindestens 5 Jahre Taxi fährt.",
+        "Jeder mit Hauptwohnsitz in Deutschland.",
+        "Nur Mitglieder eines Verbands."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Zuverlässigkeit heißt keine gravierenden Vorstrafen und solide Finanzen.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie kann die fachliche Eignung nachgewiesen werden?",
+      "optionen": [
+        "IHK-Fachkundenachweis",
+        "Nur durch Führerschein",
+        "Quittung der letzten Fahrt",
+        "Mitgliedschaft im Taxiverband"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Fachkunde wird meist durch IHK-Nachweis erbracht.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Folge hat ein Verstoß gegen die Dokumentationspflicht?",
+      "optionen": [
+        "Bußgeld und evtl. steuerliche Nachteile",
+        "Nichts, wenn keine Kontrolle erfolgt",
+        "Der Fahrgast zahlt eine Strafe",
+        "Die Versicherung zahlt automatisch weniger"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Nicht-Dokumentation kann teuer werden.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wer ist für die korrekte Aufbewahrung der Unterlagen verantwortlich?",
+      "optionen": [
+        "Der Unternehmer",
+        "Der Fahrer",
+        "Das Finanzamt",
+        "Die IHK"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Der Unternehmer ist für die Unterlagen verantwortlich.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Konsequenz droht, wenn ein Unternehmer die Betriebspflicht verletzt?",
+      "optionen": [
+        "Bußgeld, Entzug der Genehmigung möglich",
+        "Nichts, wenn genug Fahrgäste vorhanden sind",
+        "Rabatt bei der Werkstatt",
+        "Kostenlose Taxifahrten für Fahrgäste"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Verstoß gegen Betriebspflicht wird geahndet.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Bedeutung hat der Begriff 'Betriebspflicht' im Taxigewerbe?",
+      "optionen": [
+        "Das Taxi muss zu bestimmten Zeiten im Betrieb sein.",
+        "Der Unternehmer darf den Betrieb einstellen, wann er möchte.",
+        "Nur die Fahrer müssen Betriebspflicht erfüllen.",
+        "Betriebspflicht gilt nur an Werktagen."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Betriebspflicht = bestimmte Einsatzzeiten/Präsenz im Pflichtgebiet.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie kann ein Fahrgast eine Beschwerde gegen ein Taxiunternehmen einreichen?",
+      "optionen": [
+        "Bei der zuständigen Genehmigungsbehörde",
+        "Nur beim Taxiverband",
+        "Beim Finanzamt",
+        "Gar nicht, Beschwerden sind nicht vorgesehen"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Beschwerden gehen an die Behörde.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was ist ein Personenbeförderungsschein (P-Schein)?",
+      "optionen": [
+        "Eine behördliche Erlaubnis für Fahrer im gewerblichen Personenverkehr",
+        "Der Kfz-Schein des Taxis",
+        "Die Mitgliedskarte im Verband",
+        "Ein Versicherungsdokument"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "P-Schein ist die gesetzliche Fahrerlaubnis für Taxi/Mietwagen.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist bei einer Polizeikontrolle im Taxi vorzulegen?",
+      "optionen": [
+        "Alle geforderten Unterlagen: Genehmigung, Fahrzeugschein, Versicherungsnachweis",
+        "Nur der Führerschein",
+        "Nur die Taxameter-Eichbescheinigung",
+        "Nur das Kassenbuch"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Alle genannten Nachweise müssen auf Verlangen vorgelegt werden.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was bedeutet Dokumentationspflicht im Taxiunternehmen?",
+      "optionen": [
+        "Alle betrieblichen Vorgänge müssen nachvollziehbar aufgezeichnet werden.",
+        "Nur die Umsätze sind aufzuschreiben.",
+        "Die Pflicht gilt nur für Neufahrzeuge.",
+        "Fahrer dokumentieren nach Belieben."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Dokumentationspflicht gilt für alle wesentlichen Geschäftsabläufe.",
+      "punkte": 2
+    }
+  ]
+}
+{
   "Kaufmännische und finanzielle Führung des Betriebes": [
     // Kostenrechnung (Fix/Variabel)
     {
