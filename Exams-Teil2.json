@@ -1,379 +1,1501 @@
-[
-  {
-    "fallstudie": "Taxibetrieb Müller hat drei Fahrzeuge. Zwei Fahrzeuge sind täglich 14 Stunden im Einsatz, ein Fahrzeug 8 Stunden. Ein Fahrer verdient 14 €/h. Im Januar (31 Tage) gibt es folgende Kosten: Kraftstoff 3.800 €, Versicherung 1.200 €, Wartung 800 €, Steuern 380 €, Sonstiges 540 €. Alle Einnahmen betrugen 17.300 €.",
-    "tasks": [
-      {
-        "frage": "1. Wie viele Gesamteinsatzstunden aller Fahrzeuge gibt es im Januar?",
-        "richtigeAntwort": "2 Fahrzeuge x 14 h x 31 + 1 Fahrzeug x 8 h x 31 = 868 + 248 = 1.116 Stunden",
-        "punkte": 2
-      },
-      {
-        "frage": "2. Wie hoch sind die gesamten Lohnkosten im Januar?",
-        "richtigeAntwort": "1.116 Stunden x 14 €/h = 15.624 €",
-        "punkte": 2
-      },
-      {
-        "frage": "3. Wie hoch sind die Gesamtkosten (alle Betriebskosten inkl. Löhne)?",
-        "richtigeAntwort": "Kraftstoff 3.800 + Versicherung 1.200 + Wartung 800 + Steuern 380 + Sonstiges 540 + Löhne 15.624 = 22.344 €",
-        "punkte": 2
-      },
-      {
-        "frage": "4. Wie hoch ist der Gewinn oder Verlust im Januar?",
-        "richtigeAntwort": "Einnahmen 17.300 € – Gesamtkosten 22.344 € = -5.044 € (Verlust)",
-        "punkte": 2
-      },
-      {
-        "frage": "5. Wie viel Umsatz entfällt durchschnittlich pro Fahrzeug pro Tag?",
-        "richtigeAntwort": "17.300 € / 3 Fahrzeuge / 31 Tage = 186,02 € pro Fahrzeug/Tag",
-        "punkte": 1
-      },
-      {
-        "frage": "6. Wie hoch ist der durchschnittliche Umsatz pro Einsatzstunde?",
-        "richtigeAntwort": "17.300 € / 1.116 h = 15,50 € pro Stunde",
-        "punkte": 1
-      },
-      {
-        "fallstudie": "Frau Yildiz betreibt einen Mietwagenbetrieb mit vier Fahrzeugen und sechs Fahrern. Im April (30 Tage) fährt jedes Fahrzeug durchschnittlich 260 km pro Tag. Die Fixkosten betragen monatlich: Versicherung 1.600 €, Miete 2.400 €, Verwaltung 900 €. Die variablen Kosten sind: Kraftstoff 0,19 €/km, Wartung 0,04 €/km. Alle Fahrer erhalten 12 €/Stunde und arbeiten im Schnitt 8 Stunden pro Tag. Die Einnahmen im April betrugen 32.600 €.",
-        "tasks": [
-          {
-            "frage": "1. Wie viele Kilometer wurden im April insgesamt gefahren?",
-            "richtigeAntwort": "4 Fahrzeuge x 260 km/Tag x 30 Tage = 31.200 km",
-            "punkte": 2
-          },
-          {
-            "frage": "2. Wie hoch sind die gesamten Kraftstoffkosten im April?",
-            "richtigeAntwort": "31.200 km x 0,19 €/km = 5.928 €",
-            "punkte": 2
-          },
-          {
-            "frage": "3. Wie hoch sind die gesamten Wartungskosten im April?",
-            "richtigeAntwort": "31.200 km x 0,04 €/km = 1.248 €",
-            "punkte": 1
-          },
-          {
-            "frage": "4. Wie viele Gesamtstunden haben die Fahrer im April gearbeitet?",
-            "richtigeAntwort": "6 Fahrer x 8 Stunden x 30 Tage = 1.440 Stunden",
-            "punkte": 2
-          },
-          {
-            "frage": "5. Wie hoch sind die gesamten Personalkosten?",
-            "richtigeAntwort": "1.440 Stunden x 12 €/h = 17.280 €",
-            "punkte": 2
-          },
-          {
-            "frage": "6. Wie hoch sind die gesamten Fixkosten?",
-            "richtigeAntwort": "Versicherung 1.600 € + Miete 2.400 € + Verwaltung 900 € = 4.900 €",
-            "punkte": 1
-          },
-          {
-            "frage": "7. Wie hoch sind die gesamten Kosten (Fix + variabel + Personal)?",
-            "richtigeAntwort": "Fixkosten 4.900 € + Kraftstoff 5.928 € + Wartung 1.248 € + Personal 17.280 € = 29.356 €",
-            "punkte": 2
-          },
-          {
-            "frage": "8. Wie hoch ist der Gewinn im April?",
-            "richtigeAntwort": "Einnahmen 32.600 € – Gesamtkosten 29.356 € = 3.244 € Gewinn",
-            "punkte": 2
-          },
-          [
-            {
-              "frage": "Nennen Sie drei wichtige Arten von Versicherungen für Taxiunternehmer.",
-              "richtigeAntwort": "Haftpflichtversicherung, Teilkaskoversicherung, Vollkaskoversicherung",
-              "punkte": 2
-            },
-            {
-              "frage": "Sie fahren eine Taxifahrt von 7 km bei einem Grundpreis von 4,00 €, einem Kilometerpreis von 2,20 € und einem Wartezeitaufschlag von 6,00 € (insgesamt 10 Minuten Wartezeit zu je 0,60 €/Min.). Wie hoch ist der Gesamtpreis?",
-              "richtigeAntwort": "Gesamtpreis = 4,00 € + (7 x 2,20 €) + 6,00 € = 25,40 €",
-              "punkte": 3
-            },
-            {
-              "frage": "Was versteht man unter der Tarifpflicht im Taxigewerbe?",
-              "richtigeAntwort": "Die Verpflichtung, die behördlich festgelegten Fahrpreise einzuhalten.",
-              "punkte": 2
-            },
-            {
-              "frage": "Ein Taxiunternehmer erwirtschaftet im Monat 5.000 € Umsatz, davon 1.000 € aus Fahrten ins Ausland. Wie viel Umsatzsteuer (19 %) muss er für den Inlandsumsatz zahlen?",
-              "richtigeAntwort": "Inlandsumsatz: 4.000 € → 19 % = 760 € Umsatzsteuer.",
-              "punkte": 3
-            },
-            {
-              "frage": "Welche Unterlagen muss ein Taxifahrer während des Dienstes mitführen?",
-              "richtigeAntwort": "Führerschein, Personenbeförderungsschein, Fahrzeugschein, Genehmigungsurkunde, Versicherungsnachweis.",
-              "punkte": 2
-            },
-            {
-              "frage": "Ein Fahrgast vergisst sein Portemonnaie im Taxi. Was ist zu tun?",
-              "richtigeAntwort": "Das Fundstück ist unverzüglich beim zuständigen Fundbüro abzugeben.",
-              "punkte": 1
-            },
-            {
-              "frage": "Ein Unternehmer hat monatlich folgende Kosten: 2.000 € Lohn, 800 € Kraftstoff, 400 € Versicherung, 200 € Wartung. Wie hoch sind die Gesamtkosten pro Jahr?",
-              "richtigeAntwort": "Gesamtkosten: (2.000 + 800 + 400 + 200) x 12 = 3.400 x 12 = 40.800 €",
-              "punkte": 3
-            },
-            {
-              "frage": "Welche Pflichten ergeben sich für einen Taxiunternehmer bei der Beschäftigung von Fahrern?",
-              "richtigeAntwort": "Überprüfung der Zuverlässigkeit, Einweisung, Kontrolle der Arbeitszeit, Versicherungsschutz.",
-              "punkte": 2
-            },
-            {
-              "frage": "Sie fahren 50 km mit einem Taxi, das einen Durchschnittsverbrauch von 8 l/100 km hat. Wie viel Liter Kraftstoff werden verbraucht?",
-              "richtigeAntwort": "8 l / 100 km → 0,08 l/km → 50 km x 0,08 = 4 Liter",
-              "punkte": 2
-            },
-            {
-              "frage": "Nennen Sie zwei Gründe, warum die Konzession entzogen werden kann.",
-              "richtigeAntwort": "z. B. wiederholte Verstöße gegen Vorschriften, Unzuverlässigkeit, schwere Straftaten.",
-              "punkte": 2
-            },
-            {
-              "frage": "Ein Taxi legt eine Strecke von 240 km mit einer Durchschnittsgeschwindigkeit von 80 km/h zurück. Wie lange dauert die Fahrt?",
-              "richtigeAntwort": "240 km / 80 km/h = 3 Stunden",
-              "punkte": 2
-            },
-            {
-              "frage": "Berechnen Sie den Bruttolohn eines Fahrers, wenn der Nettolohn 1.600 € beträgt und die Sozialabgaben 20 % betragen.",
-              "richtigeAntwort": "Bruttolohn = 1.600 € / 0,8 = 2.000 €",
-              "punkte": 2
-            },
-            {
-              "frage": "Welche Aufgaben übernimmt das Ordnungsamt im Bereich Taxi/Mietwagen?",
-              "richtigeAntwort": "Überwachung des Betriebs, Kontrolle der Genehmigungen, Einhaltung der Tarifpflicht.",
-              "punkte": 1
-            },
-            {
-              "frage": "Was ist der Unterschied zwischen Pflichtfahrgebiet und freier Personenbeförderung?",
-              "richtigeAntwort": "Im Pflichtfahrgebiet besteht Betriebs- und Beförderungspflicht; außerhalb keine Verpflichtung.",
-              "punkte": 2
-            },
-            {
-              "frage": "Ein Reifen kostet netto 84,00 €. Wie viel zahlt der Unternehmer brutto (19 % MwSt.)?",
-              "richtigeAntwort": "84,00 € + (84,00 € x 0,19) = 99,96 €",
-              "punkte": 1
-            },
-            {
-              "frage": "Welche Angaben sind in einer Quittung zwingend erforderlich?",
-              "richtigeAntwort": "Name/Anschrift Unternehmer, Datum, Betrag, Fahrstrecke, Unterschrift.",
-              "punkte": 1
-            },
-            {
-              "frage": "Was versteht man unter Vorsteuerabzug?",
-              "richtigeAntwort": "Das Recht, gezahlte Umsatzsteuer für Betriebsausgaben von der eigenen Umsatzsteuerschuld abzuziehen.",
-              "punkte": 2
-            },
-            {
-              "frage": "Berechnen Sie die durchschnittlichen monatlichen Kosten, wenn die jährlichen Kosten 24.000 € betragen.",
-              "richtigeAntwort": "24.000 € / 12 = 2.000 €",
-              "punkte": 1
-            },
-            {
-              "frage": "Welche Folgen hat das Überschreiten der Lenkzeit für Fahrer?",
-              "richtigeAntwort": "Bußgeld, evtl. Fahrverbot, arbeitsrechtliche Konsequenzen.",
-              "punkte": 2
-            },
-            {
-              "frage": "Welche Dokumente müssen bei einer Betriebsprüfung vorliegen?",
-              "richtigeAntwort": "Buchhaltungsunterlagen, Genehmigungen, Quittungen, Fahraufträge.",
-              "punkte": 2
-            },
-            {
-              "fallstudie": "Taxibetrieb Müller hat drei Fahrzeuge. Zwei Fahrzeuge sind täglich 14 Stunden im Einsatz, ein Fahrzeug 8 Stunden. Ein Fahrer verdient 14 €/h. Im Januar (31 Tage) gibt es folgende Kosten: Kraftstoff 3.800 €, Versicherung 1.200 €, Wartung 800 €, Steuern 380 €, Sonstiges 540 €. Alle Einnahmen betrugen 17.300 €.",
-              "tasks": [
-                {
-                  "frage": "1. Wie viele Gesamteinsatzstunden aller Fahrzeuge gibt"
-                }
-              ]
-            },
-            [
-              {
-                "frage": "Ein Taxiunternehmer besitzt 4 Fahrzeuge, jedes fährt durchschnittlich 180 km pro Tag. Wie viele Kilometer legen alle Fahrzeuge zusammen im Monat (30 Tage) zurück?",
-                "richtigeAntwort": "4 x 180 km x 30 = 21.600 km",
-                "punkte": 2
-              },
-              {
-                "frage": "Sie beschäftigen 5 Fahrer, die jeweils 8 Stunden täglich arbeiten. Wie viele Gesamtarbeitsstunden fallen im Februar (28 Tage) an?",
-                "richtigeAntwort": "5 x 8 x 28 = 1.120 Stunden",
-                "punkte": 2
-              },
-              {
-                "frage": "Für eine Versicherung zahlen Sie jährlich 2.400 €. Wie hoch sind die monatlichen Kosten?",
-                "richtigeAntwort": "2.400 € / 12 = 200 € pro Monat",
-                "punkte": 1
-              },
-              {
-                "frage": "Ein Fahrer erhält 13 € pro Stunde und arbeitet im März 176 Stunden. Wie hoch ist sein Bruttolohn?",
-                "richtigeAntwort": "176 x 13 € = 2.288 €",
-                "punkte": 1
-              },
-              {
-                "frage": "Die Werkstattkosten betragen pro Fahrzeug im Jahr 1.200 €. Wie hoch sind die Gesamtkosten bei 3 Fahrzeugen?",
-                "richtigeAntwort": "3 x 1.200 € = 3.600 €",
-                "punkte": 1
-              },
-              {
-                "frage": "Im Januar wurden 3.000 € Kraftstoffkosten für 5 Fahrzeuge ausgegeben. Wie hoch ist der Durchschnitt pro Fahrzeug?",
-                "richtigeAntwort": "3.000 € / 5 = 600 € pro Fahrzeug",
-                "punkte": 1
-              },
-              {
-                "frage": "Ein Unternehmer erzielt im Monat 18.000 € Umsatz und hat Kosten von 14.200 €. Wie hoch ist der Gewinn?",
-                "richtigeAntwort": "18.000 € - 14.200 € = 3.800 € Gewinn",
-                "punkte": 2
-              },
-              {
-                "frage": "Ein Taxi fährt eine Strecke von 260 km mit einem Verbrauch von 7,5 l/100 km. Wie viel Liter werden benötigt?",
-                "richtigeAntwort": "260 x 7,5 / 100 = 19,5 Liter",
-                "punkte": 2
-              },
-              {
-                "frage": "Die Umsatzsteuer beträgt 7 % auf eine Fahrt von 86 €. Wie hoch ist die Steuer?",
-                "richtigeAntwort": "86 € x 0,07 = 6,02 €",
-                "punkte": 1
-              },
-              {
-                "frage": "Ein Taxiunternehmer hat monatliche Fixkosten von 4.200 € und variable Kosten von 1.600 €. Wie hoch sind die Gesamtkosten pro Monat?",
-                "richtigeAntwort": "4.200 € + 1.600 € = 5.800 €",
-                "punkte": 1
-              },
-              {
-                "frage": "Eine Fahrerin fährt 23 Tage à 9 Stunden. Wie viele Stunden im Monat?",
-                "richtigeAntwort": "23 x 9 = 207 Stunden",
-                "punkte": 1
-              },
-              {
-                "frage": "Für die Leasingrate zahlt ein Unternehmer 430 € monatlich. Wie viel im Jahr?",
-                "richtigeAntwort": "430 € x 12 = 5.160 €",
-                "punkte": 1
-              },
-              {
-                "frage": "Ein Fahrgast zahlt 34 € brutto (19 % MwSt). Wie hoch ist der Nettobetrag?",
-                "richtigeAntwort": "34 € / 1,19 ≈ 28,57 €",
-                "punkte": 2
-              },
-              {
-                "frage": "Wie hoch sind die Gesamtkosten für Löhne, wenn 7 Fahrer jeweils 1.950 € monatlich erhalten?",
-                "richtigeAntwort": "7 x 1.950 € = 13.650 €",
-                "punkte": 2
-              },
-              {
-                "frage": "Bei einer Taxifahrt entstehen folgende Kosten: Grundpreis 4 €, 12 km x 2,30 €/km, 5 Minuten Wartezeit à 0,60 €/Min. Berechnen Sie den Gesamtpreis.",
-                "richtigeAntwort": "4 € + (12 x 2,30 €) + (5 x 0,60 €) = 4 € + 27,60 € + 3 € = 34,60 €",
-                "punkte": 3
-              },
-              {
-                "frage": "Der Unternehmer bezahlt im Jahr 1.350 € für die Haftpflichtversicherung pro Fahrzeug. Wie viel für 4 Fahrzeuge?",
-                "richtigeAntwort": "1.350 € x 4 = 5.400 €",
-                "punkte": 1
-              },
-              {
-                "frage": "Die Kfz-Steuer beträgt 312 € pro Jahr. Wie hoch ist sie pro Monat?",
-                "richtigeAntwort": "312 € / 12 = 26 €",
-                "punkte": 1
-              },
-              {
-                "frage": "Ein Fahrer fährt im März 32 Fahrten à 17 km. Wie viele Kilometer hat er insgesamt zurückgelegt?",
-                "richtigeAntwort": "32 x 17 = 544 km",
-                "punkte": 1
-              },
-              {
-                "frage": "Sie müssen 4 neue Reifen kaufen, jeder kostet 94 € netto (inkl. 19 % MwSt). Was ist der Gesamtpreis brutto?",
-                "richtigeAntwort": "4 x 94 € x 1,19 = 447,44 €",
-                "punkte": 2
-              },
-              {
-                "frage": "Im April zahlt der Unternehmer 1.600 € Lohn, 670 € für Kraftstoff, 120 € Wartung, 90 € Steuer und 180 € Sonstiges. Wie hoch sind die Gesamtkosten?",
-                "richtigeAntwort": "1.600 € + 670 € + 120 € + 90 € + 180 € = 2.660 €",
-                "punkte": 1
-              }
-            ],
-            {
-              "fallstudie": "Herr Ahmed betreibt ein Taxiunternehmen mit fünf Fahrzeugen und acht festangestellten Fahrern. Die Fahrzeuge fahren jeweils im Monat durchschnittlich 4.500 km. Jeder Fahrer arbeitet im Monat 180 Stunden und verdient 13,50 € pro Stunde. Die monatlichen Fixkosten des Unternehmens betragen: Versicherung 1.050 €, Miete 2.400 €, Verwaltung 950 €. Variable Kosten: Kraftstoff 0,18 €/km, Wartung 0,06 €/km, Sonstiges 540 €. Im aktuellen Monat erwirtschaftet das Unternehmen Einnahmen von 28.700 €. Im Monat werden zudem 1.250 € Kfz-Steuer für alle Fahrzeuge bezahlt.",
-              "tasks": [
-                {
-                  "frage": "1. Wie viele Gesamtkilometer fahren alle Fahrzeuge im Monat?",
-                  "richtigeAntwort": "5 Fahrzeuge x 4.500 km = 22.500 km",
-                  "punkte": 2
-                },
-                {
-                  "frage": "2. Wie hoch sind die gesamten Kraftstoffkosten im Monat?",
-                  "richtigeAntwort": "22.500 km x 0,18 €/km = 4.050 €",
-                  "punkte": 2
-                },
-                {
-                  "frage": "3. Wie hoch sind die gesamten Wartungskosten im Monat?",
-                  "richtigeAntwort": "22.500 km x 0,06 €/km = 1.350 €",
-                  "punkte": 1
-                },
-                {
-                  "frage": "4. Wie hoch sind die gesamten Lohnkosten im Monat?",
-                  "richtigeAntwort": "8 Fahrer x 180 Stunden x 13,50 € = 19.440 €",
-                  "punkte": 2
-                },
-                {
-                  "frage": "5. Wie hoch sind die gesamten Fixkosten?",
-                  "richtigeAntwort": "Versicherung 1.050 € + Miete 2.400 € + Verwaltung 950 € + Kfz-Steuer 1.250 € = 5.650 €",
-                  "punkte": 2
-                },
-                {
-                  "frage": "6. Wie hoch sind die gesamten Betriebskosten (Fix + variabel + Löhne + Sonstiges)?",
-                  "richtigeAntwort": "Fixkosten 5.650 € + Kraftstoff 4.050 € + Wartung 1.350 € + Löhne 19.440 € + Sonstiges 540 € = 31.030 €",
-                  "punkte": 3
-                },
-                {
-                  "frage": "7. Wie hoch ist der Gewinn oder Verlust im aktuellen Monat?",
-                  "richtigeAntwort": "Einnahmen 28.700 € - Gesamtkosten 31.030 € = -2.330 € (Verlust)",
-                  "punkte": 2
-                }
-              ]
-            },
-            {
-              "fallstudie": "Frau Schmidt betreibt einen Mietwagenbetrieb mit sechs Fahrzeugen und zehn Fahrern. Jedes Fahrzeug fährt im Monat durchschnittlich 3.200 km. Die Fahrer arbeiten monatlich je 160 Stunden für 14 € pro Stunde. Monatliche Fixkosten: Versicherung 1.400 €, Miete 2.900 €, Verwaltung 1.100 €. Variable Kosten: Kraftstoff 0,16 €/km, Wartung 0,05 €/km, Reinigung 400 €. Die Einnahmen im Monat betragen 35.400 €. Für alle Fahrzeuge werden jährlich 5.040 € Kfz-Steuer gezahlt.",
-              "tasks": [
-                {
-                  "frage": "1. Wie viele Gesamtkilometer fahren alle Fahrzeuge im Monat?",
-                  "richtigeAntwort": "6 Fahrzeuge x 3.200 km = 19.200 km",
-                  "punkte": 2
-                },
-                {
-                  "frage": "2. Wie hoch sind die gesamten Kraftstoffkosten im Monat?",
-                  "richtigeAntwort": "19.200 km x 0,16 €/km = 3.072 €",
-                  "punkte": 2
-                },
-                {
-                  "frage": "3. Wie hoch sind die gesamten Wartungskosten im Monat?",
-                  "richtigeAntwort": "19.200 km x 0,05 €/km = 960 €",
-                  "punkte": 1
-                },
-                {
-                  "frage": "4. Wie hoch sind die gesamten Personalkosten?",
-                  "richtigeAntwort": "10 Fahrer x 160 Stunden x 14 € = 22.400 €",
-                  "punkte": 2
-                },
-                {
-                  "frage": "5. Wie hoch sind die gesamten Fixkosten inkl. anteiliger Kfz-Steuer?",
-                  "richtigeAntwort": "Versicherung 1.400 € + Miete 2.900 € + Verwaltung 1.100 € + (5.040 €/12) = 1.400 € + 2.900 € + 1.100 € + 420 € = 5.820 €",
-                  "punkte": 2
-                },
-                {
-                  "frage": "6. Wie hoch sind die gesamten variablen Kosten inkl. Reinigung?",
-                  "richtigeAntwort": "Kraftstoff 3.072 € + Wartung 960 € + Reinigung 400 € = 4.432 €",
-                  "punkte": 1
-                },
-                {
-                  "frage": "7. Wie hoch sind die gesamten Betriebskosten (Fix + variabel + Personal)?",
-                  "richtigeAntwort": "Fixkosten 5.820 € + variable Kosten 4.432 € + Personalkosten 22.400 € = 32.652 €",
-                  "punkte": 3
-                },
-                {
-                  "frage": "8. Wie hoch ist der Gewinn im Monat?",
-                  "richtigeAntwort": "Einnahmen 35.400 € - Betriebskosten 32.652 € = 2.748 € Gewinn",
-                  "punkte": 2
-                }
-              ]
-            }
-          ]
-        ]
-      }
-    ]
-  }
-]
+{
+  "Rechts": [
+    {
+      "frage": "Was ist die Beförderungspflicht für Taxis laut Gesetz?",
+      "antwort": "Jeder Fahrgast muss grundsätzlich befördert werden, außer es gibt einen sachlichen Ablehnungsgrund.",
+      "punkte": 2
+    },
+    {
+      "frage": "Nennen Sie zwei wichtige Voraussetzungen, um eine Taxigenehmigung zu erhalten.",
+      "antwort": "Persönliche Zuverlässigkeit und finanzielle Leistungsfähigkeit.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie lange können offene Rechnungen im Geschäftsverkehr regulär eingeklagt werden?",
+      "antwort": "Bis zu drei Jahre (Verjährungsfrist nach BGB).",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Dokumente müssen Sie bei einer Polizeikontrolle im Taxi vorlegen können?",
+      "antwort": "Genehmigungsurkunde, Fahrzeugschein und Versicherungsnachweis.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was unterscheidet das Personenbeförderungsgesetz (PBefG) von der BOKraft?",
+      "antwort": "PBefG regelt die Erlaubnis, BOKraft die technischen/betrieblichen Vorgaben für Fahrzeuge.",
+      "punkte": 2
+    },
+    {
+      "frage": "Geben Sie ein Beispiel für einen zulässigen Ablehnungsgrund eines Fahrgasts.",
+      "antwort": "Zahlungsunfähigkeit oder Gefahr für den Fahrer.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist mit Dokumentationspflicht im Gewerbe gemeint?",
+      "antwort": "Alle geschäftsrelevanten Vorgänge (z.B. Einnahmen, Ausgaben) müssen schriftlich dokumentiert werden.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wer kontrolliert, ob ein Taxiunternehmen die Vorschriften der BOKraft einhält?",
+      "antwort": "Die Genehmigungsbehörde und die Polizei.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was bedeutet Vertragsfreiheit im deutschen Recht?",
+      "antwort": "Jeder kann Verträge frei abschließen, solange sie nicht gegen Gesetze verstoßen.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was versteht man im Recht unter Haftung?",
+      "antwort": "Die Verantwortung für Schäden oder Verstöße (Unternehmer und/oder Fahrer).",
+      "punkte": 2
+    },
+    {
+      "frage": "Wann liegt eine Ordnungswidrigkeit im Personenbeförderungsgewerbe vor?",
+      "antwort": "Wenn gegen gesetzliche oder behördliche Auflagen verstoßen wird (z.B. ohne Genehmigung fahren).",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Rolle hat die Genehmigungsbehörde im Taxigewerbe?",
+      "antwort": "Sie erteilt, überwacht und kann Genehmigungen widerrufen.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist eine Betriebspflicht für Taxiunternehmer?",
+      "antwort": "Das Taxi muss zu den festgelegten Zeiten einsatzbereit sein.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie lange müssen geschäftliche Unterlagen (z.B. Quittungen) aufbewahrt werden?",
+      "antwort": "Zehn Jahre.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welcher Vertrag entsteht, wenn ein Fahrgast einsteigt und sein Ziel nennt?",
+      "antwort": "Ein Beförderungsvertrag.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was regelt das PBefG im Kern?",
+      "antwort": "Die gewerbliche Beförderung von Personen mit Kraftfahrzeugen.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist Verjährung im Zusammenhang mit Forderungen?",
+      "antwort": "Nach Ablauf der Frist kann eine Forderung nicht mehr eingeklagt werden.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wann kann eine Taxigenehmigung widerrufen werden?",
+      "antwort": "Wenn eine Voraussetzung wie Zuverlässigkeit entfällt.",
+      "punkte": 2
+    },
+    {
+      "frage": "Nennen Sie ein Beispiel für die Verletzung der Dokumentationspflicht.",
+      "antwort": "Nicht geführtes oder unvollständiges Kassenbuch.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wer haftet bei Verstößen gegen die Betriebspflicht?",
+      "antwort": "Der Unternehmer.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist ein sachlicher Ablehnungsgrund laut PBefG?",
+      "antwort": "Gefahr für den Fahrer oder Zahlungsunfähigkeit.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wofür steht die Abkürzung BOKraft?",
+      "antwort": "Verordnung über den Betrieb von Kraftfahrunternehmen im Personenverkehr.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welcher Nachweis belegt die fachliche Eignung eines Taxiunternehmers?",
+      "antwort": "Fachkundenachweis der IHK.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist die Betriebspflicht im Pflichtfahrgebiet?",
+      "antwort": "Taxis müssen jederzeit für Fahrgäste bereitstehen.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Unterlagen sind im Taxi immer mitzuführen?",
+      "antwort": "Genehmigung, Fahrzeugschein, Versicherungsnachweis.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie werden Bußgeldverfahren eingeleitet?",
+      "antwort": "Durch Feststellung eines Verstoßes und Anzeige durch die Behörde/Polizei.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist ein Beförderungsvertrag?",
+      "antwort": "Der Vertrag zur Personenbeförderung zwischen Fahrgast und Unternehmen.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Behörde ist für die Kontrolle von Taxen zuständig?",
+      "antwort": "Ordnungsamt, Polizei, Genehmigungsbehörde.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was gilt für Verjährung im Zusammenhang mit Ordnungswidrigkeiten?",
+      "antwort": "Nach einer bestimmten Frist kann kein Bußgeld mehr verhängt werden.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wann liegt ein Verstoß gegen das PBefG vor?",
+      "antwort": "Bei fehlender Genehmigung oder Verletzung von Pflichten.",
+      "punkte": 2
+    }
+  ]
+}
+{
+  "Kaufmännische und finanzielle Führung des Betriebes": [
+    // Kostenrechnung
+    {
+      "frage": "Was versteht man unter Fixkosten? Nennen Sie ein Beispiel.",
+      "antwort": "Kosten, die unabhängig von der Fahrleistung anfallen, z.B. Kfz-Steuer.",
+      "punkte": 2
+    },
+    {
+      "frage": "Sind Personalkosten immer Fixkosten? Begründen Sie.",
+      "antwort": "Nein, Personalkosten können auch variabel sein (bei Stücklohn, Schichtabhängigkeit).",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche der folgenden Positionen ist KEINE variable Kostenart? a) Kraftstoff b) Leasingrate c) Reifenverschleiß d) Ölverbrauch",
+      "antwort": "b) Leasingrate",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Die Versicherungsprämie ist eine variable Kostenart.",
+      "antwort": "Falsch",
+      "punkte": 1
+    },
+    {
+      "frage": "Was ist die Konsequenz, wenn variable Kosten sehr hoch werden?",
+      "antwort": "Der Break-Even-Point verschiebt sich, das Unternehmen braucht mehr Umsatz zum Gewinn.",
+      "punkte": 2
+    },
+    // Kalkulation
+    {
+      "frage": "Berechnen Sie den Break-Even-Point: Fixkosten 7.000 €/Jahr, variable Kosten 0,23 €/km, Fahrpreis 1,45 €/km.",
+      "antwort": "ca. 6.034 km",
+      "punkte": 3,
+      "rechnungsweg": "Break-Even = 7.000 € / (1,45 € - 0,23 €) ≈ 6.034 km"
+    },
+    {
+      "frage": "Wie wird der Gewinn eines Taxiunternehmens ermittelt?",
+      "antwort": "Gewinn = Erlöse minus Gesamtkosten.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist KEINE Einnahme im Sinne der Buchhaltung? a) Umsatz b) Steuerrückerstattung c) Kreditaufnahme d) Trinkgeld",
+      "antwort": "c) Kreditaufnahme",
+      "punkte": 2
+    },
+    {
+      "frage": "Berechnen Sie die Netto-Einnahme bei einem Bruttobetrag von 214,20 € (inkl. 19 % MwSt).",
+      "antwort": "180 €",
+      "punkte": 2,
+      "rechnungsweg": "214,20 € / 1,19 = 180 €"
+    },
+    {
+      "frage": "Wahr oder falsch: Skonto wirkt sich auf die Umsatzsteuer aus.",
+      "antwort": "Wahr",
+      "punkte": 1,
+      "rechnungsweg": "Skonto mindert Bemessungsgrundlage der USt."
+    },
+    // Gewinnermittlung
+    {
+      "frage": "Ein Taxiunternehmen erzielt einen Umsatz von 75.000 €, die Gesamtkosten betragen 67.200 €. Wie hoch ist der Gewinn?",
+      "antwort": "7.800 €",
+      "punkte": 2,
+      "rechnungsweg": "Gewinn = 75.000 € - 67.200 € = 7.800 €"
+    },
+    {
+      "frage": "Was ist eine Einnahmen-Überschuss-Rechnung?",
+      "antwort": "Vergleich der Betriebseinnahmen und -ausgaben zur Gewinnermittlung.",
+      "punkte": 2
+    },
+    {
+      "frage": "Darf ein Unternehmer die Umsatzsteuer, die er bezahlt, als Betriebsausgabe geltend machen?",
+      "antwort": "Nein, wenn er zum Vorsteuerabzug berechtigt ist.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie lange müssen Belege für steuerliche Zwecke aufbewahrt werden?",
+      "antwort": "10 Jahre",
+      "punkte": 2
+    },
+    // Buchhaltung & Kassenbuch
+    {
+      "frage": "Wahr oder falsch: Jede Bareinnahme und Barausgabe muss im Kassenbuch dokumentiert werden.",
+      "antwort": "Wahr",
+      "punkte": 1
+    },
+    {
+      "frage": "Was ist ein typischer Fehler beim Kassenbuch?",
+      "antwort": "Unvollständige oder verspätete Eintragungen.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist KEINE Pflichtangabe auf einer Rechnung? a) Rechnungsnummer b) Umsatzsteuerbetrag c) Farbe des Fahrzeugs d) Name des Leistenden",
+      "antwort": "c) Farbe des Fahrzeugs",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie wird der Kassenendbestand am Monatsende berechnet?",
+      "antwort": "Anfangsbestand + Einnahmen - Ausgaben.",
+      "punkte": 2
+    },
+    {
+      "frage": "Nennen Sie einen Vorteil der digitalen Buchhaltung.",
+      "antwort": "Schnellere Verarbeitung, weniger Fehlerquellen.",
+      "punkte": 2
+    },
+    // Umsatzsteuer/Vorsteuer
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer im Pflichtfahrgebiet?",
+      "antwort": "7 %",
+      "punkte": 2
+    },
+    {
+      "frage": "Was versteht man unter Vorsteuer?",
+      "antwort": "Die beim Einkauf gezahlte Umsatzsteuer, die vom Finanzamt erstattet wird.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie berechnen Sie die Vorsteuer aus einer Eingangsrechnung von 476 € brutto bei 19 % USt?",
+      "antwort": "76 €",
+      "punkte": 2,
+      "rechnungsweg": "476 € / 1,19 = 400 €, Vorsteuer = 476 € - 400 € = 76 €"
+    },
+    {
+      "frage": "Kann ein Taxiunternehmer Kleinunternehmerregelung nutzen?",
+      "antwort": "Ja, bei Jahresumsatz unter 22.000 € (Stand 2024) möglich.",
+      "punkte": 2
+    },
+    // Bilanz & Anlagevermögen
+    {
+      "frage": "Was ist das Anlagevermögen?",
+      "antwort": "Vermögenswerte, die dem Unternehmen langfristig dienen (z.B. Fahrzeuge, Geräte).",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie wird der Abschreibungsbetrag bei linearer Abschreibung berechnet?",
+      "antwort": "Anschaffungskosten / Nutzungsdauer.",
+      "punkte": 2
+    },
+    {
+      "frage": "Sind Fahrzeugreparaturen Teil des Anlagevermögens?",
+      "antwort": "Nein, sie zählen zu den laufenden Betriebskosten.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist ein Restwert beim Leasing?",
+      "antwort": "Der zu Vertragsende erwartete Wert des Fahrzeugs.",
+      "punkte": 2
+    },
+    // Lohn & Personal
+    {
+      "frage": "Was ist der Unterschied zwischen Bruttolohn und Nettolohn?",
+      "antwort": "Bruttolohn = vor Abzügen, Nettolohn = nach Abzügen.",
+      "punkte": 2
+    },
+    {
+      "frage": "Berechnen Sie das jährliche Bruttogehalt: 2.200 €/Monat.",
+      "antwort": "26.400 €",
+      "punkte": 2,
+      "rechnungsweg": "2.200 € × 12 = 26.400 €"
+    },
+    {
+      "frage": "Was zählt zu den Lohnnebenkosten?",
+      "antwort": "Arbeitgeberanteil zur Sozialversicherung, Unfallversicherung.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Trinkgelder müssen im Lohnsteuerabzugsverfahren versteuert werden.",
+      "antwort": "Falsch",
+      "punkte": 1,
+      "rechnungsweg": "Trinkgelder sind in bestimmten Fällen steuerfrei."
+    },
+    // Skonto & Zinsen
+    {
+      "frage": "Wie berechnet man 2 % Skonto auf 2.000 €?",
+      "antwort": "40 €",
+      "punkte": 2,
+      "rechnungsweg": "2.000 € × 2 % = 40 €"
+    },
+    {
+      "frage": "Wahr oder falsch: Skonto darf auch nach Ablauf der Zahlungsfrist abgezogen werden.",
+      "antwort": "Falsch",
+      "punkte": 1
+    },
+    {
+      "frage": "Welcher Zinsbetrag entsteht bei 12.000 € Darlehen und 5 % Jahreszins?",
+      "antwort": "600 €",
+      "punkte": 2,
+      "rechnungsweg": "12.000 € × 5 % = 600 €"
+    },
+    // Sonstiges / Tricky
+    {
+      "frage": "Was ist KEIN Bestandteil einer Bilanz? a) Aktiva b) Passiva c) Betriebskosten d) Eigenkapital",
+      "antwort": "c) Betriebskosten",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Jede private Nutzung eines betrieblichen Fahrzeugs muss aufgezeichnet werden.",
+      "antwort": "Wahr",
+      "punkte": 1
+    },
+    {
+      "frage": "Was ist eine Liquiditätsreserve?",
+      "antwort": "Rücklage zur Sicherung der Zahlungsfähigkeit.",
+      "punkte": 2
+    },
+    {
+      "frage": "Kann ein Unternehmer Vorsteuer aus privaten Einkäufen abziehen?",
+      "antwort": "Nein.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist die Folge einer mangelhaften Buchführung?",
+      "antwort": "Schätzung der Steuer durch das Finanzamt, Bußgelder.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie wirkt sich eine Abschreibung auf den Gewinn aus?",
+      "antwort": "Abschreibungen mindern den Gewinn.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welcher Fehler tritt häufig bei der Skontoberechnung auf?",
+      "antwort": "Skonto wird vom Bruttobetrag statt vom Nettobetrag abgezogen.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist der Unterschied zwischen Betriebsausgabe und Investition?",
+      "antwort": "Betriebsausgaben sind laufend, Investitionen sind langfristige Anschaffungen.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Eine Einnahme ist immer ein Umsatz.",
+      "antwort": "Falsch",
+      "punkte": 1
+    },
+    {
+      "frage": "Warum ist die genaue Trennung zwischen Fixkosten und variablen Kosten wichtig?",
+      "antwort": "Für korrekte Kalkulation und Preisbildung.",
+      "punkte": 2
+    }
+  ]
+}
+{
+  "Technische Anforderungen und Betrieb": [
+    {
+      "frage": "Welche gesetzliche Vorschrift regelt die technische Ausstattung von Taxis?",
+      "antwort": "BOKraft",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie viele Türen muss ein Taxi auf der rechten Seite mindestens haben?",
+      "antwort": "Zwei",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist KEINE Pflichtausstattung im Taxi? a) Taxameter b) Alarmanlage c) Mikrowelle d) Erste-Hilfe-Kasten",
+      "antwort": "c) Mikrowelle",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie oft muss ein Taxi zur Hauptuntersuchung (HU)?",
+      "antwort": "Jährlich",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Ein Taxi ohne Alarmanlage darf nicht im öffentlichen Personenverkehr eingesetzt werden.",
+      "antwort": "Wahr",
+      "punkte": 1
+    },
+    {
+      "frage": "Was prüft die Eichbehörde beim Taxameter?",
+      "antwort": "Die korrekte Messung und Anzeige des Fahrpreises.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Farbe ist in Deutschland für Taxis vorgeschrieben?",
+      "antwort": "Hell-Elfenbein (in vielen Bundesländern), sonst laut örtlicher Vorschrift.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist bei Standzeiten am Taxistand zu beachten?",
+      "antwort": "Motor ausstellen zur Umweltentlastung.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Ein Mietwagen muss immer mit einem Taxameter ausgestattet sein.",
+      "antwort": "Falsch",
+      "punkte": 1
+    },
+    {
+      "frage": "Nennen Sie zwei Beispiele für sicherheitsrelevante Fahrzeugteile, die vor Schichtbeginn geprüft werden müssen.",
+      "antwort": "Bremsen, Beleuchtung (alternativ: Reifendruck, Hupe).",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Folgen kann eine defekte Alarmanlage im Taxi haben?",
+      "antwort": "Betriebsuntersagung durch die Behörde.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist eine Doppelgenehmigung im Sinne der BOKraft?",
+      "antwort": "Erlaubnis, das Fahrzeug als Taxi und Mietwagen zu nutzen.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Pflicht besteht bei außerordentlichen HU?",
+      "antwort": "Bei Betriebsübernahme oder vor Erstzulassung.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was muss nach einem Unfall mit Personenschaden am Taxi dokumentiert werden?",
+      "antwort": "Meldung an die Genehmigungsbehörde, Unfallprotokoll, ggf. BG Verkehr.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Die Alarmanlage muss vom Fahrersitz aus aktiviert werden können.",
+      "antwort": "Wahr",
+      "punkte": 1
+    },
+    {
+      "frage": "Was ist bei Schichtwechsel zu beachten?",
+      "antwort": "Fahrzeugkontrolle, Dokumentenübergabe, ggf. Tagesabrechnung.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie kann die Fahrzeugsicherheit im Taxi zusätzlich verbessert werden?",
+      "antwort": "Durch Trennwand und Überwachungskamera (wo erlaubt).",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist ein Wegstreckenzähler und wo wird er verwendet?",
+      "antwort": "Kilometerzähler für die Fahrpreisberechnung bei Mietwagen.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Für jede Fahrt außerhalb des Pflichtfahrgebiets gelten die gleichen Tarifvorgaben wie in der Stadt.",
+      "antwort": "Falsch",
+      "punkte": 1
+    },
+    {
+      "frage": "Nennen Sie eine typische Maßnahme zur Unfallverhütung bei technischen Mängeln.",
+      "antwort": "Sofortige Reparatur oder Stilllegung des Fahrzeugs.",
+      "punkte": 2
+    }
+  ]
+}
+{
+  "Straßenverkehr und Sicherheit": [
+    {
+      "frage": "Was ist die zulässige Höchstgeschwindigkeit für Taxis innerhalb geschlossener Ortschaften?",
+      "antwort": "50 km/h (sofern nicht anders ausgeschildert).",
+      "punkte": 2
+    },
+    {
+      "frage": "Nennen Sie zwei Pflichten des Fahrers im Straßenverkehr.",
+      "antwort": "Verkehrsregeln beachten, Anschnallpflicht einhalten.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Telefonieren am Steuer ist mit Freisprecheinrichtung erlaubt.",
+      "antwort": "Wahr",
+      "punkte": 1
+    },
+    {
+      "frage": "Was ist beim Überholen von Radfahrern zu beachten?",
+      "antwort": "Mindestabstand von 1,5 Metern einhalten.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Dokumente muss der Fahrer im Taxi immer dabei haben?",
+      "antwort": "Führerschein, Fahrzeugschein, ggf. P-Schein.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Es ist erlaubt, Kunden an Bushaltestellen aussteigen zu lassen, solange kein Linienbus behindert wird.",
+      "antwort": "Wahr",
+      "punkte": 1
+    },
+    {
+      "frage": "Was ist bei Fahrten im Berufsverkehr besonders zu beachten?",
+      "antwort": "Erhöhte Aufmerksamkeit, Rücksicht auf Fußgänger und Radfahrer.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was bedeutet 'rechts vor links'?",
+      "antwort": "An Kreuzungen ohne Beschilderung hat der von rechts kommende Verkehr Vorrang.",
+      "punkte": 2
+    },
+    {
+      "frage": "Dürfen Sie als Taxifahrer auf Busspuren fahren?",
+      "antwort": "Nur wenn das Zusatzschild 'Taxi frei' angebracht ist.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist eine Umweltzone?",
+      "antwort": "Ein Bereich, der nur mit entsprechender Umweltplakette befahren werden darf.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was muss bei der Nutzung eines Navigationsgeräts während der Fahrt beachtet werden?",
+      "antwort": "Bedienung nur, wenn das Fahrzeug steht.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Parken im Halteverbot ist mit eingeschaltetem Warnblinker erlaubt.",
+      "antwort": "Falsch",
+      "punkte": 1
+    },
+    {
+      "frage": "Was ist beim Fahrgastwechsel auf vielbefahrenen Straßen wichtig?",
+      "antwort": "Sichere Halteposition wählen, Gefährdung vermeiden.",
+      "punkte": 2
+    },
+    {
+      "frage": "Nennen Sie eine typische Ordnungswidrigkeit im Straßenverkehr.",
+      "antwort": "Geschwindigkeitsüberschreitung, Rotlichtverstoß.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wer haftet bei einem Unfall mit dem Taxi?",
+      "antwort": "In der Regel der Fahrzeughalter bzw. Unternehmer (bei Verschulden auch der Fahrer).",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie verhält man sich an einem Fußgängerüberweg?",
+      "antwort": "Anhalten und Fußgänger Vorrang gewähren.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist bei Nebel im Straßenverkehr zu beachten?",
+      "antwort": "Geschwindigkeit anpassen, Licht einschalten, Abstand erhöhen.",
+      "punkte": 2
+    },
+    {
+      "frage": "Darf ein Taxi in einer Einbahnstraße wenden?",
+      "antwort": "Nein, das ist verboten.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Der Fahrer darf während der Fahrt Getränke zu sich nehmen.",
+      "antwort": "Wahr, sofern er nicht abgelenkt wird und die Verkehrssicherheit nicht gefährdet ist.",
+      "punkte": 1
+    },
+    {
+      "frage": "Nennen Sie eine Maßnahme zur Unfallverhütung im Straßenverkehr.",
+      "antwort": "Vorausschauendes Fahren, regelmäßige Pausen.",
+      "punkte": 2
+    }
+  ]
+}
+{
+  "caseText": "Ein Taxiunternehmen betreibt zwei Fahrzeuge. Fixkosten pro Fahrzeug/Monat: Leasing 350 €, Versicherung 82 €, Steuer 27 €, Wartung 53 €. Variable Kosten: 0,19 €/km. Beide Fahrzeuge fahren zusammen jährlich 62.400 km. Jahresumsatz: 63.000 €, Lohnkosten: 15.800 €, Umsatzsteuerpflicht 7 %.",
+  "tasks": [
+    {
+      "frage": "Wie hoch sind die gesamten jährlichen Fixkosten für beide Fahrzeuge?",
+      "richtigeAntwort": "12.576",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch sind die jährlichen variablen Kosten?",
+      "richtigeAntwort": "11.856",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die gesamten Betriebskosten (Fix + variabel + Lohn) pro Jahr?",
+      "richtigeAntwort": "40.232",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Jahresumsatz?",
+      "richtigeAntwort": "4.410",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist der Jahresgewinn nach Kosten und Steuer?",
+      "richtigeAntwort": "18.358",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie viele Kilometer fahren beide Fahrzeuge zusammen pro Jahr?",
+      "richtigeAntwort": "62.400",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch sind die durchschnittlichen Betriebskosten pro Kilometer? (2 Dezimalstellen)",
+      "richtigeAntwort": "0,65",
+      "punkte": 2,
+      "dezimalstellen": 2
+    },
+    {
+      "frage": "Wie hoch ist der Nettoerlös aus einer Bruttofahrt von 72 € (7 % USt)? (2 Dezimalstellen)",
+      "richtigeAntwort": "67,29",
+      "punkte": 2,
+      "dezimalstellen": 2
+    },
+    {
+      "frage": "Wie viele Fahrten à 21 € sind monatlich nötig, um die monatlichen Fixkosten zu decken?",
+      "richtigeAntwort": "30",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die gesamten Leasingkosten pro Jahr für beide Fahrzeuge?",
+      "richtigeAntwort": "8.400",
+      "punkte": 1
+    }
+  ]
+}
+{
+  "caseText": "Ein Mietwagenunternehmen betreibt ein Fahrzeug. Monatliche Fixkosten und Kostenstruktur:\n\n| Kostenart         | Betrag pro Monat |\n|-------------------|-----------------|\n| Leasing           | 360 €           |\n| Versicherung      | 77 €            |\n| Steuer            | 28 €            |\n| Wartung           | 49 €            |\n| Variable Kosten/km| 0,18 €          |\n\nMonatlich werden 2.700 km gefahren. Lohnkosten (Jahr): 13.900 €, Jahresumsatz: 35.400 €, USt 7 %.",
+  "tasks": [
+    {
+      "frage": "Wie hoch sind die jährlichen Fixkosten laut Tabelle?",
+      "richtigeAntwort": "6.168",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch sind die variablen Kosten pro Jahr?",
+      "richtigeAntwort": "5.832",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die gesamten Betriebskosten (Fix + variabel + Lohn) pro Jahr?",
+      "richtigeAntwort": "25.900",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Jahresumsatz?",
+      "richtigeAntwort": "2.478",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist der Jahresgewinn nach Kosten und Steuer?",
+      "richtigeAntwort": "7.022",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie viele Kilometer wird im Jahr gefahren?",
+      "richtigeAntwort": "32.400",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch sind die durchschnittlichen Betriebskosten pro Kilometer? (2 Dezimalstellen)",
+      "richtigeAntwort": "0,80",
+      "punkte": 2,
+      "dezimalstellen": 2
+    },
+    {
+      "frage": "Wie hoch ist der Nettoerlös aus einer Bruttofahrt von 48 € (7 % USt)? (2 Dezimalstellen)",
+      "richtigeAntwort": "44,86",
+      "punkte": 2,
+      "dezimalstellen": 2
+    }
+  ]
+}
+{
+  "caseText": "Das Unternehmen betreibt 3 Taxis. Die jährlichen Fixkosten und Streckenleistungen pro Fahrzeug sind in der Tabelle dargestellt:\n\n| Fahrzeug | Leasing | Versicherung | Steuer | Wartung | Jahres-km | Variable Kosten/km |\n|----------|---------|--------------|--------|---------|-----------|-------------------|\n| Taxi 1   | 4.100 € | 980 €        | 320 €  | 620 €   | 29.000    | 0,18 €            |\n| Taxi 2   | 4.200 € | 950 €        | 310 €  | 600 €   | 28.500    | 0,19 €            |\n| Taxi 3   | 4.250 € | 970 €        | 315 €  | 650 €   | 30.100    | 0,18 €            |\n\nGesamter Jahresumsatz: 98.900 €. Lohnkosten: 21.700 €, USt 7 %.",
+  "tasks": [
+    {
+      "frage": "Wie hoch sind die gesamten jährlichen Fixkosten für alle Fahrzeuge zusammen?",
+      "richtigeAntwort": "17.065",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die jährlichen variablen Gesamtkosten für alle Fahrzeuge zusammen?",
+      "richtigeAntwort": "16.453",
+      "punkte": 3
+    },
+    {
+      "frage": "Wie hoch sind die gesamten Betriebskosten (Fix + variabel + Lohn) pro Jahr?",
+      "richtigeAntwort": "55.218",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Jahresumsatz?",
+      "richtigeAntwort": "6.923",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist der Jahresgewinn nach Kosten und Steuer?",
+      "richtigeAntwort": "36.759",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie viele Kilometer fahren alle Fahrzeuge gemeinsam im Jahr?",
+      "richtigeAntwort": "87.600",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch sind die durchschnittlichen Betriebskosten pro Kilometer? (2 Dezimalstellen)",
+      "richtigeAntwort": "0,63",
+      "punkte": 2,
+      "dezimalstellen": 2
+    }
+  ]
+}
+{
+  "caseText": "Ein Taxiunternehmen nutzt zwei Fahrzeuge. Fixkosten je Fahrzeug/Monat: Leasing 370 €, Versicherung 84 €, Steuer 26 €, Wartung 54 €. Durchschnittliche Monats-km pro Fahrzeug: 2.600 km. Variable Kosten: 0,17 €/km. Jahresumsatz: 60.800 €, Lohnkosten: 15.900 €, Umsatzsteuerpflicht 7 %.",
+  "tasks": [
+    {
+      "frage": "Wie hoch sind die jährlichen Fixkosten für beide Fahrzeuge?",
+      "richtigeAntwort": "12.528",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch sind die jährlichen variablen Kosten für beide Fahrzeuge?",
+      "richtigeAntwort": "10.608",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die gesamten Betriebskosten (Fix + variabel + Lohn) pro Jahr?",
+      "richtigeAntwort": "39.036",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Jahresumsatz?",
+      "richtigeAntwort": "4.256",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist der Gewinn nach Kosten und Steuer?",
+      "richtigeAntwort": "17.508",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie viele Kilometer werden mit beiden Fahrzeugen zusammen im Jahr gefahren?",
+      "richtigeAntwort": "62.400",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch sind die durchschnittlichen Betriebskosten pro Kilometer? (2 Dezimalstellen)",
+      "richtigeAntwort": "0,63",
+      "punkte": 2,
+      "dezimalstellen": 2
+    },
+    {
+      "frage": "Wie hoch ist der Nettoerlös aus einer Bruttofahrt von 85 € (7 % USt)? (2 Dezimalstellen)",
+      "richtigeAntwort": "79,44",
+      "punkte": 2,
+      "dezimalstellen": 2
+    }
+  ]
+}
+{
+  "caseText": "Ein Mietwagenunternehmen mit folgenden Jahreswerten:\n\n| Kostenart            | Betrag (€) |\n|----------------------|------------|\n| Leasing              | 4.440      |\n| Versicherung         | 980        |\n| Steuer               | 325        |\n| Wartung              | 670        |\n| Variable Kosten/km   | 0,19       |\n| Jahres-km            | 28.000     |\n| Lohnkosten           | 11.400     |\n| Umsatz               | 37.700     |\n\nUmsatzsteuerpflicht: 7 %.",
+  "tasks": [
+    {
+      "frage": "Wie hoch sind die jährlichen Fixkosten laut Tabelle?",
+      "richtigeAntwort": "6.415",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch sind die jährlichen variablen Kosten?",
+      "richtigeAntwort": "5.320",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche der oben genannten Kosten sind KEINE Fixkosten?",
+      "richtigeAntwort": "Variable Kosten/km, Lohnkosten",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die Gesamtkosten (Fix + variabel + Lohn)?",
+      "richtigeAntwort": "23.135",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Umsatz?",
+      "richtigeAntwort": "2.639",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist der Jahresgewinn nach Kosten und Steuer?",
+      "richtigeAntwort": "11.926",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die durchschnittlichen Betriebskosten pro Kilometer? (2 Dezimalstellen)",
+      "richtigeAntwort": "0,83",
+      "punkte": 2,
+      "dezimalstellen": 2
+    }
+  ]
+}
+{
+  "caseText": "Ein Taxiunternehmen zahlt pro Jahr folgende Personalkosten:\n\n| Position      | Betrag (€) |\n|---------------|------------|\n| Löhne         | 13.400     |\n| Sozialabgaben | 3.100      |\n| Unfallvers.   | 400        |\n\nWeitere Kosten: Jahresfixkosten (alle Positionen zusammen): 7.800 €, variable Kosten: 5.900 €, Jahresumsatz: 31.500 €, Umsatzsteuerpflicht 7 %.",
+  "tasks": [
+    {
+      "frage": "Wie hoch sind die gesamten Lohnnebenkosten?",
+      "richtigeAntwort": "3.500",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch sind die gesamten Lohnkosten pro Jahr (inkl. Lohnnebenkosten)?",
+      "richtigeAntwort": "16.900",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die Gesamtkosten pro Jahr (Fix + variabel + Lohn)?",
+      "richtigeAntwort": "30.600",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Umsatz?",
+      "richtigeAntwort": "2.066",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist der Jahresgewinn nach Kosten und Steuer?",
+      "richtigeAntwort": "832",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die durchschnittlichen Betriebskosten pro Kilometer, wenn 28.800 km/Jahr gefahren werden? (2 Dezimalstellen)",
+      "richtigeAntwort": "1,06",
+      "punkte": 2,
+      "dezimalstellen": 2
+    }
+  ]
+}
+{
+  "caseText": "Das Unternehmen fährt jährlich 25.000 km. Fahrpreis pro km: 1,15 €, variable Kosten/km: 0,18 €, Fixkosten/Jahr: 6.400 €, Trinkgelder: 820 € (steuerfrei). Lohnkosten: 10.800 €, Umsatzsteuerpflicht 7 %.",
+  "tasks": [
+    {
+      "frage": "Wie hoch ist der jährliche Umsatz aus Fahrpreisen?",
+      "richtigeAntwort": "28.750",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Fahrpreisumsatz?",
+      "richtigeAntwort": "2.013",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die Gesamtkosten (Fix + variabel + Lohn)?",
+      "richtigeAntwort": "21.950",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist der Gewinn inkl. steuerfreiem Trinkgeld?",
+      "richtigeAntwort": "7.620",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die durchschnittlichen Betriebskosten pro Kilometer? (2 Dezimalstellen)",
+      "richtigeAntwort": "0,88",
+      "punkte": 2,
+      "dezimalstellen": 2
+    },
+    {
+      "frage": "Wie viel beträgt der Nettoerlös aus einer Bruttofahrt von 54 € (7 % USt)? (2 Dezimalstellen)",
+      "richtigeAntwort": "50,47",
+      "punkte": 2,
+      "dezimalstellen": 2
+    }
+  ]
+}
+{
+  "caseText": "Ein Taxi hat einen Unfall: Reparaturkosten 2.200 €, davon übernimmt die Versicherung 1.600 €. Selbstbeteiligung: 600 €. Im selben Monat fallen an: Leasing 380 €, Versicherung 81 €, Steuer 30 €, Wartung 130 €, Benzinkosten: 580 €, variable Kosten/km: 0,19 €, gefahrene Monats-km: 3.100. Im Monat wurden 3.400 € Umsatz erzielt, Umsatzsteuerpflicht 7 %.",
+  "tasks": [
+    {
+      "frage": "Wie hoch ist der tatsächliche Aufwand für die Reparatur nach Versicherungserstattung?",
+      "richtigeAntwort": "600",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die Fixkosten (exkl. Reparatur) im Monat?",
+      "richtigeAntwort": "491",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die variablen Kosten für den Monat?",
+      "richtigeAntwort": "589",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die Gesamtkosten des Monats inkl. Reparatur?",
+      "richtigeAntwort": "1.680",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Monatsumsatz?",
+      "richtigeAntwort": "223",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist der Gewinn im Monat nach Kosten und Umsatzsteuer?",
+      "richtigeAntwort": "1.497",
+      "punkte": 3
+    },
+    {
+      "frage": "Wie viel Prozent der Reparaturkosten hat die Versicherung übernommen? (1 Dezimalstelle)",
+      "richtigeAntwort": "72,7",
+      "punkte": 2,
+      "dezimalstellen": 1
+    },
+    {
+      "frage": "Wie hoch sind die durchschnittlichen Betriebskosten pro Kilometer? (2 Dezimalstellen)",
+      "richtigeAntwort": "0,54",
+      "punkte": 2,
+      "dezimalstellen": 2
+    }
+  ]
+}
+{
+  "caseText": "Ein Unternehmen kauft ein Fahrzeug für 22.000 € (Netto), Nutzungsdauer 5 Jahre (lineare Abschreibung). Lohnkosten: 14.600 €/Jahr. Sozialabgaben: 3.200 €/Jahr. Fixkosten pro Jahr (außer Lohn): 7.700 €. Variable Kosten: 6.200 €. Jahresumsatz: 40.800 €, Umsatzsteuerpflicht 7 %. Ein Großkunde zahlt eine Rechnung von 5.000 € (brutto) mit 2 % Skonto.",
+  "tasks": [
+    {
+      "frage": "Wie hoch ist der jährliche Abschreibungsbetrag für das Fahrzeug?",
+      "richtigeAntwort": "4.400",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die gesamten Personalkosten pro Jahr?",
+      "richtigeAntwort": "17.800",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die Gesamtkosten (Abschreibung, Fix, variabel, Personal)?",
+      "richtigeAntwort": "36.100",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Jahresumsatz?",
+      "richtigeAntwort": "2.678",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist der Gewinn nach Kosten und Umsatzsteuer?",
+      "richtigeAntwort": "2.022",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist der Skontobetrag auf die Bruttorechnung von 5.000 € bei 2 % Skonto?",
+      "richtigeAntwort": "100",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch ist der Rechnungsbetrag nach Abzug von Skonto?",
+      "richtigeAntwort": "4.900",
+      "punkte": 2
+    }
+  ]
+}
+{
+  "caseText": "Ein Unternehmen muss 33.000 km/Jahr fahren. Fixkosten: 6.900 €. Variable Kosten: 0,17 €/km. Jährlicher Kraftstoffanteil: 4.100 €, Wartung: 780 €, Lohnkosten: 11.800 €. Wegen häufiger Standzeiten (Motor läuft) entstehen 900 € Extrakosten. Jahresumsatz: 32.000 €, Umsatzsteuerpflicht 7 %.",
+  "tasks": [
+    {
+      "frage": "Wie hoch sind die gesamten variablen Kosten?",
+      "richtigeAntwort": "5.610",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die Gesamtkosten inkl. Fix, variabel, Lohn und Standzeit-Mehrkosten?",
+      "richtigeAntwort": "25.990",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist der Kraftstoffanteil an den variablen Kosten in Prozent? (1 Dezimalstelle)",
+      "richtigeAntwort": "73,1",
+      "punkte": 2,
+      "dezimalstellen": 1
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Jahresumsatz?",
+      "richtigeAntwort": "2.096",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist der Gewinn nach Kosten und Umsatzsteuer?",
+      "richtigeAntwort": "3.914",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie viel km pro Jahr entsprechen durchschnittlich 2.750 km pro Monat?",
+      "richtigeAntwort": "33.000",
+      "punkte": 1
+    },
+    {
+      "frage": "Was ist der größte Kostenblock des Unternehmens?",
+      "richtigeAntwort": "Lohnkosten",
+      "punkte": 1
+    }
+  ]
+}
+{
+  "caseText": "Das Taxiunternehmen fährt mit einem Fahrzeug. Fixkosten/Monat: Leasing 350 €, Versicherung 81 €, Steuer 27 €, Wartung 50 €. Jährliche Fahrleistung: 36.000 km, variable Kosten: 0,18 €/km. Im Juni 2021 bleibt ein Fahrgast eine Rechnung von 70 € schuldig. Für Mai 2023 ist eine Lohnabrechnung verspätet. Im März 2024 wird eine Betriebsprüfung angekündigt. Lohnkosten/Jahr: 12.600 €, Umsatz: 38.800 €, USt 7 %.",
+  "tasks": [
+    {
+      "frage": "Wie hoch sind die jährlichen Fixkosten?",
+      "richtigeAntwort": "6.096",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch sind die jährlichen variablen Kosten?",
+      "richtigeAntwort": "6.480",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die gesamten Betriebskosten (Fix + variabel + Lohn)?",
+      "richtigeAntwort": "25.176",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Jahresumsatz?",
+      "richtigeAntwort": "2.716",
+      "punkte": 2
+    },
+    {
+      "frage": "Wann verjährt der Anspruch auf die offene Fahrt vom Juni 2021 (regulär, Stand 2024)?",
+      "richtigeAntwort": "31.12.2024",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie lange muss das Kassenbuch aufbewahrt werden?",
+      "richtigeAntwort": "10 Jahre",
+      "punkte": 1
+    },
+    {
+      "frage": "Wer haftet bei fehlender Dokumentation der Lohnabrechnung?",
+      "richtigeAntwort": "Der Unternehmer",
+      "punkte": 2
+    },
+    {
+      "frage": "Was droht bei Verstoß gegen die Betriebspflicht laut Betriebsprüfung?",
+      "richtigeAntwort": "Bußgeld",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die durchschnittlichen Betriebskosten pro Kilometer? (2 Dezimalstellen)",
+      "richtigeAntwort": "0,70",
+      "punkte": 2,
+      "dezimalstellen": 2
+    }
+  ]
+}
+{
+  "caseText": "Das Unternehmen fährt mit zwei Fahrzeugen. Fixkosten/Monat/Fahrzeug: Leasing 360 €, Versicherung 79 €, Steuer 28 €, Wartung 54 €. Variable Kosten: 0,17 €/km. Beide zusammen: 63.600 km/Jahr. Lohnkosten/Jahr: 16.200 €. Im Januar gibt es einen Unfall (Schaden 2.100 €, Versicherung übernimmt 1.500 €, Selbstbeteiligung 600 €). Im März zahlt ein Kunde eine 4.200 €-Rechnung (brutto) mit 2 % Skonto. Umsatz: 62.700 €, USt 7 %. Die Bilanz wird verspätet abgegeben.",
+  "tasks": [
+    {
+      "frage": "Wie hoch sind die jährlichen Fixkosten für beide Fahrzeuge?",
+      "richtigeAntwort": "12.624",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch sind die jährlichen variablen Kosten?",
+      "richtigeAntwort": "10.812",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Jahresumsatz?",
+      "richtigeAntwort": "4.389",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Selbstbeteiligung am Unfallschaden?",
+      "richtigeAntwort": "600",
+      "punkte": 1
+    },
+    {
+      "frage": "Wer haftet, wenn der Fahrer grob fahrlässig handelt?",
+      "richtigeAntwort": "Der Fahrer (ggf. auch Unternehmer)",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist der Skontobetrag auf die Bruttorechnung von 4.200 € bei 2 % Skonto?",
+      "richtigeAntwort": "84",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie lange ist die Aufbewahrungsfrist für Bilanzen?",
+      "richtigeAntwort": "10 Jahre",
+      "punkte": 2
+    },
+    {
+      "frage": "Was droht bei verspäteter Bilanzabgabe?",
+      "richtigeAntwort": "Steuerschätzung, Bußgeld",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die durchschnittlichen Betriebskosten pro Kilometer? (2 Dezimalstellen)",
+      "richtigeAntwort": "0,62",
+      "punkte": 2,
+      "dezimalstellen": 2
+    }
+  ]
+}
+{
+  "caseText": "Ein Taxiunternehmen speichert Kundendaten auf einem privaten USB-Stick, die Quittungsbelege werden nicht geordnet abgelegt. Im Mai 2022 wurde eine hohe Einnahme versehentlich nicht im Kassenbuch erfasst. Im Oktober 2023 kommt eine Betriebsprüfung. Umsatz: 41.300 €, USt 7 %.",
+  "tasks": [
+    {
+      "frage": "Welche Pflicht wird verletzt, wenn Kundendaten privat gespeichert werden?",
+      "richtigeAntwort": "Datenschutzpflicht",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie muss die Einnahme aus Mai 2022 nacherfasst werden?",
+      "richtigeAntwort": "Korrekte Nachbuchung im Kassenbuch",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie lange ist die Aufbewahrungsfrist für Quittungsbelege?",
+      "richtigeAntwort": "10 Jahre",
+      "punkte": 1
+    },
+    {
+      "frage": "Was droht bei Verstoß gegen die Dokumentationspflicht?",
+      "richtigeAntwort": "Bußgeld, Steuerschätzung",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Umsatz?",
+      "richtigeAntwort": "2.891",
+      "punkte": 2
+    },
+    {
+      "frage": "Wann verjährt eine Steuerschuld aus Mai 2022? (regulär, Stand 2024)",
+      "richtigeAntwort": "31.12.2026",
+      "punkte": 2
+    },
+    {
+      "frage": "Wer haftet bei fehlerhafter Dokumentation?",
+      "richtigeAntwort": "Der Unternehmer",
+      "punkte": 2
+    },
+    {
+      "frage": "Was droht bei Verstoß gegen den Datenschutz?",
+      "richtigeAntwort": "Bußgeld",
+      "punkte": 2
+    }
+  ]
+}
+{
+  "caseText": "Der Fahrer verursacht einen Unfall wegen Handybenutzung. Reparaturkosten 3.200 €, Versicherung übernimmt 2.400 €, Selbstbeteiligung 800 €. Monatsfixkosten: 570 €. Variable Kosten: 0,18 €/km, 3.000 km/Monat. Lohn: 1.150 €/Monat. Umsatz 4.000 €/Monat, USt 7 %. Im Januar wird eine Betriebspflicht-Verletzung festgestellt.",
+  "tasks": [
+    {
+      "frage": "Wer haftet für den Schaden bei Handybenutzung am Steuer?",
+      "richtigeAntwort": "Der Fahrer (bei grober Fahrlässigkeit)",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Selbstbeteiligung an der Reparatur?",
+      "richtigeAntwort": "800",
+      "punkte": 1
+    },
+    {
+      "frage": "Was droht bei Verletzung der Betriebspflicht?",
+      "richtigeAntwort": "Bußgeld, ggf. Entzug der Genehmigung",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die monatlichen variablen Kosten?",
+      "richtigeAntwort": "540",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die monatlichen Gesamtkosten (Fix + variabel + Lohn)?",
+      "richtigeAntwort": "2.260",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Monatsumsatz?",
+      "richtigeAntwort": "280",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie lange müssen Unfallprotokolle aufbewahrt werden?",
+      "richtigeAntwort": "10 Jahre",
+      "punkte": 1
+    },
+    {
+      "frage": "Wann verjährt ein Zahlungsanspruch aus Januar 2022?",
+      "richtigeAntwort": "31.12.2025",
+      "punkte": 2
+    }
+  ]
+}
+{
+  "caseText": "Das Unternehmen betreibt drei Taxis. Monatsfixkosten pro Fahrzeug: Leasing 390 €, Versicherung 89 €, Steuer 34 €, Wartung 58 €. Jahres-km gesamt: 84.000. Variable Kosten/km: 0,18 €. Lohn/Jahr: 24.300 €. Im Februar 2021 ist ein Unfall (Kosten: 4.300 €, Versicherung: 3.000 €, Selbstbeteiligung: 1.300 €). Im März 2022 fehlt die Lohnabrechnung, Bilanz 2023 wird zu spät abgegeben. Umsatz 97.400 €, USt 7 %.",
+  "tasks": [
+    {
+      "frage": "Wie hoch sind die jährlichen Fixkosten für alle Fahrzeuge?",
+      "richtigeAntwort": "20.304",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die jährlichen variablen Kosten?",
+      "richtigeAntwort": "15.120",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die Gesamtkosten pro Jahr (Fix + variabel + Lohn)?",
+      "richtigeAntwort": "59.724",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Umsatz?",
+      "richtigeAntwort": "6.818",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Selbstbeteiligung am Unfallschaden?",
+      "richtigeAntwort": "1.300",
+      "punkte": 1
+    },
+    {
+      "frage": "Wer haftet bei fehlender Lohnabrechnung?",
+      "richtigeAntwort": "Der Unternehmer",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie lange müssen Bilanzen aufbewahrt werden?",
+      "richtigeAntwort": "10 Jahre",
+      "punkte": 2
+    },
+    {
+      "frage": "Was droht bei verspäteter Bilanzabgabe?",
+      "richtigeAntwort": "Steuerschätzung, Bußgeld",
+      "punkte": 2
+    },
+    {
+      "frage": "Wann verjährt ein Unfallanspruch aus Februar 2021? (regulär, Stand 2024)",
+      "richtigeAntwort": "31.12.2024",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die durchschnittlichen Betriebskosten pro Kilometer? (2 Dezimalstellen)",
+      "richtigeAntwort": "0,71",
+      "punkte": 2,
+      "dezimalstellen": 2
+    }
+  ]
+}
+{
+  "caseText": "Ein Taxiunternehmen fährt pro Monat 3.400 km. Pro km beträgt der Fahrpreis laut Taxameter 1,35 €. Variable Kosten: 0,19 €/km. Fixkosten: 610 €/Monat. Umsatzsteuerpflicht: 7 %. Ein Fahrgast bezahlt eine Fahrt bar (27 €), ein anderer per Rechnung (42 €, 2 % Skonto). Lohnkosten: 14.800 €/Jahr. Das Kassenbuch wird digital geführt. Ab 2024 gilt eine neue Umweltzone mit Fahrverbot für alte Diesel.",
+  "tasks": [
+    {
+      "frage": "Wie hoch ist der Monatsumsatz aus Fahrpreisen?",
+      "richtigeAntwort": "4.590",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch sind die variablen Kosten pro Monat?",
+      "richtigeAntwort": "646",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Monatsumsatz?",
+      "richtigeAntwort": "321",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie viel Skonto zieht der Fahrgast bei 42 € Bruttorechnung (2 %) ab?",
+      "richtigeAntwort": "0,84",
+      "punkte": 1,
+      "dezimalstellen": 2
+    },
+    {
+      "frage": "Wie muss eine Bareinnahme von 27 € im Kassenbuch dokumentiert werden?",
+      "richtigeAntwort": "Als Einnahme, Datum, Belegnummer",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist beim Fahren in der neuen Umweltzone ab 2024 zu beachten?",
+      "richtigeAntwort": "Nur Fahrzeuge mit Umweltplakette erlaubt",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die durchschnittlichen Betriebskosten pro Kilometer? (2 Dezimalstellen)",
+      "richtigeAntwort": "0,37",
+      "punkte": 2,
+      "dezimalstellen": 2
+    },
+    {
+      "frage": "Wer haftet bei Fahren ohne Umweltplakette?",
+      "richtigeAntwort": "Fahrer und Unternehmer",
+      "punkte": 2
+    }
+  ]
+}
+{
+  "caseText": "Ein Unternehmen least ein Taxi für 410 €/Monat. Fixkosten sonst: Versicherung 93 €, Steuer 29 €, Wartung 57 €, variable Kosten: 0,19 €/km, Monatsfahrleistung: 2.900 km. Lohn: 1.350 €/Monat. Im Juli 2024 ist der Fahrer 12 Tage krank (Lohnfortzahlung). Bilanz 2023 wird im Juli 2024 eingereicht. Im Juni 2024 wird zu spät auf neue Versicherung gewechselt.",
+  "tasks": [
+    {
+      "frage": "Wie hoch sind die monatlichen Fixkosten insgesamt?",
+      "richtigeAntwort": "589",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch sind die variablen Kosten pro Monat?",
+      "richtigeAntwort": "551",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Lohnfortzahlung für 12 Tage Krankheit bei 1.350 € Monatslohn?",
+      "richtigeAntwort": "540",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie lange müssen Bilanzunterlagen aufbewahrt werden?",
+      "richtigeAntwort": "10 Jahre",
+      "punkte": 1
+    },
+    {
+      "frage": "Was droht bei verspätetem Versicherungswechsel?",
+      "richtigeAntwort": "Lücke im Versicherungsschutz, Bußgeld",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist eine Ordnungswidrigkeit laut PBefG?",
+      "richtigeAntwort": "Verstoß gegen Genehmigungs-, Betriebs- oder Versicherungspflicht",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die durchschnittlichen Betriebskosten pro Kilometer? (2 Dezimalstellen)",
+      "richtigeAntwort": "0,39",
+      "punkte": 2,
+      "dezimalstellen": 2
+    },
+    {
+      "frage": "Was muss bei Leasingrückgabe beachtet werden?",
+      "richtigeAntwort": "Fahrzeug muss mängelfrei und ordnungsgemäß zurückgegeben werden",
+      "punkte": 2
+    }
+  ]
+}
+{
+  "caseText": "Ein Mietwagen fährt einen Auftrag von Köln nach Brüssel. Nach Absetzen des Fahrgastes bleibt der Fahrer 2 Stunden in Belgien stehen (Standzeit: 28 €/h). Pro Jahr: 33.000 km, Fixkosten 6.900 €, variable Kosten: 0,19 €/km, Lohnkosten 12.000 €, Umsatzsteuerpflicht: 7 %. Fahrer nimmt irrtümlich neuen Fahrgast im Ausland mit.",
+  "tasks": [
+    {
+      "frage": "Wie hoch sind die Standzeitkosten für 2 Stunden?",
+      "richtigeAntwort": "56",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist bei Rückkehrpflicht nach Auslandsfahrt zu beachten?",
+      "richtigeAntwort": "Unverzügliche Rückfahrt zum Betriebssitz, keine neuen Fahrgäste im Ausland",
+      "punkte": 2
+    },
+    {
+      "frage": "Wer haftet bei Verstoß gegen die Rückkehrpflicht?",
+      "richtigeAntwort": "Der Unternehmer (ggf. Fahrer)",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Jahresumsatz von 38.000 €?",
+      "richtigeAntwort": "2.660",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die jährlichen variablen Kosten?",
+      "richtigeAntwort": "6.270",
+      "punkte": 2
+    },
+    {
+      "frage": "Was droht bei Verstoß gegen die Rückkehrpflicht?",
+      "richtigeAntwort": "Bußgeld, ggf. Entzug der Genehmigung",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die gesamten Betriebskosten pro Jahr (Fix + variabel + Lohn)?",
+      "richtigeAntwort": "25.170",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die durchschnittlichen Betriebskosten pro Kilometer? (2 Dezimalstellen)",
+      "richtigeAntwort": "0,76",
+      "punkte": 2,
+      "dezimalstellen": 2
+    }
+  ]
+}
+{
+  "caseText": "Das Unternehmen achtet auf Unfallverhütung: Tägliche Fahrzeugkontrolle, Notfallausrüstung, Erste-Hilfe-Kurs. Fixkosten: 6.300 €/Jahr, variable Kosten: 0,18 €/km, Jahresfahrleistung: 32.000 km. Lohnkosten: 10.600 €, Umsatzsteuerpflicht: 7 %. Fahrtenbuch und Bilanz werden digital geführt. Eine Rechnung (1.400 € brutto) wird mit 3 % Skonto bezahlt.",
+  "tasks": [
+    {
+      "frage": "Nennen Sie zwei Maßnahmen zur Unfallverhütung im Unternehmen.",
+      "richtigeAntwort": "Tägliche Fahrzeugkontrolle, Erste-Hilfe-Kurs",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die variablen Kosten im Jahr?",
+      "richtigeAntwort": "5.760",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie lange müssen Fahrtenbuch und Bilanz aufbewahrt werden?",
+      "richtigeAntwort": "10 Jahre",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Umsatz von 28.000 €?",
+      "richtigeAntwort": "1.960",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist der Skontobetrag auf 1.400 € bei 3 % Skonto?",
+      "richtigeAntwort": "42",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch sind die gesamten Kosten (Fix + variabel + Lohn)?",
+      "richtigeAntwort": "22.660",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die durchschnittlichen Betriebskosten pro Kilometer? (2 Dezimalstellen)",
+      "richtigeAntwort": "0,71",
+      "punkte": 2,
+      "dezimalstellen": 2
+    }
+  ]
+}
+{
+  "caseText": "Im Betrieb herrscht akuter Personalmangel. Zwei Fahrer fallen wegen Krankheit aus. Die Nachkalkulation ergibt 8 % mehr variable Kosten als geplant. Fixkosten: 8.400 €/Jahr, variable Kosten (tatsächlich): 7.020 €, geplante variable Kosten: 6.500 €, Lohnkosten: 15.200 €, Umsatz 42.000 €, USt 7 %. Ein Unfallbericht wurde nicht abgelegt.",
+  "tasks": [
+    {
+      "frage": "Wie hoch ist die Abweichung der variablen Kosten in Euro?",
+      "richtigeAntwort": "520",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist eine typische Maßnahme im Notfallmanagement?",
+      "richtigeAntwort": "Ersatzfahrer organisieren, Schichtpläne anpassen",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch sind die Gesamtkosten (Fix + variabel + Lohn)?",
+      "richtigeAntwort": "30.620",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie hoch ist die Umsatzsteuer (7 %) auf den Umsatz?",
+      "richtigeAntwort": "2.940",
+      "punkte": 2
+    },
+    {
+      "frage": "Was droht, wenn Unfallberichte nicht dokumentiert werden?",
+      "richtigeAntwort": "Bußgeld, Haftung des Unternehmers",
+      "punkte": 2
+    },
+    {
+      "frage": "Wer haftet bei fehlerhafter Dokumentation im Unternehmen?",
+      "richtigeAntwort": "Der Unternehmer",
+      "punkte": 2
+    }
+  ]
+}
