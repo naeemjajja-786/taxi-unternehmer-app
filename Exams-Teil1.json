@@ -1058,273 +1058,661 @@
         "punkte": 1
       },
       {
-        "frage": "Welche Aussage zu variablen Kosten ist FALSCH?",
+        "frage": "Welche Größe beeinflusst den Mindestfahrpreis im Taxi am meisten?",
         "optionen": [
-          "Sie bleiben bei Null Fahrleistung gleich hoch.",
-          "Sie steigen mit der Fahrleistung.",
-          "Sie betreffen z.B. Kraftstoff, Wartung.",
-          "Sie beeinflussen den Gewinn direkt."
+          "Fixkostenhöhe",
+          "Farbe des Fahrzeugs",
+          "Fahrgestellnummer",
+          "Betriebsdauer des Taxameters"
         ],
         "richtigeAntwort": 0,
-        "erklaerung": "Variable Kosten fallen nur bei Nutzung an.",
+        "erklaerung": "Hohe Fixkosten führen zu höherem Mindestfahrpreis.",
         "punkte": 1
       },
       {
-        "frage": "Wahr oder falsch: Abschreibungen beeinflussen die Steuerlast.",
+        "frage": "Wie ermittelt man den durchschnittlichen Kilometerpreis einer Taxiflotte?",
         "optionen": [
-          "Wahr",
-          "Falsch"
+          "Gesamtkosten/Jahr durch Gesamtkilometer/Jahr",
+          "Kilometerstand durch Fahreranzahl",
+          "Gesamtkosten durch Anzahl der Taxis",
+          "Einnahmen pro Tag durch gefahrene Kilometer"
         ],
         "richtigeAntwort": 0,
-        "erklaerung": "Abschreibungen mindern den zu versteuernden Gewinn.",
+        "erklaerung": "So berechnet man die Kosten pro km.",
+        "punkte": 2
+      },
+      {
+        "frage": "Wahr oder falsch: Der Unternehmer kann im Pflichtfahrgebiet jederzeit den Fahrpreis selbst bestimmen.",
+        "optionen": [
+          "Falsch",
+          "Wahr"
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Im Pflichtfahrgebiet gilt Tarifpflicht.",
         "punkte": 1
       },
       {
-        "frage": "Wie hoch ist der Break-Even-Umsatz bei Fixkosten von 12.000 €, variable Kosten 0,45 €/km und Fahrpreis 1,20 €/km?",
+        "frage": "Welche Aussage trifft zu: Im Kassenbuch müssen ...",
         "optionen": [
-          "21.818 km",
-          "10.000 km",
-          "14.400 km",
-          "12.000 km"
-        ],
-        "richtigeAntwort": 0,
-        "erklaerung": "(12.000)/(1,20-0,45)=16.000 km.",
-        "punkte": 2
-      },
-      {
-        "frage": "Was versteht man unter Liquidität?",
-        "optionen": [
-          "Fähigkeit, kurzfristige Zahlungsverpflichtungen zu erfüllen.",
-          "Summe aller Verbindlichkeiten.",
-          "Die jährliche Abschreibung.",
-          "Farbe des Taxis."
-        ],
-        "richtigeAntwort": 0,
-        "erklaerung": "Liquidität = Zahlungsfähigkeit.",
-        "punkte": 2
-      },
-      {
-        "frage": "Wahr oder falsch: Ein Taxiunternehmen muss jede Einnahme und Ausgabe im Kassenbuch erfassen.",
-        "optionen": [
-          "Wahr",
-          "Falsch"
+          "alle Bareinnahmen und Barausgaben fortlaufend eingetragen werden.",
+          "nur die Trinkgelder eingetragen werden.",
+          "keine Eintragungen gemacht werden.",
+          "nur elektronische Zahlungen eingetragen werden."
         ],
         "richtigeAntwort": 0,
         "erklaerung": "Vollständige Dokumentation ist Pflicht.",
         "punkte": 1
       },
       {
-        "frage": "Was zählt zu den Anschaffungskosten eines Fahrzeugs?",
+        "frage": "Was passiert bei falscher oder fehlender Kassenbuchführung?",
         "optionen": [
-          "Kaufpreis plus Nebenkosten (Überführung, Zulassung)",
-          "Nur der Nettopreis laut Händler",
-          "Nur die Versicherung",
-          "Nur die Steuer"
+          "Das Finanzamt kann eine Schätzung ansetzen und Bußgeld verhängen.",
+          "Der Unternehmer bekommt eine Urkunde.",
+          "Das Kassenbuch darf vernichtet werden.",
+          "Der Unternehmer bekommt eine Steuererleichterung."
         ],
         "richtigeAntwort": 0,
-        "erklaerung": "Anschaffungskosten = Preis + Nebenkosten.",
-        "punkte": 1
-      },
-      {
-        "frage": "Wer muss in Deutschland eine Einnahmen-Überschuss-Rechnung machen?",
-        "optionen": [
-          "Gewerbetreibende mit Einnahmen < 600.000 €/Jahr und Gewinn < 60.000 €.",
-          "Jeder Unternehmer.",
-          "Nur Fahrer.",
-          "Kapitalgesellschaften."
-        ],
-        "richtigeAntwort": 0,
-        "erklaerung": "EÜR ist für kleine Unternehmen erlaubt.",
+        "erklaerung": "Unordnung wird steuerlich hart bestraft.",
         "punkte": 2
       },
       {
-        "frage": "Was ist ein Geschäftsvorfall?",
+        "frage": "Ein Taxiunternehmen erzielt einen Umsatz von 50.000 €, die Gesamtkosten betragen 47.000 €. Wie hoch ist der Gewinn?",
         "optionen": [
-          "Jede Einnahme, Ausgabe, Zahlung oder Leistung im Unternehmen.",
-          "Nur Fahrten mit Fahrgästen.",
-          "Nur Privatfahrten.",
-          "Nur Versicherungsfälle."
+          "3.000 €",
+          "47.000 €",
+          "50.000 €",
+          "2.000 €"
         ],
         "richtigeAntwort": 0,
-        "erklaerung": "Alles, was das Vermögen verändert, ist ein Geschäftsvorfall.",
-        "punkte": 1
-      },
-      {
-        "frage": "Wie wird der Endbestand im Kassenbuch ermittelt?",
-        "optionen": [
-          "Anfangsbestand plus Einnahmen minus Ausgaben.",
-          "Nur die Summe der Einnahmen.",
-          "Der Wert der Fahrten.",
-          "Nur der Kassenbon."
-        ],
-        "richtigeAntwort": 0,
-        "erklaerung": "Endbestand = Anfang + Einnahmen - Ausgaben.",
-        "punkte": 1
-      },
-      {
-        "frage": "Welche Pflicht gilt für elektronische Kassen?",
-        "optionen": [
-          "Daten müssen jederzeit lesbar, unveränderbar und auswertbar sein.",
-          "Sie dürfen nach Belieben geändert werden.",
-          "Es besteht keine Pflicht.",
-          "Nur Bargeld zählt als Umsatz."
-        ],
-        "richtigeAntwort": 0,
-        "erklaerung": "Kassendaten müssen GoBD-konform sein.",
+        "erklaerung": "Gewinn = Umsatz – Gesamtkosten = 3.000 €.",
         "punkte": 2
       },
       {
-        "frage": "Wie oft muss die Umsatzsteuervoranmeldung in der Regel abgegeben werden?",
+        "frage": "Wie kann der Unternehmer seinen Gewinn erhöhen?",
         "optionen": [
-          "Monatlich",
-          "Vierteljährlich",
-          "Jährlich",
-          "Nur bei Aufforderung"
+          "Kosten senken oder Einnahmen steigern",
+          "Nur mehr Fahrten machen",
+          "Gar nichts tun",
+          "Kassenbuch nicht führen"
         ],
         "richtigeAntwort": 0,
-        "erklaerung": "Die meisten Unternehmer melden monatlich.",
+        "erklaerung": "Mehr Umsatz und weniger Kosten führen zu mehr Gewinn.",
         "punkte": 1
       },
       {
-        "frage": "Welche Steuern sind in einer Taxirechnung im Pflichtfahrgebiet enthalten?",
+        "frage": "Welche Aussage zu Verlust ist korrekt?",
         "optionen": [
-          "7 % Umsatzsteuer",
-          "19 % Umsatzsteuer",
-          "Keine Steuer",
-          "Nur Vorsteuer"
+          "Ein Verlust entsteht, wenn die Kosten die Erlöse übersteigen.",
+          "Verlust entsteht nur durch Steuern.",
+          "Verlust betrifft nur Fixkosten.",
+          "Verlust wird steuerfrei ausgeglichen."
         ],
         "richtigeAntwort": 0,
-        "erklaerung": "Im Pflichtfahrgebiet gilt 7 %.",
+        "erklaerung": "Mehr Kosten als Einnahmen = Verlust.",
         "punkte": 1
       },
       {
-        "frage": "Was muss auf einer steuerlich korrekten Rechnung stehen?",
-        "optionen": [
-          "Name, Anschrift, Steuernummer, Rechnungsnummer, Leistungsbeschreibung, Betrag, MwSt.",
-          "Nur der Fahrpreis",
-          "Das Tagesdatum",
-          "Die Telefonnummer des Kunden"
-        ],
-        "richtigeAntwort": 0,
-        "erklaerung": "Ohne diese Angaben keine Vorsteuer.",
-        "punkte": 2
-      },
-      {
-        "frage": "Was ist ein Restwert beim Leasing?",
-        "optionen": [
-          "Der erwartete Fahrzeugwert am Vertragsende.",
-          "Die Höhe der ersten Rate.",
-          "Der Bruttolohn des Fahrers.",
-          "Die Umsatzsteuer."
-        ],
-        "richtigeAntwort": 0,
-        "erklaerung": "Restwert = geplanter Wert nach Leasingende.",
-        "punkte": 1
-      },
-      {
-        "frage": "Wahr oder falsch: Leasing ist immer günstiger als ein Fahrzeugkauf.",
-        "optionen": [
-          "Falsch",
-          "Wahr"
-        ],
-        "richtigeAntwort": 0,
-        "erklaerung": "Leasing ist nicht immer günstiger, es hängt von vielen Faktoren ab.",
-        "punkte": 1
-      },
-      {
-        "frage": "Wie hoch ist der Skontobetrag bei 1,5 % Skonto auf 1.000 €?",
-        "optionen": [
-          "15 €",
-          "1,50 €",
-          "150 €",
-          "10 €"
-        ],
-        "richtigeAntwort": 0,
-        "erklaerung": "1,5 % von 1.000 € sind 15 €.",
-        "punkte": 1
-      },
-      {
-        "frage": "Wahr oder falsch: Skonto darf auch nach Ablauf der Zahlungsfrist abgezogen werden.",
-        "optionen": [
-          "Falsch",
-          "Wahr"
-        ],
-        "richtigeAntwort": 0,
-        "erklaerung": "Nur fristgerechte Zahlung berechtigt zu Skonto.",
-        "punkte": 1
-      },
-      {
-        "frage": "Wozu dient ein Kassensturz?",
-        "optionen": [
-          "Zur Überprüfung, ob der Ist-Bestand mit dem Soll-Bestand übereinstimmt.",
-          "Zur Berechnung der Steuer.",
-          "Zur Ermittlung des Bilanzgewinns.",
-          "Zur Festlegung des Fahrpreises."
-        ],
-        "richtigeAntwort": 0,
-        "erklaerung": "Kassensturz prüft Bargeld gegen Aufzeichnungen.",
-        "punkte": 1
-      },
-      {
-        "frage": "Wem muss die Lohnabrechnung ausgehändigt werden?",
-        "optionen": [
-          "Dem Arbeitnehmer",
-          "Dem Finanzamt",
-          "Dem Fahrgast",
-          "Dem Unternehmer"
-        ],
-        "richtigeAntwort": 0,
-        "erklaerung": "Jeder Arbeitnehmer erhält eine Lohnabrechnung.",
-        "punkte": 1
-      },
-      {
-        "frage": "Wie kann die Effektivität des Fahrers beurteilt werden?",
-        "optionen": [
-          "Durch den Umsatz je Schicht oder gefahrenen Kilometer.",
-          "Nur durch das Trinkgeld.",
-          "Durch die Farbe seines Fahrzeugs.",
-          "Durch seine Mitgliedschaft im Verband."
-        ],
-        "richtigeAntwort": 0,
-        "erklaerung": "Umsatz/Leistung misst Effizienz.",
-        "punkte": 2
-      },
-      {
-        "frage": "Was ist ein Jahresabschluss?",
-        "optionen": [
-          "Die Zusammenstellung aller Geschäftsdaten eines Jahres.",
-          "Nur die Auflistung der Fahrten.",
-          "Der letzte Lohnzettel im Jahr.",
-          "Die Steuer-ID."
-        ],
-        "richtigeAntwort": 0,
-        "erklaerung": "Jahresabschluss umfasst Bilanz und GuV.",
-        "punkte": 2
-      },
-      {
-        "frage": "Wahr oder falsch: Der Kassenbestand am Jahresende muss mit dem Kassenbuch übereinstimmen.",
+        "frage": "Wahr oder falsch: Auch bei Null Fahrleistung fallen Fixkosten an.",
         "optionen": [
           "Wahr",
           "Falsch"
         ],
         "richtigeAntwort": 0,
-        "erklaerung": "Jede Differenz gilt als Fehler!",
+        "erklaerung": "Fixkosten fallen immer an.",
         "punkte": 1
       },
       {
-        "frage": "Was versteht man unter 'Eigenkapital'?",
+        "frage": "Welche Faktoren haben KEINEN Einfluss auf den Gewinn?",
         "optionen": [
-          "Das vom Unternehmer selbst eingebrachte Kapital.",
-          "Ein geliehenes Darlehen.",
-          "Der Umsatz eines Monats.",
-          "Der Gewinn nach Steuern."
+          "Farbe des Taxis",
+          "Kostensenkung",
+          "Erhöhte Umsätze",
+          "Mehr Fahrgäste"
         ],
         "richtigeAntwort": 0,
-        "erklaerung": "Eigenkapital ist das eigene Vermögen.",
+        "erklaerung": "Die Farbe hat keinen wirtschaftlichen Einfluss.",
+        "punkte": 1
+      },
+      {
+        "frage": "Welche Angabe ist auf einer steuerlich anerkannten Rechnung NICHT zwingend?",
+        "optionen": [
+          "Farbe des Taxis",
+          "Rechnungsnummer",
+          "Leistungsdatum",
+          "Name und Anschrift des Leistenden"
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Farbe ist steuerlich nicht relevant.",
+        "punkte": 1
+      },
+      {
+        "frage": "Welche Aussage zu Belegen ist richtig?",
+        "optionen": [
+          "Jede Einnahme und Ausgabe muss belegbar sein.",
+          "Nur Ausgaben sind zu belegen.",
+          "Belege müssen sofort vernichtet werden.",
+          "Belege sind freiwillig."
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Alle Buchungen müssen belegt sein.",
+        "punkte": 1
+      },
+      {
+        "frage": "Wie lange müssen Rechnungen aufbewahrt werden?",
+        "optionen": [
+          "10 Jahre",
+          "2 Jahre",
+          "5 Jahre",
+          "1 Jahr"
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Auch Rechnungen: 10 Jahre!",
+        "punkte": 1
+      },
+      {
+        "frage": "Wer ist für die korrekte Rechnungsstellung verantwortlich?",
+        "optionen": [
+          "Der Unternehmer",
+          "Nur der Fahrer",
+          "Die Kunden",
+          "Das Finanzamt"
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Rechnungslegung ist Pflicht des Unternehmers.",
+        "punkte": 1
+      },
+      {
+        "frage": "Wahr oder falsch: Die Vorsteuer ist für Privatpersonen abziehbar.",
+        "optionen": [
+          "Falsch",
+          "Wahr"
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Nur Unternehmer dürfen Vorsteuer ziehen.",
+        "punkte": 1
+      },
+      {
+        "frage": "Wie reduziert der Unternehmer seine Umsatzsteuerschuld?",
+        "optionen": [
+          "Indem er möglichst viel Vorsteuer geltend macht.",
+          "Durch weniger Einnahmen.",
+          "Durch Verzicht auf Belege.",
+          "Nur durch Skontoabzug."
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Vorsteuer mindert die Zahllast.",
+        "punkte": 1
+      },
+      {
+        "frage": "Welche Aussage ist zur Kleinunternehmerregelung korrekt?",
+        "optionen": [
+          "Bis 22.000 € Umsatz/Jahr kann man umsatzsteuerfrei bleiben.",
+          "Sie gilt für alle Unternehmer.",
+          "Sie verpflichtet zur Umsatzsteuerabgabe.",
+          "Sie bezieht sich nur auf Fixkosten."
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Kleinunternehmer zahlen keine Umsatzsteuer (bei Antrag).",
+        "punkte": 2
+      },
+      {
+        "frage": "Was ist ein Darlehen?",
+        "optionen": [
+          "Ein geliehener Geldbetrag, der zurückgezahlt werden muss.",
+          "Ein geschenktes Geld.",
+          "Eine Reparaturrechnung.",
+          "Ein Versicherungsbeitrag."
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Darlehen ist eine Verbindlichkeit.",
+        "punkte": 1
+      },
+      {
+        "frage": "Wie werden Darlehen in der Bilanz ausgewiesen?",
+        "optionen": [
+          "Auf der Passivseite",
+          "Auf der Aktivseite",
+          "Als Einnahme",
+          "Gar nicht"
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Darlehen = Schulden = Passiva.",
+        "punkte": 1
+      },
+      {
+        "frage": "Was ist eine Abschreibung?",
+        "optionen": [
+          "Wertminderung von Anlagegütern über die Nutzungsdauer",
+          "Eine Gehaltszahlung",
+          "Ein Rabatt",
+          "Ein Versicherungsbetrag"
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Abschreibung = jährlicher Wertverlust.",
+        "punkte": 1
+      },
+      {
+        "frage": "Wie wirkt sich eine Abschreibung auf den Gewinn aus?",
+        "optionen": [
+          "Sie mindert den zu versteuernden Gewinn.",
+          "Sie erhöht den Gewinn.",
+          "Sie hat keinen Einfluss.",
+          "Sie ist steuerfrei."
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Abschreibung ist Aufwand.",
+        "punkte": 1
+      },
+      {
+        "frage": "Wahr oder falsch: Leasing führt zu einem Bilanzierungsobjekt beim Leasingnehmer.",
+        "optionen": [
+          "Falsch",
+          "Wahr"
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Im Operating Leasing bleibt das Objekt meist beim Leasinggeber.",
+        "punkte": 1
+      },
+      {
+        "frage": "Wie wirkt sich ein geleastes Fahrzeug auf die Kostenstruktur aus?",
+        "optionen": [
+          "Regelmäßige Leasingraten erhöhen die Fixkosten.",
+          "Es entstehen nur einmalige Kosten.",
+          "Leasing ist günstiger als Kauf in jedem Fall.",
+          "Leasing reduziert immer die variablen Kosten."
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Leasingraten erhöhen die Fixkosten.",
+        "punkte": 1
+      },
+      {
+        "frage": "Wie berechnet sich der Arbeitgeberanteil an Sozialversicherungen?",
+        "optionen": [
+          "Prozentualer Anteil vom Bruttolohn, gesetzlich festgelegt.",
+          "Fester monatlicher Betrag für alle.",
+          "Wird individuell mit jedem Fahrer ausgehandelt.",
+          "Nur bei Teilzeitkräften."
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Anteil ist gesetzlich vorgeschrieben (meist ca. 19–21 %).",
+        "punkte": 2
+      },
+      {
+        "frage": "Welche Lohnbestandteile zählen zu den Personalkosten?",
+        "optionen": [
+          "Bruttolohn, Arbeitgeberanteil SV, evtl. Zuschläge",
+          "Nur das Trinkgeld",
+          "Nur Sozialversicherung",
+          "Nur Prämien"
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Alle Bestandteile des Lohns und Nebenkosten zählen.",
+        "punkte": 1
+      },
+      {
+        "frage": "Wahr oder falsch: Auch Minijobber sind sozialversicherungspflichtig.",
+        "optionen": [
+          "Falsch",
+          "Wahr"
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Minijobber zahlen nur pauschale Abgaben.",
+        "punkte": 1
+      },
+      {
+        "frage": "Welche Wirkung hat Skonto auf die Liquidität des Unternehmens?",
+        "optionen": [
+          "Verbessert die Liquidität durch schnellen Zahlungseingang.",
+          "Schlechtere Liquidität.",
+          "Keine Auswirkung.",
+          "Skonto erhöht den Bilanzgewinn."
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Schnelle Zahlung bringt frühere Einnahmen.",
+        "punkte": 1
+      },
+      {
+        "frage": "Wie hoch ist der Zinsaufwand für ein Darlehen von 10.000 € bei 5 % p.a.?",
+        "optionen": [
+          "500 € jährlich",
+          "5 € monatlich",
+          "100 € jährlich",
+          "2.000 € jährlich"
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "5 % von 10.000 € sind 500 €.",
+        "punkte": 2
+      },
+      {
+        "frage": "Was ist eine Einnahmen-Überschuss-Rechnung (EÜR)?",
+        "optionen": [
+          "Vergleich von Einnahmen und Ausgaben, um Gewinn oder Verlust zu ermitteln.",
+          "Ein detailliertes Fahrtenbuch.",
+          "Das Kassenbuch.",
+          "Eine spezielle Form des Lohnzettels."
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "EÜR ist die einfache Gewinnermittlung für kleine Betriebe.",
+        "punkte": 1
+      },
+      {
+        "frage": "Wer ist verpflichtet, eine Bilanz zu erstellen?",
+        "optionen": [
+          "Kapitalgesellschaften und Gewerbetreibende mit Umsatz > 600.000 € oder Gewinn > 60.000 €.",
+          "Jeder, auch Privatpersonen.",
+          "Nur Fahrer mit mehr als 10 Jahren Erfahrung.",
+          "Nur Unternehmen mit Leasingfahrzeugen."
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Bestimmte Umsatz-/Gewinngrenzen und Kapitalgesellschaften bilanzieren.",
+        "punkte": 2
+      },
+      {
+        "frage": "Was versteht man unter Vorsteuerabzug?",
+        "optionen": [
+          "Erstattung der bei Einkäufen gezahlten Umsatzsteuer an das Unternehmen.",
+          "Abzug von Fixkosten vom Gewinn.",
+          "Rückerstattung der Kfz-Steuer.",
+          "Reduzierung des Lohns durch Skonto."
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Unternehmer können gezahlte Vorsteuer mit Umsatzsteuer verrechnen.",
+        "punkte": 2
+      },
+      {
+        "frage": "Wie wirken sich variable Kosten auf die Gewinnschwelle aus?",
+        "optionen": [
+          "Je höher, desto mehr Fahrleistung ist für den Break-Even nötig.",
+          "Sie haben keinen Einfluss.",
+          "Sie senken den Fixkostenanteil.",
+          "Sie wirken sich nur auf den Skonto aus."
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Höhere variable Kosten → höherer Mindestumsatz.",
+        "punkte": 1
+      },
+      {
+        "frage": "Was ist eine Einnahme im Sinne der Buchhaltung?",
+        "optionen": [
+          "Jeder Geldeingang, unabhängig von seiner Herkunft.",
+          "Nur Bargeld.",
+          "Nur Kreditkartenzahlungen.",
+          "Nur Zuschüsse von Behörden."
+        ],
+        "richtigeAntwort": 0,
+        "erklaerung": "Alle Geldeingänge gelten als Einnahmen.",
         "punkte": 1
       }
     ]
   },
+  [
+    {
+      "frage": "Welche Aussage zu variablen Kosten ist FALSCH?",
+      "optionen": [
+        "Sie bleiben bei Null Fahrleistung gleich hoch.",
+        "Sie steigen mit der Fahrleistung.",
+        "Sie betreffen z.B. Kraftstoff, Wartung.",
+        "Sie beeinflussen den Gewinn direkt."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Variable Kosten fallen nur bei Nutzung an.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wahr oder falsch: Abschreibungen beeinflussen die Steuerlast.",
+      "optionen": [
+        "Wahr",
+        "Falsch"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Abschreibungen mindern den zu versteuernden Gewinn.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch ist der Break-Even-Umsatz bei Fixkosten von 12.000 €, variable Kosten 0,45 €/km und Fahrpreis 1,20 €/km?",
+      "optionen": [
+        "21.818 km",
+        "10.000 km",
+        "14.400 km",
+        "12.000 km"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "(12.000)/(1,20-0,45)=16.000 km.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was versteht man unter Liquidität?",
+      "optionen": [
+        "Fähigkeit, kurzfristige Zahlungsverpflichtungen zu erfüllen.",
+        "Summe aller Verbindlichkeiten.",
+        "Die jährliche Abschreibung.",
+        "Farbe des Taxis."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Liquidität = Zahlungsfähigkeit.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Ein Taxiunternehmen muss jede Einnahme und Ausgabe im Kassenbuch erfassen.",
+      "optionen": [
+        "Wahr",
+        "Falsch"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Vollständige Dokumentation ist Pflicht.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was zählt zu den Anschaffungskosten eines Fahrzeugs?",
+      "optionen": [
+        "Kaufpreis plus Nebenkosten (Überführung, Zulassung)",
+        "Nur der Nettopreis laut Händler",
+        "Nur die Versicherung",
+        "Nur die Steuer"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Anschaffungskosten = Preis + Nebenkosten.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wer muss in Deutschland eine Einnahmen-Überschuss-Rechnung machen?",
+      "optionen": [
+        "Gewerbetreibende mit Einnahmen < 600.000 €/Jahr und Gewinn < 60.000 €.",
+        "Jeder Unternehmer.",
+        "Nur Fahrer.",
+        "Kapitalgesellschaften."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "EÜR ist für kleine Unternehmen erlaubt.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist ein Geschäftsvorfall?",
+      "optionen": [
+        "Jede Einnahme, Ausgabe, Zahlung oder Leistung im Unternehmen.",
+        "Nur Fahrten mit Fahrgästen.",
+        "Nur Privatfahrten.",
+        "Nur Versicherungsfälle."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Alles, was das Vermögen verändert, ist ein Geschäftsvorfall.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie wird der Endbestand im Kassenbuch ermittelt?",
+      "optionen": [
+        "Anfangsbestand plus Einnahmen minus Ausgaben.",
+        "Nur die Summe der Einnahmen.",
+        "Der Wert der Fahrten.",
+        "Nur der Kassenbon."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Endbestand = Anfang + Einnahmen - Ausgaben.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Pflicht gilt für elektronische Kassen?",
+      "optionen": [
+        "Daten müssen jederzeit lesbar, unveränderbar und auswertbar sein.",
+        "Sie dürfen nach Belieben geändert werden.",
+        "Es besteht keine Pflicht.",
+        "Nur Bargeld zählt als Umsatz."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Kassendaten müssen GoBD-konform sein.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie oft muss die Umsatzsteuervoranmeldung in der Regel abgegeben werden?",
+      "optionen": [
+        "Monatlich",
+        "Vierteljährlich",
+        "Jährlich",
+        "Nur bei Aufforderung"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Die meisten Unternehmer melden monatlich.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Steuern sind in einer Taxirechnung im Pflichtfahrgebiet enthalten?",
+      "optionen": [
+        "7 % Umsatzsteuer",
+        "19 % Umsatzsteuer",
+        "Keine Steuer",
+        "Nur Vorsteuer"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Im Pflichtfahrgebiet gilt 7 %.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was muss auf einer steuerlich korrekten Rechnung stehen?",
+      "optionen": [
+        "Name, Anschrift, Steuernummer, Rechnungsnummer, Leistungsbeschreibung, Betrag, MwSt.",
+        "Nur der Fahrpreis",
+        "Das Tagesdatum",
+        "Die Telefonnummer des Kunden"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Ohne diese Angaben keine Vorsteuer.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist ein Restwert beim Leasing?",
+      "optionen": [
+        "Der erwartete Fahrzeugwert am Vertragsende.",
+        "Die Höhe der ersten Rate.",
+        "Der Bruttolohn des Fahrers.",
+        "Die Umsatzsteuer."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Restwert = geplanter Wert nach Leasingende.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wahr oder falsch: Leasing ist immer günstiger als ein Fahrzeugkauf.",
+      "optionen": [
+        "Falsch",
+        "Wahr"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Leasing ist nicht immer günstiger, es hängt von vielen Faktoren ab.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie hoch ist der Skontobetrag bei 1,5 % Skonto auf 1.000 €?",
+      "optionen": [
+        "15 €",
+        "1,50 €",
+        "150 €",
+        "10 €"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "1,5 % von 1.000 € sind 15 €.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wahr oder falsch: Skonto darf auch nach Ablauf der Zahlungsfrist abgezogen werden.",
+      "optionen": [
+        "Falsch",
+        "Wahr"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Nur fristgerechte Zahlung berechtigt zu Skonto.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wozu dient ein Kassensturz?",
+      "optionen": [
+        "Zur Überprüfung, ob der Ist-Bestand mit dem Soll-Bestand übereinstimmt.",
+        "Zur Berechnung der Steuer.",
+        "Zur Ermittlung des Bilanzgewinns.",
+        "Zur Festlegung des Fahrpreises."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Kassensturz prüft Bargeld gegen Aufzeichnungen.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wem muss die Lohnabrechnung ausgehändigt werden?",
+      "optionen": [
+        "Dem Arbeitnehmer",
+        "Dem Finanzamt",
+        "Dem Fahrgast",
+        "Dem Unternehmer"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Jeder Arbeitnehmer erhält eine Lohnabrechnung.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie kann die Effektivität des Fahrers beurteilt werden?",
+      "optionen": [
+        "Durch den Umsatz je Schicht oder gefahrenen Kilometer.",
+        "Nur durch das Trinkgeld.",
+        "Durch die Farbe seines Fahrzeugs.",
+        "Durch seine Mitgliedschaft im Verband."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Umsatz/Leistung misst Effizienz.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist ein Jahresabschluss?",
+      "optionen": [
+        "Die Zusammenstellung aller Geschäftsdaten eines Jahres.",
+        "Nur die Auflistung der Fahrten.",
+        "Der letzte Lohnzettel im Jahr.",
+        "Die Steuer-ID."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Jahresabschluss umfasst Bilanz und GuV.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Der Kassenbestand am Jahresende muss mit dem Kassenbuch übereinstimmen.",
+      "optionen": [
+        "Wahr",
+        "Falsch"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Jede Differenz gilt als Fehler!",
+      "punkte": 1
+    },
+    {
+      "frage": "Was versteht man unter 'Eigenkapital'?",
+      "optionen": [
+        "Das vom Unternehmer selbst eingebrachte Kapital.",
+        "Ein geliehenes Darlehen.",
+        "Der Umsatz eines Monats.",
+        "Der Gewinn nach Steuern."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Eigenkapital ist das eigene Vermögen.",
+      "punkte": 1
+    }
+  ],
   {
     "Technischer Betrieb und Betriebsdurchführung": [
       {
