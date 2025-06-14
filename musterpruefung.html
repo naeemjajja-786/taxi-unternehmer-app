@@ -4,24 +4,33 @@
   <meta charset="UTF-8">
   <title>Musterprüfung – Taxi & Mietwagen Unternehmer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-  <h1>Musterprüfung</h1>
-  <div id="timer" style="font-size:1.18em;font-weight:500;margin:0.7rem 0;"></div>
-</header>
-<main id="muster-app">
-  <div id="exam-menu" class="main-menu">
-    <button id="start-teil1">Teil 1 starten</button>
-    <button id="start-teil2" disabled>Teil 2 (später)</button>
-  </div>
-  <div id="teil1-container" style="display:none"></div>
-  <button id="backBtn" class="back-btn" style="display:none;" onclick="goBackExam()">Zurück zum Prüfungsmenü</button>
-</main>
-<footer>
-  <p>&copy; 2025 Taxi/Mietwagen Unternehmer Lern-App</p>
-</footer>
-<script src="musterpruefung.js"></script>
+  <header>
+    <h1>Musterprüfung</h1>
+    <div id="timer" class="exam-timer" aria-live="polite"></div>
+  </header>
+
+  <main id="muster-app">
+    <!-- Menü: Teil 1 oder Teil 2 -->
+    <nav id="exam-menu" class="main-menu" aria-label="Prüfungsauswahl">
+      <button id="start-teil1" type="button" aria-controls="teil1-container">Teil 1 starten (Wissensfragen)</button>
+      <button id="start-teil2" type="button" aria-controls="teil2-container">Teil 2 starten (Fallstudien)</button>
+    </nav>
+
+    <!-- Teil 1: MC/Short-Answer -->
+    <section id="teil1-container" class="quiz-container" style="display:none" aria-live="polite" aria-label="Teil 1 Fragen"></section>
+    <!-- Teil 2: Fallstudien -->
+    <section id="teil2-container" class="fallstudien-container" style="display:none" aria-live="polite" aria-label="Teil 2 Fallstudien"></section>
+    <!-- Back Button -->
+    <button id="backBtn" class="back-btn" style="display:none;" type="button" onclick="goBackExam()" aria-label="Zurück zum Prüfungsmenü">Zurück zum Prüfungsmenü</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Taxi/Mietwagen Unternehmer Lern-App</p>
+  </footer>
+  <script src="musterpruefung.js"></script>
 </body>
 </html>
