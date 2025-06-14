@@ -814,3 +814,999 @@
     "punkte": 1
   }
 ]
+{
+  "Technischer Betrieb und Betriebsdurchführung": [
+    // BOKraft-Anforderungen
+    {
+      "frage": "Was regelt die BOKraft im Taxi- und Mietwagengewerbe?",
+      "optionen": [
+        "Betrieb und Ausrüstung von Kraftfahrunternehmen im Personenverkehr",
+        "Nur die Fahrpreise",
+        "Privatfahrten und deren Ausstattung",
+        "Versicherungsfragen"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Die BOKraft regelt Betrieb, Ausrüstung und technische Pflichten.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Pflicht ergibt sich aus der BOKraft für den Unternehmer?",
+      "optionen": [
+        "Sicherstellung der vorschriftsgemäßen Ausstattung und Wartung aller Fahrzeuge",
+        "Nur regelmäßige Anmeldung beim Verband",
+        "Der Unternehmer muss alle Fahrzeuge täglich selbst fahren",
+        "Nur Fahrgäste müssen überprüft werden"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Der Unternehmer ist für Wartung und Ausrüstung verantwortlich.",
+      "punkte": 1
+    },
+    // Fahrzeugausrüstung
+    {
+      "frage": "Welche Ausrüstung ist in jedem Taxi gesetzlich vorgeschrieben?",
+      "optionen": [
+        "Taxameter, Alarmanlage, Erste-Hilfe-Kasten",
+        "Kühlschrank",
+        "Wasserkocher",
+        "Rücksitzheizung"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Diese Ausrüstung ist Pflicht laut BOKraft.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was muss auf dem Dach eines Taxis angebracht sein?",
+      "optionen": [
+        "Ein beleuchtetes Taxischild",
+        "Ein Werbebanner",
+        "Ein Navigationssystem",
+        "Ein Antennensymbol"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Taxischild ist Pflicht laut BOKraft.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Mindestanzahl an Türen ist für ein Taxi vorgeschrieben?",
+      "optionen": [
+        "Mindestens zwei Türen auf der rechten Seite",
+        "Nur eine Fahrertür",
+        "Nur vier Türen insgesamt",
+        "Es gibt keine Vorschrift"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Mindestens zwei Türen rechts sind gesetzlich vorgeschrieben.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Sicherheitsausstattung ist in einem Taxi zwingend erforderlich?",
+      "optionen": [
+        "Sicherheitsgurte für alle Sitzplätze",
+        "Nur vorne Sicherheitsgurte",
+        "Helmpflicht für Fahrgäste",
+        "Keine speziellen Anforderungen"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Gurte für alle Plätze sind Pflicht.",
+      "punkte": 1
+    },
+    // Wartung & Fahrzeugsicherheit
+    {
+      "frage": "Wie oft muss ein Taxi zur Hauptuntersuchung (HU) vorgestellt werden?",
+      "optionen": [
+        "Jährlich",
+        "Alle zwei Jahre",
+        "Nur bei Neukauf",
+        "Alle fünf Jahre"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Taxis müssen jährlich zur HU und zur BOKraft-Prüfung.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was kann zu einer Betriebsuntersagung führen?",
+      "optionen": [
+        "Mangelhafte Wartung und technische Mängel am Fahrzeug",
+        "Zu viel Werbung am Fahrzeug",
+        "Falsche Taxifarbe",
+        "Zu viele Fahrgäste"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Technische Mängel können zum Entzug der Betriebserlaubnis führen.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Regelung gilt bei winterlichen Straßenverhältnissen?",
+      "optionen": [
+        "Angepasste Ausrüstung wie Winterreifen, ggf. Schneeketten",
+        "Fahrten sind verboten",
+        "Nur mit Sommerreifen fahren",
+        "Fahrzeuge dürfen nicht genutzt werden"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Winterausrüstung ist Pflicht.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie oft muss ein Taxi gemäß BOKraft gewartet werden?",
+      "optionen": [
+        "Regelmäßig, nach Herstellervorgabe und Vorschrift",
+        "Nie",
+        "Nur bei Defekt",
+        "Einmal im Monat"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Wartung ist regelmäßig und vorschriftsgemäß durchzuführen.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was ist nach einem Unfall mit dem Taxi zu tun?",
+      "optionen": [
+        "Fahrzeug prüfen, dokumentieren, ggf. sofort Werkstatt und Behörde informieren",
+        "Nur weiterfahren",
+        "Fahrgäste nach Hause bringen",
+        "Nichts, außer der Unfall war schwer"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Unfälle müssen gemeldet und das Fahrzeug kontrolliert werden.",
+      "punkte": 2
+    },
+    // Taxameter / Wegstreckenzähler
+    {
+      "frage": "Welche Funktion hat der Taxameter im Taxi?",
+      "optionen": [
+        "Berechnung des Fahrpreises je nach Strecke und Zeit",
+        "Navigation",
+        "Musik abspielen",
+        "Türsteuerung"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Taxameter zeigt den zu zahlenden Fahrpreis an.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie oft muss der Taxameter geeicht werden?",
+      "optionen": [
+        "Jährlich",
+        "Monatlich",
+        "Alle 10 Jahre",
+        "Nie"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Die Eichung ist jährlich vorgeschrieben.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was ist bei einer Störung des Taxameters zu tun?",
+      "optionen": [
+        "Sofortige Reparatur, Fahrgast informieren, ggf. Fahrpreis nach Strecke berechnen",
+        "Einfach weiterfahren",
+        "Fahrpreis schätzen",
+        "Fahrpreis verdoppeln"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Störungen müssen behoben und dem Fahrgast erklärt werden.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Im Mietwagen ist ein Taxameter gesetzlich vorgeschrieben.",
+      "optionen": ["Falsch", "Wahr"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Im Mietwagen: Wegstreckenzähler, kein Taxameter.",
+      "punkte": 1
+    },
+    // Alarmanlage
+    {
+      "frage": "Welche Funktion hat die Alarmanlage im Taxi?",
+      "optionen": [
+        "Sie schützt Fahrer und Fahrgäste durch akustische und optische Signale.",
+        "Sie senkt den Fahrpreis.",
+        "Sie steuert die Klimaanlage.",
+        "Sie meldet jeden Halt der Polizei."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Alarmanlage: Sicherheitsfunktion laut BOKraft.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie kann die Alarmanlage im Notfall aktiviert werden?",
+      "optionen": [
+        "Vom Fahrersitz aus, z.B. mit Fußtaster oder verstecktem Schalter",
+        "Nur von außen",
+        "Nur durch die Polizei",
+        "Sie aktiviert sich automatisch bei jedem Halt"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Sie muss für den Fahrer leicht erreichbar sein.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Signale kann die Alarmanlage im Taxi auslösen?",
+      "optionen": [
+        "Hupe, Blinklichter, ggf. Taxischild-LEDs",
+        "Lautsprecheransage",
+        "Musiklautstärke erhöhen",
+        "Navigationssystem ausschalten"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Alarm: optisch und akustisch.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wahr oder falsch: Ein stiller Alarm darf im Taxi nicht eingebaut werden.",
+      "optionen": ["Falsch", "Wahr"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Stiller Alarm ist erlaubt.",
+      "punkte": 1
+    },
+    // Fahrzeugsicherheit
+    {
+      "frage": "Welche regelmäßige Prüfung trägt zur Sicherheit des Taxis bei?",
+      "optionen": [
+        "Bremsentest zu Schichtbeginn",
+        "Tägliches Waschen",
+        "Neulackierung jedes Jahr",
+        "Austausch der Innenbeleuchtung monatlich"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Bremsencheck = Sicherheitsmaßnahme.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was ist vor Schichtbeginn zu prüfen?",
+      "optionen": [
+        "Äußere Mängel am Fahrzeug, Reifendruck, Beleuchtung",
+        "Nur der Fahrpreis",
+        "Das Kassenbuch",
+        "Die Anzahl der Fahrgäste"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Vor Fahrtantritt ist ein Check Pflicht.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wahr oder falsch: Fahrgäste dürfen im Taxi nur ohne Gurt befördert werden.",
+      "optionen": ["Falsch", "Wahr"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Gurtpflicht gilt für alle!",
+      "punkte": 1
+    },
+    // Schichtwechsel, Standzeiten, Betriebsablauf
+    {
+      "frage": "Was regelt der Schichtwechsel im Taxibetrieb?",
+      "optionen": [
+        "Übergabe des Fahrzeugs und ggf. Tagesabrechnung zwischen zwei Fahrern",
+        "Nur das Austauschen der Schlüssel",
+        "Die Farbe der Sitzbezüge",
+        "Das Öffnen des Kofferraums"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Fahrzeug und Dokumente werden übergeben.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Pflicht gilt bei Standzeiten?",
+      "optionen": [
+        "Motor möglichst abstellen, Umwelt schonen, ggf. Taxameter auf Standzeit setzen",
+        "Klimaanlage auf Maximum stellen",
+        "Fahrpreis weiterlaufen lassen",
+        "Kofferraum offen lassen"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Umweltschutz: Motor aus bei langen Standzeiten.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was ist bei Betriebsablaufstörungen (z.B. Fahrzeug defekt) zu tun?",
+      "optionen": [
+        "Sofortige Meldung an Unternehmer/Betriebsleitung, ggf. Ersatzfahrzeug einsetzen",
+        "Einfach weiterfahren",
+        "Die Fahrgäste übernehmen die Reparatur",
+        "Den Defekt ignorieren"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Meldung und ggf. Ersatz sind Pflicht.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Während der Standzeit am Taxistand darf der Motor laufen.",
+      "optionen": ["Falsch", "Wahr"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Motor aus – Umweltvorschrift.",
+      "punkte": 1
+    },
+    // Zusatzfragen für Prüfungsdiversität
+    {
+      "frage": "Wer ist für die Beseitigung von Fahrzeugmängeln verantwortlich?",
+      "optionen": [
+        "Der Unternehmer",
+        "Der letzte Fahrgast",
+        "Das Ordnungsamt",
+        "Nur die Werkstatt"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Unternehmer muss für sicheren Zustand sorgen.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wahr oder falsch: Ein Taxi muss immer mit Winterreifen ausgerüstet sein.",
+      "optionen": ["Falsch", "Wahr"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Nur bei winterlichen Verhältnissen sind Winterreifen vorgeschrieben.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was ist ein Doppelgenehmigung im Sinne der BOKraft?",
+      "optionen": [
+        "Erlaubnis für Taxi- und Mietwagenbetrieb mit einem Fahrzeug",
+        "Zwei Fahrer pro Taxi",
+        "Zwei Taxameter im Fahrzeug",
+        "Genehmigung für Nacht- und Tagbetrieb"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Doppelgenehmigung = Taxi/Mietwagen-Kombi.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Pflicht besteht bei einem defekten Fahrpreisanzeiger?",
+      "optionen": [
+        "Sofortige Reparatur und Information des Fahrgasts",
+        "Weiterfahren ohne Anzeige",
+        "Preis schätzen und aufschreiben",
+        "Keine"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Defekte Geräte sind sofort instand zu setzen.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist bei einer außerordentlichen HU zu beachten?",
+      "optionen": [
+        "Sie ist erforderlich vor Inbetriebnahme und bei Unternehmensübernahme.",
+        "Nur alle 10 Jahre nötig.",
+        "Sie gilt nur für Mietwagen.",
+        "Sie betrifft nur die Innenausstattung."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Außerordentliche HU: z.B. bei Übernahme.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie kann die Sicherheit von Fahrgästen verbessert werden?",
+      "optionen": [
+        "Durch Trennwände, funktionierende Gurte und Alarmanlage.",
+        "Musik besonders laut stellen.",
+        "Fenster immer offen lassen.",
+        "Keine Kontrollmaßnahmen ergreifen."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Sicherheitsausstattung schützt alle.",
+      "punkte": 1
+    }
+  ]
+}
+{
+  "Straßenverkehrssicherheit, Unfallverhütung, Umwelt": [
+    // Unfallmeldung
+    {
+      "frage": "Wem muss ein Unfall mit Personenschaden gemeldet werden?",
+      "optionen": [
+        "Genehmigungsbehörde, BG Verkehr und Versicherung",
+        "Nur dem Fahrgast",
+        "Dem Finanzamt",
+        "Dem Taxiverband"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Unfall mit Personenschaden muss sofort an Behörden, BG Verkehr und Versicherung gemeldet werden.",
+      "punkte": 2
+    },
+    {
+      "frage": "Innerhalb welcher Frist muss ein Arbeitsunfall der BG Verkehr gemeldet werden?",
+      "optionen": [
+        "Innerhalb von 3 Tagen",
+        "Sofort",
+        "Nach einer Woche",
+        "Monatlich"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "BG Verkehr muss spätestens innerhalb von 3 Tagen informiert werden.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wahr oder falsch: Bei jedem Unfall mit schwerem Sachschaden muss die Polizei benachrichtigt werden.",
+      "optionen": ["Wahr", "Falsch"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Schwere Sach- oder Personenschäden sind meldepflichtig.",
+      "punkte": 1
+    },
+    // Notfallmaßnahmen
+    {
+      "frage": "Welche Maßnahme ist bei einem Verkehrsunfall als Erstes durchzuführen?",
+      "optionen": [
+        "Unfallstelle absichern",
+        "Fahrpreis kassieren",
+        "Fahrzeug reinigen",
+        "Handy laden"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Sicherung der Unfallstelle steht an erster Stelle.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was muss nach der Unfallmeldung getan werden?",
+      "optionen": [
+        "Verletzten helfen und Beweise sichern",
+        "Den Unfallort verlassen",
+        "Alle Unterlagen vernichten",
+        "Fahrgäste nach Hause bringen"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Erste Hilfe und Beweissicherung sind Pflicht.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie verhält man sich bei einem Unfall mit Gefahrgut-Transport?",
+      "optionen": [
+        "Sicherheitsabstand einhalten, Feuerwehr informieren, Polizei rufen",
+        "Sofort wegfahren",
+        "Fahrgast aussteigen lassen",
+        "Unfallstelle ignorieren"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Bei Gefahrgut: Spezielle Sicherheitsmaßnahmen beachten.",
+      "punkte": 2
+    },
+    // Sicherheitsausstattung
+    {
+      "frage": "Welche Sicherheitsausstattung ist in jedem Taxi gesetzlich vorgeschrieben?",
+      "optionen": [
+        "Erste-Hilfe-Kasten, Warndreieck, Warnweste",
+        "Helme",
+        "Feuerlöscher nur im Sommer",
+        "Kindersitz für jeden Platz"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Diese Ausstattung ist vorgeschrieben.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wahr oder falsch: Sicherheitsgurte sind im Taxi nur vorne Pflicht.",
+      "optionen": ["Falsch", "Wahr"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Gurtpflicht gilt für alle Plätze.",
+      "punkte": 1
+    },
+    // Arbeitsschutz
+    {
+      "frage": "Was ist ein Ziel des Arbeitsschutzes im Taxigewerbe?",
+      "optionen": [
+        "Gesundheit und Sicherheit der Beschäftigten",
+        "Weniger Steuern zahlen",
+        "Mehr Fahrgäste pro Tag",
+        "Nur Tagfahrten anbieten"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Arbeitsschutz schützt Fahrer vor Gesundheitsschäden.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Maßnahme erhöht die Arbeitssicherheit?",
+      "optionen": [
+        "Regelmäßige Pausen und ausreichende Erholung",
+        "Längere Arbeitszeiten",
+        "Fahren ohne Pause",
+        "Keine Beleuchtung im Fahrzeug"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Pausen verhindern Übermüdung und Unfälle.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wahr oder falsch: Das Telefonieren während der Fahrt ist erlaubt, wenn keine Fahrgäste an Bord sind.",
+      "optionen": ["Falsch", "Wahr"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Telefonieren ohne Freisprecheinrichtung ist verboten.",
+      "punkte": 1
+    },
+    // Unfallverhütung / Ablaufpläne
+    {
+      "frage": "Was ist eine wichtige Unfallverhütungsmaßnahme beim Taxifahren?",
+      "optionen": [
+        "Vorausschauendes Fahren und Abstandhalten",
+        "Immer auf dem Handy tippen",
+        "Rote Ampeln ignorieren",
+        "Nur nachts fahren"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Vorausschauendes Fahren senkt Unfallrisiko.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Vorschrift muss bei Unfallverhütung beachtet werden?",
+      "optionen": [
+        "Betriebsanweisung, Unfallverhütungsvorschriften der BG Verkehr",
+        "Fahrplan der Stadtwerke",
+        "Farbe des Autos",
+        "Wetterbericht"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "BG Verkehr gibt verbindliche Vorschriften.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie kann man Unfälle beim Aussteigen der Fahrgäste verhindern?",
+      "optionen": [
+        "Fahrzeug am Fahrbahnrand anhalten, Warnblinker setzen, Umfeld beobachten",
+        "Mitten auf der Kreuzung halten",
+        "Immer alle Türen gleichzeitig öffnen",
+        "Fahrgäste nicht aussteigen lassen"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Sorgfalt beim Anhalten ist Pflicht.",
+      "punkte": 1
+    },
+    // Umweltzone, Emissionswerte
+    {
+      "frage": "Was bedeutet die grüne Plakette an einem Taxi?",
+      "optionen": [
+        "Das Fahrzeug darf in Umweltzonen fahren.",
+        "Nur für Fahrten ins Ausland zugelassen.",
+        "Das Taxi ist besonders alt.",
+        "Es hat keine Alarmanlage."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Grüne Plakette = Umweltzonen-Berechtigung.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wahr oder falsch: Ein Taxi ohne Umweltplakette darf in jede Innenstadt fahren.",
+      "optionen": ["Falsch", "Wahr"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Umweltplakette ist Pflicht in vielen Städten.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Abgasnormen sind für Taxis in Umweltzonen zu beachten?",
+      "optionen": [
+        "Nur Fahrzeuge mit grüner Plakette (Euro 4 oder besser) dürfen einfahren.",
+        "Alle Fahrzeuge sind erlaubt.",
+        "Nur Elektrofahrzeuge sind erlaubt.",
+        "Abgasnorm spielt keine Rolle."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Strenge Vorgaben in Umweltzonen!",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist der Hauptzweck von Umweltzonen?",
+      "optionen": [
+        "Reduzierung von Schadstoffemissionen in Städten",
+        "Mehr Parkplätze schaffen",
+        "Fahrpreise erhöhen",
+        "Farbe des Fahrzeugs kontrollieren"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Ziel: Saubere Luft in Städten.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie kann der Taxiunternehmer aktiv zum Umweltschutz beitragen?",
+      "optionen": [
+        "Durch sparsames Fahren, Motor aus bei Standzeit, moderne Fahrzeuge",
+        "Nur durch neue Werbung",
+        "Fenster immer öffnen",
+        "Keine Inspektionen mehr"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Umweltschonendes Fahren und moderne Technik helfen.",
+      "punkte": 2
+    },
+    // Emissionswerte
+    {
+      "frage": "Welche Emissionsklasse ist für den Zugang zu allen Umweltzonen erforderlich?",
+      "optionen": [
+        "Euro 4 (grüne Plakette)",
+        "Euro 2",
+        "Euro 1",
+        "Nur Elektrofahrzeuge"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Euro 4 oder besser = grüne Plakette.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was versteht man unter CO2-Emissionen?",
+      "optionen": [
+        "Kohlenstoffdioxidausstoß eines Fahrzeugs",
+        "Farbe des Fahrzeugs",
+        "Kilometerleistung",
+        "Versicherungskosten"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "CO2 = Kohlendioxid, ein Treibhausgas.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Fahrweise reduziert Schadstoffausstoß?",
+      "optionen": [
+        "Vorausschauendes, gleichmäßiges Fahren und Vermeiden von Vollgas",
+        "Ständiges Beschleunigen und Bremsen",
+        "Nur Standzeit",
+        "Immer mit offenem Fenster"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Ökonomisches Fahren senkt Emissionen.",
+      "punkte": 2
+    },
+    // Notfall & Ablaufpläne
+    {
+      "frage": "Wie sollte ein Taxiunternehmen Notfallmaßnahmen planen?",
+      "optionen": [
+        "Mit schriftlichen Ablaufplänen und regelmäßigen Übungen",
+        "Gar nicht, Notfälle sind selten",
+        "Nur mündliche Absprachen treffen",
+        "Die Fahrer informieren die Fahrgäste"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Ablaufpläne und Übungen sind Pflicht.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was ist im Notfall besonders wichtig?",
+      "optionen": [
+        "Ruhe bewahren, Erstmaßnahmen einleiten, Rettung rufen",
+        "Zuerst Social Media informieren",
+        "Taxameter zurücksetzen",
+        "Sofort abrechnen"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Erstmaßnahmen retten Leben.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Jeder Fahrer muss mit den Ablaufplänen im Notfall vertraut sein.",
+      "optionen": ["Wahr", "Falsch"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Alle Mitarbeiter müssen wissen, was zu tun ist.",
+      "punkte": 1
+    },
+    // BG Verkehr / Arbeitsschutz
+    {
+      "frage": "Wer ist Träger der gesetzlichen Unfallversicherung für das Taxi- und Mietwagengewerbe?",
+      "optionen": [
+        "BG Verkehr",
+        "Das Finanzamt",
+        "Der Arbeitgeberverband",
+        "Die Krankenkasse"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "BG Verkehr ist zuständig.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wahr oder falsch: Nach einem Arbeitsunfall übernimmt die BG Verkehr die Heilbehandlungskosten.",
+      "optionen": ["Wahr", "Falsch"],
+      "richtigeAntwort": 0,
+      "erklaerung": "BG Verkehr übernimmt Heilbehandlung nach Arbeitsunfällen.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was versteht man unter Unfallverhütungsvorschriften?",
+      "optionen": [
+        "Gesetzliche Regeln zur Vermeidung von Arbeitsunfällen",
+        "Vorschriften zur Fahrzeugfarbe",
+        "Tarifordnung für Fahrpreise",
+        "Werberichtlinien"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Unfallverhütungsvorschriften dienen der Sicherheit am Arbeitsplatz.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Rolle spielen Ablaufpläne im Notfall?",
+      "optionen": [
+        "Sie geben klare Anweisungen für das Verhalten im Ernstfall.",
+        "Sie sind nur für den Unternehmer relevant.",
+        "Sie werden im Kassenbuch festgehalten.",
+        "Sie ersetzen Versicherungen."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Klare Pläne beschleunigen Rettungsmaßnahmen.",
+      "punkte": 1
+    },
+    // Zusatzfragen
+    {
+      "frage": "Wahr oder falsch: Fahrgäste müssen bei Unfällen immer als Zeugen zur Verfügung stehen.",
+      "optionen": ["Falsch", "Wahr"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Zeugenpflicht besteht nicht, aber ihre Aussage kann helfen.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie trägt regelmäßige Wartung zur Unfallverhütung bei?",
+      "optionen": [
+        "Sie verhindert technische Defekte, die Unfälle verursachen können.",
+        "Sie erhöht die Versicherungskosten.",
+        "Sie macht das Fahrzeug schneller.",
+        "Sie hat keinen Einfluss."
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Regelmäßige Wartung erhält die Sicherheit.",
+      "punkte": 2
+    }
+  ]
+}
+{
+  "Grenzüberschreitende Personenbeförderung": [
+    // Fahrten ins Ausland
+    {
+      "frage": "Was muss vor einer Fahrt mit dem Taxi ins Ausland grundsätzlich beachtet werden?",
+      "optionen": [
+        "Genehmigung der zuständigen Behörde, gültige Papiere und Versicherung",
+        "Nur den Tank auffüllen",
+        "Das Taxameter abstellen",
+        "Fahrgäste müssen aussteigen"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Für Auslandsfahrten sind Genehmigungen und gültige Papiere notwendig.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Pflicht gilt bei Rückfahrten nach Auslandsfahrten?",
+      "optionen": [
+        "Unverzügliche Rückkehr zum Betriebssitz (Rückkehrpflicht)",
+        "Beliebiger Aufenthalt im Ausland möglich",
+        "Fahrpreis frei verhandelbar",
+        "Das Fahrzeug darf stehen bleiben"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Nach Auslandsfahrt: sofortige Rückkehr zum Betriebssitz!",
+      "punkte": 1
+    },
+    // Rückkehrpflicht
+    {
+      "frage": "Wahr oder falsch: Mietwagen dürfen nach einer Auslandsfahrt Fahrgäste im Ausland aufnehmen.",
+      "optionen": ["Falsch", "Wahr"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Nur Rückfahrt mit demselben Fahrgast erlaubt, keine neuen Aufträge im Ausland.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Unterlagen sind bei einer Auslandsfahrt mitzuführen?",
+      "optionen": [
+        "Fahrzeugschein, Führerschein, Versicherungsnachweis, internationale grüne Versicherungskarte",
+        "Nur der Personalausweis",
+        "Nur der letzte Steuerbescheid",
+        "Eine Quittung vom Finanzamt"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Alle relevanten Dokumente müssen mitgeführt werden.",
+      "punkte": 1
+    },
+    {
+      "frage": "Was regeln bilaterale Abkommen im internationalen Taxiverkehr?",
+      "optionen": [
+        "Sonderregelungen für den grenzüberschreitenden Verkehr",
+        "Fahrzeugfarbe",
+        "Gepäckvorschriften",
+        "Die Höhe des Trinkgeldes"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Abkommen regeln z.B. Genehmigung, Haftung, Abrechnung.",
+      "punkte": 1
+    },
+    // Grenzformalitäten
+    {
+      "frage": "Was ist bei der Einreise mit dem Taxi in ein Nicht-EU-Land erforderlich?",
+      "optionen": [
+        "Grenzübertrittspapiere, evtl. Zollformalitäten und gültige Versicherung",
+        "Nur das Licht einschalten",
+        "Das Taxameter ausschalten",
+        "Eine spezielle Musikliste"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Papiere und Zollvorschriften beachten!",
+      "punkte": 2
+    },
+    {
+      "frage": "Wahr oder falsch: Bei jeder Auslandsfahrt muss das Fahrtenbuch geführt werden.",
+      "optionen": ["Wahr", "Falsch"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Fahrtenbuch ist Pflicht zur Dokumentation.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Information ist im Fahrtenbuch bei Auslandseinsätzen besonders wichtig?",
+      "optionen": [
+        "Grenzübertrittsdatum, Strecke, Fahrgastdaten",
+        "Nur die Fahrgestellnummer",
+        "Die Lieblingsmusik des Fahrers",
+        "Nur der Name der Stadt"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Jede Fahrt mit Strecke, Datum, Fahrgast und Ziel erfassen.",
+      "punkte": 1
+    },
+    // Internationale Versicherung
+    {
+      "frage": "Welche Versicherung ist bei Auslandsfahrten vorgeschrieben?",
+      "optionen": [
+        "Internationale Haftpflicht (grüne Karte)",
+        "Nur deutsche Haftpflicht",
+        "Nur Vollkasko",
+        "Keine Versicherung notwendig"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Die grüne Karte bestätigt Versicherungsschutz im Ausland.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie weist ein Unternehmer im Ausland den Versicherungsschutz nach?",
+      "optionen": [
+        "Mit der internationalen Versicherungskarte (grüne Karte)",
+        "Mit dem deutschen Steuerbescheid",
+        "Mit einer Quittung vom Kunden",
+        "Mit einer Fahrpreisliste"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Die grüne Karte ist international anerkannt.",
+      "punkte": 1
+    },
+    // Steuer/Abrechnung Ausland
+    {
+      "frage": "Welche steuerliche Besonderheit gilt für grenzüberschreitende Fahrten?",
+      "optionen": [
+        "Im Ausland erbrachte Leistungen können dort umsatzsteuerpflichtig sein.",
+        "Nur in Deutschland Steuerpflicht",
+        "Keine Abrechnung nötig",
+        "Trinkgeld wird separat versteuert"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Leistungen im Ausland können steuerpflichtig werden.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie wird der Umsatz einer Fahrt mit Start in Deutschland und Ziel im Ausland abgerechnet?",
+      "optionen": [
+        "Umsatzsteuerpflicht bis zur Grenze, im Ausland ggf. anders",
+        "Gesamte Fahrt steuerfrei",
+        "Nur Trinkgeld versteuern",
+        "Abrechnung nach Schweizer Recht"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Nur der in Deutschland gefahrene Teil ist umsatzsteuerpflichtig.",
+      "punkte": 2
+    },
+    // Sonderregelungen
+    {
+      "frage": "Was ist eine Sondergenehmigung im internationalen Taxiverkehr?",
+      "optionen": [
+        "Erlaubnis für spezielle Fahrten über die Grenze",
+        "Genehmigung für Werbung auf dem Taxi",
+        "Erlaubnis für Fahrten im Stadtgebiet",
+        "Genehmigung für Pausen im Ausland"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Für Sonderfahrten sind spezielle Genehmigungen nötig.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wahr oder falsch: Jede Fahrt ins Ausland erfordert eine neue Sondergenehmigung.",
+      "optionen": ["Falsch", "Wahr"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Oft reicht eine Grundgenehmigung, Sondergenehmigung nur für spezielle Fälle.",
+      "punkte": 1
+    },
+    // Szenario-Fragen und weitere Rephrasing
+    {
+      "frage": "Darf ein Taxiunternehmen neue Fahrgäste im Ausland aufnehmen?",
+      "optionen": [
+        "Nein, nur Rückfahrt mit demselben Fahrgast erlaubt",
+        "Ja, wenn Platz ist",
+        "Nur in Grenznähe",
+        "Immer möglich"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Fremdbeförderung im Ausland ist untersagt.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was ist bei Rückfahrten aus dem Ausland zu beachten?",
+      "optionen": [
+        "Rückkehrpflicht: ohne neuen Auftrag direkt zum Betriebssitz zurückkehren",
+        "Beliebig im Ausland weiterarbeiten",
+        "Nur auf deutschen Straßen fahren",
+        "Das Fahrtenbuch vernichten"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Rückkehrpflicht: Keine neuen Fahrgäste im Ausland aufnehmen.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wie kann die Einhaltung der Rückkehrpflicht kontrolliert werden?",
+      "optionen": [
+        "Durch Eintragungen im Fahrtenbuch",
+        "Nur durch Zufall",
+        "Gar nicht",
+        "Fahrgäste müssen eine Quittung schreiben"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Das Fahrtenbuch dokumentiert Fahrverläufe.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wahr oder falsch: Für jeden Auslandseinsatz muss ein spezieller Versicherungsschutz nachgewiesen werden.",
+      "optionen": ["Wahr", "Falsch"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Der internationale Versicherungsschutz ist Pflicht.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wer kontrolliert die Einhaltung der Vorschriften bei Grenzübertritt?",
+      "optionen": [
+        "Zoll, Polizei, ggf. Grenzbehörden",
+        "Fahrgäste",
+        "Nur der Unternehmer selbst",
+        "Die Werkstatt"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Verschiedene Behörden können kontrollieren.",
+      "punkte": 1
+    },
+    {
+      "frage": "Wahr oder falsch: Ein Mietwagen mit Rückkehrpflicht darf nach Fahrgast-Absetzen beliebig lange im Ausland bleiben.",
+      "optionen": ["Falsch", "Wahr"],
+      "richtigeAntwort": 0,
+      "erklaerung": "Sofortige Rückkehr ist Vorschrift.",
+      "punkte": 1
+    },
+    {
+      "frage": "Welche Dokumentationspflicht gilt für Auslandsfahrten?",
+      "optionen": [
+        "Jede Fahrt ist lückenlos im Fahrtenbuch zu dokumentieren.",
+        "Nur der Kilometerstand muss aufgeschrieben werden.",
+        "Keine Pflicht",
+        "Nur die Versicherung ist zu informieren"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Dokumentation ist zentral für Kontrolle und Steuern.",
+      "punkte": 2
+    },
+    {
+      "frage": "Was muss bei Fahrpreisen ins Ausland beachtet werden?",
+      "optionen": [
+        "Preisvereinbarung vor Fahrtantritt und korrekte Abrechnung (ggf. mit Steuer)",
+        "Immer Taxameter laufen lassen",
+        "Kein Preis nötig",
+        "Nur Bargeld akzeptieren"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Preise und Steuern vorher klar regeln.",
+      "punkte": 2
+    },
+    {
+      "frage": "Welche Folge hat ein Verstoß gegen die Rückkehrpflicht?",
+      "optionen": [
+        "Bußgeld und ggf. Entzug der Genehmigung",
+        "Rabatt auf Versicherungen",
+        "Höherer Fahrpreis",
+        "Keine Auswirkung"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Verstöße werden streng sanktioniert.",
+      "punkte": 2
+    },
+    {
+      "frage": "Wie lange müssen Aufzeichnungen über Auslandsfahrten aufbewahrt werden?",
+      "optionen": [
+        "10 Jahre",
+        "1 Jahr",
+        "Nur bis zur nächsten Fahrt",
+        "Gar nicht"
+      ],
+      "richtigeAntwort": 0,
+      "erklaerung": "Wie andere geschäftliche Unterlagen: 10 Jahre.",
+      "punkte": 1
+    }
+  ]
+}
