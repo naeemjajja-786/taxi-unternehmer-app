@@ -1,3 +1,4 @@
+[
 {
   "Rechts": [
     {
@@ -151,10 +152,10 @@
       "punkte": 2
     }
   ]
-}
+},
 {
   "Kaufmännische und finanzielle Führung des Betriebes": [
-    // Kostenrechnung
+    
     {
       "frage": "Was versteht man unter Fixkosten? Nennen Sie ein Beispiel.",
       "antwort": "Kosten, die unabhängig von der Fahrleistung anfallen, z.B. Kfz-Steuer.",
@@ -180,7 +181,7 @@
       "antwort": "Der Break-Even-Point verschiebt sich, das Unternehmen braucht mehr Umsatz zum Gewinn.",
       "punkte": 2
     },
-    // Kalkulation
+    
     {
       "frage": "Berechnen Sie den Break-Even-Point: Fixkosten 7.000 €/Jahr, variable Kosten 0,23 €/km, Fahrpreis 1,45 €/km.",
       "antwort": "ca. 6.034 km",
@@ -209,7 +210,7 @@
       "punkte": 1,
       "rechnungsweg": "Skonto mindert Bemessungsgrundlage der USt."
     },
-    // Gewinnermittlung
+    
     {
       "frage": "Ein Taxiunternehmen erzielt einen Umsatz von 75.000 €, die Gesamtkosten betragen 67.200 €. Wie hoch ist der Gewinn?",
       "antwort": "7.800 €",
@@ -231,7 +232,7 @@
       "antwort": "10 Jahre",
       "punkte": 2
     },
-    // Buchhaltung & Kassenbuch
+    
     {
       "frage": "Wahr oder falsch: Jede Bareinnahme und Barausgabe muss im Kassenbuch dokumentiert werden.",
       "antwort": "Wahr",
@@ -257,7 +258,7 @@
       "antwort": "Schnellere Verarbeitung, weniger Fehlerquellen.",
       "punkte": 2
     },
-    // Umsatzsteuer/Vorsteuer
+    
     {
       "frage": "Wie hoch ist die Umsatzsteuer im Pflichtfahrgebiet?",
       "antwort": "7 %",
@@ -279,7 +280,7 @@
       "antwort": "Ja, bei Jahresumsatz unter 22.000 € (Stand 2024) möglich.",
       "punkte": 2
     },
-    // Bilanz & Anlagevermögen
+    
     {
       "frage": "Was ist das Anlagevermögen?",
       "antwort": "Vermögenswerte, die dem Unternehmen langfristig dienen (z.B. Fahrzeuge, Geräte).",
@@ -300,7 +301,7 @@
       "antwort": "Der zu Vertragsende erwartete Wert des Fahrzeugs.",
       "punkte": 2
     },
-    // Lohn & Personal
+    
     {
       "frage": "Was ist der Unterschied zwischen Bruttolohn und Nettolohn?",
       "antwort": "Bruttolohn = vor Abzügen, Nettolohn = nach Abzügen.",
@@ -323,7 +324,7 @@
       "punkte": 1,
       "rechnungsweg": "Trinkgelder sind in bestimmten Fällen steuerfrei."
     },
-    // Skonto & Zinsen
+    
     {
       "frage": "Wie berechnet man 2 % Skonto auf 2.000 €?",
       "antwort": "40 €",
@@ -341,7 +342,7 @@
       "punkte": 2,
       "rechnungsweg": "12.000 € × 5 % = 600 €"
     },
-    // Sonstiges / Tricky
+    
     {
       "frage": "Was ist KEIN Bestandteil einer Bilanz? a) Aktiva b) Passiva c) Betriebskosten d) Eigenkapital",
       "antwort": "c) Betriebskosten",
@@ -393,7 +394,7 @@
       "punkte": 2
     }
   ]
-}
+},
 {
   "Technische Anforderungen und Betrieb": [
     {
@@ -497,7 +498,7 @@
       "punkte": 2
     }
   ]
-}
+},
 {
   "Straßenverkehr und Sicherheit": [
     {
@@ -601,7 +602,7 @@
       "punkte": 2
     }
   ]
-}
+},
 {
   "caseText": "Ein Taxiunternehmen betreibt zwei Fahrzeuge. Fixkosten pro Fahrzeug/Monat: Leasing 350 €, Versicherung 82 €, Steuer 27 €, Wartung 53 €. Variable Kosten: 0,19 €/km. Beide Fahrzeuge fahren zusammen jährlich 62.400 km. Jahresumsatz: 63.000 €, Lohnkosten: 15.800 €, Umsatzsteuerpflicht 7 %.",
   "tasks": [
@@ -658,7 +659,7 @@
       "punkte": 1
     }
   ]
-}
+},
 {
   "caseText": "Ein Mietwagenunternehmen betreibt ein Fahrzeug. Monatliche Fixkosten und Kostenstruktur:\n\n| Kostenart         | Betrag pro Monat |\n|-------------------|-----------------|\n| Leasing           | 360 €           |\n| Versicherung      | 77 €            |\n| Steuer            | 28 €            |\n| Wartung           | 49 €            |\n| Variable Kosten/km| 0,18 €          |\n\nMonatlich werden 2.700 km gefahren. Lohnkosten (Jahr): 13.900 €, Jahresumsatz: 35.400 €, USt 7 %.",
   "tasks": [
@@ -705,7 +706,7 @@
       "dezimalstellen": 2
     }
   ]
-}
+},
 {
   "caseText": "Das Unternehmen betreibt 3 Taxis. Die jährlichen Fixkosten und Streckenleistungen pro Fahrzeug sind in der Tabelle dargestellt:\n\n| Fahrzeug | Leasing | Versicherung | Steuer | Wartung | Jahres-km | Variable Kosten/km |\n|----------|---------|--------------|--------|---------|-----------|-------------------|\n| Taxi 1   | 4.100 € | 980 €        | 320 €  | 620 €   | 29.000    | 0,18 €            |\n| Taxi 2   | 4.200 € | 950 €        | 310 €  | 600 €   | 28.500    | 0,19 €            |\n| Taxi 3   | 4.250 € | 970 €        | 315 €  | 650 €   | 30.100    | 0,18 €            |\n\nGesamter Jahresumsatz: 98.900 €. Lohnkosten: 21.700 €, USt 7 %.",
   "tasks": [
@@ -746,7 +747,7 @@
       "dezimalstellen": 2
     }
   ]
-}
+},
 {
   "caseText": "Ein Taxiunternehmen nutzt zwei Fahrzeuge. Fixkosten je Fahrzeug/Monat: Leasing 370 €, Versicherung 84 €, Steuer 26 €, Wartung 54 €. Durchschnittliche Monats-km pro Fahrzeug: 2.600 km. Variable Kosten: 0,17 €/km. Jahresumsatz: 60.800 €, Lohnkosten: 15.900 €, Umsatzsteuerpflicht 7 %.",
   "tasks": [
@@ -793,7 +794,7 @@
       "dezimalstellen": 2
     }
   ]
-}
+},
 {
   "caseText": "Ein Mietwagenunternehmen mit folgenden Jahreswerten:\n\n| Kostenart            | Betrag (€) |\n|----------------------|------------|\n| Leasing              | 4.440      |\n| Versicherung         | 980        |\n| Steuer               | 325        |\n| Wartung              | 670        |\n| Variable Kosten/km   | 0,19       |\n| Jahres-km            | 28.000     |\n| Lohnkosten           | 11.400     |\n| Umsatz               | 37.700     |\n\nUmsatzsteuerpflicht: 7 %.",
   "tasks": [
@@ -834,7 +835,7 @@
       "dezimalstellen": 2
     }
   ]
-}
+},
 {
   "caseText": "Ein Taxiunternehmen zahlt pro Jahr folgende Personalkosten:\n\n| Position      | Betrag (€) |\n|---------------|------------|\n| Löhne         | 13.400     |\n| Sozialabgaben | 3.100      |\n| Unfallvers.   | 400        |\n\nWeitere Kosten: Jahresfixkosten (alle Positionen zusammen): 7.800 €, variable Kosten: 5.900 €, Jahresumsatz: 31.500 €, Umsatzsteuerpflicht 7 %.",
   "tasks": [
@@ -870,7 +871,7 @@
       "dezimalstellen": 2
     }
   ]
-}
+},
 {
   "caseText": "Das Unternehmen fährt jährlich 25.000 km. Fahrpreis pro km: 1,15 €, variable Kosten/km: 0,18 €, Fixkosten/Jahr: 6.400 €, Trinkgelder: 820 € (steuerfrei). Lohnkosten: 10.800 €, Umsatzsteuerpflicht 7 %.",
   "tasks": [
@@ -907,7 +908,7 @@
       "dezimalstellen": 2
     }
   ]
-}
+},
 {
   "caseText": "Ein Taxi hat einen Unfall: Reparaturkosten 2.200 €, davon übernimmt die Versicherung 1.600 €. Selbstbeteiligung: 600 €. Im selben Monat fallen an: Leasing 380 €, Versicherung 81 €, Steuer 30 €, Wartung 130 €, Benzinkosten: 580 €, variable Kosten/km: 0,19 €, gefahrene Monats-km: 3.100. Im Monat wurden 3.400 € Umsatz erzielt, Umsatzsteuerpflicht 7 %.",
   "tasks": [
@@ -954,7 +955,7 @@
       "dezimalstellen": 2
     }
   ]
-}
+},
 {
   "caseText": "Ein Unternehmen kauft ein Fahrzeug für 22.000 € (Netto), Nutzungsdauer 5 Jahre (lineare Abschreibung). Lohnkosten: 14.600 €/Jahr. Sozialabgaben: 3.200 €/Jahr. Fixkosten pro Jahr (außer Lohn): 7.700 €. Variable Kosten: 6.200 €. Jahresumsatz: 40.800 €, Umsatzsteuerpflicht 7 %. Ein Großkunde zahlt eine Rechnung von 5.000 € (brutto) mit 2 % Skonto.",
   "tasks": [
@@ -994,7 +995,7 @@
       "punkte": 2
     }
   ]
-}
+},
 {
   "caseText": "Ein Unternehmen muss 33.000 km/Jahr fahren. Fixkosten: 6.900 €. Variable Kosten: 0,17 €/km. Jährlicher Kraftstoffanteil: 4.100 €, Wartung: 780 €, Lohnkosten: 11.800 €. Wegen häufiger Standzeiten (Motor läuft) entstehen 900 € Extrakosten. Jahresumsatz: 32.000 €, Umsatzsteuerpflicht 7 %.",
   "tasks": [
@@ -1035,7 +1036,7 @@
       "punkte": 1
     }
   ]
-}
+},
 {
   "caseText": "Das Taxiunternehmen fährt mit einem Fahrzeug. Fixkosten/Monat: Leasing 350 €, Versicherung 81 €, Steuer 27 €, Wartung 50 €. Jährliche Fahrleistung: 36.000 km, variable Kosten: 0,18 €/km. Im Juni 2021 bleibt ein Fahrgast eine Rechnung von 70 € schuldig. Für Mai 2023 ist eine Lohnabrechnung verspätet. Im März 2024 wird eine Betriebsprüfung angekündigt. Lohnkosten/Jahr: 12.600 €, Umsatz: 38.800 €, USt 7 %.",
   "tasks": [
@@ -1086,7 +1087,7 @@
       "dezimalstellen": 2
     }
   ]
-}
+},
 {
   "caseText": "Das Unternehmen fährt mit zwei Fahrzeugen. Fixkosten/Monat/Fahrzeug: Leasing 360 €, Versicherung 79 €, Steuer 28 €, Wartung 54 €. Variable Kosten: 0,17 €/km. Beide zusammen: 63.600 km/Jahr. Lohnkosten/Jahr: 16.200 €. Im Januar gibt es einen Unfall (Schaden 2.100 €, Versicherung übernimmt 1.500 €, Selbstbeteiligung 600 €). Im März zahlt ein Kunde eine 4.200 €-Rechnung (brutto) mit 2 % Skonto. Umsatz: 62.700 €, USt 7 %. Die Bilanz wird verspätet abgegeben.",
   "tasks": [
@@ -1137,7 +1138,7 @@
       "dezimalstellen": 2
     }
   ]
-}
+},
 {
   "caseText": "Ein Taxiunternehmen speichert Kundendaten auf einem privaten USB-Stick, die Quittungsbelege werden nicht geordnet abgelegt. Im Mai 2022 wurde eine hohe Einnahme versehentlich nicht im Kassenbuch erfasst. Im Oktober 2023 kommt eine Betriebsprüfung. Umsatz: 41.300 €, USt 7 %.",
   "tasks": [
@@ -1182,7 +1183,7 @@
       "punkte": 2
     }
   ]
-}
+},
 {
   "caseText": "Der Fahrer verursacht einen Unfall wegen Handybenutzung. Reparaturkosten 3.200 €, Versicherung übernimmt 2.400 €, Selbstbeteiligung 800 €. Monatsfixkosten: 570 €. Variable Kosten: 0,18 €/km, 3.000 km/Monat. Lohn: 1.150 €/Monat. Umsatz 4.000 €/Monat, USt 7 %. Im Januar wird eine Betriebspflicht-Verletzung festgestellt.",
   "tasks": [
@@ -1227,7 +1228,7 @@
       "punkte": 2
     }
   ]
-}
+},
 {
   "caseText": "Das Unternehmen betreibt drei Taxis. Monatsfixkosten pro Fahrzeug: Leasing 390 €, Versicherung 89 €, Steuer 34 €, Wartung 58 €. Jahres-km gesamt: 84.000. Variable Kosten/km: 0,18 €. Lohn/Jahr: 24.300 €. Im Februar 2021 ist ein Unfall (Kosten: 4.300 €, Versicherung: 3.000 €, Selbstbeteiligung: 1.300 €). Im März 2022 fehlt die Lohnabrechnung, Bilanz 2023 wird zu spät abgegeben. Umsatz 97.400 €, USt 7 %.",
   "tasks": [
@@ -1283,7 +1284,7 @@
       "dezimalstellen": 2
     }
   ]
-}
+},
 {
   "caseText": "Ein Taxiunternehmen fährt pro Monat 3.400 km. Pro km beträgt der Fahrpreis laut Taxameter 1,35 €. Variable Kosten: 0,19 €/km. Fixkosten: 610 €/Monat. Umsatzsteuerpflicht: 7 %. Ein Fahrgast bezahlt eine Fahrt bar (27 €), ein anderer per Rechnung (42 €, 2 % Skonto). Lohnkosten: 14.800 €/Jahr. Das Kassenbuch wird digital geführt. Ab 2024 gilt eine neue Umweltzone mit Fahrverbot für alte Diesel.",
   "tasks": [
@@ -1330,7 +1331,7 @@
       "punkte": 2
     }
   ]
-}
+},
 {
   "caseText": "Ein Unternehmen least ein Taxi für 410 €/Monat. Fixkosten sonst: Versicherung 93 €, Steuer 29 €, Wartung 57 €, variable Kosten: 0,19 €/km, Monatsfahrleistung: 2.900 km. Lohn: 1.350 €/Monat. Im Juli 2024 ist der Fahrer 12 Tage krank (Lohnfortzahlung). Bilanz 2023 wird im Juli 2024 eingereicht. Im Juni 2024 wird zu spät auf neue Versicherung gewechselt.",
   "tasks": [
@@ -1376,7 +1377,7 @@
       "punkte": 2
     }
   ]
-}
+},
 {
   "caseText": "Ein Mietwagen fährt einen Auftrag von Köln nach Brüssel. Nach Absetzen des Fahrgastes bleibt der Fahrer 2 Stunden in Belgien stehen (Standzeit: 28 €/h). Pro Jahr: 33.000 km, Fixkosten 6.900 €, variable Kosten: 0,19 €/km, Lohnkosten 12.000 €, Umsatzsteuerpflicht: 7 %. Fahrer nimmt irrtümlich neuen Fahrgast im Ausland mit.",
   "tasks": [
@@ -1422,7 +1423,7 @@
       "dezimalstellen": 2
     }
   ]
-}
+},
 {
   "caseText": "Das Unternehmen achtet auf Unfallverhütung: Tägliche Fahrzeugkontrolle, Notfallausrüstung, Erste-Hilfe-Kurs. Fixkosten: 6.300 €/Jahr, variable Kosten: 0,18 €/km, Jahresfahrleistung: 32.000 km. Lohnkosten: 10.600 €, Umsatzsteuerpflicht: 7 %. Fahrtenbuch und Bilanz werden digital geführt. Eine Rechnung (1.400 € brutto) wird mit 3 % Skonto bezahlt.",
   "tasks": [
@@ -1463,7 +1464,7 @@
       "dezimalstellen": 2
     }
   ]
-}
+},
 {
   "caseText": "Im Betrieb herrscht akuter Personalmangel. Zwei Fahrer fallen wegen Krankheit aus. Die Nachkalkulation ergibt 8 % mehr variable Kosten als geplant. Fixkosten: 8.400 €/Jahr, variable Kosten (tatsächlich): 7.020 €, geplante variable Kosten: 6.500 €, Lohnkosten: 15.200 €, Umsatz 42.000 €, USt 7 %. Ein Unfallbericht wurde nicht abgelegt.",
   "tasks": [
@@ -1499,3 +1500,4 @@
     }
   ]
 }
+]
