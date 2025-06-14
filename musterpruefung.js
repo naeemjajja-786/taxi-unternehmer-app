@@ -5,14 +5,14 @@ let teil2Cases = [];
 let teil1Quiz = [];
 let teil2ShortQuiz = [];
 let teil2CaseQuiz = null;
-let currentTeil = 0; // 1=Teil1, 2=Teil2
+let currentTeil = 0;
 let currentQ = 0;
 let userScore = 0;
 let teil2Points = 0;
 let timerInterval = null;
-let timeLeft = 60 * 60; // 60 Minuten
+let timeLeft = 60 * 60;
 
-// === Utility Funktionen ===
+// === Utility ===
 function shuffle(arr) {
   let a = arr.slice();
   for (let i = a.length - 1; i > 0; i--) {
@@ -56,14 +56,12 @@ async function loadAllData() {
     fetch("Exams-Teil1.json").then(r => r.json()),
     fetch("Exams-Teil2.json").then(r => r.json())
   ]);
-  // Teil 1 flach machen
   teil1Data = [];
   for (let kap of teil1) {
     for (let key in kap) {
       teil1Data = teil1Data.concat(kap[key]);
     }
   }
-  // Teil 2 short/case aufteilen
   teil2ShortData = [];
   teil2Cases = [];
   for (let blk of teil2) {
@@ -84,11 +82,12 @@ function startTeil1() {
   document.getElementById('teil1-container').style.display = "block";
   document.getElementById('teil2-container').style.display = "none";
   document.getElementById('backBtn').style.display = "block";
-  teil1Quiz = shuffle(teil1Data).slice(0, 25); // beliebig 25 (min 20, max 30)
+  teil1Quiz = shuffle(teil1Data).slice(0, 25);
   currentQ = 0;
   startTimer();
   showTeil1Frage();
 }
+
 function showTeil1Frage() {
   if (currentQ >= teil1Quiz.length) return showResult();
   let q = teil1Quiz[currentQ];
@@ -108,12 +107,15 @@ function showTeil1Frage() {
     </div>
   `;
   document.getElementById('teil1-container').innerHTML = html;
+
+  // --- EVENTS NUR EINMAL ---
   let locked = false;
-  document.querySelectorAll('.quiz-opt').forEach(btn => {
+  let opts = document.querySelectorAll('#teil1-container .quiz-opt');
+  opts.forEach(btn => {
     btn.addEventListener('click', function() {
       if (locked) return;
       locked = true;
-      document.querySelectorAll('.quiz-opt').forEach(b => b.disabled = true);
+      opts.forEach(b => b.disabled = true);
       let idx = parseInt(this.getAttribute('data-idx'));
       let correct = (idx === q.richtigeAntwort);
       if (correct) {
@@ -123,7 +125,7 @@ function showTeil1Frage() {
       } else {
         this.classList.add('wrong');
         let cIdx = allOpts.findIndex(o=>o.idx===q.richtigeAntwort);
-        document.querySelectorAll('.quiz-opt')[cIdx].classList.add('correct');
+        opts[cIdx].classList.add('correct');
         document.getElementById('feedback').innerHTML = `<div class="fs-feedback incorrect">Falsch. Die richtige Antwort: ${decodeHTML(q.optionen[q.richtigeAntwort])}<br>${q.erklaerung || ''}</div>`;
       }
       document.getElementById('nextBtn').style.display = "block";
@@ -135,7 +137,7 @@ function showTeil1Frage() {
   };
 }
 
-// === TEIL 2: Kurzfragen + Fallstudie ===
+// === TEIL 2 ===
 function startTeil2() {
   currentTeil = 2;
   userScore = 0;
@@ -144,14 +146,18 @@ function startTeil2() {
   document.getElementById('teil2-container').style.display = "block";
   document.getElementById('teil1-container').style.display = "none";
   document.getElementById('backBtn').style.display = "block";
-  // 13-15 kurze Fragen, 1 Fallstudie mit 6-13 Tasks
   teil2ShortQuiz = shuffle(teil2ShortData).slice(0, 14);
-  teil2CaseQuiz = shuffle(teil2Cases)[0]; // 1 Fallstudie
+  teil2CaseQuiz = shuffle(teil2Cases)[0];
   currentQ = 0;
   startTimer();
   showTeil2ShortFrage();
 }
+
 function showTeil2ShortFrage() {
+  if (!teil2ShortQuiz || teil2ShortQuiz.length === 0) {
+    // Korrekt: Wenn keine short questions: überspringen
+    return showTeil2Case();
+  }
   if (currentQ >= teil2ShortQuiz.length) return showTeil2Case();
   let q = teil2ShortQuiz[currentQ];
   let allOpts = shuffle(q.optionen.map((opt, i) => ({ txt: opt, idx: i })));
@@ -171,11 +177,12 @@ function showTeil2ShortFrage() {
   `;
   document.getElementById('teil2-container').innerHTML = html;
   let locked = false;
-  document.querySelectorAll('.quiz-opt').forEach(btn => {
+  let opts = document.querySelectorAll('#teil2-container .quiz-opt');
+  opts.forEach(btn => {
     btn.addEventListener('click', function() {
       if (locked) return;
       locked = true;
-      document.querySelectorAll('.quiz-opt').forEach(b => b.disabled = true);
+      opts.forEach(b => b.disabled = true);
       let idx = parseInt(this.getAttribute('data-idx'));
       let correct = (idx === q.richtigeAntwort);
       if (correct) {
@@ -185,7 +192,7 @@ function showTeil2ShortFrage() {
       } else {
         this.classList.add('wrong');
         let cIdx = allOpts.findIndex(o=>o.idx===q.richtigeAntwort);
-        document.querySelectorAll('.quiz-opt')[cIdx].classList.add('correct');
+        opts[cIdx].classList.add('correct');
         document.getElementById('feedback').innerHTML = `<div class="fs-feedback incorrect">Falsch. Die richtige Antwort: ${decodeHTML(q.optionen[q.richtigeAntwort])}<br>${q.erklaerung || ''}</div>`;
       }
       document.getElementById('nextBtn2').style.display = "block";
@@ -196,10 +203,10 @@ function showTeil2ShortFrage() {
     showTeil2ShortFrage();
   };
 }
+
 function showTeil2Case() {
   let caseObj = teil2CaseQuiz;
   if (!caseObj || !caseObj.tasks || !Array.isArray(caseObj.tasks)) {
-    // Fallback für fehlerhafte/corrupted JSON
     document.getElementById('teil2-container').innerHTML = `<div class="result-summary"><h2>Kein Case geladen!</h2></div>`;
     return;
   }
@@ -230,7 +237,7 @@ function showTeil2Case() {
       // if(val === task.richtigeAntwort) points += (task.punkte||2);
     });
     userScore += points;
-    teil2Points = total + 28; // +28 von short Fragen (14*2 Pkt default)
+    teil2Points = total + (teil2ShortQuiz ? teil2ShortQuiz.length*2 : 0); // max Punkte korrekt!
     showResult();
   }
 }
@@ -254,7 +261,6 @@ function showResult() {
 window.onload = async function() {
   await loadAllData();
   document.getElementById('start-teil1').onclick = function() {
-    // disable both to prevent double start
     document.getElementById('start-teil1').disabled = true;
     document.getElementById('start-teil2').disabled = true;
     startTeil1();
