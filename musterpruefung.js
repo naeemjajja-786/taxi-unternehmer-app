@@ -5,14 +5,14 @@ let teil2Cases = [];
 let teil1Quiz = [];
 let teil2ShortQuiz = [];
 let teil2CaseQuiz = null;
-let currentTeil = 0;
+let currentTeil = 0; // 1=Teil1, 2=Teil2
 let currentQ = 0;
 let userScore = 0;
 let teil2Points = 0;
 let timerInterval = null;
-let timeLeft = 60 * 60;
+let timeLeft = 60 * 60; // 60 Minuten
 
-// === Utility ===
+// === Utility Funktionen ===
 function shuffle(arr) {
   let a = arr.slice();
   for (let i = a.length - 1; i > 0; i--) {
@@ -56,21 +56,19 @@ async function loadAllData() {
     fetch("Exams-Teil1.json").then(r => r.json()),
     fetch("Exams-Teil2.json").then(r => r.json())
   ]);
+  // Exams-Teil1: Flache Array (aus verschachteltem [ {Kapitel: [Fragen]} ] in eine Liste)
   teil1Data = [];
   for (let kap of teil1) {
     for (let key in kap) {
       teil1Data = teil1Data.concat(kap[key]);
     }
   }
+  // Exams-Teil2: Short questions & Cases
   teil2ShortData = [];
   teil2Cases = [];
   for (let blk of teil2) {
-    if (blk.type === "short" && Array.isArray(blk.questions)) {
-      teil2ShortData = teil2ShortData.concat(blk.questions);
-    }
-    if (blk.type === "case" && Array.isArray(blk.cases)) {
-      teil2Cases = teil2Cases.concat(blk.cases);
-    }
+    if (blk.type === "short") teil2ShortData = teil2ShortData.concat(blk.questions);
+    if (blk.type === "case") teil2Cases = teil2Cases.concat(blk.cases);
   }
 }
 
@@ -87,19 +85,19 @@ function startTeil1() {
   startTimer();
   showTeil1Frage();
 }
-
 function showTeil1Frage() {
   if (currentQ >= teil1Quiz.length) return showResult();
   let q = teil1Quiz[currentQ];
-  let allOpts = shuffle(q.optionen.map((opt, i) => ({ txt: opt, idx: i })));
+  // Map index for each button to shuffled order, but track original idx for correct answer
+  let allOpts = shuffle(q.optionen.map((opt, i) => ({ txt: opt, origIdx: i })));
   let html = `
     <div class="quiz-container">
       <div class="quiz-question">
-        Frage ${currentQ+1} von ${teil1Quiz.length}: ${decodeHTML(q.frage)}
+        Frage ${currentQ + 1} von ${teil1Quiz.length}: ${decodeHTML(q.frage)}
       </div>
       <div class="quiz-answers">
-        ${allOpts.map(opt => `
-          <button class="quiz-opt" data-idx="${opt.idx}">${decodeHTML(opt.txt)}</button>
+        ${allOpts.map((opt, i) => `
+          <button class="quiz-opt" data-orig-idx="${opt.origIdx}" data-pos="${i}">${decodeHTML(opt.txt)}</button>
         `).join('')}
       </div>
       <div id="feedback"></div>
@@ -107,25 +105,22 @@ function showTeil1Frage() {
     </div>
   `;
   document.getElementById('teil1-container').innerHTML = html;
-
-  // --- EVENTS NUR EINMAL ---
   let locked = false;
-  let opts = document.querySelectorAll('#teil1-container .quiz-opt');
-  opts.forEach(btn => {
+  let btns = document.querySelectorAll('.quiz-opt');
+  btns.forEach(btn => {
     btn.addEventListener('click', function() {
       if (locked) return;
       locked = true;
-      opts.forEach(b => b.disabled = true);
-      let idx = parseInt(this.getAttribute('data-idx'));
-      let correct = (idx === q.richtigeAntwort);
-      if (correct) {
-        userScore += (q.punkte || 2);
+      btns.forEach(b => b.disabled = true);
+      let origIdx = parseInt(this.getAttribute('data-orig-idx'));
+      let correctBtn = Array.from(btns).find(b => parseInt(b.getAttribute('data-orig-idx')) === q.richtigeAntwort);
+      if (origIdx === q.richtigeAntwort) {
+        userScore += (q.punkte || 1);
         this.classList.add('correct');
         document.getElementById('feedback').innerHTML = `<div class="fs-feedback">Richtig! ${q.erklaerung || ''}</div>`;
       } else {
         this.classList.add('wrong');
-        let cIdx = allOpts.findIndex(o=>o.idx===q.richtigeAntwort);
-        opts[cIdx].classList.add('correct');
+        if (correctBtn) correctBtn.classList.add('correct');
         document.getElementById('feedback').innerHTML = `<div class="fs-feedback incorrect">Falsch. Die richtige Antwort: ${decodeHTML(q.optionen[q.richtigeAntwort])}<br>${q.erklaerung || ''}</div>`;
       }
       document.getElementById('nextBtn').style.display = "block";
@@ -137,7 +132,7 @@ function showTeil1Frage() {
   };
 }
 
-// === TEIL 2 ===
+// === TEIL 2: Kurzfragen + Fallstudie ===
 function startTeil2() {
   currentTeil = 2;
   userScore = 0;
@@ -146,29 +141,27 @@ function startTeil2() {
   document.getElementById('teil2-container').style.display = "block";
   document.getElementById('teil1-container').style.display = "none";
   document.getElementById('backBtn').style.display = "block";
+  // 13-15 kurze Fragen, 1 Fallstudie mit 6-13 Tasks
   teil2ShortQuiz = shuffle(teil2ShortData).slice(0, 14);
   teil2CaseQuiz = shuffle(teil2Cases)[0];
   currentQ = 0;
   startTimer();
   showTeil2ShortFrage();
 }
-
 function showTeil2ShortFrage() {
-  if (!teil2ShortQuiz || teil2ShortQuiz.length === 0) {
-    // Korrekt: Wenn keine short questions: überspringen
-    return showTeil2Case();
-  }
+  // Only show if there are short questions, else go directly to case
+  if (!teil2ShortQuiz || teil2ShortQuiz.length === 0) return showTeil2Case();
   if (currentQ >= teil2ShortQuiz.length) return showTeil2Case();
   let q = teil2ShortQuiz[currentQ];
-  let allOpts = shuffle(q.optionen.map((opt, i) => ({ txt: opt, idx: i })));
+  let allOpts = shuffle(q.optionen.map((opt, i) => ({ txt: opt, origIdx: i })));
   let html = `
     <div class="quiz-container">
       <div class="quiz-question">
-        Frage ${currentQ+1} von ${teil2ShortQuiz.length}: ${decodeHTML(q.frage)}
+        Frage ${currentQ + 1} von ${teil2ShortQuiz.length}: ${decodeHTML(q.frage)}
       </div>
       <div class="quiz-answers">
-        ${allOpts.map(opt => `
-          <button class="quiz-opt" data-idx="${opt.idx}">${decodeHTML(opt.txt)}</button>
+        ${allOpts.map((opt, i) => `
+          <button class="quiz-opt" data-orig-idx="${opt.origIdx}" data-pos="${i}">${decodeHTML(opt.txt)}</button>
         `).join('')}
       </div>
       <div id="feedback"></div>
@@ -177,22 +170,21 @@ function showTeil2ShortFrage() {
   `;
   document.getElementById('teil2-container').innerHTML = html;
   let locked = false;
-  let opts = document.querySelectorAll('#teil2-container .quiz-opt');
-  opts.forEach(btn => {
+  let btns = document.querySelectorAll('.quiz-opt');
+  btns.forEach(btn => {
     btn.addEventListener('click', function() {
       if (locked) return;
       locked = true;
-      opts.forEach(b => b.disabled = true);
-      let idx = parseInt(this.getAttribute('data-idx'));
-      let correct = (idx === q.richtigeAntwort);
-      if (correct) {
+      btns.forEach(b => b.disabled = true);
+      let origIdx = parseInt(this.getAttribute('data-orig-idx'));
+      let correctBtn = Array.from(btns).find(b => parseInt(b.getAttribute('data-orig-idx')) === q.richtigeAntwort);
+      if (origIdx === q.richtigeAntwort) {
         userScore += (q.punkte || 2);
         this.classList.add('correct');
         document.getElementById('feedback').innerHTML = `<div class="fs-feedback">Richtig! ${q.erklaerung || ''}</div>`;
       } else {
         this.classList.add('wrong');
-        let cIdx = allOpts.findIndex(o=>o.idx===q.richtigeAntwort);
-        opts[cIdx].classList.add('correct');
+        if (correctBtn) correctBtn.classList.add('correct');
         document.getElementById('feedback').innerHTML = `<div class="fs-feedback incorrect">Falsch. Die richtige Antwort: ${decodeHTML(q.optionen[q.richtigeAntwort])}<br>${q.erklaerung || ''}</div>`;
       }
       document.getElementById('nextBtn2').style.display = "block";
@@ -203,23 +195,20 @@ function showTeil2ShortFrage() {
     showTeil2ShortFrage();
   };
 }
-
 function showTeil2Case() {
   let caseObj = teil2CaseQuiz;
-  if (!caseObj || !caseObj.tasks || !Array.isArray(caseObj.tasks)) {
-    document.getElementById('teil2-container').innerHTML = `<div class="result-summary"><h2>Kein Case geladen!</h2></div>`;
-    return;
-  }
+  // Safety: if caseObj is missing or no tasks, show end
+  if (!caseObj || !caseObj.tasks || !caseObj.tasks.length) return showResult();
   let caseHtml = `
     <div class="fallstudien-container">
-      <div class="fs-case-statement">${decodeHTML(caseObj.falltext || "")}</div>
+      <div class="fs-case-statement">${decodeHTML(caseObj.falltext)}</div>
       <div class="fs-tasks">
         ${caseObj.tasks.map((task, i) => `
           <div class="fs-task-block">
-            <div class="fs-question">Aufgabe ${i+1}: ${decodeHTML(task.frage)}</div>
+            <div class="fs-question">Aufgabe ${i + 1}: ${decodeHTML(task.frage)}</div>
             <input class="fs-input" id="caseAns${i}" type="text" autocomplete="off" placeholder="Ihre Antwort ...">
             <button class="fs-show-btn" onclick="document.getElementById('fs-solution-${i}').style.display='block'">Lösung anzeigen</button>
-            <div id="fs-solution-${i}" style="display:none;" class="fs-feedback">${decodeHTML(task.loesung || "")}</div>
+            <div id="fs-solution-${i}" style="display:none;" class="fs-feedback">${decodeHTML(task.loesung)}</div>
           </div>
         `).join('')}
       </div>
@@ -228,28 +217,24 @@ function showTeil2Case() {
   `;
   document.getElementById('teil2-container').innerHTML = caseHtml;
   document.getElementById('submitCaseBtn').onclick = function() {
-    // Bewertung der Tasks
     let total = 0, points = 0;
     caseObj.tasks.forEach((task, i) => {
-      let val = (document.getElementById('caseAns'+i).value||"").trim();
-      total += (task.punkte||2);
-      // Optional: Hier exakte Bewertung falls Lösung exakt ist (kann nach Bedarf erweitert werden)
-      // if(val === task.richtigeAntwort) points += (task.punkte||2);
+      let val = (document.getElementById('caseAns' + i).value || "").trim();
+      total += (task.punkte || 2);
     });
     userScore += points;
-    teil2Points = total + (teil2ShortQuiz ? teil2ShortQuiz.length*2 : 0); // max Punkte korrekt!
+    teil2Points = total;
     showResult();
-  }
+  };
 }
 
 // === Ergebnisse ===
 function showResult() {
   clearInterval(timerInterval);
-  let maxPoints = (currentTeil==1 ? teil1Quiz.reduce((sum, q) => sum + (q.punkte||2),0) : teil2Points);
   let html = `
     <div class="result-summary">
       <h2>Prüfung abgeschlossen!</h2>
-      <p>Sie haben <b>${userScore}</b> von <b>${maxPoints}</b> möglichen Punkten erreicht.</p>
+      <p>Sie haben <b>${userScore}</b> von <b>${currentTeil == 1 ? teil1Quiz.length * 2 : teil2Points || 32}</b> möglichen Punkten erreicht.</p>
       <button class="back-btn" onclick="goBackExam()">Zurück zum Prüfungsmenü</button>
     </div>
   `;
@@ -260,15 +245,7 @@ function showResult() {
 // === INIT ===
 window.onload = async function() {
   await loadAllData();
-  document.getElementById('start-teil1').onclick = function() {
-    document.getElementById('start-teil1').disabled = true;
-    document.getElementById('start-teil2').disabled = true;
-    startTeil1();
-  };
-  document.getElementById('start-teil2').onclick = function() {
-    document.getElementById('start-teil1').disabled = true;
-    document.getElementById('start-teil2').disabled = true;
-    startTeil2();
-  };
+  document.getElementById('start-teil1').onclick = startTeil1;
+  document.getElementById('start-teil2').onclick = startTeil2;
   document.getElementById('backBtn').onclick = goBackExam;
 };
