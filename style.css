@@ -7,114 +7,46 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 header, footer {
     background: #203040;
     color: #fff;
     padding: 1.1rem 0.5rem;
     text-align: center;
 }
-
-footer {
-    margin-top: auto;
-    font-size: 1rem;
-}
-
-.main-menu {
+footer { margin-top: auto; font-size: 1rem; }
+.vertical-menu, .main-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
     gap: 1.2rem;
 }
-
+.sub-menu { margin-top: 2.1rem; gap: 1.6rem; }
 .main-button {
-    font-size: 1.2rem;
+    font-size: 1.22rem;
     background: #2945a3;
     color: #fff;
     border: none;
-    padding: 1rem 2.2rem;
+    padding: 1.08rem 2.25rem;
     border-radius: 7px;
     cursor: pointer;
     text-decoration: none;
-    transition: background 0.18s;
+    transition: background 0.18s, box-shadow 0.19s;
     box-shadow: 0 2px 5px #ccd7e0a1;
-    margin: 0.2rem 0;
     width: 260px;
     text-align: center;
-}
-.main-button:hover { background: #182c57; }
-
-.action-button {
-    background: #38b34a;
-    color: #fff;
-    border: none;
-    padding: 0.7rem 1.6rem;
-    margin-top: 1rem;
-    border-radius: 6px;
-    font-size: 1.09rem;
-    cursor: pointer;
-    transition: background 0.16s;
-    margin-bottom: 0.4rem;
     font-weight: 500;
 }
-.action-button:hover { background: #278f34; }
-
-.question-block, .result-block {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 12px #c8d6e2;
-    margin: 2rem auto 1rem auto;
-    padding: 1.5rem 1.3rem 1.1rem 1.3rem;
-    max-width: 490px;
-}
-
-.q-number {
-    font-weight: 600;
-    margin-bottom: 0.2rem;
-    color: #3452a0;
-    letter-spacing: 0.4px;
-    font-size: 1.01rem;
-}
-
-.q-text {
-    font-size: 1.13rem;
-    margin-bottom: 1.1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #17304a;
-}
-
-.answer-option {
-    font-size: 1.08rem;
-    margin-bottom: 0.42rem;
-    cursor: pointer;
-    display: inline-block;
-    line-height: 1.6;
-    padding: 3px 0 3px 5px;
-}
-
-.feedback {
-    margin-top: 1.2rem;
-    padding: 0.93rem 0.9rem;
-    background: #eafcfa;
-    border-left: 5px solid #38b34a;
-    border-radius: 7px;
-    color: #204030;
-    font-size: 1.07rem;
-}
-
-#exam-timer {
-    text-align: right;
-    margin: 0.8rem 10% 0.2rem 0;
-    font-size: 1.11rem;
-    color: #ca3535;
-    font-weight: 500;
-}
-
+.button-bg-1 { background: linear-gradient(90deg,#38b34a,#47e2c2);}
+.button-bg-2 { background: linear-gradient(90deg,#224a98,#41a4e7);}
+.button-bg-3 { background: linear-gradient(90deg,#d8a40d,#ffe889);}
+.button-bg-4 { background: linear-gradient(90deg,#ac2d63,#fc8c5c);}
+.button-bg-5 { background: linear-gradient(90deg,#3d72b4,#a2cdf2);}
+.button-bg-6 { background: linear-gradient(90deg,#d49e2b,#eabf75);}
+.main-button:hover { filter: brightness(0.96) contrast(1.1); }
 .back-button {
     display: inline-block;
-    margin: 0.8rem 0 0 0;
+    margin: 0.7rem 0 0 0;
     color: #2945a3;
     background: #f5f4fc;
     border-radius: 5px;
@@ -125,17 +57,55 @@ footer {
     transition: background 0.15s;
 }
 .back-button:hover { background: #e7e1fa; }
-
-.result-block h2 {
-    color: #0d672e;
-    margin-top: 0;
-    font-size: 1.23rem;
-    margin-bottom: 1rem;
+.question-block, .result-block {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px #c8d6e2;
+    margin: 2rem auto 1rem auto;
+    padding: 1.5rem 1.3rem 1.1rem 1.3rem;
+    max-width: 490px;
 }
-
-@media (max-width: 650px) {
-    .main-menu { gap: 0.75rem; }
+.q-number {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    color: #3452a0;
+    letter-spacing: 0.4px;
+    font-size: 1.01rem;
+}
+.q-text {
+    font-size: 1.13rem;
+    margin-bottom: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #17304a;
+}
+.answer-option {
+    font-size: 1.08rem;
+    margin-bottom: 0.42rem;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.6;
+    padding: 3px 0 3px 5px;
+}
+.feedback {
+    margin-top: 1.2rem;
+    padding: 0.93rem 0.9rem;
+    background: #eafcfa;
+    border-left: 5px solid #38b34a;
+    border-radius: 7px;
+    color: #204030;
+    font-size: 1.07rem;
+}
+#exam-timer {
+    text-align: right;
+    margin: 0.8rem 10% 0.2rem 0;
+    font-size: 1.11rem;
+    color: #ca3535;
+    font-weight: 500;
+}
+@media (max-width: 700px) {
+    .vertical-menu, .main-menu, .sub-menu { gap: 0.88rem; }
     .main-button { width: 92vw; max-width: 99vw; padding: 1rem 0.6rem; }
-    .question-block, .result-block { max-width: 97vw; padding: 1rem 0.5rem; }
+    .question-block, .result-block { max-width: 98vw; padding: 1rem 0.6rem; }
     #exam-timer { margin-right: 2vw; }
 }
