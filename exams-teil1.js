@@ -1,4 +1,11 @@
-const SACHGEBIET_QUOTA = {
+// exams-teil1.js
+
+let allQuestions = [];
+let selectedQuestions = [];
+let currentQuestionIndex = 0;
+let score = 0;
+
+const questionDistribution = {
     "Recht": 12,
     "Kaufmännische und finanzielle Führung des Betriebes": 24,
     "Technischer Betrieb und Betriebsdurchführung": 9,
@@ -6,144 +13,106 @@ const SACHGEBIET_QUOTA = {
     "Grenzüberschreitende Personenbeförderung": 6
 };
 
-let questions = [];
-let examQuestions = [];
-let currentQuestion = 0;
-let score = 0;
+// سوالات JSON لوڈ کرو
+fetch('Exams-Teil1.json')
+    .then(response => response.json())
+    .then(data => {
+        allQuestions = data;
+        // MCQ بٹن پر کلک سے کوئز شروع ہو
+        document.getElementById('start-mcq-btn').addEventListener('click', startMCQQuiz);
+    });
 
-const examContainer = document.getElementById('exam-container');
+function startMCQQuiz() {
+    selectedQuestions = selectQuestionsBySachgebiet();
+    currentQuestionIndex = 0;
+    score = 0;
+    document.getElementById('mcq-quiz-container').style.display = 'block';
+    document.getElementById('mcq-start-screen').style.display = 'none';
+    showQuestion();
+}
 
-function shuffle(arr) {
+function selectQuestionsBySachgebiet() {
+    let questions = [];
+    // ہر Sachgebiet سے مطلوبہ تعداد میں رینڈم سوالات لو
+    for (let sachgebiet in questionDistribution) {
+        // فلٹر کرو
+        let filtered = allQuestions.filter(q => (q.sachgebiet || q.Sachgebiet) === sachgebiet);
+        // رینڈمائز کرو
+        filtered = shuffle(filtered);
+        // مطلوبہ تعداد لو (کم ہوں تو جتنے ہیں لے لو)
+        let count = questionDistribution[sachgebiet];
+        questions = questions.concat(filtered.slice(0, count));
+    }
+    // سارے سوالات کو پھر سے رینڈمائز کرو تاکہ مکس ہوں
+    return shuffle(questions);
+}
+
+function shuffle(array) {
+    let arr = array.slice();
     for (let i = arr.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
+        let j = Math.floor(Math.random() * (i + 1));
         [arr[i], arr[j]] = [arr[j], arr[i]];
     }
     return arr;
 }
 
-async function loadQuestions() {
-    try {
-        const response = await fetch('Exams-Teil1.json');
-        if (!response.ok) {
-            throw new Error("Fragen-Datei nicht gefunden!");
-        }
-        questions = await response.json();
-    } catch (err) {
-        examContainer.innerHTML = "<div style='color:red;'>Fehler beim Laden der Fragen. Stellen Sie sicher, dass <b>Exams-Teil1.json</b> vorhanden ist.</div>";
-        throw err;
-    }
-}
-
-function selectQuestionsBySachgebiet() {
-    examQuestions = [];
-    let sachgebietGroups = {};
-    for (let q of questions) {
-        let sg = q.sachgebiet;
-        if (!sachgebietGroups[sg]) sachgebietGroups[sg] = [];
-        sachgebietGroups[sg].push(q);
-    }
-    for (let sg in SACHGEBIET_QUOTA) {
-        let group = sachgebietGroups[sg] || [];
-        examQuestions = examQuestions.concat(shuffle(group).slice(0, SACHGEBIET_QUOTA[sg]));
-    }
-    examQuestions = shuffle(examQuestions);
-}
-
 function showQuestion() {
-    examContainer.innerHTML = "";
-    if (currentQuestion < examQuestions.length) {
-        const q = examQuestions[currentQuestion];
-        const questionBlock = document.createElement('div');
-        questionBlock.className = "question-block";
-
-        const qNumber = document.createElement('div');
-        qNumber.className = "q-number";
-        qNumber.textContent = `Frage ${currentQuestion + 1} von ${examQuestions.length} (${q.sachgebiet})`;
-        questionBlock.appendChild(qNumber);
-
-        const qText = document.createElement('div');
-        qText.className = "q-text";
-        qText.textContent = q.frage;
-        questionBlock.appendChild(qText);
-
-        q.antworten.forEach((antwort, idx) => {
-            const label = document.createElement('label');
-            label.className = "answer-option";
-            const input = document.createElement('input');
-            input.type = 'radio';
-            input.name = 'antwort';
-            input.value = idx;
-            label.appendChild(input);
-            label.appendChild(document.createTextNode(" " + antwort));
-            questionBlock.appendChild(label);
-            questionBlock.appendChild(document.createElement('br'));
-        });
-
-        const checkBtn = document.createElement('button');
-        checkBtn.textContent = "Antwort prüfen";
-        checkBtn.className = "action-button";
-        checkBtn.onclick = checkAnswer;
-        questionBlock.appendChild(checkBtn);
-
-        examContainer.appendChild(questionBlock);
-    } else {
-        finishExam();
-    }
-}
-
-function checkAnswer() {
-    const selected = document.querySelector('input[name="antwort"]:checked');
-    if (!selected) {
-        alert('Bitte wählen Sie eine Antwort aus!');
-        return;
-    }
-    const userAnswer = parseInt(selected.value);
-    const q = examQuestions[currentQuestion];
-    const isCorrect = userAnswer === q.richtig;
-    if (isCorrect) score++;
-    let feedback = document.createElement('div');
-    feedback.className = "feedback";
-    feedback.innerHTML = isCorrect
-        ? "<b>Richtig!</b>"
-        : `<b>Falsch!</b> Richtige Antwort: ${q.antworten[q.richtig]}`;
-    if (q.erklaerung) {
-        feedback.innerHTML += "<br><small>" + q.erklaerung + "</small>";
-    }
-    examContainer.appendChild(feedback);
-
-    const nextBtn = document.createElement('button');
-    nextBtn.textContent = (currentQuestion < examQuestions.length - 1)
-        ? "Nächste Frage"
-        : "Ergebnis anzeigen";
-    nextBtn.className = "action-button";
-    nextBtn.onclick = () => {
-        currentQuestion++;
-        showQuestion();
-    };
-    examContainer.appendChild(document.createElement('br'));
-    examContainer.appendChild(nextBtn);
-
-    document.querySelectorAll('input[name="antwort"]').forEach(el => el.disabled = true);
-    document.querySelector('button.action-button').disabled = true;
-}
-
-function finishExam() {
-    examContainer.innerHTML = `
-        <div class="result-block">
-            <h2>Ergebnis</h2>
-            <p>Sie haben <b>${score}</b> von <b>${examQuestions.length}</b> Fragen richtig beantwortet (${Math.round(score/examQuestions.length*100)}%)</p>
-            <button class="action-button" id="restart-btn">Neu starten</button>
+    let q = selectedQuestions[currentQuestionIndex];
+    let questionContainer = document.getElementById('mcq-question');
+    questionContainer.innerHTML = `
+        <div><b>Frage ${currentQuestionIndex + 1} von ${selectedQuestions.length}</b></div>
+        <div class="question-text">${q.question}</div>
+        <div id="mcq-answers">
+            ${q.answers.map((ans, idx) =>
+                `<button class="mcq-answer-btn" data-idx="${idx}">${ans}</button>`
+            ).join('')}
         </div>
+        <div id="mcq-feedback"></div>
     `;
-    document.getElementById('restart-btn').onclick = startExam;
+
+    // آنسر بٹن ایونٹس
+    Array.from(document.getElementsByClassName('mcq-answer-btn')).forEach(btn => {
+        btn.addEventListener('click', function () {
+            checkAnswer(parseInt(this.dataset.idx));
+        });
+    });
 }
 
-async function startExam() {
-    score = 0;
-    currentQuestion = 0;
-    await loadQuestions();
-    selectQuestionsBySachgebiet();
-    showQuestion();
+function checkAnswer(selectedIdx) {
+    let q = selectedQuestions[currentQuestionIndex];
+    let feedbackDiv = document.getElementById('mcq-feedback');
+    let correctIdx = q.correct;
+    let explanation = q.explanation || "";
+
+    if (selectedIdx === correctIdx) {
+        feedbackDiv.innerHTML = `<span style="color:green;"><b>Richtig!</b></span> ${explanation}`;
+        score++;
+    } else {
+        feedbackDiv.innerHTML = `<span style="color:red;"><b>Falsch!</b></span> Richtige Antwort: ${q.answers[correctIdx]} <br>${explanation}`;
+    }
+
+    // اگلا سوال بٹن (یا End)
+    feedbackDiv.innerHTML += `<br><button id="next-mcq-btn">${currentQuestionIndex + 1 < selectedQuestions.length ? 'Nächste Frage' : 'Ergebnis anzeigen'}</button>`;
+    document.getElementById('mcq-answers').style.pointerEvents = 'none';
+
+    document.getElementById('next-mcq-btn').addEventListener('click', function () {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < selectedQuestions.length) {
+            showQuestion();
+        } else {
+            showResult();
+        }
+    });
 }
 
-startExam();
+function showResult() {
+    let resultDiv = document.getElementById('mcq-question');
+    resultDiv.innerHTML = `
+        <h3>Quiz beendet!</h3>
+        <p>Richtige Antworten: <b>${score} von ${selectedQuestions.length}</b></p>
+        <button id="restart-mcq-btn">Nochmal spielen</button>
+    `;
+    document.getElementById('restart-mcq-btn').addEventListener('click', () => {
+        startMCQQuiz();
+    });
+}
