@@ -5,17 +5,13 @@ const SACHGEBIET_QUOTA = {
     "Straßenverkehrssicherheit, Unfallverhütung, Umwelt": 9,
     "Grenzüberschreitende Personenbeförderung": 6
 };
-const EXAM_DURATION = 30 * 60; // 30 minutes
 
 let questions = [];
 let examQuestions = [];
 let currentQuestion = 0;
 let score = 0;
-let timer = EXAM_DURATION;
-let timerInterval = null;
 
 const examContainer = document.getElementById('exam-container');
-const timerDiv = document.getElementById('exam-timer');
 
 function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
@@ -51,28 +47,6 @@ function selectQuestionsBySachgebiet() {
         examQuestions = examQuestions.concat(shuffle(group).slice(0, SACHGEBIET_QUOTA[sg]));
     }
     examQuestions = shuffle(examQuestions);
-}
-
-function formatTime(seconds) {
-    const m = Math.floor(seconds / 60);
-    const s = seconds % 60;
-    return `${m}:${s.toString().padStart(2, '0')}`;
-}
-
-function showTimer() {
-    timerDiv.textContent = `Zeit: ${formatTime(timer)}`;
-}
-
-function startTimer() {
-    showTimer();
-    timerInterval = setInterval(() => {
-        timer--;
-        showTimer();
-        if (timer <= 0) {
-            clearInterval(timerInterval);
-            finishExam(true);
-        }
-    }, 1000);
 }
 
 function showQuestion() {
@@ -113,7 +87,7 @@ function showQuestion() {
 
         examContainer.appendChild(questionBlock);
     } else {
-        finishExam(false);
+        finishExam();
     }
 }
 
@@ -153,13 +127,11 @@ function checkAnswer() {
     document.querySelector('button.action-button').disabled = true;
 }
 
-function finishExam(timeout = false) {
-    clearInterval(timerInterval);
+function finishExam() {
     examContainer.innerHTML = `
         <div class="result-block">
             <h2>Ergebnis</h2>
             <p>Sie haben <b>${score}</b> von <b>${examQuestions.length}</b> Fragen richtig beantwortet (${Math.round(score/examQuestions.length*100)}%)</p>
-            <p>${timeout ? "Zeit abgelaufen!" : ""}</p>
             <button class="action-button" id="restart-btn">Neu starten</button>
         </div>
     `;
@@ -169,12 +141,9 @@ function finishExam(timeout = false) {
 async function startExam() {
     score = 0;
     currentQuestion = 0;
-    timer = EXAM_DURATION;
     await loadQuestions();
     selectQuestionsBySachgebiet();
-    startTimer();
     showQuestion();
 }
 
-// پیج لوڈ پر فوراً سٹارٹ:
 startExam();
