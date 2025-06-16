@@ -2,35 +2,27 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Musterprüfung – Taxi & Mietwagen Unternehmer</title>
+  <title>Prüfungsfragen – Taxi/Mietwagen Unternehmer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS: Case-Sensitive Path! -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-  <h1>Musterprüfung</h1>
-  <div id="timer" style="font-size:1.18em;font-weight:500;margin:0.7rem 0;"></div>
-</header>
-
-<main id="muster-app">
-  <!-- Prüfungsmenü -->
-  <div id="exam-menu" class="main-menu">
-    <button id="start-teil1">Teil 1 starten</button>
-    <button id="start-teil2">Teil 2 starten</button>
-  </div>
-  
-  <!-- Container für Prüfungsfragen -->
-  <div id="teil1-container" style="display:none"></div>
-  <div id="teil2-container" style="display:none"></div>
-  
-  <!-- Zurück Button -->
-  <button id="backBtn" class="back-btn" style="display:none;" type="button">Zurück zum Prüfungsmenü</button>
-</main>
-
-<footer>
-  <p>&copy; 2025 Taxi/Mietwagen Unternehmer Lern-App</p>
-</footer>
-<script src="musterpruefung.js"></script>
+  <header>
+    <h1>Prüfungsfragen</h1>
+    <div id="timer" style="font-size:1.1em; margin-top:8px;"></div>
+  </header>
+  <main>
+    <div id="quiz-main" class="quiz-container"></div>
+    <div style="text-align:center; margin:2rem;">
+      <button id="restartBtn" class="back-btn" style="display:none;">Quiz wiederholen</button>
+    </div>
+    <div>
+      <button class="back-btn" onclick="window.location.href='index.html'">Zurück zum Hauptmenü</button>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Taxi/Mietwagen Unternehmer Lern-App</p>
+  </footer>
+  <script src="exams-teil1.js"></script>
 </body>
 </html>
