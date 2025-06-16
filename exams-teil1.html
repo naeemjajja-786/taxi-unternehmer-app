@@ -1,21 +1,34 @@
-<!-- exams-teil1.html -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Taxi Unternehmer MCQ Quiz</title>
+    <title>IHK MCQ Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main-container">
-        <h1>IHK Fachkunde MCQ Quiz</h1>
-        <div id="mcq-start-screen">
-            <button id="start-mcq-btn">MCQ Quiz starten</button>
+        <h1>Fachkundeprüfung MCQs</h1>
+
+        <!-- باقی بٹنز/سیکشن جوں کے توں -->
+        <div class="menu-btns">
+            <!-- ... دیگر بٹن ... -->
+            <button id="start-mcq-btn" class="menu-btn">MCQs Quiz</button>
+            <!-- ... دیگر بٹن ... -->
         </div>
-        <div id="mcq-quiz-container" style="display:none;">
-            <div id="mcq-question"></div>
+
+        <!-- MCQ QUIZ BOX (شروع میں hidden) -->
+        <div id="quiz-container" class="quiz-container hidden">
+            <div id="quiz-content">
+                <div id="question-number"></div>
+                <div id="question-text"></div>
+                <div id="choices"></div>
+                <div id="mcq-feedback"></div>
+            </div>
+            <div id="result-summary" style="display:none;">
+                <div id="score"></div>
+                <button id="restart">Quiz neu starten</button>
+            </div>
         </div>
-        <!-- یہاں باقی بٹنز اور کوئز کے ڈوی جوں کے توں رہیں -->
     </div>
     <script src="exams-teil1.js"></script>
 </body>
