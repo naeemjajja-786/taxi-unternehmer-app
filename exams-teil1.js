@@ -164,5 +164,5 @@ async function startExam() {
     showQuestion();
 }
 
-// پیج لوڈ ہوتے ہی امتحان سٹارٹ!
+// فوراً پیج لوڈ پر امتحان شروع:
 startExam();
