@@ -13,13 +13,11 @@ let questions = [];
 let examQuestions = [];
 let currentQuestion = 0;
 let score = 0;
-let userAnswers = [];
 let timer = EXAM_DURATION;
 let timerInterval = null;
 
 const examContainer = document.getElementById('exam-container');
 const timerDiv = document.getElementById('exam-timer');
-const startBtn = document.getElementById('start-btn');
 
 function shuffle(arr) {
     return arr.sort(() => Math.random() - 0.5);
@@ -33,13 +31,11 @@ async function loadQuestions() {
 function selectQuestionsBySachgebiet() {
     examQuestions = [];
     let sachgebietGroups = {};
-    // گروپ بنائیں
     for (let q of questions) {
         let sg = q.sachgebiet;
         if (!sachgebietGroups[sg]) sachgebietGroups[sg] = [];
         sachgebietGroups[sg].push(q);
     }
-    // ہر group میں سے مطلوبہ random سوالات چنیں
     for (let sg in SACHGEBIET_QUOTA) {
         let group = sachgebietGroups[sg] || [];
         if (group.length < SACHGEBIET_QUOTA[sg]) {
@@ -47,7 +43,6 @@ function selectQuestionsBySachgebiet() {
         }
         examQuestions = examQuestions.concat(shuffle(group).slice(0, SACHGEBIET_QUOTA[sg]));
     }
-    // mix all for random order in exam
     examQuestions = shuffle(examQuestions);
 }
 
@@ -77,7 +72,6 @@ function showQuestion() {
     examContainer.innerHTML = "";
     if (currentQuestion < examQuestions.length) {
         const q = examQuestions[currentQuestion];
-
         const questionBlock = document.createElement('div');
         questionBlock.className = "question-block";
 
@@ -126,7 +120,6 @@ function checkAnswer() {
     const q = examQuestions[currentQuestion];
     const isCorrect = userAnswer === q.richtig;
     if (isCorrect) score++;
-    // فیڈبیک اور وضاحت
     let feedback = document.createElement('div');
     feedback.className = "feedback";
     feedback.innerHTML = isCorrect
@@ -169,7 +162,6 @@ function finishExam(timeout = false) {
 async function startExam() {
     score = 0;
     currentQuestion = 0;
-    userAnswers = [];
     timer = EXAM_DURATION;
     examContainer.innerHTML = '<button id="start-btn" class="action-button">Test starten</button>';
     document.getElementById('start-btn').onclick = async () => {
