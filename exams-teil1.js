@@ -17,12 +17,22 @@ let timerInterval = null;
 const examContainer = document.getElementById('exam-container');
 const timerDiv = document.getElementById('exam-timer');
 
+// Utility for shuffling
 function shuffle(arr) {
-    return arr.sort(() => Math.random() - 0.5);
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
 }
 
+// Fetch questions and start exam when ready
 async function loadQuestions() {
     const response = await fetch('Exams-Teil1.json');
+    if (!response.ok) {
+        examContainer.innerHTML = "<div style='color:red;'>Fehler: Exams-Teil1.json konnte nicht geladen werden.</div>";
+        throw new Error("Fragen nicht gefunden!");
+    }
     questions = await response.json();
 }
 
@@ -36,6 +46,10 @@ function selectQuestionsBySachgebiet() {
     }
     for (let sg in SACHGEBIET_QUOTA) {
         let group = sachgebietGroups[sg] || [];
+        if (group.length < SACHGEBIET_QUOTA[sg]) {
+            // Warn user if not enough questions
+            examContainer.innerHTML = `<div style="color:orange;">Warnung: Sachgebiet "${sg}" enthält nur ${group.length} Fragen (gefordert: ${SACHGEBIET_QUOTA[sg]}).</div>`;
+        }
         examQuestions = examQuestions.concat(shuffle(group).slice(0, SACHGEBIET_QUOTA[sg]));
     }
     examQuestions = shuffle(examQuestions);
@@ -158,11 +172,15 @@ async function startExam() {
     score = 0;
     currentQuestion = 0;
     timer = EXAM_DURATION;
-    await loadQuestions();
-    selectQuestionsBySachgebiet();
-    startTimer();
-    showQuestion();
+    try {
+        await loadQuestions();
+        selectQuestionsBySachgebiet();
+        startTimer();
+        showQuestion();
+    } catch (e) {
+        // Fehler schon angezeigt
+    }
 }
 
-// فوراً پیج لوڈ پر امتحان شروع:
+// پیج لوڈ پر امتحان فوراً سٹارٹ:
 startExam();
