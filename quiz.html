@@ -1,102 +1,113 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <title>Themen Quiz</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>🧠 Themen Quiz</h1>
-  </header>
-  <main id="app">
-    <div id="quiz-container">
-      <div id="question-container">
-        <div id="question" class="question"></div>
-        <ul id="options" class="options"></ul>
-      </div>
-      <div id="feedback" class="feedback"></div>
-      <button id="next-btn" class="quiz-btn">Nächstes</button>
-    </div>
-    <button class="zuruck-btn" onclick="history.back()">Zurück</button>
-  </main>
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f6f6f6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header, footer {
+    background: #203040;
+    color: #fff;
+    padding: 1.1rem 0.5rem;
+    text-align: center;
+}
+footer { margin-top: auto; font-size: 1rem; }
 
-  <script>
-    let quizData = [];
-    let currentQuestion = 0;
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1.1rem;
+}
 
-    const params = new URLSearchParams(window.location.search);
-    const quizFile = params.get('file');
+.main-button {
+    font-size: 1.20rem;
+    background: #295cbd;
+    color: #fff;
+    border: none;
+    padding: 1rem 2.1rem;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.18s;
+    box-shadow: 0 2px 5px #ccd7e0a1;
+    width: 260px;
+    text-align: center;
+    font-weight: 500;
+}
+.main-button:hover { background: #183e78; }
 
-    const questionEl = document.getElementById('question');
-    const optionsEl = document.getElementById('options');
-    const feedbackEl = document.getElementById('feedback');
-    const nextBtn = document.getElementById('next-btn');
+.blue-bg {
+    background: #295cbd !important;
+    color: #fff !important;
+}
 
-    // JSON سے سوالات لوڈ کریں
-    fetch(quizFile)
-      .then(res => res.json())
-      .then(data => {
-        quizData = data;
-        showQuestion();
-      })
-      .catch(err => {
-        questionEl.textContent = "Quiz آپ لوڈ نہیں ہو سکا۔";
-        console.error(err);
-      });
+.back-button {
+    display: inline-block;
+    margin: 0.7rem 0 0 0;
+    color: #2945a3;
+    background: #f5f4fc;
+    border-radius: 5px;
+    padding: 0.32rem 1.12rem;
+    text-decoration: none;
+    font-size: 1.03rem;
+    border: 1px solid #bcd;
+    transition: background 0.15s;
+}
+.back-button:hover { background: #e7e1fa; }
 
-    function showQuestion() {
-      feedbackEl.textContent = '';
-      optionsEl.innerHTML = '';
-      if (currentQuestion < quizData.length) {
-        const qObj = quizData[currentQuestion];
-        questionEl.textContent = qObj.frage || '';
-        // جوابات کے لیے بٹن
-        qObj.antworten.forEach(ans => {
-          const li = document.createElement('li');
-          const btn = document.createElement('button');
-          btn.className = 'option-button';
-          btn.textContent = ans;
-          btn.addEventListener('click', () => checkAnswer(ans));
-          li.appendChild(btn);
-          optionsEl.appendChild(li);
-        });
-        // اگلا بٹن غیرفعال کریں جب تک جواب نہ دیا جائے
-        nextBtn.disabled = true;
-      } else {
-        // جب تمام سوالات ختم ہوں
-        questionEl.textContent = "Quiz ختم ہو چکا ہے!";
-        nextBtn.style.display = 'none';
-      }
-    }
-
-    function checkAnswer(selected) {
-      const qObj = quizData[currentQuestion];
-      // درست اور غلط جواب پہچانیں
-      Array.from(optionsEl.children).forEach(li => {
-        const btn = li.firstChild;
-        if (btn.textContent === qObj.richtigeAntwort) {
-          btn.classList.add('correct');
-        }
-        if (btn.textContent === selected && selected !== qObj.richtigeAntwort) {
-          btn.classList.add('incorrect');
-        }
-        btn.disabled = true;
-      });
-      // feedback دکھائیں
-      if (selected === qObj.richtigeAntwort) {
-        feedbackEl.textContent = "درست! " + (qObj.erklärung || '');
-      } else {
-        feedbackEl.textContent = "غلط! صحیح جواب: " + qObj.richtigeAntwort + (qObj.erklärung ? ' | ' + qObj.erklärung : '');
-      }
-      nextBtn.disabled = false;
-    }
-
-    nextBtn.addEventListener('click', () => {
-      currentQuestion++;
-      showQuestion();
-    });
-  </script>
-</body>
-</html>
+.question-block, .result-block {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px #c8d6e2;
+    margin: 2rem auto 1rem auto;
+    padding: 1.5rem 1.3rem 1.1rem 1.3rem;
+    max-width: 490px;
+}
+.q-number {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    color: #3452a0;
+    letter-spacing: 0.4px;
+    font-size: 1.01rem;
+}
+.q-text {
+    font-size: 1.13rem;
+    margin-bottom: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #17304a;
+}
+.answer-option {
+    font-size: 1.08rem;
+    margin-bottom: 0.42rem;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.6;
+    padding: 3px 0 3px 5px;
+}
+.feedback {
+    margin-top: 1.2rem;
+    padding: 0.93rem 0.9rem;
+    background: #eafcfa;
+    border-left: 5px solid #38b34a;
+    border-radius: 7px;
+    color: #204030;
+    font-size: 1.07rem;
+}
+#exam-timer {
+    text-align: right;
+    margin: 0.8rem 10% 0.2rem 0;
+    font-size: 1.11rem;
+    color: #ca3535;
+    font-weight: 500;
+}
+@media (max-width: 700px) {
+    .main-menu { gap: 0.8rem; }
+    .main-button { width: 92vw; max-width: 99vw; padding: 1rem 0.6rem; }
+    .question-block, .result-block { max-width: 98vw; padding: 1rem 0.6rem; }
+    #exam-timer { margin-right: 2vw; }
+}
