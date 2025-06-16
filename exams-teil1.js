@@ -1,5 +1,3 @@
-// exams-teil1.js
-
 const SACHGEBIET_QUOTA = {
     "Recht": 12,
     "Kaufmännische und finanzielle Führung des Betriebes": 24,
@@ -7,7 +5,7 @@ const SACHGEBIET_QUOTA = {
     "Straßenverkehrssicherheit, Unfallverhütung, Umwelt": 9,
     "Grenzüberschreitende Personenbeförderung": 6
 };
-const EXAM_DURATION = 30 * 60; // 30 minutes in seconds
+const EXAM_DURATION = 30 * 60; // 30 minutes
 
 let questions = [];
 let examQuestions = [];
@@ -38,9 +36,6 @@ function selectQuestionsBySachgebiet() {
     }
     for (let sg in SACHGEBIET_QUOTA) {
         let group = sachgebietGroups[sg] || [];
-        if (group.length < SACHGEBIET_QUOTA[sg]) {
-            console.warn(`Warnung: Sachgebiet "${sg}" enthält nur ${group.length} Fragen!`);
-        }
         examQuestions = examQuestions.concat(shuffle(group).slice(0, SACHGEBIET_QUOTA[sg]));
     }
     examQuestions = shuffle(examQuestions);
