@@ -158,13 +158,11 @@ async function startExam() {
     score = 0;
     currentQuestion = 0;
     timer = EXAM_DURATION;
-    examContainer.innerHTML = '<button id="start-btn" class="action-button">Test starten</button>';
-    document.getElementById('start-btn').onclick = async () => {
-        await loadQuestions();
-        selectQuestionsBySachgebiet();
-        startTimer();
-        showQuestion();
-    };
+    await loadQuestions();
+    selectQuestionsBySachgebiet();
+    startTimer();
+    showQuestion();
 }
 
+// پیج لوڈ ہوتے ہی امتحان سٹارٹ!
 startExam();
