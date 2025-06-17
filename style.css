@@ -6,6 +6,7 @@ body {
     color: #1b2330;
 }
 
+/* مرکزی باکس */
 .main-container {
     max-width: 840px;
     background: #fff;
@@ -15,6 +16,20 @@ body {
     padding: 28px 28px 48px 28px;
 }
 
+.heading-box {
+    background: #eaf0fe;
+    border: 2px solid #b8c4e4;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 13px 16px;
+    margin: 20px 0 22px 0;
+    font-size: 1.22em;
+    letter-spacing: 0.3px;
+    box-shadow: 0 2px 7px rgba(120,170,230,0.06);
+    text-align: center;
+}
+
+/* مین/سب بٹن ہمیشہ باکس */
 .menu-btns {
     display: flex;
     flex-direction: column;
@@ -23,26 +38,116 @@ body {
     align-items: center;
 }
 
-.menu-btn {
-    padding: 17px 60px;
-    border-radius: 8px;
-    font-size: 1.23em;
-    background: #377cff;
-    color: #fff;
-    border: none;
+.menu-btn, .chapter-btn, .sub-btn {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-size: 1.13em;
+    background: #f7fafc;
+    color: #254170;
+    border: 2px solid #b0b7d1;
+    box-shadow: 0 2px 12px rgba(90,120,190,0.08);
     font-family: inherit;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 2px 12px rgba(90,120,190,0.10);
-    letter-spacing: 0.4px;
-    transition: background 0.15s, transform 0.10s;
+    letter-spacing: 0.3px;
+    margin: 0 auto;
+    display: block;
+    transition: background 0.14s, color 0.12s, border 0.12s, transform 0.09s;
 }
-.menu-btn:hover, .menu-btn:focus {
-    background: #2556ab;
-    transform: translateY(-2px) scale(1.03);
+.menu-btn:hover, .chapter-btn:hover, .sub-btn:hover,
+.menu-btn:focus, .chapter-btn:focus, .sub-btn:focus {
+    background: #e7f0ff;
+    border: 2px solid #377cff;
+    color: #2356b7;
+    outline: none;
+    transform: translateY(-1px) scale(1.03);
+}
+
+.lang-switch {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+.lang-switch button {
+    padding: 11px 32px;
+    border-radius: 7px;
+    border: 2px solid #b0b7d1;
+    background: #f9faff;
+    color: #254170;
+    font-size: 1.09em;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.14s, border 0.13s;
+}
+.lang-switch .active,
+.lang-switch button:focus {
+    background: #eaf0fe;
+    border: 2px solid #377cff;
+    color: #2356b7;
     outline: none;
 }
 
+.chapter-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 160px;
+}
+
+/* کیس سٹڈی/چیپٹر/متن باکس */
+.box, .case-box, .question-box, .chapter-content {
+    background: #f7faff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(180,180,220,0.07);
+    border: 1.3px solid #dbe2f1;
+    margin-bottom: 18px;
+    padding: 15px 18px;
+}
+.case-box {
+    border-left: 5px solid #377cff;
+    margin-bottom: 26px;
+}
+.chapter-content {
+    margin-top: 18px;
+    font-size: 1.10em;
+    line-height: 1.7;
+}
+
+/* واپس بٹن ہمیشہ ایک جیسا */
+.back-btn {
+    background: #fff;
+    color: #245393;
+    border: 2px solid #245393;
+    border-radius: 8px;
+    padding: 9px 24px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(40,70,150,0.06);
+    transition: background 0.14s, color 0.14s, border 0.13s;
+    display: inline-block;
+}
+.back-btn:hover, .back-btn:focus {
+    background: #245393;
+    color: #fff;
+    outline: none;
+}
+
+/* کوئز/MCQ */
 .quiz-container {
     background: linear-gradient(120deg, #e8f0fe 10%, #f2e7fa 55%, #ffe8ec 100%);
     border-radius: 18px;
@@ -54,21 +159,7 @@ body {
     min-height: 340px;
     border: 1.5px solid #d2daf0;
 }
-
-#question-number {
-    font-size: 1.09em;
-    color: #5477b8;
-    margin-bottom: 6px;
-    font-weight: 500;
-}
-#question-text {
-    font-size: 1.20em;
-    margin-bottom: 19px;
-    font-weight: 500;
-    color: #183458;
-}
-
-.mcq-answer-btn {
+.mcq-answer-btn, .choice-btn {
     display: block;
     width: 100%;
     text-align: left;
@@ -82,13 +173,12 @@ body {
     font-size: 1.09em;
     font-family: inherit;
 }
-
-.mcq-answer-btn:hover, .mcq-answer-btn:focus {
+.mcq-answer-btn:hover, .mcq-answer-btn:focus, .choice-btn:hover, .choice-btn:focus {
     background: #e8f3fa;
     border: 1.7px solid #7bb0e5;
     outline: none;
 }
-.mcq-answer-btn:disabled {
+.mcq-answer-btn:disabled, .choice-btn:disabled {
     opacity: 0.62;
     cursor: not-allowed;
 }
@@ -98,14 +188,8 @@ body {
     font-size: 1.13em;
     padding: 9px 0 2px 0;
 }
-.correct {
-    color: #118746;
-    font-weight: bold;
-}
-.incorrect {
-    color: #e62d2d;
-    font-weight: bold;
-}
+.correct { color: #118746; font-weight: bold; }
+.incorrect { color: #e62d2d; font-weight: bold; }
 
 #next-mcq-btn, #restart {
     margin-top: 22px;
@@ -129,18 +213,29 @@ body {
     margin-top: 8px;
 }
 
-.hidden {
-    display: none !important;
+/* Footer */
+footer {
+    text-align: center;
+    color: #a7b0c7;
+    font-size: 0.99em;
+    margin-top: 26px;
+    margin-bottom: 14px;
 }
 
+/* responsive */
 @media (max-width: 900px) {
     .main-container { padding: 10px 2vw 28px 2vw; }
     .quiz-container { max-width: 98vw; padding: 10px 3vw 18px 3vw; }
+    .menu-btn, .chapter-btn, .sub-btn { font-size: 1em; padding: 12px 0; }
+    .heading-box { font-size: 1.05em; }
+    .box, .case-box, .question-box { padding: 10px 8px; }
+    .chapter-list { gap: 14px; }
 }
-
 @media (max-width: 600px) {
-    .menu-btn { padding: 13px 4vw; font-size: 1em; }
-    .quiz-container { padding: 7px 1vw 12px 1vw; min-height: 220px; }
-    #question-text { font-size: 1.07em; }
-    .mcq-answer-btn { font-size: 0.97em; padding: 9px 7px; }
+    .main-container { padding: 6px 0 18px 0; }
+    .quiz-container { padding: 6px 1vw 12px 1vw; min-height: 140px; }
+    .heading-box { font-size: 1em; }
+    .menu-btn, .chapter-btn, .sub-btn { font-size: 0.95em; padding: 10px 0; }
+    .chapter-list { flex-direction: column; gap: 7px; }
+    .column { min-width: unset; }
 }
