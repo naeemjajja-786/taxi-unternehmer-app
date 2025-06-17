@@ -2,34 +2,37 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>IHK MCQ Quiz</title>
+    <title>MCQs Quiz | Prüfungsfragen</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main-container">
-        <h1>Fachkundeprüfung MCQs</h1>
-
-        <!-- باقی بٹنز/سیکشن جوں کے توں -->
+        <button class="back-btn" onclick="window.location.href='pruefungsfragen.html'">← Zurück</button>
+        <div class="heading-box">Prüfungs-MCQs (Sachgebiete-Auswahl nach IHK)</div>
         <div class="menu-btns">
-            <!-- ... دیگر بٹن ... -->
-            <button id="start-mcq-btn" class="menu-btn">MCQs Quiz</button>
-            <!-- ... دیگر بٹن ... -->
+            <button id="start-mcq-btn" class="menu-btn">Quiz starten</button>
         </div>
-
-        <!-- MCQ QUIZ BOX (شروع میں hidden) -->
         <div id="quiz-container" class="quiz-container hidden">
+            <button class="back-btn" onclick="hideQuiz()" style="margin-bottom:12px;">← Zurück</button>
             <div id="quiz-content">
-                <div id="question-number"></div>
-                <div id="question-text"></div>
+                <div class="box" id="question-number"></div>
+                <div class="question-box" id="question-text"></div>
                 <div id="choices"></div>
                 <div id="mcq-feedback"></div>
             </div>
             <div id="result-summary" style="display:none;">
-                <div id="score"></div>
+                <div class="box" id="score"></div>
                 <button id="restart">Quiz neu starten</button>
             </div>
         </div>
     </div>
     <script src="exams-teil1.js"></script>
+    <script>
+        function hideQuiz() {
+            document.getElementById('quiz-container').classList.add('hidden');
+            document.getElementById('result-summary').style.display = 'none';
+            document.getElementById('quiz-content').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
