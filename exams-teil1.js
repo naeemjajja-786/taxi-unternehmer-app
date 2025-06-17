@@ -1,18 +1,16 @@
-// exams-teil1.js
-
 let allQuestions = [];
 let selectedQuestions = [];
 let currentQuestionIndex = 0;
 let score = 0;
 
-// ہر Sachgebiet کے مطابق تقسیم
+// جدول کے مطابق MCQ تقسیم:
 const questionDistribution = {
-    "Recht": 12,
-    "Kaufmännische und finanzielle Führung des Betriebes": 24,
-    "Technischer Betrieb und Betriebsdurchführung": 9,
-    "Straßenverkehrssicherheit, Unfallverhütung, Umwelt": 9,
-    "Grenzüberschreitende Personenbeförderung": 6
-};
+    "Recht": 6,
+    "Kaufmännische und finanzielle Führung des Betriebes": 12,
+    "Technischer Betrieb und Betriebsdurchführung": 4,
+    "Straßenverkehrssicherheit, Unfallverhütung, Umwelt": 4,
+    "Grenzüberschreitende Personenbeförderung": 4
+}; // کل = 30
 
 document.addEventListener('DOMContentLoaded', function() {
     fetch('Exams-Teil1.json')
@@ -24,9 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function startMCQQuiz() {
-    // کوئز باکس دکھاؤ، باقی ہٹا دو
     document.getElementById('quiz-container').classList.remove('hidden');
-    document.querySelector('.menu-btns').style.display = 'none';
     selectedQuestions = selectQuestionsBySachgebiet();
     currentQuestionIndex = 0;
     score = 0;
@@ -54,7 +50,6 @@ function shuffle(array) {
 }
 
 function showQuestion() {
-    // اگر سب سوال ختم تو نتیجہ دکھاؤ
     if (currentQuestionIndex >= selectedQuestions.length) {
         showResult();
         return;
@@ -66,7 +61,6 @@ function showQuestion() {
     document.getElementById('question-number').innerHTML = `<b>Frage ${currentQuestionIndex + 1} von ${selectedQuestions.length}</b>`;
     document.getElementById('question-text').textContent = q.question;
 
-    // جواب بٹن بناؤ
     let answersHTML = '';
     q.answers.forEach((ans, idx) => {
         answersHTML += `<button class="mcq-answer-btn" data-idx="${idx}">${ans}</button>`;
@@ -92,10 +86,7 @@ function checkAnswer(selectedIdx) {
     } else {
         feedbackDiv.innerHTML = `<span class="incorrect">Falsch!</span> Richtige Antwort: ${q.answers[correctIdx]}<br>${explanation}`;
     }
-
-    // Disable all answer buttons
     Array.from(document.getElementsByClassName('mcq-answer-btn')).forEach(btn => btn.disabled = true);
-
     feedbackDiv.innerHTML += `<br><button id="next-mcq-btn">${currentQuestionIndex + 1 < selectedQuestions.length ? 'Nächste Frage' : 'Ergebnis anzeigen'}</button>`;
     document.getElementById('next-mcq-btn').addEventListener('click', function () {
         currentQuestionIndex++;
@@ -108,9 +99,9 @@ function showResult() {
     document.getElementById('result-summary').style.display = 'block';
     document.getElementById('score').innerHTML = `<b>Quiz beendet!</b><br>Richtige Antworten: <b>${score} von ${selectedQuestions.length}</b>`;
     document.getElementById('restart').onclick = function () {
-        // مکمل ری سیٹ
         document.getElementById('quiz-container').classList.add('hidden');
-        document.querySelector('.menu-btns').style.display = 'flex';
+        document.getElementById('result-summary').style.display = 'none';
+        document.getElementById('quiz-content').style.display = 'block';
         score = 0;
         currentQuestionIndex = 0;
         selectedQuestions = [];
