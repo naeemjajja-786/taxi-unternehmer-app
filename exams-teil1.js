@@ -5,12 +5,12 @@ let score = 0;
 
 // جدول کے مطابق MCQ تقسیم:
 const questionDistribution = {
-    "Recht": 6,
-    "Kaufmännische und finanzielle Führung des Betriebes": 12,
-    "Technischer Betrieb und Betriebsdurchführung": 4,
-    "Straßenverkehrssicherheit, Unfallverhütung, Umwelt": 4,
-    "Grenzüberschreitende Personenbeförderung": 4
-}; // کل = 30
+    "Recht": 12,
+    "Kaufmännische und finanzielle Führung des Betriebes": 24,
+    "Technischer Betrieb und Betriebsdurchführung": 9,
+    "Straßenverkehrssicherheit, Unfallverhütung, Umwelt": 9,
+    "Grenzüberschreitende Personenbeförderung": 6
+}; // کل = 60
 
 document.addEventListener('DOMContentLoaded', function() {
     fetch('Exams-Teil1.json')
