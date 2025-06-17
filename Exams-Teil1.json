@@ -1,3 +1,4 @@
+[
  {
       "sachgebiet": "Rechts",
       "subthema": "PBefG",
@@ -304,7 +305,7 @@
         }
       ]
     }
-  ],
+  ,
   [
     {
       "sachgebiet": "Rechts",
@@ -4419,4 +4420,5 @@
       "punkte": 1
     }
   ]
+
 ]
